@@ -47,7 +47,7 @@ export default function Credentials() {
             <p className="text-white font-semibold text-sm">I eliminate the wall.</p>
 
             <p className="text-[#ccc] text-sm leading-relaxed">
-              I've spent 20+ years in product commercialisation roles, beginning in sales, completing an MBA and moving into Product and Marketing Management. Most of my career was spent in regulated sectors including medical technology (pharma, devices and software), fintech, construction tech, veterinary tech. I provide a rare full-stack GTM capability, with a heavy lean towards (but not limited to) high-growth SaaS.
+              I've spent 20+ years in product commercialisation roles beginning in sales, completing an MBA and moving into Product and Marketing Management. Most of my career was spent in regulated sectors including medical technology (pharma, devices and software), fintech, construction tech, veterinary tech. I provide a rare full-stack GTM capability, with a heavy lean towards (but not limited to) high-growth SaaS.
             </p>
             <p className="text-[#ccc] text-sm leading-relaxed">
               I can lead upstream product strategy (R&D, product definition, roadmapping and development) and downstream execution (segmentation & targeting, positioning, messaging and launch) — or step in to solve for just one part of the spectrum.
