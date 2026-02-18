@@ -36,7 +36,7 @@ const problemQuestions = [
 
 const faqs = [
   { q: "Are these Notion templates?", a: "Yes. Two separate Notion portals you can duplicate into your workspace." },
-  { q: "Can I use these if I'm not technical?", a: "GTM Foundations is designed for non-technical founders. Vibe Coding System is for builders (but you don't need to be a professional developer)." },
+  { q: "Can I use these if I'm not technical?", a: "GTM Foundations is designed for non-technical founders. Vibe Coding Foundations is for builders (but you don't need to be a professional developer)." },
   { q: "What if I need help?", a: "The systems are self-guided. If you want execution support, upgrade to a productised service." },
   { q: "Do you offer both as a bundle?", a: "Yes. $249 for both (save $49)." },
   { q: "Refunds?", a: "No refunds. Digital products with instant access. Download the free ICP Framework first if you're unsure of the quality." },
@@ -94,7 +94,7 @@ export default function LaunchSystem() {
                 <Zap className="w-4 h-4" />Buy GTM Foundations — $149
               </button>
               <button className="inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm border border-white/20 hover:border-white/40 transition-colors">
-                <Code className="w-4 h-4" />Buy Vibe Coding System — $149
+                <Code className="w-4 h-4" />Buy Vibe Coding Foundations — $149
               </button>
               <button className="inline-flex items-center gap-2 text-[#E91E8C] font-semibold px-6 py-3.5 rounded-lg text-sm border border-[#E91E8C]/40 hover:border-[#E91E8C] transition-colors">
                 <Package className="w-4 h-4" />Bundle Both — $249
@@ -169,7 +169,7 @@ export default function LaunchSystem() {
                   <Code className="w-5 h-5 text-[#00C4E0]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0a0a0a]">Vibe Coding System</h3>
+                  <h3 className="text-xl font-bold text-[#0a0a0a]">Vibe Coding Foundations</h3>
                   <span className="text-[#00C4E0] font-semibold text-sm">$149</span>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export default function LaunchSystem() {
               </div>
               <p className="text-[#aaa] text-xs mb-6">Format: Notion portal, duplicate into your workspace.</p>
               <button className="inline-flex items-center justify-center gap-2 text-[#0a0a0a] font-semibold px-6 py-3 rounded-lg text-sm w-full border-2 border-[#00C4E0]/40 hover:border-[#00C4E0] transition-colors">
-                <ShoppingCart className="w-4 h-4" />Buy Vibe Coding System — $149
+                <ShoppingCart className="w-4 h-4" />Buy Vibe Coding Foundations — $149
               </button>
             </motion.div>
           </div>
@@ -240,7 +240,7 @@ export default function LaunchSystem() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Code className="w-4 h-4 text-[#00C4E0]" />
-                <h3 className="text-base font-bold text-[#0a0a0a]">Vibe Coding System is for you if:</h3>
+                <h3 className="text-base font-bold text-[#0a0a0a]">Vibe Coding Foundations is for you if:</h3>
               </div>
               <div className="space-y-3">
                 {whoFor2.map((item, i) => (
@@ -333,7 +333,7 @@ export default function LaunchSystem() {
               <p className="text-white font-bold text-2xl">$149</p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-center">
-              <p className="text-[#999] mb-1">Vibe Coding System</p>
+              <p className="text-[#999] mb-1">Vibe Coding Foundations</p>
               <p className="text-white font-bold text-2xl">$149</p>
             </div>
             <div className="bg-[#E91E8C]/10 border border-[#E91E8C]/30 rounded-xl px-6 py-4 text-center">
@@ -347,7 +347,7 @@ export default function LaunchSystem() {
               <Zap className="w-4 h-4" />Buy GTM Foundations
             </button>
             <button className="inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm border border-white/20 hover:border-white/40 transition-colors">
-              <Code className="w-4 h-4" />Buy Vibe Coding System
+              <Code className="w-4 h-4" />Buy Vibe Coding Foundations
             </button>
             <button className="inline-flex items-center gap-2 text-[#E91E8C] font-semibold px-6 py-3.5 rounded-lg text-sm border border-[#E91E8C]/40 hover:border-[#E91E8C] transition-colors">
               <Package className="w-4 h-4" />Bundle Both
