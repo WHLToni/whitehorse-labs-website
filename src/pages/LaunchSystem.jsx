@@ -221,7 +221,7 @@ export default function LaunchSystem() {
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">Who This Is For</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-[#0a0a0a]">Find Your Fit</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-[#0a0a0a]">Who Is This For?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
