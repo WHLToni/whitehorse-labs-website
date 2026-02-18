@@ -53,6 +53,9 @@ export default function FractionalCompare() {
               <p className={`text-sm leading-relaxed whitespace-pre-line ${role.highlight ? "text-[#ccc]" : "text-[#666]"}`}>
                 {role.description}
               </p>
+              {role.boldFooter && (
+                <p className="text-sm font-bold text-white mt-3">{role.boldFooter}</p>
+              )}
             </motion.div>
           ))}
         </div>
