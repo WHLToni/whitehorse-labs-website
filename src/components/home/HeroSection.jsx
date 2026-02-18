@@ -45,7 +45,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to={createPageUrl("Services")}
-                className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
+                className="btn-gradient inline-flex items-center justify-center gap-2 text-[#E91E8C] font-semibold px-8 py-4 rounded-lg text-sm"
               >
                 View Services & Pricing
                 <ArrowRight className="w-4 h-4" />
