@@ -111,22 +111,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 md:py-32 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-12">What Clients Say</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {testimonials.map((t, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="p-8 rounded-2xl bg-white/5 border border-white/10">
-                <Quote className="w-8 h-8 text-[#E91E8C]/30 mb-4" />
-                <p className="text-white/90 text-base leading-relaxed italic">"{t}"</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Recent Work */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
