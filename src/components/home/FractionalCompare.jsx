@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AboutBio from "./AboutBio";
 
 const roles = [
   {
