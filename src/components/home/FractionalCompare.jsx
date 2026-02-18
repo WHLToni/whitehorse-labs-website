@@ -14,7 +14,8 @@ const roles = [
   },
   {
     title: "Fractional",
-    description: "Embedded expert with decision-making authority. Owns specific commercialisation outcomes end-to-end — strategy, execution, and results. Works part-time (typically 1 day/week or project-based sprints), but operates like your head of product marketing.\n\n**You get senior-level expertise without the six-figure salary, equity, or long-term commitment of a full-time executive hire.**",
+    description: "Embedded expert with decision-making authority. Owns specific commercialisation outcomes end-to-end — strategy, execution, and results. Works part-time (typically 1 day/week or project-based sprints), but operates like your head of product marketing.",
+boldFooter: "You get senior-level expertise without the six-figure salary, equity, or long-term commitment of a full-time executive hire.",
     highlight: true,
   },
 ];
