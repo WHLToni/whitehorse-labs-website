@@ -11,7 +11,7 @@ export default function Credentials() {
             About
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-            Full-Stack{" "}
+            Full-Stack Hands On{" "}
             <span className="gradient-text-simple">GTM Expertise</span>
           </h2>
         </div>
