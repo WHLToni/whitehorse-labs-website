@@ -174,7 +174,7 @@ export default function Services() {
           </h2>
           <p className="text-[#999] text-base mb-10 max-w-xl mx-auto">
             Start with the $149 Launch System — the same frameworks and portals I use with clients.
-            DIY your commercialisation, then hire me later if you need execution.
+            DIY your commercialisation, then hit me up later if you need execution.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to={createPageUrl("LaunchSystem")} className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm">
