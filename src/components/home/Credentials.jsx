@@ -53,7 +53,7 @@ export default function Credentials() {
               I can lead upstream product strategy (R&D, product definition, roadmapping and development) and downstream execution (segmentation & targeting, positioning, messaging and launch) — or step in to solve for just one part of the spectrum.
             </p>
             <p className="text-[#ccc] text-sm leading-relaxed">
-              From seed-stage startups to managing $20M+ products for publicly listed brands, across Asia Pacific and the USA, I've operated with both enterprise budgets and bootstrap constraints.
+              From seed-stage startups, to managing $20M+ products for publicly listed brands across Asia Pacific and the USA, I've operated with both enterprise budgets and bootstrap constraints.
             </p>
             <p className="text-[#ccc] text-sm leading-relaxed">
               I don't run workshops and hand you a deck — I build the systems and foundations that your team needs to take your product to market and win. You get the impact of a cross-functional product and GTM team, delivered by one senior leader at a fraction of the cost.
