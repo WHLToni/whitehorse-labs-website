@@ -97,8 +97,7 @@ export default function Services() {
               Fixed-Scope Commercialisation Services
             </h1>
             <p className="text-lg text-[#666] max-w-2xl leading-relaxed">
-              No discovery phases that go nowhere. No hourly billing. Just commercial strategy work,
-              delivered in weeks — not months.
+              Commercial strategy work, delivered in weeks, not months.
             </p>
           </motion.div>
         </div>
