@@ -71,9 +71,19 @@ export default function Credentials() {
             {/* Brands */}
             <div className="mt-6 pt-6 border-t border-white/10">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-6">Brands I've worked with</p>
-              <div className="flex flex-wrap gap-6 items-center">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
-                  <div key={i} className="h-8 w-20 bg-white/10 rounded opacity-40" />
+              <div className="flex flex-wrap gap-8 items-center">
+                {[
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/97a75526b_2.png",
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/9a353716a_3.png",
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/7958509e5_4.png",
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/2020d9e3a_5.png",
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e780a8a30_6.png",
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b3a8bc7b3_7.png",
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/f1cf92dd3_8.png",
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/c2ba0ee53_9.png",
+                  "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e8e4da89e_Prospection.png",
+                ].map((src, i) => (
+                  <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-10 w-auto object-contain opacity-70" />
                 ))}
               </div>
             </div>
