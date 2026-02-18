@@ -162,7 +162,7 @@ export default function Services() {
             ))}
           </div>
           <p className="text-[#888] text-sm mt-8">
-            Payment: 50% upfront, 50% on delivery. Payment plans available for $12K+ packages.
+            Payment: 50% upfront, 50% on delivery.
           </p>
         </div>
       </section>
