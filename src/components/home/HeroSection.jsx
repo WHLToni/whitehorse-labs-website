@@ -28,7 +28,7 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-8 text-[#0a0a0a]">
-              Product Commercialisation for Complex,{" "}
+              Fractional Go-to-Market Expertise for Complex and{" "}
               <span className="gradient-text-simple">Regulated Products</span>
             </h1>
 
