@@ -28,7 +28,7 @@ export default function FractionalCompare() {
             The Difference
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
-            Why Fractional Product Commercialisation?
+            Fractional GTM vs. Consultant vs. Contractor
           </h2>
         </div>
 
