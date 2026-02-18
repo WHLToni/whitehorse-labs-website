@@ -25,46 +25,40 @@ export default function FractionalCompare() {
   return (
     <section className="py-24 md:py-32 bg-[#f7f7f8]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div>
-          <div>
-            <div className="mb-10">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
-                The Difference
+        <div className="max-w-2xl mb-16">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
+            The Difference
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
+            Fractional GTM vs. Consultant vs. Contractor
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {roles.map((role, i) => (
+            <motion.div
+              key={role.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              className={`p-8 rounded-2xl border ${
+                role.highlight
+                  ? "bg-[#0a0a0a] border-transparent"
+                  : "bg-white border-[#e5e5e5]"
+              }`}
+            >
+              <h3 className={`text-xl font-bold mb-3 ${role.highlight ? "text-[#E91E8C]" : "text-[#888]"}`}>
+                {role.title}
+              </h3>
+              <p className={`text-sm leading-relaxed whitespace-pre-line ${role.highlight ? "text-[#ccc]" : "text-[#666]"}`}>
+                {role.description}
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
-                Fractional GTM vs. Consultant vs. Contractor
-              </h2>
-            </div>
-
-            <div className="flex flex-col gap-6">
-              {roles.map((role, i) => (
-                <motion.div
-                  key={role.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1, duration: 0.5 }}
-                  className={`p-8 rounded-2xl border ${
-                    role.highlight
-                      ? "bg-[#0a0a0a] border-transparent"
-                      : "bg-white border-[#e5e5e5]"
-                  }`}
-                >
-                  <h3 className={`text-xl font-bold mb-3 ${role.highlight ? "text-[#E91E8C]" : "text-[#888]"}`}>
-                    {role.title}
-                  </h3>
-                  <p className={`text-sm leading-relaxed whitespace-pre-line ${role.highlight ? "text-[#ccc]" : "text-[#666]"}`}>
-                    {role.description}
-                  </p>
-                  {role.boldFooter && (
-                    <p className="text-sm font-bold text-white mt-3">{role.boldFooter}</p>
-                  )}
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-
+              {role.boldFooter && (
+                <p className="text-sm font-bold text-white mt-3">{role.boldFooter}</p>
+              )}
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
