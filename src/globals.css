@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --magenta: #E91E8C;
+  --purple: #7B5FB5;
+  --deep-blue: #5B7EBF;
+  --sky-blue: #4BA4D8;
+  --cyan: #00C4E0;
+  --bg-primary: #0a0a0a;
+  --bg-card: #111111;
+  --border-subtle: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #999999;
+  --text-muted: #666666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #E91E8C 0%, #7B5FB5 25%, #5B7EBF 50%, #4BA4D8 75%, #00C4E0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-simple {
+  background: linear-gradient(135deg, #E91E8C, #00C4E0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  position: relative;
+  background: #111;
+  border-radius: 16px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(135deg, #E91E8C, #00C4E0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #E91E8C, #7B5FB5);
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #d4187e, #6b4fa5);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 30px rgba(233, 30, 140, 0.3);
+}
+
+.btn-outline-gradient {
+  position: relative;
+  background: transparent;
+  border: none;
+  z-index: 1;
+}
+
+.btn-outline-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(135deg, #E91E8C, #00C4E0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.btn-outline-gradient:hover {
+  background: rgba(233, 30, 140, 0.1);
+  transform: translateY(-1px);
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 327 83% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 188 100% 44%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 327 83% 52%;
+    --radius: 0.5rem;
+  }
+}
