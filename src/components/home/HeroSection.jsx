@@ -38,7 +38,7 @@ export default function HeroSection() {
               You've built the product. You know it works. But figuring out who it's for,
               how to position it and how to take it to market without burning cash — that's where most teams stall.
             </p>
-            <p className="text-sm md:text-base text-[#888] max-w-xl mb-12">
+            <p className="text-base md:text-lg text-[#888] max-w-xl mb-12">
               A-player expertise at fractional cost. Fixed scope, fixed price, delivered in weeks — not months.
             </p>
 
