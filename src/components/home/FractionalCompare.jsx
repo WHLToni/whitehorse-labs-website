@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const roles = [
   {
     title: "Consultant",
-    description: "Analyses your situation, provides recommendations, then exits. Implementation is your problem.",
+    description: "Analyses your situation, provides recommendations, then exits. Implementation is up to you.",
     highlight: false,
   },
   {
