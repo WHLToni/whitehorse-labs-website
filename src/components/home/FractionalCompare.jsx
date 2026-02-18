@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 const roles = [
   {
     title: "Consultant",
-    description: "Analyses and recommends, then exits. You're left to execute.",
+    description: "Analyses your situation, provides recommendations, then exits. Implementation is your problem.",
     highlight: false,
   },
   {
     title: "Contractor",
-    description: "Executes against a brief. Rarely owns strategic direction.",
+    description: "Executes defined tasks to spec. No strategic input, no outcome ownership.",
     highlight: false,
   },
   {
     title: "Fractional",
-    description: "Owns specific commercialisation decisions and outputs, end-to-end. Strategy and execution, delivered fast.",
+    description: "Embedded expert with decision-making authority. Owns specific commercialisation outcomes end-to-end — strategy, execution, and results. Works part-time (typically 1 day/week or project-based sprints), but operates like your head of product marketing.\n\nYou get senior-level expertise without the six-figure salary, equity, or long-term commitment of a full-time executive hire.",
     highlight: true,
   },
 ];
@@ -49,17 +49,12 @@ export default function FractionalCompare() {
               <h3 className={`text-xl font-bold mb-3 ${role.highlight ? "text-[#E91E8C]" : "text-[#888]"}`}>
                 {role.title}
               </h3>
-              <p className={`text-sm leading-relaxed ${role.highlight ? "text-[#ccc]" : "text-[#666]"}`}>
+              <p className={`text-sm leading-relaxed whitespace-pre-line ${role.highlight ? "text-[#ccc]" : "text-[#666]"}`}>
                 {role.description}
               </p>
             </motion.div>
           ))}
         </div>
-
-        <p className="text-[#888] text-sm mt-8 max-w-xl">
-          You get A-player expertise at fractional cost — without the six-figure salary, equity,
-          or long-term commitment of a full-time hire.
-        </p>
       </div>
     </section>
   );
