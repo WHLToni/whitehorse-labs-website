@@ -83,7 +83,7 @@ export default function Credentials() {
                   "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/c2ba0ee53_9.png",
                   "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e8e4da89e_Prospection.png",
                 ].map((src, i) => (
-                  <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-10 w-auto object-contain opacity-70" />
+                  <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-16 w-auto object-contain opacity-70" />
                 ))}
               </div>
             </div>
