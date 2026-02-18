@@ -42,9 +42,8 @@ export default function Credentials() {
             className="lg:col-span-2 p-8 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-4"
           >
             <p className="text-[#ccc] text-sm leading-relaxed">
-              Product and Go-To-Market (or Product Marketing) are often treated as a relay race. Product throws the 'what' over the wall; Marketing tries to figure out the 'why.'
+              Product and Go-To-Market (or Product Marketing) are often treated as a relay race. Product throws the 'what' over the wall; Marketing tries to figure out the 'why.' And a whole lot of value gets lost in the handoff.
             </p>
-            <p className="text-[#ccc] text-sm leading-relaxed">A whole lot of value gets lost in the handoff.</p>
             <p className="text-white font-semibold text-sm">I eliminate the wall.</p>
 
             <p className="text-[#ccc] text-sm leading-relaxed">
