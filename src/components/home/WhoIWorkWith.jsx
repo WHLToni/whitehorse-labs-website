@@ -33,13 +33,13 @@ const audiences = [
 
 export default function WhoIWorkWith() {
   return (
-    <section className="py-24 md:py-32 border-t border-white/5">
+    <section className="py-24 md:py-32 bg-[#f7f7f8]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
             Clients
           </p>
-          <h2 className="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
             Who I Work With
           </h2>
         </div>
@@ -52,7 +52,7 @@ export default function WhoIWorkWith() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="p-8 rounded-2xl bg-[#0d0d0d] border border-white/5 hover:border-white/10 transition-colors"
+              className="p-8 rounded-2xl bg-white border border-[#e5e5e5] hover:border-[#E91E8C]/20 transition-colors"
             >
               <div
                 className="w-10 h-10 rounded-lg flex items-center justify-center mb-5"
@@ -60,16 +60,16 @@ export default function WhoIWorkWith() {
               >
                 <a.icon className="w-5 h-5" style={{ color: a.color }} />
               </div>
-              <h3 className="font-['Space_Grotesk'] text-lg font-semibold mb-3">{a.title}</h3>
-              <p className="text-[#999] text-sm leading-relaxed">{a.description}</p>
+              <h3 className="text-lg font-bold mb-3 text-[#0a0a0a]">{a.title}</h3>
+              <p className="text-[#666] text-sm leading-relaxed">{a.description}</p>
             </motion.div>
           ))}
         </div>
 
-        <div className="mt-8 flex items-center gap-2">
+        <div className="mt-8">
           <Link
             to={createPageUrl("LaunchSystem")}
-            className="text-[#00C4E0] text-sm font-medium hover:text-[#E91E8C] transition-colors inline-flex items-center gap-2"
+            className="text-[#E91E8C] text-sm font-medium hover:opacity-80 transition-opacity inline-flex items-center gap-2"
           >
             Vibe coder? Start with the $149 Launch System
             <ArrowRight className="w-4 h-4" />

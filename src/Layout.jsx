@@ -11,13 +11,15 @@ const navLinks = [
   { label: "Launch System", page: "LaunchSystem" },
 ];
 
-function Logo() {
+function Logo({ dark = false }) {
   return (
-    <span className="font-['Space_Grotesk'] text-xl md:text-2xl font-bold tracking-tight">
-      WHITEHORSE{" "}
-      <span className="gradient-text-simple">/</span>{" "}
-      LABS
-    </span>
+    <div className="flex items-center gap-2">
+      <img
+        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b061673c1_PrimaryLogo.png"
+        alt="Whitehorse Labs"
+        className="h-8 w-auto"
+      />
+    </div>
   );
 }
 
@@ -25,9 +27,9 @@ export default function Layout({ children, currentPageName }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-xl border-b border-white/5">
+    <div className="min-h-screen bg-white text-[#0a0a0a]">
+      {/* Navigation - light */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link to={createPageUrl("Home")}>
@@ -42,8 +44,8 @@ export default function Layout({ children, currentPageName }) {
                   to={createPageUrl(link.page)}
                   className={`text-sm font-medium transition-colors duration-200 ${
                     currentPageName === link.page
-                      ? "text-white"
-                      : "text-[#999] hover:text-white"
+                      ? "text-[#0a0a0a]"
+                      : "text-[#666] hover:text-[#0a0a0a]"
                   }`}
                 >
                   {link.label}
@@ -59,7 +61,7 @@ export default function Layout({ children, currentPageName }) {
 
             {/* Mobile toggle */}
             <button
-              className="md:hidden text-white p-2"
+              className="md:hidden text-[#0a0a0a] p-2"
               onClick={() => setMobileOpen(!mobileOpen)}
             >
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -74,14 +76,14 @@ export default function Layout({ children, currentPageName }) {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-[#0a0a0a] border-t border-white/5 overflow-hidden"
+              className="md:hidden bg-white border-t border-[#e5e5e5] overflow-hidden"
             >
               <div className="px-6 py-6 space-y-4">
                 {navLinks.map((link) => (
                   <Link
                     key={link.page}
                     to={createPageUrl(link.page)}
-                    className="block text-base font-medium text-[#999] hover:text-white transition-colors"
+                    className="block text-base font-medium text-[#555] hover:text-[#0a0a0a] transition-colors"
                     onClick={() => setMobileOpen(false)}
                   >
                     {link.label}
@@ -103,14 +105,18 @@ export default function Layout({ children, currentPageName }) {
       {/* Page Content */}
       <main className="pt-16 md:pt-20">{children}</main>
 
-      {/* Footer */}
-      <footer className="border-t border-white/5">
+      {/* Footer - dark section */}
+      <footer className="bg-[#0a0a0a] text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 md:py-20">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
             <div className="md:col-span-2">
-              <Logo />
-              <p className="text-[#999] text-sm mt-4 max-w-md leading-relaxed">
-                Product commercialisation for complex, regulated products. 
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b061673c1_PrimaryLogo.png"
+                alt="Whitehorse Labs"
+                className="h-10 w-auto brightness-0 invert mb-4"
+              />
+              <p className="text-[#999] text-sm max-w-md leading-relaxed">
+                Product commercialisation for complex, regulated products.
                 A-player expertise at fractional cost.
               </p>
             </div>
@@ -152,7 +158,7 @@ export default function Layout({ children, currentPageName }) {
               </div>
             </div>
           </div>
-          <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-[#666]">© {new Date().getFullYear()} Whitehorse Labs. All rights reserved.</p>
             <p className="text-xs text-[#666]">Fractional Product Commercialisation</p>
           </div>
