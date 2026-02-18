@@ -27,10 +27,12 @@ export default function HeroSection() {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-8 text-[#0a0a0a]">
-              Fractional Go-to-Market Expertise for Complex and{" "}
-              <span className="gradient-text-simple">Regulated Products</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-3 text-[#0a0a0a]">
+              Fractional Go-to-Market Expertise
             </h1>
+            <p className="text-lg md:text-xl font-semibold text-[#555] mb-8">
+              for Complex and <span className="gradient-text-simple">Regulated Products</span>
+            </p>
 
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">
               You've built the product. You know it works. But figuring out who it's for,
