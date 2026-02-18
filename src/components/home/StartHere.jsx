@@ -23,7 +23,7 @@ export default function StartHere() {
             </p>
             <Link
               to={createPageUrl("Services")}
-              className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm"
+              className="inline-flex items-center gap-2 text-[#E91E8C] font-semibold px-6 py-3 rounded-lg text-sm border-2 border-[#E91E8C]/40 hover:border-[#E91E8C] transition-colors"
             >
               View Services & Pricing
               <ArrowRight className="w-4 h-4" />
