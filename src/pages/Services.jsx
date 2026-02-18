@@ -73,9 +73,9 @@ const services = [
 ];
 
 const roles = [
-  { title: "Consultant", desc: "Analyses and recommends, then exits. You're left to execute." },
-  { title: "Contractor", desc: "Executes against a brief. Rarely owns strategic direction." },
-  { title: "Fractional", desc: "Owns specific commercialisation decisions and outputs, end-to-end. Strategy and execution. A-player expertise at fractional cost.", highlight: true },
+  { title: "Consultant", desc: "Analyses and recommends, then exits. You're left to execute.", dark: false },
+  { title: "Contractor", desc: "Executes against a brief. Rarely owns strategic direction.", dark: false },
+  { title: "Fractional", desc: "Owns specific commercialisation decisions and outputs, end-to-end. Strategy and execution. A-player expertise at fractional cost.", dark: true },
 ];
 
 const steps = [
@@ -89,24 +89,15 @@ export default function Services() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative pt-24 pb-16 md:pt-32 md:pb-24">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/3 w-[500px] h-[400px] rounded-full bg-[#7B5FB5]/8 blur-[150px]" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
-              Services & Pricing
-            </p>
-            <h1 className="font-['Space_Grotesk'] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 max-w-3xl">
+      <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">Services & Pricing</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 max-w-3xl text-[#0a0a0a]">
               Fixed-Scope Commercialisation Services
             </h1>
-            <p className="text-lg text-[#999] max-w-2xl leading-relaxed">
-              No discovery phases that go nowhere. No hourly billing. Just commercial strategy work, 
+            <p className="text-lg text-[#666] max-w-2xl leading-relaxed">
+              No discovery phases that go nowhere. No hourly billing. Just commercial strategy work,
               delivered in weeks — not months.
             </p>
           </motion.div>
@@ -114,8 +105,8 @@ export default function Services() {
       </section>
 
       {/* Service Cards */}
-      <section className="pb-24 md:pb-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 space-y-6">
+      <section className="pb-24 md:pb-32 bg-[#f7f7f8]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 space-y-6 pt-12">
           {services.map((s, i) => (
             <ServiceCard key={s.title} {...s} index={i} />
           ))}
@@ -123,15 +114,11 @@ export default function Services() {
       </section>
 
       {/* How Fractional Differs */}
-      <section className="py-24 md:py-32 border-t border-white/5">
+      <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
-              The Model
-            </p>
-            <h2 className="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold tracking-tight">
-              Why Work Fractionally?
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">The Model</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">Why Work Fractionally?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {roles.map((r, i) => (
@@ -141,14 +128,10 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className={`p-8 rounded-2xl border ${
-                  r.highlight ? "bg-[#111] border-[#E91E8C]/30" : "bg-[#0d0d0d] border-white/5"
-                }`}
+                className={`p-8 rounded-2xl border ${r.dark ? "bg-[#0a0a0a] border-transparent" : "bg-[#f7f7f8] border-[#e5e5e5]"}`}
               >
-                <h3 className={`font-['Space_Grotesk'] text-xl font-semibold mb-3 ${r.highlight ? "text-[#E91E8C]" : "text-[#666]"}`}>
-                  {r.title}
-                </h3>
-                <p className="text-[#999] text-sm leading-relaxed">{r.desc}</p>
+                <h3 className={`text-xl font-bold mb-3 ${r.dark ? "text-[#E91E8C]" : "text-[#888]"}`}>{r.title}</h3>
+                <p className={`text-sm leading-relaxed ${r.dark ? "text-[#ccc]" : "text-[#666]"}`}>{r.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -156,15 +139,11 @@ export default function Services() {
       </section>
 
       {/* How We Work */}
-      <section className="py-24 md:py-32 border-t border-white/5">
+      <section className="py-24 md:py-32 bg-[#f7f7f8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
-              Process
-            </p>
-            <h2 className="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold tracking-tight">
-              Clear Process, No Surprises
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">Process</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">Clear Process, No Surprises</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {steps.map((s, i) => (
@@ -174,44 +153,36 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="p-6 rounded-2xl bg-[#0d0d0d] border border-white/5"
+                className="p-6 rounded-2xl bg-white border border-[#e5e5e5]"
               >
-                <span className="gradient-text-simple font-['Space_Grotesk'] text-3xl font-bold">
-                  {s.num}
-                </span>
-                <h3 className="font-['Space_Grotesk'] text-lg font-semibold mt-4 mb-2">{s.title}</h3>
-                <p className="text-[#999] text-sm leading-relaxed">{s.desc}</p>
+                <span className="gradient-text-simple text-3xl font-bold">{s.num}</span>
+                <h3 className="text-lg font-bold mt-4 mb-2 text-[#0a0a0a]">{s.title}</h3>
+                <p className="text-[#666] text-sm leading-relaxed">{s.desc}</p>
               </motion.div>
             ))}
           </div>
-          <p className="text-[#666] text-sm mt-8">
+          <p className="text-[#888] text-sm mt-8">
             Payment: 50% upfront, 50% on delivery. Payment plans available for $12K+ packages.
           </p>
         </div>
       </section>
 
       {/* Not Ready CTA */}
-      <section className="py-24 md:py-32 border-t border-white/5">
+      <section className="py-24 md:py-32 bg-[#0a0a0a]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold tracking-tight mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">
             Not Ready to Commit?
           </h2>
           <p className="text-[#999] text-base mb-10 max-w-xl mx-auto">
-            Start with the $149 Launch System — the same frameworks and portals I use with clients. 
+            Start with the $149 Launch System — the same frameworks and portals I use with clients.
             DIY your commercialisation, then hire me later if you need execution.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              to={createPageUrl("LaunchSystem")}
-              className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
-            >
+            <Link to={createPageUrl("LaunchSystem")} className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm">
               <ShoppingCart className="w-4 h-4" />
               Buy the Launch System
             </Link>
-            <Link
-              to={createPageUrl("ICPFramework")}
-              className="btn-outline-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
-            >
+            <Link to={createPageUrl("ICPFramework")} className="inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm border border-white/20 hover:border-white/40 transition-colors">
               <Download className="w-4 h-4" />
               Download Free ICP Framework
             </Link>
