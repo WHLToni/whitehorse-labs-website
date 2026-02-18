@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Agency FB Bold fallback stack - closest web-safe alternatives */
+@font-face {
+  font-family: 'AgencyFB';
+  src: local('Agency FB Bold'), local('AgencyFB-Bold'), local('Agency FB');
+  font-weight: 700;
+  font-style: normal;
+}
 
 :root {
   --magenta: #E91E8C;
@@ -10,12 +18,13 @@
   --deep-blue: #5B7EBF;
   --sky-blue: #4BA4D8;
   --cyan: #00C4E0;
-  --bg-primary: #0a0a0a;
-  --bg-card: #111111;
-  --border-subtle: #1a1a1a;
-  --text-primary: #ffffff;
-  --text-secondary: #999999;
-  --text-muted: #666666;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f7f8;
+  --bg-dark: #0a0a0a;
+  --text-primary: #0a0a0a;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+  --border: #e5e5e5;
 }
 
 * {
@@ -31,7 +40,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'AgencyFB', 'Agency FB', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .gradient-text {
