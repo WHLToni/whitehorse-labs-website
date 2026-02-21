@@ -51,6 +51,7 @@ import Home from './pages/Home';
 import ICPFramework from './pages/ICPFramework';
 import LaunchSystem from './pages/LaunchSystem';
 import Services from './pages/Services';
+import Contact from './pages/Contact';
 import __Layout from './Layout.jsx';
 
 
@@ -59,6 +60,7 @@ export const PAGES = {
     "ICPFramework": ICPFramework,
     "LaunchSystem": LaunchSystem,
     "Services": Services,
+    "Contact": Contact,
 }
 
 export const pagesConfig = {
