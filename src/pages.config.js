@@ -47,20 +47,20 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
+import Contact from './pages/Contact';
 import Home from './pages/Home';
 import ICPFramework from './pages/ICPFramework';
 import LaunchSystem from './pages/LaunchSystem';
 import Services from './pages/Services';
-import Contact from './pages/Contact';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
+    "Contact": Contact,
     "Home": Home,
     "ICPFramework": ICPFramework,
     "LaunchSystem": LaunchSystem,
     "Services": Services,
-    "Contact": Contact,
 }
 
 export const pagesConfig = {
