@@ -146,7 +146,7 @@ export default function ChoosePath() {
           className="border border-white/10 rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
         >
           <div className="flex-1 min-w-0">
-            <p className="text-[15px] font-bold text-white mb-1.5">The MVP Sprint</p>
+            <p className="text-[15px] font-bold text-white mb-1.5">The MVP Sprint <span className="text-[#999] text-xs font-normal">(Tech Products Only)</span></p>
             <p className="text-white/50 text-sm leading-relaxed">
               You have a problem worth solving but no product yet. I'll help you define the problem, design the solution and build a working proof of concept using rapid prototyping — ready for real-world validation in weeks, not months.
             </p>
