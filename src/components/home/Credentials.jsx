@@ -44,13 +44,13 @@ export default function Credentials() {
               </h2>
 
               <p className="text-[#555] text-sm leading-relaxed">
-                Product develops something brilliant, handballs it to marketing, who handballs it to sales. Value gets lost at every handoff and nobody owns the outcome end to end — I've spent 20+ years closing that gap.
+                The Product team develops a brilliant product or feature, handballs it over the fence to Marketing, who eventually handball it over the fence to Sales - value gets lost at every handoff and nobody owns the outcome end to end. Sound familiar? I dismantle the fences.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                From seed-stage startups finding their first customers, to managing $20M+ product portfolios for publicly listed brands across APAC and the USA — I've operated at every point on that spectrum, with both enterprise resources and bootstrap constraints.
+                From seed-stage startups finding their first customers, to managing $20M+ product portfolios for publicly listed brands across APAC and the USA, I've operated at almost every point on the product commercialisation spectrum, with both enterprise resources and bootstrap constraints.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                I began in medical device and pharmaceutical sales — an industry where regulatory rigour, clinical credibility and commercial excellence aren't optional, they're the baseline. From there I finished an MBA and moved through product and marketing management, spending the majority of my career in regulated sectors — medtech (both instruments and software), fintech, construction tech, veterinary technology.
+                I began in medical device and pharmaceutical sales - an industry where regulatory rigour, clinical credibility and commercial excellence aren't optional, they're the baseline. From there I finished an MBA and moved through product and marketing management, spending the majority of my career in regulated sectors - medtech (both instruments and software), fintech, construction tech, veterinary technology.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
                 That full-stack experience means I can lead upstream product strategy and downstream GTM execution, or step in to solve for just one part.
