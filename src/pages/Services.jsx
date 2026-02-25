@@ -181,10 +181,7 @@ export default function Services() {
               <ShoppingCart className="w-4 h-4" />
               Buy the Launch System
             </Link>
-            <Link to={createPageUrl("ICPFramework")} className="inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm border border-white/20 hover:border-white/40 transition-colors">
-              <Download className="w-4 h-4" />
-              Download Free ICP Framework
-            </Link>
+
           </div>
         </div>
       </section>
