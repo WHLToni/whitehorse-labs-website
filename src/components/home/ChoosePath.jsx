@@ -138,23 +138,24 @@ export default function ChoosePath() {
         </p>
 
         {/* MVP Sprint */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.45 }}
-          className="border border-white/10 rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
-        >
-          <div className="flex-1 min-w-0">
-            <p className="text-[15px] font-bold text-white mb-1.5">The MVP Sprint <span className="text-[#999] text-xs font-normal">(Tech Products Only)</span></p>
-            <p className="text-white/50 text-sm leading-relaxed">
-              You have a problem worth solving but no product yet. I'll help you define the problem, design the solution and build a working proof of concept using rapid prototyping — ready for real-world validation in weeks, not months.
-            </p>
-          </div>
-          <div className="sm:text-right shrink-0 sm:pt-0.5">
-            <p className="text-white font-semibold text-sm">Custom</p>
-          </div>
-        </motion.div>
+         <motion.div
+           initial={{ opacity: 0, y: 14 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ duration: 0.45 }}
+           className="border border-white/10 rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
+         >
+           <div className="flex-1 min-w-0">
+             <p className="text-[15px] font-bold text-white mb-1.5">The MVP Sprint <span className="text-[#999] text-xs font-normal">(Tech Products Only)</span></p>
+             <p className="text-white/50 text-sm leading-relaxed">
+               You have a problem worth solving but no product yet. I'll help you define the problem, design the solution and build a working proof of concept using rapid prototyping — ready for real-world validation in weeks, not months.
+             </p>
+           </div>
+           <div className="sm:text-right shrink-0 sm:pt-0.5">
+             <p className="text-white font-semibold text-sm">From $3,000</p>
+             <p className="text-white/30 text-xs mt-0.5">1 week</p>
+           </div>
+         </motion.div>
 
         {/* Book a Call — secondary */}
         <div className="mt-7">
