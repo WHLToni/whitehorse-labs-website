@@ -172,12 +172,12 @@ export default function ChoosePath() {
 
         {/* Footer line */}
         <p className="mt-10 text-sm text-white italic">
-          Not ready for a full engagement? Get the{" "}
+          Not ready for a full engagement?{" "}
           <Link
             to={createPageUrl("LaunchSystem")}
             className="text-white/40 hover:text-[#e8195a] transition-colors not-italic"
           >
-            GTM Toolkit for $149 →
+            Get the DIY Toolkits from $149 →
           </Link>
         </p>
 
