@@ -44,7 +44,7 @@ export default function Credentials() {
               </h2>
 
               <p className="text-[#555] text-sm leading-relaxed">
-                The Product team develops a brilliant product or feature, handballs it over the fence to Marketing, who eventually handball it over the fence to Sales - value gets lost at every handoff and nobody owns the outcome end to end. Sound familiar? I dismantle the fences.
+                If you've landed on my website, this scenario is probably familiar... Your Product team has developed a brilliant new feature; they handball it over the fence to Marketing, who eventually handballs it over the next fence to Sales - value is lost at every handoff and nobody owns the outcome end to end. I dismantle the fences.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
                 From seed-stage startups finding their first customers, to managing $20M+ product portfolios for publicly listed brands across APAC and the USA, I've operated at almost every point on the product commercialisation spectrum, with both enterprise resources and bootstrap constraints.
