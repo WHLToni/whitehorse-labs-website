@@ -100,7 +100,7 @@ export default function ChoosePath() {
               </div>
               {/* Right — price */}
               <div className="sm:text-right shrink-0 sm:pt-0.5">
-                <p className="text-white font-semibold text-sm">{tier.price}</p>
+                <p className="text-white font-semibold text-sm">From {tier.price}</p>
                 {tier.duration && (
                   <p className="text-white/30 text-xs mt-0.5">{tier.duration}</p>
                 )}
