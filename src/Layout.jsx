@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Home", page: "Home" },
   { label: "Services & Pricing", page: "Services" },
-  { label: "GTM Toolkit", page: "LaunchSystem" },
+  { label: "DIY Toolkits", page: "LaunchSystem" },
   { label: "Contact", page: "Contact" },
 ];
 
