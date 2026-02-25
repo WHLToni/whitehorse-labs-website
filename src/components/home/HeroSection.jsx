@@ -1,8 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "../../utils";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { motion } from "framer-motion";
+
+const comparisons = [
+  {
+    title: "Consultant",
+    body: "Diagnoses the problem, hands you a report, exits. Implementation is on you.",
+    highlight: false,
+  },
+  {
+    title: "Contractor",
+    body: "Executes what you brief them on. No strategy, no ownership.",
+    highlight: false,
+  },
+  {
+    title: "Fractional GTM",
+    body: "Embedded senior expertise. Owns the outcome — strategy and execution — without the six-figure hire.",
+    highlight: true,
+  },
+];
 
 export default function HeroSection() {
   return (
@@ -23,37 +41,40 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#e5e5e5] bg-[#f7f7f8] mb-8">
               <div className="w-1.5 h-1.5 rounded-full bg-[#E91E8C]" />
               <span className="text-xs font-medium text-[#666] tracking-wide uppercase">
-                Fractional GTM Consultant
+                Fractional GTM · Regulated &amp; Complex Products
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-3 text-[#0a0a0a]">
-              Fractional Go-to-Market Expertise
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-8 text-[#0a0a0a]">
+              You've built the product. Now comes the hard part.
             </h1>
-            <p className="text-lg md:text-xl font-semibold text-[#555] mb-8">
-              for Complex and <span className="gradient-text-simple">Regulated Products</span>
-            </p>
 
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">
-              You've built the product. You know it works. But figuring out who it's for, how to position it and how to take it to market without burning cash — a lot of founders stall at this critical point.
+              Commercialising a complex product takes more than a GTM strategy. It takes someone who understands the full journey — from product development through to sales. I've worked all of it, across regulated industries where the stakes are high and the buyers are hard to reach.
             </p>
-            <p className="text-base md:text-lg text-[#888] max-w-xl mb-12">
-              Get senior GTM expertise at fractional cost. Fixed scope, fixed price and delivered in weeks not months.
+            <p className="text-sm font-semibold text-[#888] max-w-xl mb-12 tracking-wide">
+              Senior expertise. Fixed scope. Delivered in weeks.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to={createPageUrl("Services")}
-                className="btn-gradient inline-flex items-center justify-center gap-2 text-[#E91E8C] font-semibold px-8 py-4 rounded-lg text-sm"
+                to={createPageUrl("Contact")}
+                className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
               >
-                View Services & Pricing
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
               </Link>
-
+              <Link
+                to={createPageUrl("ICPFramework")}
+                className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#E91E8C]/40 transition-colors"
+              >
+                <Download className="w-4 h-4" />
+                Free ICP Framework
+              </Link>
             </div>
           </motion.div>
 
-          {/* Right side - dark card with stats */}
+          {/* Right side - comparison card */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -64,26 +85,16 @@ export default function HeroSection() {
               <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#E91E8C]/10 blur-[80px]" />
               <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#00C4E0]/10 blur-[60px]" />
               <div className="relative">
-                <p className="text-[#666] text-xs uppercase tracking-widest mb-8">Scope & Delivery</p>
+                <p className="text-[#666] text-xs uppercase tracking-widest mb-8">How Is This Different?</p>
                 <div className="space-y-6">
-                  {[
-                    { label: "Foundation Sprint", price: "$6K", time: "2 weeks" },
-                    { label: "GTM Blueprint", price: "$12K", time: "4 weeks" },
-                    { label: "Launch Ready Package", price: "$20K", time: "6 weeks" },
-                  ].map((s) => (
-                    <div key={s.label} className="flex items-center justify-between border-b border-white/5 pb-4">
-                      <span className="text-white text-sm font-medium">{s.label}</span>
-                      <div className="text-right">
-                        <span className="gradient-text-simple text-sm font-bold">{s.price}</span>
-                        <span className="text-[#666] text-xs ml-2">· {s.time}</span>
-                      </div>
+                  {comparisons.map((item, i) => (
+                    <div key={item.title} className={`pb-6 ${i < comparisons.length - 1 ? "border-b border-white/5" : ""}`}>
+                      <p className={`text-sm font-bold mb-1.5 ${item.highlight ? "text-[#E91E8C]" : "text-[#888]"}`}>
+                        {item.title}
+                      </p>
+                      <p className="text-[#ccc] text-sm leading-relaxed">{item.body}</p>
                     </div>
                   ))}
-                </div>
-                <div className="mt-8 pt-6 border-t border-white/5">
-                  <p className="text-[#999] text-xs leading-relaxed">
-                    20+ years across healthtech, medtech, fintech, SaaS. Seed → IPO experience.
-                  </p>
                 </div>
               </div>
             </div>
