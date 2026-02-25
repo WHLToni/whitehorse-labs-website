@@ -72,11 +72,11 @@ export default function Credentials() {
         </div>
       </div>
 
-      {/* Brands strip — dark band */}
+      {/* Brands strip — dark band, inside the section */}
       <div className="bg-[#0a0a0a] py-12 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-8 text-center">Brands I've worked with</p>
-          <div className="flex flex-wrap gap-8 items-center justify-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#555] mb-8">Brands I've Worked With</p>
+          <div className="flex flex-wrap gap-8 items-center justify-start">
             {[
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/97a75526b_2.png",
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/9a353716a_3.png",
