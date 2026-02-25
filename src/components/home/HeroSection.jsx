@@ -35,11 +35,10 @@ export default function HeroSection() {
             </p>
 
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">
-              You've built the product. You know it works. But figuring out who it's for,
-              how to position it and how to take it to market without burning cash — that's where most teams stall.
+              You've built the product. You know it works. But figuring out who it's for, how to position it and how to take it to market without burning cash — a lot of founders stall at this critical point.
             </p>
             <p className="text-base md:text-lg text-[#888] max-w-xl mb-12">
-              A-player expertise at fractional cost. Fixed scope, fixed price, delivered in weeks — not months.
+              Get senior GTM expertise at fractional cost. Fixed scope, fixed price and delivered in weeks not months.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
