@@ -49,13 +49,7 @@ export default function HeroSection() {
                 View Services & Pricing
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link
-                to={createPageUrl("ICPFramework")}
-                className="btn-outline-gradient inline-flex items-center justify-center gap-2 text-[#0a0a0a] font-semibold px-8 py-4 rounded-lg text-sm border-2 border-[#e5e5e5] hover:border-[#E91E8C]/40 transition-colors"
-              >
-                <Download className="w-4 h-4" />
-                Download Free ICP Framework
-              </Link>
+
             </div>
           </motion.div>
 
