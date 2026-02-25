@@ -93,7 +93,7 @@ export default function ChoosePath() {
                 <p className="text-[15px] font-bold text-white mb-1.5">{tier.name}</p>
                 <p className="text-white/50 text-sm leading-relaxed">{tier.description}</p>
                 {tier.output && (
-                  <p className="text-xs mt-2 leading-relaxed" style={{ color: "#e8195a", textShadow: "0 0 12px rgba(232,25,90,0.35)" }}>
+                  <p className="text-xs mt-2 leading-relaxed" style={{ color: "#c4607a" }}>
                     ↳ {tier.output}
                   </p>
                 )}
