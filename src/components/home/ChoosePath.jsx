@@ -93,7 +93,7 @@ export default function ChoosePath() {
                 <p className="text-[15px] font-bold text-white mb-1.5">{tier.name}</p>
                 <p className="text-white/50 text-sm leading-relaxed">{tier.description}</p>
                 {tier.output && (
-                  <p className="text-xs mt-2 leading-relaxed" style={{ color: "#d4608a", textShadow: "0 0 12px rgba(180,60,110,0.4)" }}>
+                  <p className="text-xs mt-2 leading-relaxed" style={{ color: "#e8195a", textShadow: "0 0 12px rgba(232,25,90,0.35)" }}>
                     ↳ {tier.output}
                   </p>
                 )}
@@ -116,7 +116,7 @@ export default function ChoosePath() {
             className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm"
             style={{
               background: "#e8195a",
-              boxShadow: "0 4px 24px rgba(233,30,140,0.35)",
+              boxShadow: "0 4px 24px rgba(232,25,90,0.35)",
             }}
           >
             Book a Call →
