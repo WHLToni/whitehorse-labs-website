@@ -148,7 +148,10 @@ export default function ChoosePath() {
            <div className="flex-1 min-w-0">
              <p className="text-[15px] font-bold text-white mb-1.5">The MVP Sprint <span className="text-[#999] text-xs font-normal">(Tech Products Only)</span></p>
              <p className="text-white/50 text-sm leading-relaxed">
-               You have a problem worth solving but no product yet. I'll help you define the problem, design the solution and build a working proof of concept using rapid prototyping — ready for real-world validation in weeks, not months.
+               You have a problem worth solving but no product yet. I'll help you define the problem, design the solution and build a working proof of concept using AI-assisted rapid prototyping — ready for real-world validation in weeks, not months.
+             </p>
+             <p className="text-xs text-white/40 mt-3">
+               Current toolstack: Base44, Replit, Figma, Relume, Notion (for documentation)
              </p>
            </div>
            <div className="sm:text-right shrink-0 sm:pt-0.5">
