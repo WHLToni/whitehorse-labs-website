@@ -87,9 +87,9 @@ export default function HeroSection() {
               {/* Logo watermark */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/a9c4afc91_PrimaryLogo_White2.png"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/1c08d4c56_PrimaryLogo_White3.png"
                   alt=""
-                  className="w-full h-full object-contain opacity-50"
+                  className="w-full h-full object-cover opacity-50"
                 />
               </div>
               <div className="relative">
