@@ -167,7 +167,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Footer line */}
-        <p className="mt-10 text-xs text-white/25 italic">
+        <p className="mt-10 text-xs text-white italic">
           Not ready for a full engagement? The frameworks I use with every client are available for $149{" "}
           <Link
             to={createPageUrl("LaunchSystem")}
