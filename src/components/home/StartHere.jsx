@@ -23,12 +23,12 @@ export default function StartHere() {
           Book a Call →
         </Link>
         <p className="mt-5 text-sm text-[#555] italic">
-          Not ready for a call?{" "}
+          Not ready for a call? Start with the{" "}
           <Link
             to={createPageUrl("LaunchSystem")}
             className="hover:text-[#0a0a0a] transition-colors"
           >
-            Start with the $149 Launch System →
+            GTM Toolkit — $149 →
           </Link>
         </p>
       </div>

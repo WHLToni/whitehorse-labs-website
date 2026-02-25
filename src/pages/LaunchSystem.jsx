@@ -82,12 +82,11 @@ export default function LaunchSystem() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Product</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
-              The Launch System:{" "}
-              <span className="gradient-text-simple">Two DIY Portals to Build and Launch Your Product</span>
+              The GTM Toolkit:{" "}
+              <span className="gradient-text-simple">Frameworks, Models and Templates for DIY Commercialisation</span>
             </h1>
             <p className="text-lg text-[#999] leading-relaxed mb-10">
-              The same frameworks I use with $15K clients—now available as ready-to-use systems for $149 each.
-              Validate your idea, build it right, and launch strategically.
+              The exact frameworks, models and templates I use with every client—available as a self-serve Notion portal with AI prompts included. Validate your idea, build it right, and launch strategically.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3">
               <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
