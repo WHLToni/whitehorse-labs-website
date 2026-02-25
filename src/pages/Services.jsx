@@ -78,12 +78,12 @@ const steps = [
   {
     num: "01",
     title: "Book Your Package",
-    desc: "Choose your service and confirm scope. For custom engagements, we start with a 30-minute call to define the brief.",
+    desc: "Choose your service and confirm scope - I'll share a questionnaire to help with this. For custom engagements, we start with a 60-minute call to define the brief.",
   },
   {
     num: "02",
     title: "Kickoff",
-    desc: "You get access to a client portal with all frameworks, templates and project tracking. We align on objectives, timeline and deliverables.",
+    desc: "You get access to a client portal in Notion with all frameworks, templates and project tracking. We align on objectives, timeline and deliverables.",
   },
   {
     num: "03",
