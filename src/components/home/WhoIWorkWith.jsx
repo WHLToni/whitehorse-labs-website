@@ -37,25 +37,40 @@ export default function WhoIWorkWith() {
           </h2>
         </div>
 
-        <div className="max-w-3xl">
-          {audiences.map((a, i) => (
-            <motion.div
-              key={a.num}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08, duration: 0.5 }}
-            >
-              {i > 0 && <div className="border-t border-[#e5e5e5]" />}
-              <div className="flex gap-10 py-8">
-                <span className="text-sm font-light text-[#bbb] w-8 shrink-0 pt-0.5">{a.num}</span>
-                <div>
-                  <h3 className="text-base font-bold text-[#0a0a0a] mb-2">{a.title}</h3>
-                  <p className="text-[#666] text-sm leading-relaxed">{a.description}</p>
+        <div
+          className="w-full lg:w-[65%] bg-white rounded-2xl px-10 py-2"
+          style={{
+            boxShadow: "0 4px 40px rgba(233, 30, 140, 0.10), 0 1px 12px rgba(0,0,0,0.07)",
+          }}
+        >
+          {audiences.map((a, i) => {
+            const [hovered, setHovered] = useState(false);
+            return (
+              <motion.div
+                key={a.num}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.5 }}
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+              >
+                {i > 0 && <div className="border-t border-[#e5e5e5]" />}
+                <div className="flex gap-10 py-8">
+                  <span
+                    className="text-sm font-light w-8 shrink-0 pt-0.5 transition-colors duration-200"
+                    style={{ color: hovered ? "#E91E8C" : "#bbb" }}
+                  >
+                    {a.num}
+                  </span>
+                  <div>
+                    <h3 className="text-base font-bold text-[#0a0a0a] mb-2">{a.title}</h3>
+                    <p className="text-[#666] text-sm leading-relaxed">{a.description}</p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
