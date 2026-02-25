@@ -88,12 +88,12 @@ export default function HeroSection() {
                 <p className="text-white text-base font-bold uppercase tracking-widest mb-8">Fractional vs Consultant vs Contractor</p>
                 <div className="space-y-6">
                   {comparisons.map((item, i) => (
-                    <div key={item.title} className={`pb-6 ${i < comparisons.length - 1 ? "border-b border-white/5" : ""}`}>
-                      <p className={`text-sm font-bold mb-1.5 ${item.highlight ? "" : "text-[#888]"}`}
+                    <div key={item.title} className={`pb-6 ${i < comparisons.length - 1 ? "border-b border-white/20" : ""}`}>
+                      <p className={`text-base font-bold mb-2 ${item.highlight ? "" : "text-[#888]"}`}
                         style={item.highlight ? { color: "#d44d6e" } : {}}>
                         {item.title}
                       </p>
-                      <p className="text-[#ccc] text-sm leading-relaxed">{item.body}</p>
+                      <p className="text-[#ccc] text-base leading-relaxed">{item.body}</p>
                     </div>
                   ))}
                 </div>
