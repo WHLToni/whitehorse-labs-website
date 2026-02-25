@@ -65,7 +65,7 @@ export default function Credentials() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-[#E91E8C] hover:underline mt-1"
               >
-                My LinkedIn Profile <ExternalLink className="w-3.5 h-3.5" />
+                Connect With Me on LinkedIn <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </motion.div>
           </div>
