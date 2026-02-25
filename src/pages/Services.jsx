@@ -116,7 +116,7 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
             {subheading}
           </p>
           <div className="mb-8">
-            <p className="text-lg font-bold text-[#888]">
+            <p className="text-lg font-bold text-[#e8195a]">
               {price} · {duration}
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function Services() {
           <p className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-4 text-center">
             Also Available
           </p>
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-12 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-12 text-center">
             Pre-Build
           </p>
           <ServiceCard
