@@ -1,50 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "../../utils";
-import { ArrowRight, ShoppingCart } from "lucide-react";
 
 export default function StartHere() {
   return (
-    <section className="py-24 md:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="text-center mb-16">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">
-            Next Step
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
-            Start Here
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="p-8 rounded-2xl bg-[#f7f7f8] border border-[#e5e5e5] text-center">
-            <p className="text-xs text-[#888] uppercase tracking-widest mb-4">
-              Funded startups & pre-exit owners
-            </p>
-            <Link
-              to={createPageUrl("Services")}
-              className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-6 py-3 rounded-lg text-sm border-2 border-[#e8195a]/40 hover:border-[#e8195a] transition-colors"
-            >
-              View Services & Pricing
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-
-          <div className="p-8 rounded-2xl bg-[#f7f7f8] border border-[#e5e5e5] text-center">
-            <p className="text-xs text-[#888] uppercase tracking-widest mb-4">
-              Vibe coders & bootstrap founders
-            </p>
-            <Link
-              to={createPageUrl("LaunchSystem")}
-              className="inline-flex items-center gap-2 text-[#0a0a0a] font-semibold px-6 py-3 rounded-lg text-sm border-2 border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors"
-            >
-              <ShoppingCart className="w-4 h-4" />
-              Buy Launch System — $149
-            </Link>
-          </div>
-
-
-        </div>
+    <section className="py-24 md:py-32 bg-[#f7f7f8]">
+      <div className="max-w-2xl mx-auto px-6 lg:px-10 text-center">
+        <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">
+          Ready to Start?
+        </p>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
+          Let's take your product to market.
+        </h2>
+        <p className="text-base text-[#555] leading-relaxed mb-10">
+          Book a 30-minute call and we'll work out where you are, what you need, and whether we're a good fit.
+        </p>
+        <Link
+          to={createPageUrl("Contact")}
+          className="inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
+          style={{ background: "#e8195a" }}
+        >
+          Book a Call →
+        </Link>
+        <p className="mt-5 text-xs text-[#999] italic">
+          Not ready for a call?{" "}
+          <Link
+            to={createPageUrl("LaunchSystem")}
+            className="hover:text-[#0a0a0a] transition-colors"
+          >
+            Start with the $149 Launch System →
+          </Link>
+        </p>
       </div>
     </section>
   );
