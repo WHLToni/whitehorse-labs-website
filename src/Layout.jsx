@@ -17,7 +17,7 @@ function Logo({ dark = false }) {
       <img
         src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b061673c1_PrimaryLogo.png"
         alt="Whitehorse Labs"
-        className="h-14 w-auto"
+        className="h-28 w-auto"
       />
     </div>
   );
