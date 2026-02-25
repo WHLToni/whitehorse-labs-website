@@ -34,25 +34,28 @@ export default function Credentials() {
               className="lg:col-span-2 flex flex-col gap-5"
             >
               <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C]">
-                About
+                The Practitioner
               </p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
-                Full-Stack GTM. No Handoffs.
+                Full-Stack GTM. Strategy and Execution, End to End.
               </h2>
               <p className="text-sm text-[#888] font-medium">
                 Toni Morrow · 20+ years in regulated GTM · Medtech, Fintech, SaaS · Seed to IPO
               </p>
 
               <p className="text-[#555] text-sm leading-relaxed">
-                Product develops something brilliant, handballs it to marketing, who handballs it to sales. Value gets lost at every handoff — and nobody owns the outcome end to end. I've spent 20+ years closing that gap.
+                Product develops something brilliant, handballs it to marketing, who handballs it to sales. Value gets lost at every handoff and nobody owns the outcome end to end — I've spent 20+ years closing that gap.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                From seed-stage startups finding their first customers, to managing $20M+ product portfolios for publicly listed brands across Asia Pacific and the USA — I've operated at every point on that spectrum, with both enterprise resources and bootstrap constraints.
+                From seed-stage startups finding their first customers, to managing $20M+ product portfolios for publicly listed brands across APAC and the USA — I've operated at every point on that spectrum, with both enterprise resources and bootstrap constraints.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                My background is unusual. I started in sales, built up through product and marketing management, and spent the majority of my career in regulated sectors — medtech, fintech, construction tech, veterinary technology. That full-stack experience means I can lead upstream product strategy and downstream GTM execution, or step in to solve for just one part.
+                I began in medical device and pharmaceutical sales — an industry where regulatory rigour, clinical credibility and commercial excellence aren't optional, they're the baseline. From there I finished an MBA and moved through product and marketing management, spending the majority of my career in regulated sectors — medtech (both instruments and software), fintech, construction tech, veterinary technology.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
+                That full-stack experience means I can lead upstream product strategy and downstream GTM execution, or step in to solve for just one part.
+              </p>
+              <p className="text-[#555] text-sm font-semibold leading-relaxed text-[#0a0a0a]">
                 I don't run workshops and hand you a deck. I build the systems and foundations your team needs to take your product to market and win.
               </p>
 
