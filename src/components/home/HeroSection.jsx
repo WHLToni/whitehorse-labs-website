@@ -50,7 +50,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">
-              Commercialising a complex product takes more than a GTM strategy. It takes someone who understands the full journey - from product development through to sales. I've worked all of it, across regulated industries where the stakes are high and the buyers are hard to reach.
+              Commercialising a complex product takes more than a launch plan. Building a Go-To-Market strategy that drives growth requires deep understanding of the full journey - from product development through to sales. I've operated across the full spectrum, in regulated industries where the stakes are high and the buyers are hard to reach.
             </p>
             <p className="text-sm font-semibold text-[#0a0a0a] max-w-xl mb-12 tracking-wide">
               Senior expertise. Fixed scope. Delivered in weeks.
