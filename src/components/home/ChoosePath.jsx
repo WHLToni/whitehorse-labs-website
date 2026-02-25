@@ -133,7 +133,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Pre-Build label */}
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-white/30 mb-6">
+        <p className="text-[10px] font-semibold uppercase tracking-widest text-white mb-6">
           Pre-Build
         </p>
 
@@ -167,7 +167,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Footer line */}
-        <p className="mt-10 text-xs text-white italic">
+        <p className="mt-10 text-sm text-white italic">
           Not ready for a full engagement? The frameworks I use with every client are available for $149{" "}
           <Link
             to={createPageUrl("LaunchSystem")}

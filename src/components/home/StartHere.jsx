@@ -22,7 +22,7 @@ export default function StartHere() {
         >
           Book a Call →
         </Link>
-        <p className="mt-5 text-xs text-[#999] italic">
+        <p className="mt-5 text-sm text-[#555] italic">
           Not ready for a call?{" "}
           <Link
             to={createPageUrl("LaunchSystem")}
