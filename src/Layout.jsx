@@ -17,7 +17,7 @@ function Logo({ dark = false }) {
       <img
         src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b061673c1_PrimaryLogo.png"
         alt="Whitehorse Labs"
-        className="h-24 w-auto"
+        className="h-48 w-auto"
       />
     </div>
   );
@@ -113,7 +113,7 @@ export default function Layout({ children, currentPageName }) {
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b061673c1_PrimaryLogo.png"
                 alt="Whitehorse Labs"
-                className="h-20 w-auto brightness-0 invert mb-4"
+                className="h-40 w-auto brightness-0 invert mb-4"
               />
               <p className="text-[#999] text-sm max-w-md leading-relaxed">
                 Fractional GTM · Regulated & Complex Products
