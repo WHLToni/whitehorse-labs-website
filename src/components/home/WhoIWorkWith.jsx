@@ -30,10 +30,10 @@ export default function WhoIWorkWith() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
-            Clients
+            Are We a Good Fit?
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
-            Who I Work With
+            I deliver the best results for:
           </h2>
         </div>
 
