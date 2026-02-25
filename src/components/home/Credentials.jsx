@@ -23,9 +23,6 @@ export default function Credentials() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-sm text-[#888] font-medium mt-3 text-center lg:text-left">
-                Toni Morrow · 20+ years in regulated GTM · Medtech, Fintech, SaaS · Seed to IPO
-              </p>
             </motion.div>
 
             {/* Right — bio */}
@@ -42,6 +39,10 @@ export default function Credentials() {
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
                 Full-Stack GTM. Strategy and Execution, End to End.
               </h2>
+              <p className="text-sm text-[#888] font-medium">
+                Toni Morrow · 20+ years in regulated GTM · Medtech, Fintech, SaaS · Seed to IPO
+              </p>
+
               <p className="text-[#555] text-sm leading-relaxed">
                 Product develops something brilliant, handballs it to marketing, who handballs it to sales. Value gets lost at every handoff and nobody owns the outcome end to end — I've spent 20+ years closing that gap.
               </p>
