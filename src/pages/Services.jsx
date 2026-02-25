@@ -97,7 +97,7 @@ const steps = [
   },
 ];
 
-function ServiceCard({ name, subheading, price, duration, deliverables, bestFor, ctaLabel, ctaPage, darkBg = false }) {
+function ServiceCard({ name, subheading, price, duration, deliverables, bestFor, ctaLabel, ctaPage, darkBg = false, priceColor = "#e8195a" }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -116,7 +116,7 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
             {subheading}
           </p>
           <div className="mb-8">
-            <p className="text-lg font-bold text-[#e8195a]">
+            <p className="text-lg font-bold" style={{ color: priceColor }}>
               {price} · {duration}
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function Services() {
           <p className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-4 text-center">
             Also Available
           </p>
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-12 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#d4678c] mb-12 text-center">
             Pre-Build
           </p>
           <ServiceCard
@@ -212,6 +212,7 @@ export default function Services() {
             subheading="You have a problem worth solving but no product yet."
             price="Custom"
             duration="Scope dependent"
+            priceColor="#d4678c"
             deliverables={[
               "Problem definition and opportunity framing",
               "Solution design and concept validation",
