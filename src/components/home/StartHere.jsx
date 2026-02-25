@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "../../utils";
-import { ArrowRight, Download, ShoppingCart } from "lucide-react";
+import { ArrowRight, ShoppingCart } from "lucide-react";
 
 export default function StartHere() {
   return (
