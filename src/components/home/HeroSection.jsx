@@ -50,9 +50,9 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">
-              Commercialising a complex product takes more than a GTM strategy. You need someone who understands the full journey - from product development through to sales. I've worked all of it, across regulated industries where the stakes are high and the buyers are hard to reach.
+              Commercialising a complex product takes more than a GTM strategy. It takes someone who understands the full journey - from product development through to sales. I've worked all of it, across regulated industries where the stakes are high and the buyers are hard to reach.
             </p>
-            <p className="text-sm font-semibold text-[#888] max-w-xl mb-12 tracking-wide">
+            <p className="text-sm font-semibold text-[#0a0a0a] max-w-xl mb-12 tracking-wide">
               Senior expertise. Fixed scope. Delivered in weeks.
             </p>
 
@@ -65,10 +65,10 @@ export default function HeroSection() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                to={createPageUrl("Services")}
+                to={createPageUrl("Contact")}
                 className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#E91E8C]/40 transition-colors"
               >
-                View Services
+                Book a Call
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
