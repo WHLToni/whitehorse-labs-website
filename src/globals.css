@@ -13,7 +13,7 @@
 }
 
 :root {
-  --magenta: #E91E8C;
+  --magenta: #e8195a;
   --purple: #7B5FB5;
   --deep-blue: #5B7EBF;
   --sky-blue: #4BA4D8;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #E91E8C 0%, #7B5FB5 25%, #5B7EBF 50%, #4BA4D8 75%, #00C4E0 100%);
+  background: linear-gradient(135deg, #e8195a 0%, #7B5FB5 25%, #5B7EBF 50%, #4BA4D8 75%, #00C4E0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -78,14 +78,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-gradient {
-  background: linear-gradient(135deg, #E91E8C, #7B5FB5);
+  background: linear-gradient(135deg, #e8195a, #7B5FB5);
   transition: all 0.3s ease;
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(135deg, #d4187e, #6b4fa5);
+  background: linear-gradient(135deg, #cf1450, #6b4fa5);
   transform: translateY(-1px);
-  box-shadow: 0 8px 30px rgba(233, 30, 140, 0.3);
+  box-shadow: 0 8px 30px rgba(232, 25, 90, 0.3);
 }
 
 .btn-outline-gradient {
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   border-radius: 8px;
   padding: 2px;
-  background: linear-gradient(135deg, #E91E8C, #00C4E0);
+  background: linear-gradient(135deg, #e8195a, #00C4E0);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline-gradient:hover {
-  background: rgba(233, 30, 140, 0.1);
+  background: rgba(232, 25, 90, 0.1);
   transform: translateY(-1px);
 }
 
@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
     --card-foreground: 0 0% 4%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 4%;
-    --primary: 327 83% 52%;
+    --primary: 344 83% 50%;
     --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 4%;
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     --destructive-foreground: 0 0% 100%;
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 327 83% 52%;
+    --ring: 344 83% 50%;
     --radius: 0.5rem;
   }
 }
