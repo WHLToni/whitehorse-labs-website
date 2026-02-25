@@ -82,7 +82,7 @@ export default function LaunchSystem() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Product</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
-              The GTM Toolkit:{" "}
+              DIY Toolkits:{" "}
               <span className="gradient-text-simple">Frameworks, Models and Templates for DIY Commercialisation</span>
             </h1>
             <p className="text-lg text-[#999] leading-relaxed mb-10">
@@ -90,13 +90,13 @@ export default function LaunchSystem() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3">
               <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-                <Zap className="w-4 h-4" />Buy GTM Foundations — $149
+                <Zap className="w-4 h-4" />Get the GTM Toolkit — $149
               </button>
               <button className="inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm border border-white/20 hover:border-white/40 transition-colors">
-                <Code className="w-4 h-4" />Buy Vibe Coding Foundations — $149
+                <Code className="w-4 h-4" />Get the Build Toolkit — $149
               </button>
               <button className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-6 py-3.5 rounded-lg text-sm border border-[#e8195a]/40 hover:border-[#e8195a] transition-colors">
-                <Package className="w-4 h-4" />Bundle Both — $249
+                <Package className="w-4 h-4" />Get Both Toolkits — $249
               </button>
             </div>
           </motion.div>
@@ -124,8 +124,8 @@ export default function LaunchSystem() {
       {/* The Systems */}
       <section className="py-24 md:py-32 bg-[#f7f7f8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Systems</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-16 text-[#0a0a0a]">Buy Each for $149 or Bundle for $249</h2>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Toolkits</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-16 text-[#0a0a0a]">Choose Your Path</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             {/* Portal 1 */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
@@ -135,7 +135,7 @@ export default function LaunchSystem() {
                   <Zap className="w-5 h-5 text-[#e8195a]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0a0a0a]">GTM Foundations Package</h3>
+                  <h3 className="text-xl font-bold text-[#0a0a0a]">The GTM Toolkit</h3>
                   <span className="text-[#e8195a] font-semibold text-sm">$149</span>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function LaunchSystem() {
               </div>
               <p className="text-[#aaa] text-xs mb-6">Format: Notion portal, duplicate into your workspace.</p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                <ShoppingCart className="w-4 h-4" />Buy GTM Foundations — $149
+                <ShoppingCart className="w-4 h-4" />Get the GTM Toolkit — $149
               </button>
             </motion.div>
 
@@ -168,7 +168,7 @@ export default function LaunchSystem() {
                   <Code className="w-5 h-5 text-[#00C4E0]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0a0a0a]">Vibe Coding Foundations</h3>
+                  <h3 className="text-xl font-bold text-[#0a0a0a]">The Build Toolkit</h3>
                   <span className="text-[#00C4E0] font-semibold text-sm">$149</span>
                 </div>
               </div>
@@ -192,7 +192,7 @@ export default function LaunchSystem() {
               </div>
               <p className="text-[#aaa] text-xs mb-6">Format: Notion portal, duplicate into your workspace.</p>
               <button className="inline-flex items-center justify-center gap-2 text-[#0a0a0a] font-semibold px-6 py-3 rounded-lg text-sm w-full border-2 border-[#00C4E0]/40 hover:border-[#00C4E0] transition-colors">
-                <ShoppingCart className="w-4 h-4" />Buy Vibe Coding Foundations — $149
+                <ShoppingCart className="w-4 h-4" />Get the Build Toolkit — $149
               </button>
             </motion.div>
           </div>
@@ -205,12 +205,12 @@ export default function LaunchSystem() {
                 <Package className="w-5 h-5 text-[#e8195a]" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Bundle Both <span className="text-[#e8195a]">$249</span> <span className="text-[#666] text-sm font-normal line-through mr-1">$298</span><span className="text-xs bg-[#e8195a]/20 text-[#e8195a] px-2 py-0.5 rounded-full font-semibold">Save $49</span></h3>
+                <h3 className="text-xl font-bold text-white">Both Toolkits <span className="text-[#e8195a]">$249</span> <span className="text-[#666] text-sm font-normal line-through mr-1">$298</span><span className="text-xs bg-[#e8195a]/20 text-[#e8195a] px-2 py-0.5 rounded-full font-semibold">Save $49</span></h3>
                 <p className="text-[#999] text-sm mt-1">Get the complete system—validate your idea, build it right, and launch strategically.</p>
               </div>
             </div>
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-3.5 rounded-lg text-sm flex-shrink-0">
-              <ShoppingCart className="w-4 h-4" />Buy Complete Bundle — $249
+              <ShoppingCart className="w-4 h-4" />Get Both Toolkits — $249
             </button>
           </motion.div>
         </div>
@@ -225,7 +225,7 @@ export default function LaunchSystem() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Zap className="w-4 h-4 text-[#e8195a]" />
-                <h3 className="text-base font-bold text-[#0a0a0a]">GTM Foundations is for you if:</h3>
+                <h3 className="text-base font-bold text-[#0a0a0a]">The GTM Toolkit is for you if:</h3>
               </div>
               <div className="space-y-3">
                 {whoFor1.map((item, i) => (
@@ -239,7 +239,7 @@ export default function LaunchSystem() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Code className="w-4 h-4 text-[#00C4E0]" />
-                <h3 className="text-base font-bold text-[#0a0a0a]">Vibe Coding Foundations is for you if:</h3>
+                <h3 className="text-base font-bold text-[#0a0a0a]">The Build Toolkit is for you if:</h3>
               </div>
               <div className="space-y-3">
                 {whoFor2.map((item, i) => (
@@ -328,28 +328,28 @@ export default function LaunchSystem() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-white">Simple, One-Time Pricing</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 text-sm">
             <div className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-center">
-              <p className="text-[#999] mb-1">GTM Foundations</p>
+              <p className="text-[#999] mb-1">The GTM Toolkit</p>
               <p className="text-white font-bold text-2xl">$149</p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-center">
-              <p className="text-[#999] mb-1">Vibe Coding Foundations</p>
+              <p className="text-[#999] mb-1">The Build Toolkit</p>
               <p className="text-white font-bold text-2xl">$149</p>
             </div>
             <div className="bg-[#e8195a]/10 border border-[#e8195a]/30 rounded-xl px-6 py-4 text-center">
-              <p className="text-[#e8195a] mb-1">Bundle Both <span className="text-xs">(save $49)</span></p>
+              <p className="text-[#e8195a] mb-1">Both Toolkits <span className="text-xs">(save $49)</span></p>
               <p className="text-white font-bold text-2xl">$249</p>
             </div>
           </div>
           <p className="text-[#666] text-sm mb-10">One-time payment. Lifetime access. No subscription. Lifetime updates included.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              <Zap className="w-4 h-4" />Buy GTM Foundations
+              <Zap className="w-4 h-4" />Get the GTM Toolkit
             </button>
             <button className="inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm border border-white/20 hover:border-white/40 transition-colors">
-              <Code className="w-4 h-4" />Buy Vibe Coding Foundations
+              <Code className="w-4 h-4" />Get the Build Toolkit
             </button>
             <button className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-6 py-3.5 rounded-lg text-sm border border-[#e8195a]/40 hover:border-[#e8195a] transition-colors">
-              <Package className="w-4 h-4" />Bundle Both
+              <Package className="w-4 h-4" />Get Both Toolkits
             </button>
           </div>
         </div>
