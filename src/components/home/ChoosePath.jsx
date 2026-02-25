@@ -71,7 +71,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Stack label */}
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-white/30 mb-6">
+        <p className="text-[10px] font-semibold uppercase tracking-widest text-white mb-6">
           The Commercialisation Stack
         </p>
 
