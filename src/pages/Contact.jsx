@@ -4,11 +4,11 @@ import { Send, Loader2 } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 
 const services = [
-  "Foundation Sprint — $6,000",
-  "GTM Blueprint — $12,000",
-  "Launch Ready Package — $20,000",
+  "The Diagnostic — $6,000",
+  "GTM Strategy — $12,000",
+  "Launch Architecture — $20,000",
   "Pre-Exit Readiness — Custom",
-  "Launch System (DIY)",
+  "GTM Toolkit (DIY) — $149",
   "Just exploring",
 ];
 
