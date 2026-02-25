@@ -264,16 +264,16 @@ export default function Services() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Not Ready to Commit?</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
-              Start with the $149 Launch System.
+              Get the GTM Toolkit for $149.
             </h2>
             <p className="text-base md:text-lg text-[#666] max-w-2xl mx-auto leading-relaxed mb-8">
-              The same frameworks and templates I use with every client — available as a self-serve portal. DIY your commercialisation, then come back when you need execution support.
+              The exact frameworks, models and templates I use with every client — available as a self-serve Notion portal with AI prompts included. DIY your commercialisation, then come back when you need execution support.
             </p>
             <Link
               to={createPageUrl("LaunchSystem")}
               className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
             >
-              Buy the Launch System →
+              Get the GTM Toolkit →
             </Link>
           </motion.div>
         </div>
