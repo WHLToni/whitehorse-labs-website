@@ -1,7 +1,5 @@
 import React from "react";
 import HeroSection from "../components/home/HeroSection";
-import FractionalCompareV1 from "../components/home/FractionalCompareV1";
-import FractionalCompareV3 from "../components/home/FractionalCompareV3";
 import ChoosePath from "../components/home/ChoosePath";
 import WhoIWorkWith from "../components/home/WhoIWorkWith";
 import Credentials from "../components/home/Credentials";
