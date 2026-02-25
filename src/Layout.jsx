@@ -116,8 +116,7 @@ export default function Layout({ children, currentPageName }) {
                 className="h-10 w-auto brightness-0 invert mb-4"
               />
               <p className="text-[#999] text-sm max-w-md leading-relaxed">
-                Product commercialisation for complex, regulated products.
-                A-player expertise at fractional cost.
+                Fractional GTM · Regulated & Complex Products
               </p>
             </div>
             <div>
