@@ -66,7 +66,7 @@ export default function ChoosePath() {
             Choose How You Want to Start
           </h2>
           <p className="text-white/50 text-base leading-relaxed max-w-2xl">
-            You've built something. Now you need to commercialise it. Fixed scope, fixed price, delivered in weeks. No hourly billing, no discovery phases that go nowhere.
+            You've built something. Now you need to commercialise it. Fixed scope, fixed price, delivered in weeks.
           </p>
         </div>
 
