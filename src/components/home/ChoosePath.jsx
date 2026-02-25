@@ -126,7 +126,7 @@ export default function ChoosePath() {
         {/* Divider */}
         <div className="relative flex items-center my-10">
           <div className="flex-1 border-t border-white/[0.08]" />
-          <span className="mx-4 text-[10px] font-semibold uppercase tracking-widest text-white/20">
+          <span className="mx-4 text-[10px] font-semibold uppercase tracking-widest text-white">
             Also Available
           </span>
           <div className="flex-1 border-t border-white/[0.08]" />
