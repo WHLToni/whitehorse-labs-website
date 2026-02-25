@@ -33,8 +33,8 @@ const tiers = [
     price: "Custom",
     duration: null,
     description:
-      "Commercial systems, brand refresh, digital foundations and sales enablement built for acquisition readiness. Priced on scope.",
-    output: null,
+      "Commercial systems, brand refresh, digital foundations and sales enablement built for acquisition readiness.",
+    output: "Priced on scope.",
   },
 ];
 
