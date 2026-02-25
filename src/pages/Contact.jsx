@@ -221,7 +221,7 @@ ${form.message}
                   onChange={handleChange}
                   required
                   rows={5}
-                  placeholder="Tell me about your product, where you're at, and what you need…"
+                  placeholder="Share a brief summary of your challenge / problem:"
                   className={inputCls + " resize-none"}
                 />
               </Field>
