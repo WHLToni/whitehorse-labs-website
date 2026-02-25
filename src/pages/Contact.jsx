@@ -73,7 +73,7 @@ ${form.message}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">Contact</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Contact</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a] max-w-3xl">
               Let's Talk
             </h1>
@@ -93,8 +93,8 @@ ${form.message}
               animate={{ opacity: 1, y: 0 }}
               className="p-12 rounded-2xl bg-[#f7f7f8] border border-[#e5e5e5] text-center"
             >
-              <div className="w-14 h-14 rounded-full bg-[#E91E8C]/10 flex items-center justify-center mx-auto mb-6">
-                <Send className="w-6 h-6 text-[#E91E8C]" />
+              <div className="w-14 h-14 rounded-full bg-[#e8195a]/10 flex items-center justify-center mx-auto mb-6">
+                <Send className="w-6 h-6 text-[#e8195a]" />
               </div>
               <h2 className="text-2xl font-bold text-[#0a0a0a] mb-3">Message Sent</h2>
               <p className="text-[#666] text-sm leading-relaxed max-w-sm mx-auto">
@@ -102,7 +102,7 @@ ${form.message}
               </p>
               <button
                 onClick={() => setStatus("idle")}
-                className="mt-8 text-sm font-semibold text-[#E91E8C] hover:underline"
+                className="mt-8 text-sm font-semibold text-[#e8195a] hover:underline"
               >
                 Send another message
               </button>
@@ -205,7 +205,7 @@ ${form.message}
                         value={opt}
                         checked={form.preferredContact === opt}
                         onChange={handleChange}
-                        className="accent-[#E91E8C]"
+                        className="accent-[#e8195a]"
                       />
                       <span className="text-sm text-[#555]">{opt}</span>
                     </label>
@@ -245,14 +245,14 @@ ${form.message}
   );
 }
 
-const inputCls = "w-full px-4 py-3 rounded-lg border border-[#e5e5e5] bg-[#f7f7f8] text-[#0a0a0a] text-sm placeholder:text-[#aaa] focus:outline-none focus:border-[#E91E8C] focus:ring-2 focus:ring-[#E91E8C]/10 transition-colors";
+const inputCls = "w-full px-4 py-3 rounded-lg border border-[#e5e5e5] bg-[#f7f7f8] text-[#0a0a0a] text-sm placeholder:text-[#aaa] focus:outline-none focus:border-[#e8195a] focus:ring-2 focus:ring-[#e8195a]/10 transition-colors";
 
 function Field({ label, hint, required, children }) {
   return (
     <div className="flex flex-col gap-1.5">
       <label className="text-sm font-medium text-[#0a0a0a]">
         {label}
-        {required && <span className="text-[#E91E8C] ml-0.5">*</span>}
+        {required && <span className="text-[#e8195a] ml-0.5">*</span>}
         {hint && <span className="text-[#aaa] font-normal ml-1.5 text-xs">({hint})</span>}
       </label>
       {children}

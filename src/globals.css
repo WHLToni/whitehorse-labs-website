@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text-simple {
-  background: linear-gradient(135deg, #E91E8C, #00C4E0);
+  background: linear-gradient(135deg, #e8195a, #00C4E0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   border-radius: 16px;
   padding: 1px;
-  background: linear-gradient(135deg, #E91E8C, #00C4E0);
+  background: linear-gradient(135deg, #e8195a, #00C4E0);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

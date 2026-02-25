@@ -33,7 +33,7 @@ export default function Credentials() {
               transition={{ delay: 0.1 }}
               className="lg:col-span-2 flex flex-col gap-5"
             >
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a]">
                 The Practitioner
               </p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
@@ -63,7 +63,7 @@ export default function Credentials() {
                 href="https://www.linkedin.com/in/tonimorrow/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#E91E8C] hover:underline mt-1"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#e8195a] hover:underline mt-1"
               >
                 Connect With Me on LinkedIn <ExternalLink className="w-3.5 h-3.5" />
               </a>

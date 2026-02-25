@@ -55,7 +55,7 @@ export default function ICPFramework() {
       <section className="py-24 md:py-32 bg-[#f7f7f8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">The Problem</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Problem</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Early-stage founders try to sell to everyone.</h2>
             <div className="space-y-3 mb-8">
               {['"Our product is for small businesses."', '"We\'re targeting millennials."', '"Anyone who needs X can use this."'].map((q, i) => (
@@ -75,12 +75,12 @@ export default function ICPFramework() {
       {/* What You Get */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">What You Get</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">What You Get</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
             {includes.map((item, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="flex items-start gap-3 p-6 rounded-xl bg-[#f7f7f8] border border-[#e5e5e5]">
-                <Check className="w-5 h-5 mt-0.5 text-[#E91E8C] flex-shrink-0" />
+                <Check className="w-5 h-5 mt-0.5 text-[#e8195a] flex-shrink-0" />
                 <span className="text-[#555] text-sm leading-relaxed">{item}</span>
               </motion.div>
             ))}
@@ -94,17 +94,17 @@ export default function ICPFramework() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">Why This Works</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Why This Works</p>
               <p className="text-[#666] text-sm leading-relaxed">
                 This framework is built on 20 years of product and marketing launches across regulated industries. I've used it to define ICPs for healthtech startups entering the US, fintech products targeting SMBs in APAC, SaaS tools for enterprise procurement, and veterinary platforms for multi-location clinics. It's rigorous, structured, repeatable.
               </p>
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">Who This Is For</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Who This Is For</p>
               <div className="space-y-3">
                 {whoFor.map((item, i) => (
                   <div key={i} className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#E91E8C] mt-2 flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#e8195a] mt-2 flex-shrink-0" />
                     <span className="text-[#555] text-sm">{item}</span>
                   </div>
                 ))}
@@ -117,7 +117,7 @@ export default function ICPFramework() {
       {/* What Happens Next */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">What Happens Next</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">What Happens Next</p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
             {steps.map((s, i) => (
               <motion.div key={s.num} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}

@@ -59,7 +59,7 @@ export default function ChoosePath() {
 
         {/* Header */}
         <div className="mb-12">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">
             The Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5">
@@ -115,7 +115,7 @@ export default function ChoosePath() {
             to={createPageUrl("Contact")}
             className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm"
             style={{
-              background: "#E91E8C",
+              background: "#e8195a",
               boxShadow: "0 4px 24px rgba(233,30,140,0.35)",
             }}
           >
@@ -171,7 +171,7 @@ export default function ChoosePath() {
           Not ready for a full engagement? The frameworks I use with every client are available for $149{" "}
           <Link
             to={createPageUrl("LaunchSystem")}
-            className="text-white/40 hover:text-[#E91E8C] transition-colors not-italic"
+            className="text-white/40 hover:text-[#e8195a] transition-colors not-italic"
           >
             →
           </Link>

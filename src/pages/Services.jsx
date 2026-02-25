@@ -20,7 +20,7 @@ const services = [
     ],
     bestFor: "Funded startups building commercial foundations, or pre-exit owners tightening positioning before a sale.",
     ctaLabel: "Book Foundation Sprint",
-    accentColor: "#E91E8C",
+    accentColor: "#e8195a",
   },
   {
     title: "GTM Blueprint",
@@ -92,7 +92,7 @@ export default function Services() {
       <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">Services & Pricing</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Services & Pricing</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 max-w-3xl text-[#0a0a0a]">
               Fixed-Scope Commercialisation Services
             </h1>
@@ -116,7 +116,7 @@ export default function Services() {
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">The Model</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Model</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">Why Work Fractionally?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -129,7 +129,7 @@ export default function Services() {
                 transition={{ delay: i * 0.1, duration: 0.5 }}
                 className={`p-8 rounded-2xl border ${r.dark ? "bg-[#0a0a0a] border-transparent" : "bg-[#f7f7f8] border-[#e5e5e5]"}`}
               >
-                <h3 className={`text-xl font-bold mb-3 ${r.dark ? "text-[#E91E8C]" : "text-[#888]"}`}>{r.title}</h3>
+                <h3 className={`text-xl font-bold mb-3 ${r.dark ? "text-[#e8195a]" : "text-[#888]"}`}>{r.title}</h3>
                 <p className={`text-sm leading-relaxed ${r.dark ? "text-[#ccc]" : "text-[#666]"}`}>{r.desc}</p>
               </motion.div>
             ))}
@@ -141,7 +141,7 @@ export default function Services() {
       <section className="py-24 md:py-32 bg-[#f7f7f8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">Process</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Process</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">Clear Process, No Surprises</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

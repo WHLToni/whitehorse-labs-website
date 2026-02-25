@@ -8,7 +8,7 @@ export default function StartHere() {
     <section className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">
             Next Step
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
@@ -23,7 +23,7 @@ export default function StartHere() {
             </p>
             <Link
               to={createPageUrl("Services")}
-              className="inline-flex items-center gap-2 text-[#E91E8C] font-semibold px-6 py-3 rounded-lg text-sm border-2 border-[#E91E8C]/40 hover:border-[#E91E8C] transition-colors"
+              className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-6 py-3 rounded-lg text-sm border-2 border-[#e8195a]/40 hover:border-[#e8195a] transition-colors"
             >
               View Services & Pricing
               <ArrowRight className="w-4 h-4" />
@@ -36,7 +36,7 @@ export default function StartHere() {
             </p>
             <Link
               to={createPageUrl("LaunchSystem")}
-              className="inline-flex items-center gap-2 text-[#0a0a0a] font-semibold px-6 py-3 rounded-lg text-sm border-2 border-[#e5e5e5] hover:border-[#E91E8C]/40 transition-colors"
+              className="inline-flex items-center gap-2 text-[#0a0a0a] font-semibold px-6 py-3 rounded-lg text-sm border-2 border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors"
             >
               <ShoppingCart className="w-4 h-4" />
               Buy Launch System — $149

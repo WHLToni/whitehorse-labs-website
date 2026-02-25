@@ -27,7 +27,7 @@ export default function HeroSection() {
     <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-white">
       {/* Subtle gradient blobs */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-[700px] h-[700px] rounded-full bg-[#E91E8C]/5 blur-[140px]" />
+        <div className="absolute top-1/4 right-0 w-[700px] h-[700px] rounded-full bg-[#e8195a]/5 blur-[140px]" />
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] rounded-full bg-[#00C4E0]/5 blur-[120px]" />
       </div>
 
@@ -39,7 +39,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0, 1] }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#e5e5e5] bg-[#f7f7f8] mb-8">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#E91E8C]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-[#e8195a]" />
               <span className="text-xs font-medium text-[#666] tracking-wide uppercase">
                 Fractional GTM · Regulated &amp; Complex Products
               </span>
@@ -66,7 +66,7 @@ export default function HeroSection() {
               </Link>
               <Link
                 to={createPageUrl("Contact")}
-                className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#E91E8C]/40 transition-colors"
+                className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors"
               >
                 Book a Call
                 <ArrowRight className="w-4 h-4" />
@@ -82,14 +82,14 @@ export default function HeroSection() {
             className="hidden lg:block"
           >
             <div className="bg-[#0a0a0a] rounded-3xl p-10 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#E91E8C]/10 blur-[80px]" />
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#e8195a]/10 blur-[80px]" />
               <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#00C4E0]/10 blur-[60px]" />
               <div className="relative">
                 <p className="text-white text-base font-bold uppercase tracking-widest mb-8">Fractional vs Consultant vs Contractor</p>
                 <div className="space-y-6">
                   {comparisons.map((item, i) => (
                     <div key={item.title} className={`pb-6 ${i < comparisons.length - 1 ? "border-b border-white/5" : ""}`}>
-                      <p className={`text-sm font-bold mb-1.5 ${item.highlight ? "text-[#E91E8C]" : "text-[#888]"}`}>
+                      <p className={`text-sm font-bold mb-1.5 ${item.highlight ? "text-[#e8195a]" : "text-[#888]"}`}>
                         {item.title}
                       </p>
                       <p className="text-[#ccc] text-sm leading-relaxed">{item.body}</p>

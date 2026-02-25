@@ -25,7 +25,7 @@ export default function WhoIWorkWith() {
     <section className="py-24 md:py-32 bg-[#f7f7f8]">
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
         <div className="mb-12">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#E91E8C] mb-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">
             Are We a Good Fit?
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
