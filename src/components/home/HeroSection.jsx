@@ -85,7 +85,7 @@ export default function HeroSection() {
               <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#E91E8C]/10 blur-[80px]" />
               <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#00C4E0]/10 blur-[60px]" />
               <div className="relative">
-                <p className="text-[#666] text-xs uppercase tracking-widest mb-8">How Is This Different?</p>
+                <p className="text-[#666] text-xs uppercase tracking-widest mb-8">How Is Fractional GTM Better?</p>
                 <div className="space-y-6">
                   {comparisons.map((item, i) => (
                     <div key={item.title} className={`pb-6 ${i < comparisons.length - 1 ? "border-b border-white/5" : ""}`}>
