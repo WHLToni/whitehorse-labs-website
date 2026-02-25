@@ -14,7 +14,7 @@ export default function Credentials() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="flex items-start justify-center lg:justify-start"
+              className="flex flex-col items-center lg:items-start gap-4"
             >
               <div className="w-full max-w-[280px] lg:max-w-full rounded-2xl overflow-hidden border border-[#e5e5e5]">
                 <img
