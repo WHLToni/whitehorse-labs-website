@@ -37,7 +37,7 @@ export default function WhoIWorkWith() {
           </h2>
         </div>
 
-        <div className="w-full lg:w-[65%] bg-white rounded-2xl shadow-md shadow-black/5 border border-[#e5e5e5] overflow-hidden px-8">
+        <div className="max-w-3xl">
           {audiences.map((a, i) => (
             <motion.div
               key={a.num}
@@ -46,7 +46,7 @@ export default function WhoIWorkWith() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
             >
-              {i > 0 && <div className="border-t border-[#f0f0f0]" />}
+              {i > 0 && <div className="border-t border-[#e5e5e5]" />}
               <div className="flex gap-10 py-8">
                 <span className="text-sm font-light text-[#bbb] w-8 shrink-0 pt-0.5">{a.num}</span>
                 <div>
