@@ -43,18 +43,7 @@ export default function StartHere() {
             </Link>
           </div>
 
-          <div className="p-8 rounded-2xl bg-[#f7f7f8] border border-[#e5e5e5] text-center">
-            <p className="text-xs text-[#888] uppercase tracking-widest mb-4">
-              Want to test the frameworks first?
-            </p>
-            <Link
-              to={createPageUrl("ICPFramework")}
-              className="inline-flex items-center gap-2 text-[#0a0a0a] font-semibold px-6 py-3 rounded-lg text-sm border-2 border-[#e5e5e5] hover:border-[#E91E8C]/40 transition-colors"
-            >
-              <Download className="w-4 h-4" />
-              Free ICP Framework
-            </Link>
-          </div>
+
         </div>
       </div>
     </section>
