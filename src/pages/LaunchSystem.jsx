@@ -364,16 +364,7 @@ export default function LaunchSystem() {
         </div>
       </section>
 
-      {/* Still Not Sure */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8]">
-        <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4 text-[#0a0a0a]">Still Not Sure?</h2>
-          <p className="text-[#666] text-base mb-8">Download the free ICP Framework—one of the core tools inside the GTM Foundations package.</p>
-          <Link to={createPageUrl("ICPFramework")} className="inline-flex items-center gap-2 text-[#0a0a0a] font-semibold px-8 py-4 rounded-lg text-sm border-2 border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors">
-            <Download className="w-4 h-4" />Download Free ICP Framework
-          </Link>
-        </div>
-      </section>
+
     </div>
   );
 }
