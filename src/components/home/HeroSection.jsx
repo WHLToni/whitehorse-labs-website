@@ -84,6 +84,14 @@ export default function HeroSection() {
             <div className="bg-[#0a0a0a] rounded-3xl p-10 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#e8195a]/10 blur-[80px]" />
               <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#00C4E0]/10 blur-[60px]" />
+              {/* Logo watermark */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/52ebf4179_PrimaryLogo_White1.png"
+                  alt=""
+                  className="w-4/5 h-4/5 object-contain opacity-50"
+                />
+              </div>
               <div className="relative">
                 <p className="text-white text-base font-bold uppercase tracking-widest mb-8">Fractional vs Consultant vs Contractor</p>
                 <div className="space-y-6">
