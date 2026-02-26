@@ -110,7 +110,7 @@ export default function LaunchSystem() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">DIY Toolkits</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
-              The frameworks I use with every client, DIY yours for $149.
+              Access the frameworks I use with every client. $149.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
               Two self-serve Notion portals — one for commercialising your product, one for building a solid MVP (or prototype) if you're using vibe coding tools. The same frameworks and models that I use with clients (and my own vibe-coded products), available without the price tag. These are blank templates and frameworks, with some detailed prompts ideally for Gemini or Claude.
