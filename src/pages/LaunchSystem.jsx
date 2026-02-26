@@ -105,7 +105,7 @@ export default function LaunchSystem() {
     <div>
 
       {/* PAGE HEADER */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8] text-center">
+      <section className="py-12 md:py-16 bg-[#f7f7f8] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">DIY Toolkits</p>
@@ -120,7 +120,7 @@ export default function LaunchSystem() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8 md:p-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Problem</p>
@@ -140,23 +140,25 @@ export default function LaunchSystem() {
       </section>
 
       {/* THE TOOLKITS */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
+        <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-10 z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Toolkits</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-[#0a0a0a]">Two products. Buy one or both.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-white">Two products. Buy one or both.</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {/* GTM Toolkit */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-              className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8 flex flex-col">
+              className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
-                <h3 className="text-xl font-bold text-[#0a0a0a] mb-1">The GTM Toolkit</h3>
+                <h3 className="text-xl font-bold text-white mb-1">The GTM Toolkit</h3>
                 <p className="text-[#e8195a] font-bold text-2xl">$149</p>
               </div>
-              <p className="text-[#888] text-sm italic leading-relaxed mb-4">
+              <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Commercialise your product with the same frameworks a senior GTM operator uses with $15K clients.
               </p>
-              <p className="text-[#555] text-sm leading-relaxed mb-8 flex-1">
+              <p className="text-white/50 text-sm leading-relaxed mb-8 flex-1">
                 For founders who have an idea but don't know how to validate it, position it or take it to market. And for founders who have already built something but don't know who it's for or how to sell it.
               </p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
@@ -166,15 +168,15 @@ export default function LaunchSystem() {
 
             {/* Build Toolkit */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-              className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8 flex flex-col">
+              className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
-                <h3 className="text-xl font-bold text-[#0a0a0a] mb-1">The Build Toolkit</h3>
+                <h3 className="text-xl font-bold text-white mb-1">The Build Toolkit</h3>
                 <p className="text-[#e8195a] font-bold text-2xl">$149</p>
               </div>
-              <p className="text-[#888] text-sm italic leading-relaxed mb-4">
+              <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Build a clean, scalable MVP without the usual vibe coding pitfalls — spaghetti code, security holes, zero documentation.
               </p>
-              <p className="text-[#555] text-sm leading-relaxed mb-8 flex-1">
+              <p className="text-white/50 text-sm leading-relaxed mb-8 flex-1">
                 For founders who are ready to build and want to do it properly from day one. Not a heavy enterprise-grade engineering setup — a lean, practical system that gets you to a handoff-ready MVP without the mess.
               </p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
@@ -184,16 +186,16 @@ export default function LaunchSystem() {
 
             {/* Get Both */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
-              className="bg-white rounded-2xl border-2 border-[#e8195a]/40 shadow-sm p-8 flex flex-col relative">
+              className="rounded-2xl border-2 border-[#e8195a]/40 p-8 flex flex-col relative" style={{ background: "#1a1a18" }}>
               <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
                 <span className="bg-[#e8195a] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Best Value</span>
               </div>
               <div className="mb-5">
-                <h3 className="text-xl font-bold text-[#0a0a0a] mb-1">Get Both</h3>
+                <h3 className="text-xl font-bold text-white mb-1">Get Both</h3>
                 <p className="text-[#e8195a] font-bold text-2xl">$249</p>
-                <p className="text-[#aaa] text-xs mt-0.5">save $49</p>
+                <p className="text-white/30 text-xs mt-0.5">save $49</p>
               </div>
-              <p className="text-[#888] text-sm italic leading-relaxed mb-4">
+              <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Validate your idea, build it right, and take it to market. The complete system from idea to launch.
               </p>
               <div className="flex-1" />
@@ -207,9 +209,9 @@ export default function LaunchSystem() {
       </section>
 
       {/* WHAT'S INCLUDED */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-12">What's Included</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-8">What's Included</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
@@ -243,10 +245,10 @@ export default function LaunchSystem() {
       </section>
 
       {/* WHO IS THIS FOR */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Who Is This For?</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-[#0a0a0a]">Made for founders doing the work themselves.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[#0a0a0a]">Made for founders doing the work themselves.</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
@@ -290,18 +292,20 @@ export default function LaunchSystem() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
+        <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-10 z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">How It Works</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-[#0a0a0a]">Simple by design.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-white">Simple by design.</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {steps.map((s, i) => (
               <motion.div key={s.num}
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="p-6 rounded-2xl bg-white border border-[#e5e5e5]">
+                className="p-6 rounded-2xl border border-white/10" style={{ background: "#1a1a18" }}>
                 <span className="gradient-text-simple text-3xl font-bold">{s.num}</span>
-                <h3 className="text-base font-bold mt-4 mb-2 text-[#0a0a0a]">{s.title}</h3>
-                <p className="text-[#666] text-sm leading-relaxed">{s.desc}</p>
+                <h3 className="text-base font-bold mt-4 mb-2 text-white">{s.title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{s.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -309,7 +313,7 @@ export default function LaunchSystem() {
       </section>
 
       {/* THE UPGRADE PATH */}
-      <section className="relative py-24 md:py-32 overflow-hidden" style={{ background: "#111110" }}>
+      <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
         <div className="relative max-w-3xl mx-auto px-6 lg:px-10 z-10">
@@ -329,9 +333,9 @@ export default function LaunchSystem() {
       </section>
 
       {/* WHAT YOU'RE NOT GETTING */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-10">What You're Not Getting</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-8">What You're Not Getting</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
@@ -367,10 +371,10 @@ export default function LaunchSystem() {
       </section>
 
       {/* PRICING */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Pricing</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[#0a0a0a]">Simple. One-time. No surprises.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Simple. One-time. No surprises.</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
               <p className="text-[#888] text-sm mb-1">The GTM Toolkit</p>
@@ -385,7 +389,7 @@ export default function LaunchSystem() {
               <p className="text-[#e8195a] font-bold text-2xl">$249</p>
             </div>
           </div>
-          <p className="text-[#aaa] text-sm mb-10">One-time payment. Lifetime access. Lifetime updates included. No subscription.</p>
+          <p className="text-[#aaa] text-sm mb-8">One-time payment. Lifetime access. Lifetime updates included. No subscription.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
               Get the GTM Toolkit — $149 →
@@ -401,15 +405,13 @@ export default function LaunchSystem() {
       </section>
 
       {/* FAQs */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">FAQs</p>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Frequently Asked Questions</h2>
           {faqs.map((f, i) => <FAQItem key={i} question={f.q} answer={f.a} />)}
         </div>
       </section>
-
-
 
     </div>
   );
