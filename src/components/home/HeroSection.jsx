@@ -52,10 +52,10 @@ export default function HeroSection() {
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">
               Commercialising a complex product takes more than a launch plan. Building a Go-To-Market strategy that drives growth requires deep understanding of the full journey - from product development through to sales. I've operated across the full spectrum, in regulated industries where the stakes are high and the buyers are hard to reach.
             </p>
-            <p className="text-sm font-semibold text-[#0a0a0a] max-w-xl mb-12 tracking-wide">
-              Full-Stack GTM.<br />
-              Strategy and Execution, End to End.
-            </p>
+            <div className="text-sm font-semibold text-[#0a0a0a] max-w-xl mb-12 tracking-wide">
+              <p>Full-Stack GTM.</p>
+              <p>Strategy and Execution, End to End.</p>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
