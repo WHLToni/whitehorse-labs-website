@@ -409,20 +409,7 @@ export default function LaunchSystem() {
         </div>
       </section>
 
-      {/* BOTTOM CTA */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8] border-t border-[#e5e5e5]">
-        <div className="max-w-2xl mx-auto px-6 lg:px-10 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Still Not Sure?</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Download the free ICP Framework.</h2>
-          <p className="text-[#666] text-base leading-relaxed mb-8">
-            One of the core tools inside the GTM Toolkit — yours free, no strings attached. If it's useful, you'll know the full toolkit is worth it.
-          </p>
-          <Link to={createPageUrl("ICPFramework")}
-            className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm">
-            Download Free ICP Framework →
-          </Link>
-        </div>
-      </section>
+
 
     </div>
   );
