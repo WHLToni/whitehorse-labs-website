@@ -54,7 +54,7 @@ export default function HeroSection() {
             </p>
             <div className="text-sm font-semibold text-[#0a0a0a] max-w-xl mb-12 tracking-wide">
               <p>Full-Stack GTM.</p>
-              <p>Strategy and Execution, End to End.</p>
+              <p className="mt-1">Strategy and Execution, End to End.</p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
