@@ -133,7 +133,7 @@ export default function LaunchSystem() {
               ))}
             </div>
             <p className="text-[#666] text-sm leading-relaxed">
-              You could wing it and learn the hard way. You could hire a consultant if you had $15K. Or you could buy the systems I've used to launch 20+ products over 20 years.
+              You could wing it and learn the hard way — burning through cash on the wrong audience, positioning it badly, or launching before you're ready. Or you could start with the same frameworks a senior GTM operator uses with clients, and give yourself a real chance of getting it right.
             </p>
           </div>
         </div>
