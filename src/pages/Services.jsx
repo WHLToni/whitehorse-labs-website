@@ -169,7 +169,7 @@ export default function Services() {
   return (
     <div>
       {/* PAGE HEADER */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Services & Pricing</p>
@@ -184,9 +184,9 @@ export default function Services() {
       </section>
 
       {/* THE COMMERCIALISATION STACK */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-10 md:py-12 bg-white">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-16 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-8 text-center">
             The Commercialisation Stack
           </p>
           <div className="space-y-6">
@@ -198,7 +198,7 @@ export default function Services() {
       </section>
 
       {/* ALSO AVAILABLE SECTION */}
-      <section className="py-24 md:py-32 bg-[#0a0a0a] relative overflow-hidden">
+      <section className="py-10 md:py-12 bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-[#e8195a]/5 blur-[120px]" />
         <div className="max-w-5xl mx-auto px-6 lg:px-10 relative">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-4 text-center">
@@ -228,14 +228,14 @@ export default function Services() {
       </section>
 
       {/* HOW IT WORKS SECTION */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8]">
+      <section className="py-10 md:py-12 bg-[#f7f7f8]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">How It Works</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-2">Clear Process. No Surprises.</h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
             {steps.map((step, i) => (
               <motion.div
                 key={step.num}
@@ -259,7 +259,7 @@ export default function Services() {
       </section>
 
       {/* BOTTOM CTA SECTION */}
-      <section className="py-24 md:py-32 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Not Ready to Commit?</p>
