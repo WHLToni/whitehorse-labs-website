@@ -164,7 +164,7 @@ export default function Layout({ children, currentPageName }) {
                   to={createPageUrl("LaunchSystem")}
                   className="block text-sm text-[#999] hover:text-white transition-colors"
                 >
-                  Buy Launch System — $149
+                  Get the Frameworks — from {pricing.from} →
                 </Link>
                 <Link
                   to={createPageUrl("Services")}
