@@ -177,7 +177,7 @@ export default function ChoosePath() {
             to={createPageUrl("LaunchSystem")}
             className="text-white/40 hover:text-[#e8195a] transition-colors not-italic"
           >
-            Get the DIY Toolkits from $149 →
+            Get the Frameworks from $149 →
           </Link>
         </p>
 

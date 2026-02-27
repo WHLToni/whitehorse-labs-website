@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     q: "Can I use these if I'm not technical?",
-    a: "The GTM Toolkit is designed for non-technical founders — no technical knowledge required. The Build Toolkit is designed for founders who are actively building, but you don't need to be a professional developer to use it.",
+    a: "The GTM OS is designed for non-technical founders — no technical knowledge required. The Build OS is designed for founders who are actively building, but you don't need to be a professional developer to use it.",
   },
   {
     q: "What if I need help?",
@@ -92,7 +92,7 @@ const faqs = [
   },
   {
     q: "Do you offer both as a bundle?",
-    a: "Yes — $249 for both toolkits, saving you $49.",
+    a: "Yes — $249 for both, saving you $49.",
   },
   {
     q: "Refunds?",
@@ -108,12 +108,12 @@ export default function LaunchSystem() {
       <section className="py-12 md:py-16 bg-[#f7f7f8] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">DIY Toolkits</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">GET THE FRAMEWORKS</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
-              Access the frameworks I use with every client. $149.
+              The frameworks I use with every client. Yours from $149.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
-              Two self-serve Notion portals — one for commercialising your product, one for building a solid MVP (or prototype) if you're using vibe coding tools. The same frameworks and models that I use with clients (and my own vibe-coded products), available without the price tag. These are blank templates and frameworks, with some detailed prompts ideally for Gemini or Claude.
+              Two self-serve Notion portals — each one a complete operating system for a critical part of building and launching your product. The GTM OS for commercialisation. The Build OS for development. The same systems I use with clients, available without the price tag.
             </p>
           </motion.div>
         </div>
@@ -144,15 +144,15 @@ export default function LaunchSystem() {
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 z-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Toolkits</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-white">Two products. Buy one or both.</h2>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">WHITEHORSE OS</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-white">Two systems. Buy one or both.</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {/* GTM Toolkit */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
-                <h3 className="text-xl font-bold text-white mb-1">The GTM Toolkit</h3>
+                <h3 className="text-xl font-bold text-white mb-1">The GTM OS</h3>
                 <p className="text-[#e8195a] font-bold text-2xl">$149</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
@@ -162,7 +162,7 @@ export default function LaunchSystem() {
                 For founders who have an idea but don't know how to validate it, position it or take it to market. And for founders who have already built something but don't know who it's for or how to sell it.
               </p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                Get the GTM Toolkit — $149 →
+                Get the GTM OS — $149 →
               </button>
             </motion.div>
 
@@ -170,7 +170,7 @@ export default function LaunchSystem() {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
-                <h3 className="text-xl font-bold text-white mb-1">The Build Toolkit</h3>
+                <h3 className="text-xl font-bold text-white mb-1">The Build OS</h3>
                 <p className="text-[#e8195a] font-bold text-2xl">$149</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
@@ -180,7 +180,7 @@ export default function LaunchSystem() {
                 For founders who are ready to build and want to do it properly from day one. Not a heavy enterprise-grade engineering setup — a lean, practical system that gets you to a handoff-ready MVP without the mess.
               </p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                Get the Build Toolkit — $149 →
+                Get the Build OS — $149 →
               </button>
             </motion.div>
 
@@ -200,7 +200,7 @@ export default function LaunchSystem() {
               </p>
               <div className="flex-1" />
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full mt-8">
-                Get Both Toolkits — $249 →
+                Get Both — $249 →
               </button>
             </motion.div>
 
@@ -215,7 +215,7 @@ export default function LaunchSystem() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
-              <h3 className="text-xl font-bold text-[#0a0a0a] mb-6">The GTM Toolkit</h3>
+              <h3 className="text-xl font-bold text-[#0a0a0a] mb-6">The GTM OS</h3>
               <div className="space-y-3 mb-6">
                 {gtmItems.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -228,7 +228,7 @@ export default function LaunchSystem() {
             </div>
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
-              <h3 className="text-xl font-bold text-[#0a0a0a] mb-6">The Build Toolkit</h3>
+              <h3 className="text-xl font-bold text-[#0a0a0a] mb-6">The Build OS</h3>
               <div className="space-y-3 mb-6">
                 {buildItems.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -252,7 +252,7 @@ export default function LaunchSystem() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
-              <h3 className="text-base font-bold text-[#0a0a0a] mb-5">The GTM Toolkit is for you if:</h3>
+              <h3 className="text-base font-bold text-[#0a0a0a] mb-5">The GTM OS is for you if:</h3>
               <div className="space-y-3">
                 {whoForGTM.map((item, i) => (
                   <div key={i} className="flex items-start gap-2">
@@ -264,7 +264,7 @@ export default function LaunchSystem() {
             </div>
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
-              <h3 className="text-base font-bold text-[#0a0a0a] mb-5">The Build Toolkit is for you if:</h3>
+              <h3 className="text-base font-bold text-[#0a0a0a] mb-5">The Build OS is for you if:</h3>
               <div className="space-y-3">
                 {whoForBuild.map((item, i) => (
                   <div key={i} className="flex items-start gap-2">
@@ -320,7 +320,7 @@ export default function LaunchSystem() {
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Upgrade Path</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">Start DIY. Upgrade when you're ready.</h2>
           <p className="text-white/50 text-base leading-relaxed mb-4">
-            If you work through the GTM Toolkit and decide you want professional execution — strategy, positioning, launch — you can upgrade to any productised service and your $149 purchase price will be credited against the engagement fee.
+            If you work through the GTM OS and decide you want professional execution — strategy, positioning, launch — you can upgrade to any productised service and your $149 purchase price will be credited against the engagement fee.
           </p>
           <p className="text-white/50 text-base leading-relaxed mb-10">
             You're not throwing money away by starting here. You're getting a head start.
@@ -377,28 +377,28 @@ export default function LaunchSystem() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Simple. One-time. No surprises.</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">The GTM Toolkit</p>
+              <p className="text-[#888] text-sm mb-1">The GTM OS</p>
               <p className="text-[#e8195a] font-bold text-2xl">$149</p>
             </div>
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">The Build Toolkit</p>
+              <p className="text-[#888] text-sm mb-1">The Build OS</p>
               <p className="text-[#e8195a] font-bold text-2xl">$149</p>
             </div>
             <div className="bg-[#f7f7f8] border-2 border-[#e8195a]/30 rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">Both Toolkits <span className="text-[#e8195a] text-xs">(save $49)</span></p>
+              <p className="text-[#888] text-sm mb-1">Both <span className="text-[#e8195a] text-xs">(save $49)</span></p>
               <p className="text-[#e8195a] font-bold text-2xl">$249</p>
             </div>
           </div>
           <p className="text-[#aaa] text-sm mb-8">One-time payment. Lifetime access. Lifetime updates included. No subscription.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              Get the GTM Toolkit — $149 →
+              Get the GTM OS — $149 →
             </button>
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              Get the Build Toolkit — $149 →
+              Get the Build OS — $149 →
             </button>
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              Get Both Toolkits — $249 →
+              Get Both — $249 →
             </button>
           </div>
         </div>
