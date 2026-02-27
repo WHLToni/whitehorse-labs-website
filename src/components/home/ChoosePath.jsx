@@ -40,6 +40,7 @@ const tiers = [
 ];
 
 export default function ChoosePath() {
+  const pricing = usePricing();
   return (
     <section
       className="py-24 md:py-32 relative overflow-hidden"
@@ -178,7 +179,7 @@ export default function ChoosePath() {
             to={createPageUrl("LaunchSystem")}
             className="text-white/40 hover:text-[#e8195a] transition-colors not-italic"
           >
-            Get the Frameworks from $149 →
+            Get the Frameworks — from {pricing.from} →
           </Link>
         </p>
 
