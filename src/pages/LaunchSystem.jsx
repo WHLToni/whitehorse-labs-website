@@ -172,7 +172,7 @@ export default function LaunchSystem() {
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">The GTM OS</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">$149</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Commercialise your product with the same frameworks a senior GTM operator uses with $15K clients.
@@ -181,7 +181,7 @@ export default function LaunchSystem() {
                 For founders who have an idea but don't know how to validate it, position it or take it to market. And for founders who have already built something but don't know who it's for or how to sell it.
               </p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                Get the GTM OS — $149 →
+                {pricing.gtmBtn}
               </button>
             </motion.div>
 
@@ -190,7 +190,7 @@ export default function LaunchSystem() {
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">The Build OS</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">$149</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Build a clean, scalable MVP without the usual vibe coding pitfalls — spaghetti code, security holes, zero documentation.
@@ -199,7 +199,7 @@ export default function LaunchSystem() {
                 For founders who are ready to build and want to do it properly from day one. Not a heavy enterprise-grade engineering setup — a lean, practical system that gets you to a handoff-ready MVP without the mess.
               </p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                Get the Build OS — $149 →
+                {pricing.buildBtn}
               </button>
             </motion.div>
 
@@ -211,15 +211,15 @@ export default function LaunchSystem() {
               </div>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">Get Both</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">$249</p>
-                <p className="text-white/30 text-xs mt-0.5">save $49</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing.both}</p>
+                <p className="text-white/30 text-xs mt-0.5">{pricing.save}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Validate your idea, build it right, and take it to market. The complete system from idea to launch.
               </p>
               <div className="flex-1" />
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full mt-8">
-                Get Both — $249 →
+                {pricing.bothBtn}
               </button>
             </motion.div>
 
@@ -397,27 +397,27 @@ export default function LaunchSystem() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
               <p className="text-[#888] text-sm mb-1">The GTM OS</p>
-              <p className="text-[#e8195a] font-bold text-2xl">$149</p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
             </div>
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
               <p className="text-[#888] text-sm mb-1">The Build OS</p>
-              <p className="text-[#e8195a] font-bold text-2xl">$149</p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
             </div>
             <div className="bg-[#f7f7f8] border-2 border-[#e8195a]/30 rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">Both <span className="text-[#e8195a] text-xs">(save $49)</span></p>
-              <p className="text-[#e8195a] font-bold text-2xl">$249</p>
+              <p className="text-[#888] text-sm mb-1">Both <span className="text-[#e8195a] text-xs">({pricing.save})</span></p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing.both}</p>
             </div>
           </div>
           <p className="text-[#aaa] text-sm mb-8">One-time payment. Lifetime access. Lifetime updates included. No subscription.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              Get the GTM OS — $149 →
+              {pricing.gtmBtn}
             </button>
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              Get the Build OS — $149 →
+              {pricing.buildBtn}
             </button>
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              Get Both — $249 →
+              {pricing.bothBtn}
             </button>
           </div>
         </div>
