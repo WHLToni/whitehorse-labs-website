@@ -129,7 +129,7 @@ export default function LaunchSystem() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">GET THE FRAMEWORKS</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
-              The frameworks I use with every client. Yours from $149.
+              The frameworks I use with every client. Yours from {pricing.from}.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
               Two self-serve Notion portals — each one a complete operating system for a critical part of building and launching your product. The GTM OS for commercialisation. The Build OS for development. The same systems I use with clients, available without the price tag.
