@@ -6,9 +6,9 @@ import { Check, X } from "lucide-react";
 import FAQItem from "../components/shared/FAQItem";
 
 const PRICING = {
-  AU: { single: "AUD $149", both: "AUD $249", save: "save AUD $49", gtmBtn: "Get the GTM OS — AUD $149 →", buildBtn: "Get the Build OS — AUD $149 →", bothBtn: "Get Both — AUD $249 →" },
-  GB: { single: "£79", both: "£129", save: "save £29", gtmBtn: "Get the GTM OS — £79 →", buildBtn: "Get the Build OS — £79 →", bothBtn: "Get Both — £129 →" },
-  DEFAULT: { single: "USD $99", both: "USD $159", save: "save $39", gtmBtn: "Get the GTM OS — USD $99 →", buildBtn: "Get the Build OS — USD $99 →", bothBtn: "Get Both — USD $159 →" },
+  AU: { single: "AUD $149", both: "AUD $249", save: "save AUD $49", from: "AUD $149", gtmBtn: "Get the GTM OS — AUD $149 →", buildBtn: "Get the Build OS — AUD $149 →", bothBtn: "Get Both — AUD $249 →" },
+  GB: { single: "£79", both: "£129", save: "save £29", from: "£79", gtmBtn: "Get the GTM OS — £79 →", buildBtn: "Get the Build OS — £79 →", bothBtn: "Get Both — £129 →" },
+  DEFAULT: { single: "USD $99", both: "USD $159", save: "save $39", from: "USD $99", gtmBtn: "Get the GTM OS — USD $99 →", buildBtn: "Get the Build OS — USD $99 →", bothBtn: "Get Both — USD $159 →" },
 };
 
 const problemQuestions = [
