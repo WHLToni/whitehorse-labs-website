@@ -89,6 +89,10 @@ const faqs = [
     a: "Yes — two separate Notion portals you can duplicate directly into your own workspace. No technical setup required.",
   },
   {
+    q: "Do the operating systems include AI prompts?",
+    a: "Yes — both the GTM OS and the Build OS include detailed AI prompts throughout, designed to guide you through each framework step by step. Rather than staring at a blank template wondering where to start, the prompts give you a clear brief to hand to an AI assistant and get a useful output immediately.\n\nI recommend using Gemini, Claude, or Perplexity for research and strategy work, and Notion AI if you prefer to stay inside your workspace. The prompts are written to work well with any LLM — use whatever you're most comfortable with.\n\nThat said, remember that AI is just a tool. It's excellent for getting foundations in place quickly, but nothing beats real human insight when it comes to the nuance of your specific market, your buyers, and your product.",
+  },
+  {
     q: "Can I use these if I'm not technical?",
     a: "The GTM OS is designed for non-technical founders — no technical knowledge required. The Build OS is designed for founders who are actively building, but you don't need to be a professional developer to use it.",
   },
