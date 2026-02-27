@@ -139,21 +139,79 @@ export default function LaunchSystem() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-6 lg:px-10">
-          <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8 md:p-12">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Problem</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Sound familiar?</h2>
-            <div className="space-y-3 mb-8">
-              {problemQuestions.map((q, i) => (
-                <div key={i} className="pl-4 border-l-2 border-[#e8195a]/40 py-1 text-[#555] text-sm">
-                  {q}
+      <section className="relative overflow-hidden" style={{ background: "#111110" }}>
+        <div className="absolute top-0 left-0 w-[700px] h-[600px] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at top left, rgba(232,25,90,0.06) 0%, transparent 65%)" }} />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[400px] pointer-events-none"
+          style={{ background: "radial-gradient(ellipse at bottom right, rgba(232,25,90,0.04) 0%, transparent 65%)" }} />
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-14 py-14 md:py-16 z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+
+            {/* LEFT COLUMN */}
+            <div className="flex flex-col pr-0 md:pr-12 pb-12 md:pb-0">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-5">DOES THIS SOUND LIKE YOU?</p>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white leading-tight">
+                You've built something, but now you're stuck.
+              </h2>
+              <p className="text-white/50 text-base leading-relaxed mb-8">
+                You have a product, or at least the beginnings of one. But the commercial side feels like a bit of a black hole. You know you need to validate product-market fit, and you know you need a go-to-market plan. But knowing you need them and knowing how to build them are two very different things.
+              </p>
+
+              {/* Stat block */}
+              <div className="mt-auto rounded-xl border border-[#e8195a]/20 p-6" style={{ background: "rgba(232,25,90,0.08)" }}>
+                <div className="flex items-stretch gap-0">
+                  <div className="flex-1 pr-5">
+                    <p className="text-[#e8195a] font-bold text-3xl mb-1">34%</p>
+                    <p className="text-white/50 text-xs leading-snug">of startups fail from lack of product-market fit</p>
+                  </div>
+                  <div className="w-px bg-white/10 flex-shrink-0" />
+                  <div className="flex-1 pl-5">
+                    <p className="text-[#e8195a] font-bold text-3xl mb-1">29%</p>
+                    <p className="text-white/50 text-xs leading-snug">fail from poor marketing and weak GTM strategy</p>
+                  </div>
                 </div>
-              ))}
+                <div className="mt-4 pt-4 border-t border-white/10">
+                  <p className="text-white/25 text-xs italic">Source: Failory, via Embroker (2025). Based on interviews with 80+ founders of failed startups.</p>
+                </div>
+              </div>
             </div>
-            <p className="text-[#666] text-sm leading-relaxed">
-              You could wing it and learn the hard way — burning through cash on the wrong audience, positioning it badly, or launching before you're ready. Or you could start with the same frameworks a senior GTM operator uses with clients, and give yourself a real chance of getting it right.
-            </p>
+
+            {/* Vertical divider */}
+            <div className="hidden md:block absolute left-1/2 top-14 bottom-14 w-px" style={{ background: "rgba(255,255,255,0.06)" }} />
+
+            {/* RIGHT COLUMN */}
+            <div className="flex flex-col pl-0 md:pl-12 pt-12 md:pt-0 border-t border-white/5 md:border-t-0">
+              <p className="text-xs font-semibold uppercase tracking-widest text-white/20 mb-5">QUESTIONS FOUNDERS GET STUCK ON</p>
+
+              <div className="flex-1">
+                {problemQuestions.map((q, i) => (
+                  <div key={i}>
+                    <div
+                      className="group flex items-center gap-4 py-3.5 cursor-default transition-all duration-200"
+                    >
+                      <div className="w-[3px] self-stretch rounded-full flex-shrink-0 transition-all duration-200"
+                        style={{ background: "rgba(232,25,90,0.5)" }}
+                        onMouseEnter={e => e.currentTarget.style.background = "#e8195a"}
+                        onMouseLeave={e => e.currentTarget.style.background = "rgba(232,25,90,0.5)"}
+                      />
+                      <span className="text-white/60 text-sm leading-relaxed transition-colors duration-200 group-hover:text-white/85">{q}</span>
+                    </div>
+                    {i < problemQuestions.length - 1 && (
+                      <div className="h-px" style={{ background: "rgba(255,255,255,0.05)" }} />
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="text-white/35 text-sm italic leading-relaxed">
+                  You could wing it and learn the hard way —{" "}
+                  <span className="text-white/60 not-italic">burning through cash on the wrong audience, positioning it badly, or launching before you're ready.</span>
+                  {" "}Or you could start with the same frameworks a senior GTM operator uses with clients, and give yourself a real chance of getting it right.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
