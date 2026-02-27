@@ -63,10 +63,10 @@ export default function ChoosePath() {
             The Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5">
-            Choose How You Want to Start
+            Choose Your Starting Point
           </h2>
           <p className="text-white/50 text-base leading-relaxed max-w-2xl">
-            You've built something. Now you need to commercialise it. Fixed scope, fixed price, delivered in weeks.
+            You've built something and now you need to commercialise it. I deliver fixed scope, fixed price GTM expertise delivered in weeks.
           </p>
         </div>
 
