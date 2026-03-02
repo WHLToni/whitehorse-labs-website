@@ -457,13 +457,13 @@ export default function LaunchSystem() {
           <p className="text-[#aaa] text-sm mb-8">One-time payment. Lifetime access. Lifetime updates included. No subscription.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              {pricing.gtmBtn}
+              {pricing ? pricing.gtmBtn : "..."}
             </button>
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              {pricing.buildBtn}
+              {pricing ? pricing.buildBtn : "..."}
             </button>
             <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              {pricing.bothBtn}
+              {pricing ? pricing.bothBtn : "..."}
             </button>
           </div>
         </div>
