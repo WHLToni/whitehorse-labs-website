@@ -443,15 +443,15 @@ export default function LaunchSystem() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
               <p className="text-[#888] text-sm mb-1">The GTM OS</p>
-              <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.single : "..."}</p>
             </div>
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
               <p className="text-[#888] text-sm mb-1">The Build OS</p>
-              <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.single : "..."}</p>
             </div>
             <div className="bg-[#f7f7f8] border-2 border-[#e8195a]/30 rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">Both <span className="text-[#e8195a] text-xs">({pricing.save})</span></p>
-              <p className="text-[#e8195a] font-bold text-2xl">{pricing.both}</p>
+              <p className="text-[#888] text-sm mb-1">Both <span className="text-[#e8195a] text-xs">({pricing ? pricing.save : ""})</span></p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.both : "..."}</p>
             </div>
           </div>
           <p className="text-[#aaa] text-sm mb-8">One-time payment. Lifetime access. Lifetime updates included. No subscription.</p>
