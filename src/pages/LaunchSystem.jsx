@@ -117,7 +117,7 @@ export default function LaunchSystem() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">GET THE FRAMEWORKS</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
-              The frameworks I use with every client. Yours from {pricing.from}.
+              The frameworks I use with every client. Yours from {pricing ? pricing.from : "..."}.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
               Two self-serve Notion portals — each one a complete operating system for a critical part of building and launching your product. The GTM OS for commercialisation. The Build OS for development. The same systems I use with clients, available without the price tag.
@@ -218,7 +218,7 @@ export default function LaunchSystem() {
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">The GTM OS</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.single : "..."}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Commercialise your product with the same frameworks a senior GTM operator uses with $15K clients.
@@ -227,7 +227,7 @@ export default function LaunchSystem() {
                 For founders who have an idea but don't know how to validate it, position it or take it to market. And for founders who have already built something but don't know who it's for or how to sell it.
               </p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                {pricing.gtmBtn}
+                {pricing ? pricing.gtmBtn : "..."}
               </button>
             </motion.div>
 
@@ -236,7 +236,7 @@ export default function LaunchSystem() {
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">The Build OS</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.single : "..."}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Build a clean, scalable MVP without the usual vibe coding pitfalls — spaghetti code, security holes, zero documentation.
@@ -245,7 +245,7 @@ export default function LaunchSystem() {
                 For founders who are ready to build and want to do it properly from day one. Not a heavy enterprise-grade engineering setup — a lean, practical system that gets you to a handoff-ready MVP without the mess.
               </p>
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                {pricing.buildBtn}
+                {pricing ? pricing.buildBtn : "..."}
               </button>
             </motion.div>
 
@@ -257,15 +257,15 @@ export default function LaunchSystem() {
               </div>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">Get Both</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">{pricing.both}</p>
-                <p className="text-white/30 text-xs mt-0.5">{pricing.save}</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.both : "..."}</p>
+                <p className="text-white/30 text-xs mt-0.5">{pricing ? pricing.save : ""}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Validate your idea, build it right, and take it to market. The complete system from idea to launch.
               </p>
               <div className="flex-1" />
               <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full mt-8">
-                {pricing.bothBtn}
+                {pricing ? pricing.bothBtn : "..."}
               </button>
             </motion.div>
 
