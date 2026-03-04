@@ -99,7 +99,7 @@ ${form.message}
               className="p-12 rounded-2xl bg-[#f7f7f8] border border-[#e5e5e5] text-center"
             >
               <div className="w-14 h-14 rounded-full bg-[#e8195a]/10 flex items-center justify-center mx-auto mb-6">
-                <Send className="w-6 h-6 text-[#e8195a]" />
+                <Send className="w-6 h-6 text-[#e8195a]" aria-hidden="true" />
               </div>
               <h2 className="text-2xl font-bold text-[#0a0a0a] mb-3">Message Sent</h2>
               <p className="text-[#666] text-sm leading-relaxed max-w-sm mx-auto">
@@ -237,9 +237,9 @@ ${form.message}
                 className="btn-gradient w-full inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-60"
               >
                 {status === "sending" ? (
-                  <><Loader2 className="w-4 h-4 animate-spin" /> Sending…</>
+                  <><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Sending…</>
                 ) : (
-                  <><Send className="w-4 h-4" /> Send Message</>
+                  <><Send className="w-4 h-4" aria-hidden="true" /> Send Message</>
                 )}
               </button>
             </motion.form>
