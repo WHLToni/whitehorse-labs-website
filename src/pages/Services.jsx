@@ -275,7 +275,7 @@ export default function Services() {
               The exact frameworks, models and templates I use with every client — available as self-serve Notion portals with AI prompts included. The GTM OS for commercialisation, the Build OS for development. DIY your build and launch, then come back when you need execution support.
             </p>
             <Link
-              to={createPageUrl("LaunchSystem")}
+              to={createPageUrl("GetTheFrameworks")}
               className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
             >
               Get the Frameworks →

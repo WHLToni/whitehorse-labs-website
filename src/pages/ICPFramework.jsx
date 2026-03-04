@@ -140,7 +140,7 @@ export default function ICPFramework() {
             <Download className="w-5 h-5" />Download Now
           </button>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-            <Link to={createPageUrl("LaunchSystem")} className="text-[#999] hover:text-white text-sm transition-colors inline-flex items-center gap-2">
+            <Link to={createPageUrl("GetTheFrameworks")} className="text-[#999] hover:text-white text-sm transition-colors inline-flex items-center gap-2">
               <ShoppingCart className="w-4 h-4" />Or get the full Launch System — $149
             </Link>
             <Link to={createPageUrl("Services")} className="text-[#999] hover:text-white text-sm transition-colors inline-flex items-center gap-2">
