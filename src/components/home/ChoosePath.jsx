@@ -176,10 +176,10 @@ export default function ChoosePath() {
         <p className="mt-10 text-sm text-white italic">
           Not ready for a full engagement?{" "}
           <Link
-            to={createPageUrl("LaunchSystem")}
+            to={createPageUrl("GetTheFrameworks")}
             className="text-white/40 hover:text-[#e8195a] transition-colors not-italic"
           >
-            Get the Frameworks — from {pricing.from} →
+            Get the Frameworks{pricing ? ` — from ${pricing.from}` : ""} →
           </Link>
         </p>
 
