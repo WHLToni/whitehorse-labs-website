@@ -105,7 +105,7 @@ const faqs = [
   },
 ];
 
-export default function LaunchSystem() {
+export default function GetTheFrameworks() {
   useEffect(() => {
     document.title = "Get the Frameworks — Whitehorse Labs";
     document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM OS and Build OS. Two self-serve Notion portals with AI prompts. The exact frameworks a senior GTM operator uses with clients. From $99 USD.");
@@ -179,9 +179,7 @@ export default function LaunchSystem() {
               <div className="flex-1">
                 {problemQuestions.map((q, i) => (
                   <div key={i}>
-                    <div
-                      className="group flex items-center gap-4 py-3.5 cursor-default transition-all duration-200"
-                    >
+                    <div className="group flex items-center gap-4 py-3.5 cursor-default transition-all duration-200">
                       <div className="w-[3px] self-stretch rounded-full flex-shrink-0 transition-all duration-200"
                         style={{ background: "rgba(232,25,90,0.5)" }}
                         onMouseEnter={e => e.currentTarget.style.background = "#e8195a"}
