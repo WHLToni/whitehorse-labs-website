@@ -33,6 +33,11 @@ const initialForm = {
 };
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact — Whitehorse Labs";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Book a call with Toni Morrow, fractional GTM consultant for complex and regulated products.");
+  }, []);
+
   const [form, setForm] = useState(initialForm);
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
 

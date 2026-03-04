@@ -106,6 +106,11 @@ const faqs = [
 ];
 
 export default function LaunchSystem() {
+  useEffect(() => {
+    document.title = "Get the Frameworks — Whitehorse Labs";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM OS and Build OS. Two self-serve Notion portals with AI prompts. The exact frameworks a senior GTM operator uses with clients. From $99 USD.");
+  }, []);
+
   const pricing = usePricing();
 
   return (

@@ -166,6 +166,11 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
 }
 
 export default function Services() {
+  useEffect(() => {
+    document.title = "Services & Pricing — Whitehorse Labs";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Fixed-scope GTM services from $6K. The Diagnostic, GTM Strategy, Launch Architecture and Pre-Exit Readiness. No retainers, no hourly billing.");
+  }, []);
+
   return (
     <div>
       {/* PAGE HEADER */}
