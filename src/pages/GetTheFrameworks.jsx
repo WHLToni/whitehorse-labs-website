@@ -287,7 +287,7 @@ export default function GetTheFrameworks() {
               <div className="space-y-3 mb-6">
                 {gtmItems.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <Check className="w-4 h-4 mt-0.5 text-[#e8195a] flex-shrink-0" />
+                    <Check className="w-4 h-4 mt-0.5 text-[#e8195a] flex-shrink-0" aria-hidden="true" />
                     <span className="text-[#555] text-sm">{item}</span>
                   </div>
                 ))}
@@ -300,7 +300,7 @@ export default function GetTheFrameworks() {
               <div className="space-y-3 mb-6">
                 {buildItems.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <Check className="w-4 h-4 mt-0.5 text-[#e8195a] flex-shrink-0" />
+                    <Check className="w-4 h-4 mt-0.5 text-[#e8195a] flex-shrink-0" aria-hidden="true" />
                     <span className="text-[#555] text-sm">{item}</span>
                   </div>
                 ))}
@@ -411,7 +411,7 @@ export default function GetTheFrameworks() {
               <div className="space-y-3">
                 {youAreGetting.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <Check className="w-4 h-4 mt-0.5 text-[#e8195a] flex-shrink-0" />
+                    <Check className="w-4 h-4 mt-0.5 text-[#e8195a] flex-shrink-0" aria-hidden="true" />
                     <span className="text-[#555] text-sm">{item}</span>
                   </div>
                 ))}
@@ -423,7 +423,7 @@ export default function GetTheFrameworks() {
               <div className="space-y-3">
                 {youAreNotGetting.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <X className="w-4 h-4 mt-0.5 text-[#aaa] flex-shrink-0" />
+                    <X className="w-4 h-4 mt-0.5 text-[#aaa] flex-shrink-0" aria-hidden="true" />
                     <span className="text-[#aaa] text-sm">{item}</span>
                   </div>
                 ))}

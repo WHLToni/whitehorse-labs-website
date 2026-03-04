@@ -130,7 +130,7 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
           <ul className="space-y-2">
             {deliverables.map((item, i) => (
               <li key={i} className={`text-sm leading-relaxed flex gap-3 ${darkBg ? "text-[#aaa]" : "text-[#555]"}`}>
-                <span className="text-[#e8195a] font-bold flex-shrink-0">•</span>
+                <span className="text-[#e8195a] font-bold flex-shrink-0" aria-hidden="true">•</span>
                 <span>{item}</span>
               </li>
             ))}
