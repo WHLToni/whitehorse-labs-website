@@ -172,6 +172,50 @@ export default function ChoosePath() {
           </Link>
         </div>
 
+        {/* Fractional divider */}
+        <div className="relative flex flex-col items-center my-10 gap-1.5">
+          <div className="flex items-center w-full">
+            <div className="flex-1 border-t border-white/[0.08]" />
+            <span className="mx-4 text-[10px] font-semibold uppercase tracking-widest text-white">
+              Also Available
+            </span>
+            <div className="flex-1 border-t border-white/[0.08]" />
+          </div>
+          <p className="text-[10px] font-semibold uppercase tracking-widest text-[#e8195a]">
+            Fractional Leadership
+          </p>
+        </div>
+
+        {/* Fractional GTM Leadership */}
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.45 }}
+          className="border border-white/10 rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
+        >
+          <div className="flex-1 min-w-0">
+            <p className="text-[15px] font-bold text-white mb-1.5">Fractional GTM Leadership</p>
+            <p className="text-white/50 text-sm leading-relaxed">
+              For founders and teams who need senior GTM leadership on an ongoing basis — not a one-off engagement. I embed as a fractional head of product marketing or GTM, working across strategy and execution on a part-time basis. Engagements are bespoke and availability is limited — get in touch to discuss whether this is the right fit.
+            </p>
+          </div>
+          <div className="sm:text-right shrink-0 sm:pt-0.5">
+            <p className="text-white font-semibold text-sm">Ongoing</p>
+            <p className="text-white/30 text-xs mt-0.5">Availability dependent</p>
+          </div>
+        </motion.div>
+
+        {/* Book a Call — fractional */}
+        <div className="mt-7">
+          <Link
+            to={createPageUrl("Contact")}
+            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm border border-white/25 hover:border-white/50 transition-colors"
+          >
+            Book a Call →
+          </Link>
+        </div>
+
         {/* Footer line */}
         <p className="mt-10 text-sm text-white italic">
           Not ready for a full engagement?{" "}

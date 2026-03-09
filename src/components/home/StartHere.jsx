@@ -33,6 +33,15 @@ export default function StartHere() {
             Start with the DIY Toolkits{pricing ? ` from ${pricing.from}` : ""} →
           </Link>
         </p>
+        <p className="mt-3 text-sm text-[#555]/40 italic">
+          Looking for ongoing fractional support? Availability is limited —{" "}
+          <Link
+            to={createPageUrl("Contact")}
+            className="hover:text-[#555]/70 transition-colors"
+          >
+            get in touch to discuss →
+          </Link>
+        </p>
       </div>
     </section>
   );
