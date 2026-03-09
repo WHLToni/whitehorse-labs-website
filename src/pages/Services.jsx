@@ -146,6 +146,11 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
             <p className={`text-sm leading-relaxed ${darkBg ? "text-[#999]" : "text-[#666]"}`}>
               {bestFor}
             </p>
+            {outputLine && (
+              <p className="text-sm mt-4 leading-relaxed" style={{ color: priceColor }}>
+                {outputLine}
+              </p>
+            )}
           </div>
           <div>
             <Link
