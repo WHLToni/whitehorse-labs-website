@@ -97,7 +97,7 @@ const steps = [
   },
 ];
 
-function ServiceCard({ name, subheading, price, duration, deliverables, bestFor, ctaLabel, ctaPage, darkBg = false, priceColor = "#e8195a" }) {
+function ServiceCard({ name, subheading, price, duration, deliverables, bestFor, ctaLabel, ctaPage, darkBg = false, priceColor = "#e8195a", outputLine = null }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
