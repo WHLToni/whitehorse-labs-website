@@ -204,6 +204,37 @@ export default function Services() {
               <ServiceCard key={card.name} {...card} />
             ))}
           </div>
+
+          {/* Fractional divider */}
+          <div className="relative flex flex-col items-center mt-10 mb-6 gap-1.5">
+            <div className="flex items-center w-full">
+              <div className="flex-1 border-t border-[#e5e5e5]" />
+              <span className="mx-4 text-[10px] font-semibold uppercase tracking-widest text-[#888]">
+                Also Available
+              </span>
+              <div className="flex-1 border-t border-[#e5e5e5]" />
+            </div>
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-[#e8195a]">
+              Fractional Leadership
+            </p>
+          </div>
+
+          <ServiceCard
+            name="Fractional GTM Leadership"
+            subheading="For founders and leadership teams who need senior GTM capability embedded on an ongoing basis."
+            price="Ongoing"
+            duration="Availability dependent"
+            deliverables={[
+              "I operate as a fractional head of product marketing or GTM",
+              "Owning strategy and execution across your commercial function on a part-time basis",
+              "Scope, cadence and commitment are agreed upfront",
+              "Availability is limited — get in touch to discuss whether this is the right fit",
+            ]}
+            bestFor="Founders who need senior GTM leadership without the commitment of a full-time hire. Teams at an inflection point — scaling, repositioning, or entering new markets — who need embedded commercial leadership to drive outcomes."
+            outputLine="Senior GTM leadership without the full-time hire — embedded in your team, invested in your outcomes."
+            ctaLabel="Book a Call →"
+            ctaPage="Contact"
+          />
         </div>
       </section>
 
