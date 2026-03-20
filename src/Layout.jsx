@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "./utils";
 import { Menu, X } from "lucide-react";
@@ -23,26 +23,10 @@ function Logo({ dark = false }) {
   );
 }
 
-const PRICING = {
-  AU: { from: "AUD $149" },
-  GB: { from: "£79" },
-  DEFAULT: { from: "USD $99" },
-};
+const AUD_FROM = "AUD $149";
 
 export default function Layout({ children, currentPageName }) {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [pricing, setPricing] = useState(PRICING.DEFAULT);
-
-  useEffect(() => {
-    fetch("https://ipapi.co/json/")
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.country_code === "AU") setPricing(PRICING.AU);
-        else if (data.country_code === "GB") setPricing(PRICING.GB);
-        else setPricing(PRICING.DEFAULT);
-      })
-      .catch(() => setPricing(PRICING.DEFAULT));
-  }, []);
 
   return (
     <div className="min-h-screen bg-white text-[#0a0a0a]">
@@ -164,7 +148,7 @@ export default function Layout({ children, currentPageName }) {
                   to={createPageUrl("GetTheFrameworks")}
                   className="block text-sm text-[#999] hover:text-white transition-colors"
                 >
-                  Get the Frameworks — from {pricing.from} →
+                  Get the Frameworks — from {AUD_FROM} →
                 </Link>
                 <Link
                   to={createPageUrl("Services")}
