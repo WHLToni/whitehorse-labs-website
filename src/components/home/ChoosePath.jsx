@@ -7,7 +7,7 @@ import { usePricing } from "../shared/usePricing";
 const tiers = [
   {
     name: "The Diagnostic",
-    price: "$6K",
+    price: "AUD $6K",
     duration: "2 weeks",
     description:
       "Market research, segmentation, ICP definition, competitive analysis and problem definition. Optional: customer interviews including hypothesis design and insight analysis.",
@@ -15,7 +15,7 @@ const tiers = [
   },
   {
     name: "GTM Strategy",
-    price: "$12K",
+    price: "AUD $12K",
     duration: "4 weeks",
     description:
       "Everything in The Diagnostic, plus positioning framework, messaging framework and brand foundations.",
@@ -23,7 +23,7 @@ const tiers = [
   },
   {
     name: "Launch Architecture",
-    price: "$20K",
+    price: "AUD $20K",
     duration: "6 weeks",
     description:
       "Everything in GTM Strategy, plus sales enablement tools — pitch deck, competitive battlecards, talk tracks and persona cards — and a full launch plan.",
@@ -157,7 +157,7 @@ export default function ChoosePath() {
              </p>
            </div>
            <div className="sm:text-right shrink-0 sm:pt-0.5">
-             <p className="text-white font-semibold text-sm">From $3,000</p>
+             <p className="text-white font-semibold text-sm">From AUD $3,000</p>
              <p className="text-white/30 text-xs mt-0.5">1 week</p>
            </div>
          </motion.div>
