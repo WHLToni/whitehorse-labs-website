@@ -32,7 +32,9 @@ export default function Admin() {
       setCustomers(data);
       setLoading(false);
     });
-  }, []);
+  }, [authChecked]);
+
+  if (!authChecked) return null;
 
   return (
     <div className="min-h-screen bg-[#f7f7f8] pt-8 pb-16">
