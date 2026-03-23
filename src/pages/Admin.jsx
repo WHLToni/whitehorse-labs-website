@@ -1,11 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { base44 } from "@/api/base44Client";
+import { useNavigate } from "react-router-dom";
 
 export default function Admin() {
   const [customers, setCustomers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [authChecked, setAuthChecked] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
+    base44.auth.me().then((user) => {
+      if (!user) {
+        base44.auth.redirectToLogin("/admin");
+        return;
+      }
+      if (user.role !== "admin") {
+        alert("Permission Denied: You do not have access to this page.");
+        navigate("/");
+        return;
+      }
+      setAuthChecked(true);
+    }).catch(() => {
+      base44.auth.redirectToLogin("/admin");
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!authChecked) return;
     document.title = "Admin — Whitehorse Labs";
     base44.entities.Customer.list("-purchase_date", 200).then((data) => {
       setCustomers(data);
