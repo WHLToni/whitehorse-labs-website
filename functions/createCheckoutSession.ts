@@ -4,7 +4,7 @@ const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY"));
 
 const PRODUCTS = {
   gtm: {
-    priceId: "price_1TE0YoKIYCIh7fY32Y3fpNkB",
+    priceId: "price_1TE1toQ67iHZYw6wAYWf3Wvk",
     name: "The GTM OS",
   },
 };
