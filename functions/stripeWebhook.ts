@@ -28,6 +28,7 @@ Deno.serve(async (req) => {
   }
 
   if (event.type === "checkout.session.completed") {
+    const base44 = createClientFromRequest(req);
     const session = event.data.object;
     const product = session.metadata?.product;
     const customerEmail = session.customer_details?.email;
@@ -72,7 +73,6 @@ Deno.serve(async (req) => {
 
     if (customerEmail && product && NOTION_LINKS[product]) {
       try {
-        const base44 = createClientFromRequest(req);
         await base44.asServiceRole.integrations.Core.SendEmail({
           to: customerEmail,
           subject: `Your ${PRODUCT_NAMES[product]} — Access Inside`,
