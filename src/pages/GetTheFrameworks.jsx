@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "../utils";
 import { motion } from "framer-motion";
@@ -106,12 +106,23 @@ const faqs = [
 ];
 
 export default function GetTheFrameworks() {
-  useEffect(() => {
-    document.title = "Get the Frameworks — Whitehorse Labs";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM OS and Build OS. Two self-serve Notion portals with AI prompts. The exact frameworks a senior GTM operator uses with clients. From $99 USD.");
-  }, []);
+  const [loading, setLoading] = useState(false);
 
-  const pricing = usePricing();
+  const handleBuy = async (product) => {
+    if (window.self !== window.top) {
+      alert("Checkout is only available from the published app. Please open the site directly.");
+      return;
+    }
+    setLoading(product);
+    const response = await base44.functions.invoke("createCheckoutSession", { product });
+    setLoading(false);
+    if (response.data?.url) {
+      window.location.href = response.data.url;
+    }
+  };
+
+  useEffect(() => {
+  // pricing used for display labels
 
   return (
     <div>
@@ -229,8 +240,8 @@ export default function GetTheFrameworks() {
               <p className="text-white/50 text-sm leading-relaxed mb-8 flex-1">
                 For founders who have an idea but don't know how to validate it, position it or take it to market. And for founders who have already built something but don't know who it's for or how to sell it.
               </p>
-              <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                {pricing ? pricing.gtmBtn : "..."}
+              <button onClick={() => handleBuy('gtm')} disabled={loading === 'gtm'} className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full disabled:opacity-70">
+                {loading === 'gtm' ? 'Redirecting...' : (pricing ? pricing.gtmBtn : '...')}
               </button>
             </motion.div>
 
@@ -247,9 +258,9 @@ export default function GetTheFrameworks() {
               <p className="text-white/50 text-sm leading-relaxed mb-8 flex-1">
                 For founders who are ready to build and want to do it properly from day one. Not a heavy enterprise-grade engineering setup — a lean, practical system that gets you to a handoff-ready MVP without the mess.
               </p>
-              <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full">
-                {pricing ? pricing.buildBtn : "..."}
-              </button>
+              <div className="text-center">
+                <span className="inline-block bg-[#333] text-white/50 font-semibold px-6 py-3 rounded-lg text-sm w-full cursor-not-allowed">Coming Soon</span>
+              </div>
             </motion.div>
 
             {/* Get Both */}
@@ -267,9 +278,9 @@ export default function GetTheFrameworks() {
                 Validate your idea, build it right, and take it to market. The complete system from idea to launch.
               </p>
               <div className="flex-1" />
-              <button className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full mt-8">
-                {pricing ? pricing.bothBtn : "..."}
-              </button>
+              <div className="text-center mt-8">
+                <span className="inline-block bg-[#333] text-white/50 font-semibold px-6 py-3 rounded-lg text-sm w-full cursor-not-allowed">Coming Soon</span>
+              </div>
             </motion.div>
 
           </div>
@@ -459,15 +470,11 @@ export default function GetTheFrameworks() {
           </div>
           <p className="text-[#aaa] text-sm mb-8">One-time payment. Lifetime access. Lifetime updates included. No subscription.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
-            <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              {pricing ? pricing.gtmBtn : "..."}
+            <button onClick={() => handleBuy('gtm')} disabled={loading === 'gtm'} className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm disabled:opacity-70">
+              {loading === 'gtm' ? 'Redirecting...' : (pricing ? pricing.gtmBtn : '...')}
             </button>
-            <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              {pricing ? pricing.buildBtn : "..."}
-            </button>
-            <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm">
-              {pricing ? pricing.bothBtn : "..."}
-            </button>
+            <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">{pricing ? pricing.buildBtn.replace('Get the', 'Coming Soon —') : 'Coming Soon'}</span>
+            <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">{pricing ? pricing.bothBtn.replace('Get Both', 'Coming Soon') : 'Coming Soon'}</span>
           </div>
         </div>
       </section>
