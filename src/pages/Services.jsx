@@ -305,16 +305,16 @@ export default function Services() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Not Ready to Commit?</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
-              Get the Frameworks.
+              Buy the Frameworks.
             </h2>
             <p className="text-base md:text-lg text-[#666] max-w-2xl mx-auto leading-relaxed mb-8">
               The exact frameworks, models and templates I use with every client — available as self-serve Notion portals with AI prompts included. The GTM OS for commercialisation, the Build OS for development. DIY your build and launch, then come back when you need execution support.
             </p>
             <Link
-              to={createPageUrl("GetTheFrameworks")}
+              to={createPageUrl("BuyTheFrameworks")}
               className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
             >
-              Get the Frameworks →
+              Buy the Frameworks →
             </Link>
           </motion.div>
         </div>

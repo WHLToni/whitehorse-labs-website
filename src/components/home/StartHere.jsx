@@ -27,7 +27,7 @@ export default function StartHere() {
         <p className="mt-5 text-sm text-[#555] italic">
           Not ready for a call?{" "}
           <Link
-            to={createPageUrl("GetTheFrameworks")}
+            to={createPageUrl("BuyTheFrameworks")}
             className="hover:text-[#0a0a0a] transition-colors"
           >
             Start with the DIY Toolkits{pricing ? ` from ${pricing.from}` : ""} →

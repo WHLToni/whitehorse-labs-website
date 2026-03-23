@@ -48,7 +48,7 @@
  * The mainPage value must match a key in the PAGES object exactly.
  */
 import Contact from './pages/Contact';
-import GetTheFrameworks from './pages/GetTheFrameworks';
+import BuyTheFrameworks from './pages/BuyTheFrameworks';
 import Home from './pages/Home';
 import ICPFramework from './pages/ICPFramework';
 import Services from './pages/Services';
@@ -57,7 +57,7 @@ import __Layout from './Layout.jsx';
 
 export const PAGES = {
     "Contact": Contact,
-    "GetTheFrameworks": GetTheFrameworks,
+    "BuyTheFrameworks": BuyTheFrameworks,
     "Home": Home,
     "ICPFramework": ICPFramework,
     "Services": Services,
