@@ -31,6 +31,8 @@ Deno.serve(async (req) => {
     const session = event.data.object;
     const product = session.metadata?.product;
     const customerEmail = session.customer_details?.email;
+    const customerName = session.customer_details?.name || "";
+    const stripeCustomerId = typeof session.customer === "string" ? session.customer : "";
 
     // Get actual amount paid (after any discount)
     const amountTotal = session.amount_total;
@@ -41,6 +43,32 @@ Deno.serve(async (req) => {
     const discountLine = discountAmount > 0
       ? `\nDiscount applied: -${currency} $${(discountAmount / 100).toFixed(2)}\nTotal paid: ${formattedTotal}\n`
       : `\nTotal paid: ${formattedTotal}\n`;
+
+    // Save customer to database (upsert by email)
+    if (customerEmail && product) {
+      try {
+        const existing = await base44.asServiceRole.entities.Customer.filter({ email: customerEmail });
+        if (existing && existing.length > 0) {
+          await base44.asServiceRole.entities.Customer.update(existing[0].id, {
+            purchase_date: new Date().toISOString(),
+            product_name: PRODUCT_NAMES[product] || product,
+            full_name: customerName || existing[0].full_name,
+            stripe_customer_id: stripeCustomerId || existing[0].stripe_customer_id,
+          });
+        } else {
+          await base44.asServiceRole.entities.Customer.create({
+            email: customerEmail,
+            full_name: customerName,
+            purchase_date: new Date().toISOString(),
+            product_name: PRODUCT_NAMES[product] || product,
+            stripe_customer_id: stripeCustomerId,
+          });
+        }
+        console.log(`Customer saved: ${customerEmail}`);
+      } catch (dbErr) {
+        console.error("Customer save error:", dbErr.message);
+      }
+    }
 
     if (customerEmail && product && NOTION_LINKS[product]) {
       try {
