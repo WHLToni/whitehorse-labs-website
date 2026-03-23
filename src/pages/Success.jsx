@@ -50,7 +50,7 @@ export default function Success() {
           href={notionLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm mb-4"
+          className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm mb-4" style={{ color: '#e8195a', background: 'white', border: '2px solid #e8195a' }}
         >
           <ExternalLink className="w-4 h-4" />
           Access {productName} →
