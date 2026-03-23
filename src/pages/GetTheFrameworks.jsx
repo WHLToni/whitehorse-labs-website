@@ -98,7 +98,7 @@ const faqs = [
   },
   {
     q: "Do you offer both as a bundle?",
-    a: "Yes — $249 for both, saving you $49.",
+    a: "Yes — AUD $249 for both, saving you AUD $49.",
   },
   {
     q: "Refunds?",
@@ -108,6 +108,12 @@ const faqs = [
 
 export default function GetTheFrameworks() {
   const [loading, setLoading] = useState(false);
+  const pricing = usePricing();
+
+  useEffect(() => {
+    document.title = "Get the Frameworks — Whitehorse Labs";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM OS and Build OS. Two self-serve Notion portals with AI prompts. From AUD $149.");
+  }, []);
 
   const handleBuy = async (product) => {
     if (window.self !== window.top) {
@@ -122,9 +128,6 @@ export default function GetTheFrameworks() {
     }
   };
 
-  useEffect(() => {
-  // pricing used for display labels
-
   return (
     <div>
 
@@ -134,7 +137,7 @@ export default function GetTheFrameworks() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">GET THE FRAMEWORKS</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
-              The frameworks I use with every client. Yours from {pricing ? pricing.from : "..."}.
+              The frameworks I use with every client. Yours from {pricing.from}.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
               Two self-serve Notion portals — each one a complete operating system for a critical part of building and launching your product. The GTM OS for commercialisation. The Build OS for development. The same systems I use with clients, available without the price tag.
@@ -152,7 +155,6 @@ export default function GetTheFrameworks() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-14 py-14 md:py-16 z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
 
-            {/* LEFT COLUMN */}
             <div className="flex flex-col pr-0 md:pr-12 pb-12 md:pb-0">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-5">DOES THIS SOUND LIKE YOU?</p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white leading-tight">
@@ -161,8 +163,6 @@ export default function GetTheFrameworks() {
               <p className="text-white/50 text-base leading-relaxed mb-8">
                 You have a product, or at least the beginnings of one. But the commercial side feels like a bit of a black hole. You know you need to validate product-market fit, and you know you need a go-to-market plan. But knowing you need them and knowing how to build them are two very different things.
               </p>
-
-              {/* Stat block */}
               <div className="mt-auto rounded-xl border border-[#e8195a]/20 p-6" style={{ background: "rgba(232,25,90,0.08)" }}>
                 <div className="flex items-stretch gap-0">
                   <div className="flex-1 pr-5">
@@ -181,13 +181,10 @@ export default function GetTheFrameworks() {
               </div>
             </div>
 
-            {/* Vertical divider */}
             <div className="hidden md:block absolute left-1/2 top-14 bottom-14 w-px" style={{ background: "rgba(255,255,255,0.06)" }} />
 
-            {/* RIGHT COLUMN */}
             <div className="flex flex-col pl-0 md:pl-12 pt-12 md:pt-0 border-t border-white/5 md:border-t-0">
               <p className="text-xs font-semibold uppercase tracking-widest text-white/20 mb-5">QUESTIONS FOUNDERS GET STUCK ON</p>
-
               <div className="flex-1">
                 {problemQuestions.map((q, i) => (
                   <div key={i}>
@@ -205,7 +202,6 @@ export default function GetTheFrameworks() {
                   </div>
                 ))}
               </div>
-
               <div className="mt-6 pt-6 border-t border-white/10">
                 <p className="text-white/35 text-sm italic leading-relaxed">
                   You could wing it and learn the hard way —{" "}
@@ -233,7 +229,7 @@ export default function GetTheFrameworks() {
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">The GTM OS</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.single : "..."}</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Commercialise your product with the same frameworks a senior GTM operator uses with $15K clients.
@@ -242,7 +238,7 @@ export default function GetTheFrameworks() {
                 For founders who have an idea but don't know how to validate it, position it or take it to market. And for founders who have already built something but don't know who it's for or how to sell it.
               </p>
               <button onClick={() => handleBuy('gtm')} disabled={loading === 'gtm'} className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm w-full disabled:opacity-70">
-                {loading === 'gtm' ? 'Redirecting...' : (pricing ? pricing.gtmBtn : '...')}
+                {loading === 'gtm' ? 'Redirecting...' : pricing.gtmBtn}
               </button>
             </motion.div>
 
@@ -251,7 +247,7 @@ export default function GetTheFrameworks() {
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">The Build OS</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.single : "..."}</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Build a clean, scalable MVP without the usual vibe coding pitfalls — spaghetti code, security holes, zero documentation.
@@ -259,9 +255,7 @@ export default function GetTheFrameworks() {
               <p className="text-white/50 text-sm leading-relaxed mb-8 flex-1">
                 For founders who are ready to build and want to do it properly from day one. Not a heavy enterprise-grade engineering setup — a lean, practical system that gets you to a handoff-ready MVP without the mess.
               </p>
-              <div className="text-center">
-                <span className="inline-block bg-[#333] text-white/50 font-semibold px-6 py-3 rounded-lg text-sm w-full cursor-not-allowed">Coming Soon</span>
-              </div>
+              <span className="inline-block bg-[#333] text-white/50 font-semibold px-6 py-3 rounded-lg text-sm w-full text-center cursor-not-allowed">Coming Soon</span>
             </motion.div>
 
             {/* Get Both */}
@@ -272,16 +266,14 @@ export default function GetTheFrameworks() {
               </div>
               <div className="mb-5">
                 <h3 className="text-xl font-bold text-white mb-1">Get Both</h3>
-                <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.both : "..."}</p>
-                <p className="text-white/30 text-xs mt-0.5">{pricing ? pricing.save : ""}</p>
+                <p className="text-[#e8195a] font-bold text-2xl">{pricing.both}</p>
+                <p className="text-white/30 text-xs mt-0.5">{pricing.save}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
                 Validate your idea, build it right, and take it to market. The complete system from idea to launch.
               </p>
               <div className="flex-1" />
-              <div className="text-center mt-8">
-                <span className="inline-block bg-[#333] text-white/50 font-semibold px-6 py-3 rounded-lg text-sm w-full cursor-not-allowed">Coming Soon</span>
-              </div>
+              <span className="inline-block bg-[#333] text-white/50 font-semibold px-6 py-3 rounded-lg text-sm w-full text-center cursor-not-allowed mt-8">Coming Soon</span>
             </motion.div>
 
           </div>
@@ -400,7 +392,7 @@ export default function GetTheFrameworks() {
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Upgrade Path</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">Start DIY. Upgrade when you're ready.</h2>
           <p className="text-white/50 text-base leading-relaxed mb-4">
-            If you work through the GTM OS and decide you want professional execution — strategy, positioning, launch — you can upgrade to any productised service and your $149 purchase price will be credited against the engagement fee.
+            If you work through the GTM OS and decide you want professional execution — strategy, positioning, launch — you can upgrade to any productised service and your AUD $149 purchase price will be credited against the engagement fee.
           </p>
           <p className="text-white/50 text-base leading-relaxed mb-10">
             You're not throwing money away by starting here. You're getting a head start.
@@ -458,24 +450,24 @@ export default function GetTheFrameworks() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
               <p className="text-[#888] text-sm mb-1">The GTM OS</p>
-              <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.single : "..."}</p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
             </div>
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">The Build OS</p>
-              <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.single : "..."}</p>
+              <p className="text-[#888] text-sm mb-1">The Build OS <span className="text-[#bbb] text-xs font-normal">(Coming Soon)</span></p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
             </div>
             <div className="bg-[#f7f7f8] border-2 border-[#e8195a]/30 rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">Both <span className="text-[#e8195a] text-xs">({pricing ? pricing.save : ""})</span></p>
-              <p className="text-[#e8195a] font-bold text-2xl">{pricing ? pricing.both : "..."}</p>
+              <p className="text-[#888] text-sm mb-1">Both <span className="text-[#e8195a] text-xs">({pricing.save})</span> <span className="text-[#bbb] text-xs font-normal">(Coming Soon)</span></p>
+              <p className="text-[#e8195a] font-bold text-2xl">{pricing.both}</p>
             </div>
           </div>
           <p className="text-[#aaa] text-sm mb-8">One-time payment. Lifetime access. Lifetime updates included. No subscription.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
             <button onClick={() => handleBuy('gtm')} disabled={loading === 'gtm'} className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm disabled:opacity-70">
-              {loading === 'gtm' ? 'Redirecting...' : (pricing ? pricing.gtmBtn : '...')}
+              {loading === 'gtm' ? 'Redirecting...' : pricing.gtmBtn}
             </button>
-            <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">{pricing ? pricing.buildBtn.replace('Get the', 'Coming Soon —') : 'Coming Soon'}</span>
-            <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">{pricing ? pricing.bothBtn.replace('Get Both', 'Coming Soon') : 'Coming Soon'}</span>
+            <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">Build OS — Coming Soon</span>
+            <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">Bundle — Coming Soon</span>
           </div>
         </div>
       </section>
