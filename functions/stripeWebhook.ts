@@ -32,6 +32,16 @@ Deno.serve(async (req) => {
     const product = session.metadata?.product;
     const customerEmail = session.customer_details?.email;
 
+    // Get actual amount paid (after any discount)
+    const amountTotal = session.amount_total;
+    const amountSubtotal = session.amount_subtotal;
+    const discountAmount = amountSubtotal - amountTotal;
+    const currency = (session.currency || 'aud').toUpperCase();
+    const formattedTotal = `${currency} $${(amountTotal / 100).toFixed(2)}`;
+    const discountLine = discountAmount > 0
+      ? `\nDiscount applied: -${currency} $${(discountAmount / 100).toFixed(2)}\nTotal paid: ${formattedTotal}\n`
+      : `\nTotal paid: ${formattedTotal}\n`;
+
     if (customerEmail && product && NOTION_LINKS[product]) {
       try {
         const base44 = createClientFromRequest(req);

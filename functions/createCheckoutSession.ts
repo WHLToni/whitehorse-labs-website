@@ -23,6 +23,7 @@ Deno.serve(async (req) => {
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items: [{ price: productConfig.priceId, quantity: 1 }],
+      allow_promotion_codes: true,
       success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&product=${product}`,
       cancel_url: `${origin}/GetTheFrameworks`,
       metadata: {
