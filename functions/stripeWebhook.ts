@@ -50,8 +50,7 @@ Deno.serve(async (req) => {
           subject: `Your ${PRODUCT_NAMES[product]} — Access Inside`,
           body: `Hi there,
 
-Thank you for purchasing ${PRODUCT_NAMES[product]}!
-
+Thank you for purchasing ${PRODUCT_NAMES[product]}!${discountLine}
 Here's your access link — click to duplicate the portal into your own Notion workspace:
 
 ${NOTION_LINKS[product]}
