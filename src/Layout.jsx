@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Home", page: "Home" },
   { label: "Services & Pricing", page: "Services" },
-  { label: "Get the Frameworks", page: "GetTheFrameworks" },
+  { label: "Buy the Frameworks", page: "BuyTheFrameworks" },
   { label: "Contact", page: "Contact" },
 ];
 
@@ -145,10 +145,10 @@ export default function Layout({ children, currentPageName }) {
               <h4 className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-4">Quick Links</h4>
               <div className="space-y-3">
                 <Link
-                  to={createPageUrl("GetTheFrameworks")}
+                  to={createPageUrl("BuyTheFrameworks")}
                   className="block text-sm text-[#999] hover:text-white transition-colors"
                 >
-                  Get the Frameworks — from {AUD_FROM} →
+                  Buy the Frameworks — from {AUD_FROM} →
                 </Link>
                 <Link
                   to={createPageUrl("Services")}
