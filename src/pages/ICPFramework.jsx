@@ -27,9 +27,9 @@ function CTABlock() {
   return (
     <div className="flex flex-col items-start gap-2">
       <button className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-8 py-4 rounded-lg text-base border-2 border-[#e8195a] hover:bg-[#e8195a] hover:text-white transition-colors">
-        Define Your ICP
+        Access the ICP Framework Tool (Free)
       </button>
-      <p className="text-[#888] text-sm">Get to a clear, usable definition in under 10 minutes.</p>
+      <p className="text-[#888] text-sm">Kickstart your GTM planning.</p>
     </div>
   );
 }
@@ -46,11 +46,13 @@ export default function ICPFramework() {
             {/* Left: text (2/3) */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="flex-1 md:w-2/3">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] leading-tight mb-6">
-                If your product isn't selling, you haven't clearly defined who it's for.
+                You've built the MVP. Now let's find the buyers.
               </h1>
+              <p className="text-[#333] text-base font-semibold leading-relaxed mb-4">
+                A defined Ideal Customer Profile (ICP) gets you to revenue — it shapes your entire go-to-market strategy. Our ICP framework helps you move from 'I think people want this' to <em>'I know exactly who to sell to.'</em>
+              </p>
               <p className="text-[#555] text-base leading-relaxed mb-10">
-                ICP stands for Ideal Customer Profile. It defines who is most likely to buy, and why.
-                When it's unclear, messaging, sales, and growth all become harder. This <strong>free ICP Tool</strong> helps you define it properly in under 10 minutes.
+                This free tool will help you define and document your most profitable customers and sharpen your Go-To-Market strategy — in under 15 minutes.
               </p>
               <CTABlock />
             </motion.div>
