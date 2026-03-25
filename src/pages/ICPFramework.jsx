@@ -52,20 +52,14 @@ export default function ICPFramework() {
             <CTABlock />
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10">
-            <div className="rounded-xl overflow-hidden border border-[#e5e5e5] shadow-sm mx-auto" style={{ aspectRatio: '9/16', maxWidth: '360px', position: 'relative' }}>
+            <div className="rounded-xl overflow-hidden border border-[#e5e5e5] shadow-sm mx-auto" style={{ position: 'relative', width: '100%', maxWidth: '360px', height: '0px', paddingBottom: '142.061%' }}>
               <iframe
-                src="https://drive.google.com/file/d/1lMMzF-8sxPzPdS5Zh8imQPMXzNs4jSJ-/preview?autoplay=1"
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  width: '110%',
-                  height: '110%',
-                  transform: 'translate(-50%, -50%)',
-                  border: 'none',
-                }}
-                allow="autoplay"
+                allow="fullscreen"
                 allowFullScreen
+                height="100%"
+                src="https://streamable.com/e/ncvvr5?"
+                width="100%"
+                style={{ border: 'none', width: '100%', height: '100%', position: 'absolute', left: 0, top: 0, overflow: 'hidden' }}
               />
             </div>
           </motion.div>
