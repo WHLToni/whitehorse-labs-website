@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
 const diagnosisPoints = [
-  "Interest, but low conversion",
-  "Messaging that feels broad or inconsistent",
-  "Long or unpredictable sales cycles",
-  "Leads that don't quite fit",
-  "A product that should work, but isn't gaining traction",
+  "High interest, yet conversions fall flat",
+  "Vague messaging that fails to connect with ideal buyers",
+  "Sales cycles are dragging, unpredictable, and inefficient",
+  "Your pipeline is full, but lead quality and fit are low",
+  "A promising product struggling to gain market traction",
 ];
 
 const whatItGives = [
-  "Define your highest-probability buyer",
-  "Identify who to exclude",
-  "Clarify buying triggers",
-  "Align product, messaging, and sales",
+  "Pinpoint your highest-value, most convertible buyers",
+  "Clearly define who not to target, saving valuable time and resources",
+  "Uncover the precise triggers that drive purchase decisions",
+  "Achieve seamless alignment across product, marketing, and sales efforts",
 ];
 
 const outcomes = [
@@ -61,7 +61,7 @@ export default function ICPFramework() {
 
             {/* Left: Diagnosis */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">You might be seeing this...</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">Recognize These Challenges?</h2>
               <div className="space-y-4 mb-8">
                 {diagnosisPoints.map((point, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -75,9 +75,9 @@ export default function ICPFramework() {
 
             {/* Right: What this fixes */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">What this free tool fixes:</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">Unlock Precision: How Our ICP Tool Helps</h2>
               <p className="text-[#555] text-base leading-relaxed mb-6">
-                This is a structured way to define who is most likely to buy, based on real buying behaviour rather than broad targeting.
+                Our free ICP tool provides a clear, data-driven methodology to pinpoint your ideal customers, moving beyond assumptions to focus on real-world buying behaviors. This means more effective outreach and higher conversion rates.
               </p>
               <div className="space-y-4 mb-6">
                 {whatItGives.map((item, i) => (
@@ -87,7 +87,7 @@ export default function ICPFramework() {
                   </div>
                 ))}
               </div>
-              <p className="text-[#888] text-sm">Built from two decades in product marketing and go-to-market strategy.</p>
+              <p className="text-[#888] text-sm">Distilled from two decades of hands-on experience in product marketing and go-to-market strategy, this framework provides battle-tested insights for your business.</p>
             </div>
 
           </div>
