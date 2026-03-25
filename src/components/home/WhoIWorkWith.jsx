@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "../../utils";
 import { motion } from "framer-motion";
 
 const audiences = [
@@ -46,6 +48,14 @@ export default function WhoIWorkWith() {
             >
               <h3 className="text-base font-bold text-[#0a0a0a] mb-3">{a.title}</h3>
               <p className="text-[#666] text-sm leading-relaxed">{a.description}</p>
+              {a.title === "Pre-MVP Founders" && (
+                <Link
+                  to={createPageUrl("ICPFramework")}
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#e8195a] mt-3 hover:underline"
+                >
+                  Start with the Free ICP Tool →
+                </Link>
+              )}
             </motion.div>
           ))}
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import HeroSection from "../components/home/HeroSection";
 import ChoosePath from "../components/home/ChoosePath";
+import ICPCallout from "../components/home/ICPCallout";
 import WhoIWorkWith from "../components/home/WhoIWorkWith";
 import Credentials from "../components/home/Credentials";
 import StartHere from "../components/home/StartHere";
@@ -17,6 +18,7 @@ export default function Home() {
       <Credentials />
       <WhoIWorkWith />
       <ChoosePath />
+      <ICPCallout />
       <StartHere />
     </div>
   );
