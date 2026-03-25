@@ -80,7 +80,7 @@ export default function ICPFramework() {
 
             {/* Left: Diagnosis */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">Recognize These Challenges?</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">Recognise These Challenges?</h2>
               <div className="space-y-4 mb-8">
                 {diagnosisPoints.map((point, i) => (
                   <div key={i} className="flex items-start gap-3">
