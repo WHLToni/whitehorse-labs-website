@@ -52,10 +52,18 @@ export default function ICPFramework() {
             <CTABlock />
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10">
-            <div className="rounded-xl overflow-hidden border border-[#e5e5e5] shadow-sm" style={{ aspectRatio: '16/9' }}>
+            <div className="rounded-xl overflow-hidden border border-[#e5e5e5] shadow-sm" style={{ aspectRatio: '16/9', position: 'relative' }}>
               <iframe
-                src="https://drive.google.com/file/d/1lMMzF-8sxPzPdS5Zh8imQPMXzNs4jSJ-/preview"
-                className="w-full h-full"
+                src="https://drive.google.com/file/d/1lMMzF-8sxPzPdS5Zh8imQPMXzNs4jSJ-/preview?autoplay=1"
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  width: '100%',
+                  height: '112%',
+                  transform: 'translate(-50%, -50%) scale(1.08)',
+                  border: 'none',
+                }}
                 allow="autoplay"
                 allowFullScreen
               />
