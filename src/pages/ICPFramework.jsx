@@ -49,7 +49,7 @@ export default function ICPFramework() {
                 You've built the MVP. Now let's find the buyers.
               </h1>
               <p className="text-[#333] text-base font-semibold leading-relaxed mb-4">
-                A defined Ideal Customer Profile (ICP) gets you to revenue — it shapes your entire go-to-market strategy. Our ICP framework helps you move from 'I think people want this' to <em>'I know exactly who to sell to.'</em>
+                A defined Ideal Customer Profile (ICP) defines your entire go-to-market strategy, and <em>gets you to revenue.</em> Our ICP framework helps you move from 'I think people want this' to <em>'I know exactly who to sell to.'</em>
               </p>
               <p className="text-[#555] text-base leading-relaxed mb-10">
                 This free tool will help you define and document your most profitable customers and sharpen your Go-To-Market strategy — in under 15 minutes.
