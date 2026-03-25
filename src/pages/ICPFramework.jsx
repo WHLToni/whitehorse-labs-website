@@ -40,27 +40,34 @@ export default function ICPFramework() {
 
       {/* HERO */}
       <section className="py-20 md:py-28 bg-white border-b border-[#e5e5e5]">
-        <div className="max-w-2xl mx-auto px-6 lg:px-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] leading-tight mb-6">
-              If your product isn't selling, you haven't clearly defined who it's for.
-            </h1>
-            <p className="text-[#555] text-base leading-relaxed mb-10">
-              ICP stands for Ideal Customer Profile. It defines who is most likely to buy, and why.
-              When it's unclear, messaging, sales, and growth all become harder. This <strong>free ICP Tool</strong> helps you define it properly in under 10 minutes.
-            </p>
-            <CTABlock />
-          </motion.div>
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10">
-            <div style={{ position: 'relative', width: '220px', height: '312px', flexShrink: 0 }}>
-              <iframe
-                allow="fullscreen;autoplay"
-                allowFullScreen
-                src="https://streamable.com/e/ncvvr5?autoplay=1"
-                style={{ border: 'none', width: '100%', height: '100%', position: 'absolute', left: 0, top: 0, overflow: 'hidden', borderRadius: '12px' }}
-              />
-            </div>
-          </motion.div>
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <div className="flex flex-col md:flex-row items-start gap-12">
+
+            {/* Left: text (2/3) */}
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="flex-1 md:w-2/3">
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] leading-tight mb-6">
+                If your product isn't selling, you haven't clearly defined who it's for.
+              </h1>
+              <p className="text-[#555] text-base leading-relaxed mb-10">
+                ICP stands for Ideal Customer Profile. It defines who is most likely to buy, and why.
+                When it's unclear, messaging, sales, and growth all become harder. This <strong>free ICP Tool</strong> helps you define it properly in under 10 minutes.
+              </p>
+              <CTABlock />
+            </motion.div>
+
+            {/* Right: video (1/3) */}
+            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="md:w-1/3 flex justify-center md:justify-end">
+              <div style={{ position: 'relative', width: '220px', height: '312px', flexShrink: 0 }}>
+                <iframe
+                  allow="fullscreen;autoplay"
+                  allowFullScreen
+                  src="https://streamable.com/e/ncvvr5?autoplay=1"
+                  style={{ border: 'none', width: '100%', height: '100%', position: 'absolute', left: 0, top: 0, overflow: 'hidden', borderRadius: '12px' }}
+                />
+              </div>
+            </motion.div>
+
+          </div>
         </div>
       </section>
 
