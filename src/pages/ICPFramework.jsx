@@ -52,14 +52,12 @@ export default function ICPFramework() {
             <CTABlock />
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10">
-            <div className="rounded-xl overflow-hidden border border-[#e5e5e5] shadow-sm mx-auto" style={{ position: 'relative', width: '100%', maxWidth: '360px', height: '0px', paddingBottom: '142.061%' }}>
+            <div style={{ position: 'relative', width: '100%', height: '0px', paddingBottom: '142.061%' }}>
               <iframe
                 allow="fullscreen"
                 allowFullScreen
-                height="100%"
                 src="https://streamable.com/e/ncvvr5?"
-                width="100%"
-                style={{ border: 'none', width: '100%', height: '100%', position: 'absolute', left: 0, top: 0, overflow: 'hidden' }}
+                style={{ border: 'none', width: '100%', height: '100%', position: 'absolute', left: 0, top: 0, overflow: 'hidden', borderRadius: '12px' }}
               />
             </div>
           </motion.div>
