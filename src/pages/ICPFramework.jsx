@@ -26,9 +26,9 @@ const outcomes = [
 function CTABlock() {
   return (
     <div className="flex flex-col items-start gap-2">
-      <button className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-8 py-4 rounded-lg text-base border-2 border-[#e8195a] hover:bg-[#e8195a] hover:text-white transition-colors">
+      <a href="https://icp-frameworktool-d3e8aa.netlify.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-8 py-4 rounded-lg text-base border-2 border-[#e8195a] hover:bg-[#e8195a] hover:text-white transition-colors">
         Access the ICP Framework Tool (Free)
-      </button>
+      </a>
       <p className="text-[#888] text-sm">Get to a clear, usable definition in under 10 minutes.</p>
     </div>
   );
