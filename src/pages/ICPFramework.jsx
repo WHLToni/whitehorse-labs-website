@@ -26,7 +26,7 @@ const outcomes = [
 function CTABlock() {
   return (
     <div className="flex flex-col items-start gap-2">
-      <button className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-base">
+      <button className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-8 py-4 rounded-lg text-base border-2 border-[#e8195a] hover:bg-[#e8195a]/5 transition-colors">
         Define Your ICP
       </button>
       <p className="text-[#888] text-sm">Get to a clear, usable definition in under 10 minutes.</p>
@@ -47,7 +47,7 @@ export default function ICPFramework() {
             </h1>
             <p className="text-[#555] text-base leading-relaxed mb-10">
               ICP stands for Ideal Customer Profile. It defines who is most likely to buy, and why.
-              When it's unclear, messaging, sales, and growth all become harder. This framework helps you define it properly in under 10 minutes.
+              When it's unclear, messaging, sales, and growth all become harder. This <strong>free ICP Tool</strong> helps you define it properly in under 10 minutes.
             </p>
             <CTABlock />
           </motion.div>
@@ -57,7 +57,7 @@ export default function ICPFramework() {
       {/* DIAGNOSIS */}
       <section className="py-16 md:py-20 bg-[#f7f7f8] border-b border-[#e5e5e5]">
         <div className="max-w-2xl mx-auto px-6 lg:px-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">You might be seeing this</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">You might be seeing this...</h2>
           <div className="space-y-4 mb-8">
             {diagnosisPoints.map((point, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -73,7 +73,7 @@ export default function ICPFramework() {
       {/* WHAT THIS IS */}
       <section className="py-16 md:py-20 bg-white border-b border-[#e5e5e5]">
         <div className="max-w-2xl mx-auto px-6 lg:px-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-6">What this gives you</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-6">What this free tool gives you</h2>
           <p className="text-[#555] text-base leading-relaxed mb-8">
             This is a structured way to define who is most likely to buy, based on real buying behaviour rather than broad targeting.
           </p>
@@ -92,7 +92,7 @@ export default function ICPFramework() {
       {/* OUTCOME + CTA */}
       <section className="py-16 md:py-24 bg-[#f7f7f8]">
         <div className="max-w-2xl mx-auto px-6 lg:px-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">What changes after this</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">How does this improve growth?</h2>
           <div className="space-y-4 mb-12">
             {outcomes.map((item, i) => (
               <div key={i} className="flex items-start gap-3">
