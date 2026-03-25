@@ -54,38 +54,43 @@ export default function ICPFramework() {
         </div>
       </section>
 
-      {/* DIAGNOSIS */}
+      {/* DIAGNOSIS + WHAT THIS IS — two columns */}
       <section className="py-16 md:py-20 bg-[#f7f7f8] border-b border-[#e5e5e5]">
-        <div className="max-w-2xl mx-auto px-6 lg:px-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">You might be seeing this...</h2>
-          <div className="space-y-4 mb-8">
-            {diagnosisPoints.map((point, i) => (
-              <div key={i} className="flex items-start gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#0a0a0a] mt-2 flex-shrink-0" />
-                <span className="text-[#333] text-base">{point}</span>
-              </div>
-            ))}
-          </div>
-          <p className="text-[#888] text-sm">This often points back to ICP clarity.</p>
-        </div>
-      </section>
+        <div className="max-w-4xl mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-      {/* WHAT THIS IS */}
-      <section className="py-16 md:py-20 bg-white border-b border-[#e5e5e5]">
-        <div className="max-w-2xl mx-auto px-6 lg:px-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-6">What this free tool fixes:</h2>
-          <p className="text-[#555] text-base leading-relaxed mb-8">
-            This is a structured way to define who is most likely to buy, based on real buying behaviour rather than broad targeting.
-          </p>
-          <div className="space-y-4 mb-8">
-            {whatItGives.map((item, i) => (
-              <div key={i} className="flex items-start gap-3">
-                <Check className="w-4 h-4 mt-0.5 text-[#0a0a0a] flex-shrink-0" />
-                <span className="text-[#333] text-base">{item}</span>
+            {/* Left: Diagnosis */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">You might be seeing this...</h2>
+              <div className="space-y-4 mb-8">
+                {diagnosisPoints.map((point, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#0a0a0a] mt-2 flex-shrink-0" />
+                    <span className="text-[#333] text-base">{point}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+              <p className="text-[#888] text-sm">This often points back to ICP clarity.</p>
+            </div>
+
+            {/* Right: What this fixes */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">What this free tool fixes:</h2>
+              <p className="text-[#555] text-base leading-relaxed mb-6">
+                This is a structured way to define who is most likely to buy, based on real buying behaviour rather than broad targeting.
+              </p>
+              <div className="space-y-4 mb-6">
+                {whatItGives.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <Check className="w-4 h-4 mt-0.5 text-[#0a0a0a] flex-shrink-0" />
+                    <span className="text-[#333] text-base">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-[#888] text-sm">Built from two decades in product marketing and go-to-market strategy.</p>
+            </div>
+
           </div>
-          <p className="text-[#888] text-sm">Built from two decades in product marketing and go-to-market strategy.</p>
         </div>
       </section>
 
