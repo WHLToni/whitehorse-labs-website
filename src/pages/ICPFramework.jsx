@@ -73,7 +73,7 @@ export default function ICPFramework() {
       {/* WHAT THIS IS */}
       <section className="py-16 md:py-20 bg-white border-b border-[#e5e5e5]">
         <div className="max-w-2xl mx-auto px-6 lg:px-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-6">What this free tool gives you</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-6">What this free tool fixes:</h2>
           <p className="text-[#555] text-base leading-relaxed mb-8">
             This is a structured way to define who is most likely to buy, based on real buying behaviour rather than broad targeting.
           </p>
