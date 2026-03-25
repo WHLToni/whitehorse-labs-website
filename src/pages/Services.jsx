@@ -293,9 +293,7 @@ export default function Services() {
             ))}
           </div>
 
-          <p className="text-sm font-bold text-[#0a0a0a]">
-            Payment: 50% upfront, 50% on delivery.
-          </p>
+
         </div>
       </section>
 
