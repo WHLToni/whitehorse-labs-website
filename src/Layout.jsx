@@ -29,7 +29,7 @@ export default function Layout({ children, currentPageName }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-[#0a0a0a]">
+    <div className="min-h-screen bg-pink-50 text-[#0a0a0a]">
       {/* Navigation - light */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
