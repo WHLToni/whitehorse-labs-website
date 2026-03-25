@@ -54,9 +54,9 @@ export default function ICPFramework() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10">
             <div style={{ position: 'relative', width: '220px', height: '312px', flexShrink: 0 }}>
               <iframe
-                allow="fullscreen"
+                allow="fullscreen;autoplay"
                 allowFullScreen
-                src="https://streamable.com/e/ncvvr5?"
+                src="https://streamable.com/e/ncvvr5?autoplay=1"
                 style={{ border: 'none', width: '100%', height: '100%', position: 'absolute', left: 0, top: 0, overflow: 'hidden', borderRadius: '12px' }}
               />
             </div>
