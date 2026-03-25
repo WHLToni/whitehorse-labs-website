@@ -26,7 +26,7 @@ const outcomes = [
 function CTABlock() {
   return (
     <div className="flex flex-col items-start gap-2">
-      <button className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-8 py-4 rounded-lg text-base border-2 border-[#e8195a] hover:bg-[#e8195a]/5 transition-colors">
+      <button className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-8 py-4 rounded-lg text-base border-2 border-[#e8195a] hover:bg-[#e8195a] hover:text-white transition-colors">
         Define Your ICP
       </button>
       <p className="text-[#888] text-sm">Get to a clear, usable definition in under 10 minutes.</p>
@@ -65,7 +65,7 @@ export default function ICPFramework() {
               <div className="space-y-4 mb-8">
                 {diagnosisPoints.map((point, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#0a0a0a] mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-[#e8195a]/60 mt-2 flex-shrink-0" />
                     <span className="text-[#333] text-base">{point}</span>
                   </div>
                 ))}
@@ -82,8 +82,8 @@ export default function ICPFramework() {
               <div className="space-y-4 mb-6">
                 {whatItGives.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <Check className="w-4 h-4 mt-0.5 text-[#0a0a0a] flex-shrink-0" />
-                    <span className="text-[#333] text-base">{item}</span>
+                    <Check className="w-4 h-4 mt-0.5 text-[#e8195a] flex-shrink-0" />
+                  <span className="text-[#333] text-base">{item}</span>
                   </div>
                 ))}
               </div>
@@ -101,7 +101,7 @@ export default function ICPFramework() {
           <div className="space-y-4 mb-12">
             {outcomes.map((item, i) => (
               <div key={i} className="flex items-start gap-3">
-                <Check className="w-4 h-4 mt-0.5 text-[#0a0a0a] flex-shrink-0" />
+                <Check className="w-4 h-4 mt-0.5 text-[#e8195a] flex-shrink-0" />
                 <span className="text-[#333] text-base">{item}</span>
               </div>
             ))}
