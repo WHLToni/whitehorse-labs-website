@@ -52,7 +52,7 @@ export default function ICPFramework() {
             <CTABlock />
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10">
-            <div style={{ position: 'relative', width: '100%', height: '0px', paddingBottom: '142.061%' }}>
+            <div style={{ position: 'relative', width: '220px', height: '312px', flexShrink: 0 }}>
               <iframe
                 allow="fullscreen"
                 allowFullScreen
