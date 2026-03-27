@@ -11,11 +11,11 @@ export default function StartHere() {
         <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">
           Ready to Start?
         </p>
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
-          Let's take your product to market.
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-4">
+          Book a 30-minute call.
         </h2>
         <p className="text-base text-[#555] leading-relaxed mb-10">
-          Book a 30-minute call and we'll work out where you are, what you need, and whether we're a good fit.
+          We'll work out where you are, what you need, and whether we're a good fit.
         </p>
         <Link
           to={createPageUrl("Contact")}
