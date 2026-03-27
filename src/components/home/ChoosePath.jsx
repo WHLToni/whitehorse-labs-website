@@ -114,12 +114,14 @@ export default function ChoosePath() {
         {/* Bootstrap budget nudge */}
         <div className="mt-4 px-7 py-4 border border-white/10 rounded-xl flex items-center justify-between gap-4 flex-wrap">
           <p className="text-white/40 text-sm italic">On a bootstrap budget?</p>
-          <Link
-            to={createPageUrl("ICPFramework")}
+          <a
+            href="https://icp-builder-tool.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm font-semibold text-white/60 hover:text-white border border-white/20 hover:border-white/40 px-4 py-1.5 rounded-lg transition-colors"
           >
             Get the Free ICP Framework →
-          </Link>
+          </a>
         </div>
 
         {/* Book a Call — primary */}

@@ -53,12 +53,14 @@ export default function Layout({ children, currentPageName }) {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                to={createPageUrl("ICPFramework")}
+              <a
+                href="https://icp-builder-tool.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-gradient text-white text-sm font-semibold px-5 py-2.5 rounded-lg"
               >
                 Free ICP Framework
-              </Link>
+              </a>
             </div>
 
             {/* Mobile toggle */}
@@ -91,13 +93,15 @@ export default function Layout({ children, currentPageName }) {
                     {link.label}
                   </Link>
                 ))}
-                <Link
-                  to={createPageUrl("ICPFramework")}
+                <a
+                  href="https://icp-builder-tool.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block btn-gradient text-white text-sm font-semibold px-5 py-3 rounded-lg text-center mt-4"
                   onClick={() => setMobileOpen(false)}
                 >
                   Free ICP Framework
-                </Link>
+                </a>
               </div>
             </motion.div>
           )}
@@ -133,12 +137,14 @@ export default function Layout({ children, currentPageName }) {
                     {link.label}
                   </Link>
                 ))}
-                <Link
-                  to={createPageUrl("ICPFramework")}
+                <a
+                  href="https://icp-builder-tool.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block text-sm text-[#999] hover:text-white transition-colors"
                 >
                   Free ICP Framework
-                </Link>
+                </a>
               </div>
             </div>
             <div>

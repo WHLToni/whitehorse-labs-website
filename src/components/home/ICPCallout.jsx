@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "../../utils";
 import { motion } from "framer-motion";
 
 export default function ICPCallout() {
@@ -23,12 +21,14 @@ export default function ICPCallout() {
               Not sure who your ideal customer is? Our ICP Framework tool gets you to a clear, usable definition in under 15 minutes.
             </p>
           </div>
-          <Link
-            to={createPageUrl("ICPFramework")}
+          <a
+            href="https://icp-builder-tool.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-lg text-sm border border-[#0a0a0a] text-[#0a0a0a] hover:bg-[#0a0a0a] hover:text-white transition-colors"
           >
             Get the ICP Framework →
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>
