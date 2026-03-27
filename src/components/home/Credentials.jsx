@@ -75,7 +75,7 @@ export default function Credentials() {
       {/* Brands strip — dark band */}
       <div className="bg-[#0a0a0a] py-12 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-8 text-center">Brands I've worked with</p>
+          <p className="text-base font-semibold uppercase tracking-widest text-[#666] mb-8 text-center">Brands I've worked with</p>
           <div className="flex flex-wrap gap-8 items-center justify-center">
             {[
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/97a75526b_2.png",
@@ -88,7 +88,7 @@ export default function Credentials() {
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/c2ba0ee53_9.png",
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e8e4da89e_Prospection.png",
             ].map((src, i) => (
-              <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-32 w-auto object-contain opacity-70" />
+              <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70" />
             ))}
           </div>
         </div>
