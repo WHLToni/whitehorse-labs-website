@@ -142,7 +142,7 @@ export default function BuyTheFrameworks() {
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
               The GTM Builder and Product Builder are self-guided Notion systems — a step-by-step series of frameworks augmented with detailed AI prompts, that will guide you through building the commercial foundations that every investor wants to see.
               <br /><br />
-              The same baseline frameworks used by big consulting firms, adapted for product and SaaS founders who need to move fast.
+              The same baseline frameworks used by big consulting firms and SaaS companies, adapted for product and SaaS founders who need to move fast.
             </p>
           </motion.div>
         </div>
