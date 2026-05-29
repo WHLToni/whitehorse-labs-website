@@ -62,7 +62,7 @@ const AuthenticatedApp = () => {
         />
       ))}
       <Route path="/success" element={<LayoutWrapper currentPageName="success"><Success /></LayoutWrapper>} />
-      <Route path="/BuyTheFrameworks" element={<LayoutWrapper currentPageName="BuyTheFrameworks"><BuyTheFrameworks /></LayoutWrapper>} />
+      <Route path="/BuyTheBuilderSuite" element={<LayoutWrapper currentPageName="BuyTheFrameworks"><BuyTheFrameworks /></LayoutWrapper>} />
       <Route path="/admin" element={<Admin />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>

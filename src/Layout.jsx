@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Home", page: "Home" },
   { label: "Services & Pricing", page: "Services" },
-  { label: "The Builder Suite", page: "BuyTheFrameworks" },
+  { label: "The Builder Suite", href: "/BuyTheBuilderSuite" },
   { label: "Contact", page: "Contact" },
 ];
 
@@ -42,8 +42,8 @@ export default function Layout({ children, currentPageName }) {
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
-                  key={link.page}
-                  to={createPageUrl(link.page)}
+                  key={link.label}
+                  to={link.href ?? createPageUrl(link.page)}
                   className={`text-sm font-medium transition-colors duration-200 ${
                     currentPageName === link.page
                       ? "text-[#0a0a0a]"
@@ -85,8 +85,8 @@ export default function Layout({ children, currentPageName }) {
               <div className="px-6 py-6 space-y-4">
                 {navLinks.map((link) => (
                   <Link
-                    key={link.page}
-                    to={createPageUrl(link.page)}
+                    key={link.label}
+                    to={link.href ?? createPageUrl(link.page)}
                     className="block text-base font-medium text-[#555] hover:text-[#0a0a0a] transition-colors"
                     onClick={() => setMobileOpen(false)}
                   >
@@ -130,8 +130,8 @@ export default function Layout({ children, currentPageName }) {
               <div className="space-y-3">
                 {navLinks.map((link) => (
                   <Link
-                    key={link.page}
-                    to={createPageUrl(link.page)}
+                    key={link.label}
+                    to={link.href ?? createPageUrl(link.page)}
                     className="block text-sm text-[#999] hover:text-white transition-colors"
                   >
                     {link.label}
@@ -151,7 +151,7 @@ export default function Layout({ children, currentPageName }) {
               <h4 className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-4">Quick Links</h4>
               <div className="space-y-3">
                 <Link
-                  to={createPageUrl("BuyTheFrameworks")}
+                  to="/BuyTheBuilderSuite"
                   className="block text-sm text-[#999] hover:text-white transition-colors"
                 >
                   Buy the Frameworks — from {AUD_FROM} →
