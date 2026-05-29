@@ -135,7 +135,7 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#f7f7f8] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">BUY THE FRAMEWORKS</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Self-serve · Notion-based · AI-guided</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Do the groundwork yourself. Bring on fractional expertise when you're ready to scale.
             </h1>
