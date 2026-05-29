@@ -1,11 +1,11 @@
 const AU_PRICING = {
-  from: "AUD $149",
-  single: "AUD $149",
-  both: "AUD $249",
-  save: "Save AUD $49",
-  gtmBtn: "Get the GTM OS — AUD $149 →",
-  buildBtn: "Get the Build OS — AUD $149 →",
-  bothBtn: "Get Both — AUD $249 →",
+  from: "AUD $349",
+  single: "AUD $349",
+  both: "AUD $549",
+  save: "Save AUD $149",
+  gtmBtn: "Get the GTM Builder — AUD $349 →",
+  buildBtn: "Get the Product Builder — AUD $349 →",
+  bothBtn: "Get Both — AUD $549 →",
 };
 
 export function usePricing() {

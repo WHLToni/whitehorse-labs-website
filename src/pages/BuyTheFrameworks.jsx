@@ -98,7 +98,7 @@ const faqs = [
   },
   {
     q: "Do you offer both as a bundle?",
-    a: "Yes — AUD $249 for both, saving you AUD $49.",
+    a: "Yes — AUD $549 for both, saving you AUD $149.",
   },
   {
     q: "Refunds?",
@@ -112,7 +112,7 @@ export default function BuyTheFrameworks() {
 
   useEffect(() => {
     document.title = "GTM Builder & Product Builder — Whitehorse Labs";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 36 AI prompts — the baseline frameworks used by leading consulting firms and MBAs, adapted for product and SaaS founders. From AUD $149.");
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 36 AI prompts — the baseline frameworks used by leading consulting firms and MBAs, adapted for product and SaaS founders. From AUD $349.");
   }, []);
 
   const handleBuy = async (product) => {
@@ -395,7 +395,7 @@ export default function BuyTheFrameworks() {
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Upgrade Path</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">Start here. Bring me in when you're ready to scale.</h2>
           <p className="text-white/50 text-base leading-relaxed mb-4">
-            If you work through the GTM Builder and decide you want professional execution — strategy, positioning, launch — you can upgrade to any productised service and your AUD $149 purchase price will be credited against the engagement fee.
+            If you work through the GTM Builder and decide you want professional execution — strategy, positioning, launch — you can upgrade to any productised service and your AUD $349 purchase price will be credited against the engagement fee.
           </p>
           <p className="text-white/50 text-base leading-relaxed mb-10">
             You're not throwing money away by starting here. You're getting a head start.
