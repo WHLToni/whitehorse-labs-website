@@ -24,7 +24,7 @@ const gtmItems = [
   "Positioning and messaging architecture",
 
   "Launch planning — both strategic and tactical layers",
-  "Detailed JSON prompts in every section, to augment your thinking and conduct deep research / analysis",
+  "Detailed AI prompts (JSON) in every section, to augment your thinking and conduct deep research / analysis",
 ];
 
 const buildItems = [
