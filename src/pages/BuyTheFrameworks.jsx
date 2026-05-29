@@ -182,7 +182,7 @@ export default function BuyTheFrameworks() {
                 You have a product, or at least the beginnings of one. But the commercial side feels like a bit of a black hole. You know you need to validate product-market fit, and you know you need a go-to-market plan. But knowing you need them and knowing how to build them are two very different things.
               </p>
               <p className="text-white/50 text-base leading-relaxed mb-8">
-                The Builder products give you the baseline foundations fast — the frameworks that matter most at early stage, structured so you can work through them yourself. Consulting goes further: tailored frameworks, additional models specific to your product and market, and an experienced operator helping you embed those foundations and build a GTM that scales. Same starting point. Different depth.
+                The Builder products give you the baseline foundations fast — the frameworks that matter most at early stage, structured so you can work through them yourself.
               </p>
             </div>
 
