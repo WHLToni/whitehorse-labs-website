@@ -17,14 +17,14 @@ const problemQuestions = [
 ];
 
 const gtmItems = [
-  "Market research and sizing templates",
+  "Guided market research and sizing frameworks",
   "Segmentation and targeting model",
   "Ideal Customer Profile (ICP) template — including hypotheses, assumptions and interview guide",
   "Competitive analysis matrix",
   "Positioning and messaging architecture",
-  "Brand strategy foundations and essential brand elements guide",
-  "Launch planning frameworks",
-  "AI prompts throughout to guide your thinking",
+
+  "Launch planning — both strategic and tactical layers",
+  "Detailed JSON prompts in every section, to augment your thinking and conduct deep research / analysis",
 ];
 
 const buildItems = [
