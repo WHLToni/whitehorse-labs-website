@@ -236,7 +236,7 @@ export default function ChoosePath() {
             to={createPageUrl("GetTheFrameworks")}
             className="text-white/40 hover:text-[#e8195a] transition-colors not-italic"
           >
-            Get the Frameworks{pricing ? ` — from ${pricing.from}` : ""} →
+            The Builder Suite{pricing ? ` — from ${pricing.from}` : ""} →
           </Link>
         </p>
 

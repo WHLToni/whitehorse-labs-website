@@ -306,7 +306,7 @@ export default function Services() {
               Buy the Frameworks.
             </h2>
             <p className="text-base md:text-lg text-[#666] max-w-2xl mx-auto leading-relaxed mb-8">
-              The exact frameworks, models and templates I use with every client — available as self-serve Notion portals with AI prompts included. The GTM OS for commercialisation, the Build OS for development. DIY your build and launch, then come back when you need execution support.
+              The exact frameworks, models and templates I use with every client — available as self-serve Notion portals with AI prompts included. The GTM Builder for commercialisation, the Product Builder for development. DIY your build and launch, then come back when you need execution support.
             </p>
             <Link
               to={createPageUrl("BuyTheFrameworks")}

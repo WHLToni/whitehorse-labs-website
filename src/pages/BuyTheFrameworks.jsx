@@ -85,12 +85,12 @@ const faqs = [
     a: "Yes — two separate Notion portals you can duplicate directly into your own workspace. No technical setup required.",
   },
   {
-    q: "Do the operating systems include AI prompts?",
-    a: "Yes — both the GTM OS and the Build OS include detailed AI prompts throughout, designed to guide you through each framework step by step. Rather than staring at a blank template wondering where to start, the prompts give you a clear brief to hand to an AI assistant and get a useful output immediately.\n\nI recommend using Gemini, Claude, or Perplexity for research and strategy work, and Notion AI if you prefer to stay inside your workspace. The prompts are written to work well with any LLM — use whatever you're most comfortable with.\n\nThat said, remember that AI is just a tool. It's excellent for getting foundations in place quickly, but nothing beats real human insight when it comes to the nuance of your specific market, your buyers, and your product.",
+    q: "Do the self-guided systems include AI prompts?",
+    a: "Yes — both the GTM Builder and the Product Builder include detailed AI prompts throughout, designed to guide you through each framework step by step. Rather than staring at a blank template wondering where to start, the prompts give you a clear brief to hand to an AI assistant and get a useful output immediately.\n\nI recommend using Gemini, Claude, or Perplexity for research and strategy work, and Notion AI if you prefer to stay inside your workspace. The prompts are written to work well with any LLM — use whatever you're most comfortable with.\n\nThat said, remember that AI is just a tool. It's excellent for getting foundations in place quickly, but nothing beats real human insight when it comes to the nuance of your specific market, your buyers, and your product.",
   },
   {
     q: "Can I use these if I'm not technical?",
-    a: "The GTM OS is designed for non-technical founders — no technical knowledge required. The Build OS is designed for founders who are actively building, but you don't need to be a professional developer to use it.",
+    a: "The GTM Builder is designed for non-technical founders — no technical knowledge required. The Product Builder is designed for founders who are actively building, but you don't need to be a professional developer to use it.",
   },
   {
     q: "What if I need help?",
@@ -111,8 +111,8 @@ export default function BuyTheFrameworks() {
   const pricing = usePricing();
 
   useEffect(() => {
-    document.title = "Buy the Frameworks — Whitehorse Labs";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM OS and Build OS. Two self-serve Notion portals with AI prompts. From AUD $149.");
+    document.title = "GTM Builder & Product Builder — Whitehorse Labs";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 36 AI prompts — the baseline frameworks used by leading consulting firms and MBAs, adapted for product and SaaS founders. From AUD $149.");
   }, []);
 
   const handleBuy = async (product) => {
@@ -137,10 +137,10 @@ export default function BuyTheFrameworks() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">BUY THE FRAMEWORKS</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
-              The frameworks I use with every client. Yours from {pricing.from}.
+              Do the groundwork yourself. Bring me in when you're ready to scale.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
-              Two self-serve Notion portals — each one a complete operating system for a critical part of building and launching your product. The GTM OS for commercialisation. The Build OS for development. The same systems I use with clients, available without the price tag.
+              The GTM Builder and Product Builder are self-guided Notion systems — 36 AI prompts and structured frameworks that walk you through the commercial foundations every investor will ask about. The same baseline frameworks used by leading consulting firms and MBAs, adapted for product and SaaS founders who need to move fast.
             </p>
           </motion.div>
         </div>
@@ -162,6 +162,9 @@ export default function BuyTheFrameworks() {
               </h2>
               <p className="text-white/50 text-base leading-relaxed mb-8">
                 You have a product, or at least the beginnings of one. But the commercial side feels like a bit of a black hole. You know you need to validate product-market fit, and you know you need a go-to-market plan. But knowing you need them and knowing how to build them are two very different things.
+              </p>
+              <p className="text-white/50 text-base leading-relaxed mb-8">
+                The Builder products give you the baseline foundations fast — the frameworks that matter most at early stage, structured so you can work through them yourself. Consulting goes further: tailored frameworks, additional models specific to your product and market, and an experienced operator helping you embed those foundations and build a GTM that scales. Same starting point. Different depth.
               </p>
               <div className="mt-auto rounded-xl border border-[#e8195a]/20 p-6" style={{ background: "rgba(232,25,90,0.08)" }}>
                 <div className="flex items-stretch gap-0">
@@ -220,7 +223,7 @@ export default function BuyTheFrameworks() {
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 z-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">WHITEHORSE OS</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">THE BUILDER SUITE</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-white">Two systems. Buy one or both.</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
@@ -228,7 +231,7 @@ export default function BuyTheFrameworks() {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
-                <h3 className="text-xl font-bold text-white mb-1">The GTM OS</h3>
+                <h3 className="text-xl font-bold text-white mb-1">GTM Builder</h3>
                 <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
@@ -246,7 +249,7 @@ export default function BuyTheFrameworks() {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
               className="rounded-2xl border border-white/10 p-8 flex flex-col" style={{ background: "#1a1a18" }}>
               <div className="mb-5">
-                <h3 className="text-xl font-bold text-white mb-1">The Build OS</h3>
+                <h3 className="text-xl font-bold text-white mb-1">Product Builder</h3>
                 <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
               </div>
               <p className="text-white/50 text-sm italic leading-relaxed mb-4">
@@ -287,7 +290,7 @@ export default function BuyTheFrameworks() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
-              <h3 className="text-xl font-bold text-[#0a0a0a] mb-6">The GTM OS</h3>
+              <h3 className="text-xl font-bold text-[#0a0a0a] mb-6">GTM Builder</h3>
               <div className="space-y-3 mb-6">
                 {gtmItems.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -300,7 +303,7 @@ export default function BuyTheFrameworks() {
             </div>
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
-              <h3 className="text-xl font-bold text-[#0a0a0a] mb-6">The Build OS</h3>
+              <h3 className="text-xl font-bold text-[#0a0a0a] mb-6">Product Builder</h3>
               <div className="space-y-3 mb-6">
                 {buildItems.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -324,7 +327,7 @@ export default function BuyTheFrameworks() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
-              <h3 className="text-base font-bold text-[#0a0a0a] mb-5">The GTM OS is for you if:</h3>
+              <h3 className="text-base font-bold text-[#0a0a0a] mb-5">GTM Builder is for you if:</h3>
               <div className="space-y-3">
                 {whoForGTM.map((item, i) => (
                   <div key={i} className="flex items-start gap-2">
@@ -336,7 +339,7 @@ export default function BuyTheFrameworks() {
             </div>
 
             <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-8">
-              <h3 className="text-base font-bold text-[#0a0a0a] mb-5">The Build OS is for you if:</h3>
+              <h3 className="text-base font-bold text-[#0a0a0a] mb-5">Product Builder is for you if:</h3>
               <div className="space-y-3">
                 {whoForBuild.map((item, i) => (
                   <div key={i} className="flex items-start gap-2">
@@ -390,9 +393,9 @@ export default function BuyTheFrameworks() {
           style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
         <div className="relative max-w-3xl mx-auto px-6 lg:px-10 z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Upgrade Path</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">Start DIY. Upgrade when you're ready.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">Start here. Bring me in when you're ready to scale.</h2>
           <p className="text-white/50 text-base leading-relaxed mb-4">
-            If you work through the GTM OS and decide you want professional execution — strategy, positioning, launch — you can upgrade to any productised service and your AUD $149 purchase price will be credited against the engagement fee.
+            If you work through the GTM Builder and decide you want professional execution — strategy, positioning, launch — you can upgrade to any productised service and your AUD $149 purchase price will be credited against the engagement fee.
           </p>
           <p className="text-white/50 text-base leading-relaxed mb-10">
             You're not throwing money away by starting here. You're getting a head start.
@@ -449,11 +452,11 @@ export default function BuyTheFrameworks() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Simple. One-time. No surprises.</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">The GTM OS</p>
+              <p className="text-[#888] text-sm mb-1">GTM Builder</p>
               <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
             </div>
             <div className="bg-[#f7f7f8] rounded-xl px-8 py-5 text-center">
-              <p className="text-[#888] text-sm mb-1">The Build OS <span className="text-[#bbb] text-xs font-normal">(Coming Soon)</span></p>
+              <p className="text-[#888] text-sm mb-1">Product Builder <span className="text-[#bbb] text-xs font-normal">(Coming Soon)</span></p>
               <p className="text-[#e8195a] font-bold text-2xl">{pricing.single}</p>
             </div>
             <div className="bg-[#f7f7f8] border-2 border-[#e8195a]/30 rounded-xl px-8 py-5 text-center">
@@ -466,7 +469,7 @@ export default function BuyTheFrameworks() {
             <button onClick={() => handleBuy('gtm')} disabled={loading === 'gtm'} className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-6 py-3.5 rounded-lg text-sm disabled:opacity-70">
               {loading === 'gtm' ? 'Redirecting...' : pricing.gtmBtn}
             </button>
-            <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">Build OS — Coming Soon</span>
+            <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">Product Builder — Coming Soon</span>
             <span className="inline-block bg-[#eee] text-[#aaa] font-semibold px-6 py-3.5 rounded-lg text-sm cursor-not-allowed">Bundle — Coming Soon</span>
           </div>
         </div>
