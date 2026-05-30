@@ -272,28 +272,6 @@ export default function BuyTheFrameworks() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Social Proof</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[#0a0a0a]">What founders say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {testimonials.map((t, i) => (
-              <motion.div key={i}
-                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-                className="bg-[#f7f7f8] rounded-2xl border border-[#e5e5e5] p-7 flex flex-col gap-5">
-                <p className="text-[#555] text-sm leading-relaxed italic">"{t.quote}"</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-[#e8195a]/15 flex items-center justify-center flex-shrink-0">
-                    <span className="text-[#e8195a] text-xs font-bold">{t.initials}</span>
-                  </div>
-                  <p className="text-[#888] text-sm font-medium">{t.name}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* PRODUCT BUILDER CARD */}
       <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
