@@ -144,84 +144,28 @@ export default function BuyTheFrameworks() {
               <br /><br />
               The same baseline frameworks used by big consulting firms and SaaS companies, adapted for product and SaaS founders who need to move fast.
             </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+              <button
+                onClick={() => handleBuy('gtm')}
+                disabled={loading === 'gtm'}
+                className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70"
+              >
+                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder — AUD $349'}
+              </button>
+              <a
+                href="#gtm-builder"
+                className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors"
+              >
+                See what's inside ↓
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* THE PROBLEM */}
-      <section className="relative overflow-hidden" style={{ background: "#111110" }}>
-        <div className="absolute top-0 left-0 w-[700px] h-[600px] pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at top left, rgba(232,25,90,0.06) 0%, transparent 65%)" }} />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[400px] pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at bottom right, rgba(232,25,90,0.04) 0%, transparent 65%)" }} />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-14 py-14 md:py-16 z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-
-            <div className="flex flex-col pr-0 md:pr-12 pb-12 md:pb-0">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-5">DOES THIS SOUND LIKE YOU?</p>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white leading-tight">
-                You've built something, but now you're stuck.
-              </h2>
-              <div className="rounded-xl border border-[#e8195a]/20 p-6 mb-8" style={{ background: "rgba(232,25,90,0.08)" }}>
-                <div className="flex items-stretch gap-0">
-                  <div className="flex-1 pr-5">
-                    <p className="text-[#e8195a] font-bold text-3xl mb-1">34%</p>
-                    <p className="text-white/50 text-xs leading-snug">of startups fail from lack of product-market fit</p>
-                  </div>
-                  <div className="w-px bg-white/10 flex-shrink-0" />
-                  <div className="flex-1 pl-5">
-                    <p className="text-[#e8195a] font-bold text-3xl mb-1">29%</p>
-                    <p className="text-white/50 text-xs leading-snug">fail from poor marketing and weak GTM strategy</p>
-                  </div>
-                </div>
-                <div className="mt-4 pt-4 border-t border-white/10">
-                  <p className="text-white/25 text-xs italic">Source: Failory, via Embroker (2025). Based on interviews with 80+ founders of failed startups.</p>
-                </div>
-              </div>
-              <p className="text-white/50 text-base leading-relaxed mb-8">
-                You have a product, or at least the beginnings of one. But the commercial side feels like a bit of a black hole. You know you need to validate product-market fit, and you know you need a go-to-market plan. But knowing you need them and knowing how to build them are two very different things.
-              </p>
-              <p className="text-white/50 text-base leading-relaxed mb-8">
-                The Builder products give you the baseline foundations fast — the frameworks that matter most at early stage, structured so you can work through them yourself.
-              </p>
-            </div>
-
-            <div className="hidden md:block absolute left-1/2 top-14 bottom-14 w-px" style={{ background: "rgba(255,255,255,0.06)" }} />
-
-            <div className="flex flex-col pl-0 md:pl-12 pt-12 md:pt-0 border-t border-white/5 md:border-t-0">
-              <p className="text-xs font-semibold uppercase tracking-widest text-white/20 mb-5">QUESTIONS FOUNDERS GET STUCK ON</p>
-              <div className="flex-1">
-                {problemQuestions.map((q, i) => (
-                  <div key={i}>
-                    <div className="group flex items-center gap-4 py-3.5 cursor-default transition-all duration-200">
-                      <div className="w-[3px] self-stretch rounded-full flex-shrink-0 transition-all duration-200"
-                        style={{ background: "rgba(232,25,90,0.5)" }}
-                        onMouseEnter={e => e.currentTarget.style.background = "#e8195a"}
-                        onMouseLeave={e => e.currentTarget.style.background = "rgba(232,25,90,0.5)"}
-                      />
-                      <span className="text-white/60 text-sm leading-relaxed transition-colors duration-200 group-hover:text-white/85">{q}</span>
-                    </div>
-                    {i < problemQuestions.length - 1 && (
-                      <div className="h-px" style={{ background: "rgba(255,255,255,0.05)" }} />
-                    )}
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6 pt-6 border-t border-white/10">
-                <p className="text-white/35 text-sm italic leading-relaxed">
-                  You could wing it and learn the hard way —{" "}
-                  <span className="text-white/60 not-italic">burning through cash on the wrong audience, positioning it badly, or launching before you're ready.</span>
-                  {" "}Or you could start with the same frameworks a senior GTM operator uses with clients, and give yourself a real chance of getting it right.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
 
       {/* THE TOOLKITS */}
-      <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
+      <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 z-10">
