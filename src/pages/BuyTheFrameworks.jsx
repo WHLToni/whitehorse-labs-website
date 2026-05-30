@@ -14,19 +14,19 @@ const modules = [
   { num: "05", title: "Positioning & Messaging Architecture" },
   { num: "06", title: "Brand Strategy & Foundations" },
   { num: "07", title: "Launch Planning including Pricing Strategy" },
-  { num: "\u2605", title: "GTM One-Page \u2014 Investor / Executive Snapshot", bonus: true },
+  { num: "\u2605", title: "GTM One-Page - Investor / Executive Snapshot", bonus: true },
 ];
 
 const tags = [
   "36 AI prompts throughout",
-  "~4\u20136 hours to complete",
+  "~4-6 hours to complete",
   "Instant Notion access",
 ];
 
 const outcomes = [
   {
     title: "A validated ICP",
-    desc: "A clear, evidence-based profile of your ideal customer \u2014 specific enough to use in a sales conversation and defensible in an investor meeting.",
+    desc: "A clear, evidence-based profile of your ideal customer - specific enough to use in a sales conversation and defensible in an investor meeting.",
   },
   {
     title: "A positioning statement that holds up",
@@ -34,7 +34,7 @@ const outcomes = [
   },
   {
     title: "A launch plan with pricing built in",
-    desc: "A sequenced go-to-market plan that covers channels, messaging, and pricing strategy \u2014 ready to execute or hand to a team.",
+    desc: "A sequenced go-to-market plan that covers channels, messaging, and pricing strategy - ready to execute or hand to a team.",
   },
   {
     title: "A one-page GTM summary",
@@ -45,7 +45,7 @@ const outcomes = [
 const stats = [
   {
     number: "90%",
-    label: "of startups that fail cite go-to-market failure as a primary cause \u2014 not product failure",
+    label: "of startups that fail cite go-to-market failure as a primary cause - not product failure",
   },
   {
     number: "3x",
@@ -60,7 +60,7 @@ const stats = [
 const whoFor = [
   "You're pre-revenue or pre-raise and need to build your commercial foundations before you spend a dollar on marketing or a minute on messaging.",
   "You're preparing for international expansion and need to validate your ICP and positioning in a new market before you commit.",
-  "You need investor-ready GTM foundations \u2014 the frameworks that answer the questions every investor asks \u2014 without the cost or timeline of a consulting engagement.",
+  "You need investor-ready GTM foundations - the frameworks that answer the questions every investor asks - without the cost or timeline of a consulting engagement.",
 ];
 
 const testimonials = [
@@ -74,23 +74,23 @@ const testimonials = [
 const faqs = [
   {
     q: "Are these Notion templates?",
-    a: "Yes \u2014 two separate Notion portals you can duplicate directly into your own workspace. No technical setup required.",
+    a: "Yes - two separate Notion portals you can duplicate directly into your own workspace. No technical setup required.",
   },
   {
     q: "Do the self-guided systems include AI prompts?",
-    a: "Yes \u2014 both the GTM Builder and the Product Builder include detailed AI prompts throughout, designed to guide you through each framework step by step. Rather than staring at a blank template wondering where to start, the prompts give you a clear brief to hand to an AI assistant and get a useful output immediately.\n\nI recommend using Gemini, Claude, or Perplexity for research and strategy work, and Notion AI if you prefer to stay inside your workspace. The prompts are written to work well with any LLM \u2014 use whatever you're most comfortable with.\n\nThat said, remember that AI is just a tool. It's excellent for getting foundations in place quickly, but nothing beats real human insight when it comes to the nuance of your specific market, your buyers, and your product.",
+    a: "Yes - both the GTM Builder and the Product Builder include detailed AI prompts throughout, designed to guide you through each framework step by step. Rather than staring at a blank template wondering where to start, the prompts give you a clear brief to hand to an AI assistant and get a useful output immediately.\n\nI recommend using Gemini, Claude, or Perplexity for research and strategy work, and Notion AI if you prefer to stay inside your workspace. The prompts are written to work well with any LLM - use whatever you're most comfortable with.\n\nThat said, remember that AI is just a tool. It's excellent for getting foundations in place quickly, but nothing beats real human insight when it comes to the nuance of your specific market, your buyers, and your product.",
   },
   {
     q: "Can I use these if I'm not technical?",
-    a: "The GTM Builder is designed for non-technical founders \u2014 no technical knowledge required. The Product Builder is designed for founders who are actively building, but you don't need to be a professional developer to use it.",
+    a: "The GTM Builder is designed for non-technical founders - no technical knowledge required. The Product Builder is designed for founders who are actively building, but you don't need to be a professional developer to use it.",
   },
   {
     q: "How long does it take to complete?",
-    a: "Most founders complete the GTM Builder in 4\u20136 focused hours. You don't need to do it in one sitting \u2014 each module is self-contained and saves as you go. Some founders spread it across a week, working through one module at a time.",
+    a: "Most founders complete the GTM Builder in 4-6 focused hours. You don't need to do it in one sitting - each module is self-contained and saves as you go. Some founders spread it across a week, working through one module at a time.",
   },
   {
     q: "Is this suitable for non-technical founders?",
-    a: "Yes. The GTM Builder is about commercial strategy, not technology. If you understand your product and your market, you have everything you need. The AI prompts are designed to draw out that thinking in a structured way \u2014 no prior GTM experience required.",
+    a: "Yes. The GTM Builder is about commercial strategy, not technology. If you understand your product and your market, you have everything you need. The AI prompts are designed to draw out that thinking in a structured way - no prior GTM experience required.",
   },
   {
     q: "What if I need help?",
@@ -98,7 +98,7 @@ const faqs = [
   },
   {
     q: "Do you offer both as a bundle?",
-    a: "Yes \u2014 AUD $549 for both, saving you AUD $149.",
+    a: "Yes - AUD $549 for both, saving you AUD $149.",
   },
   {
     q: "Refunds?",
@@ -111,8 +111,8 @@ export default function BuyTheFrameworks() {
   const pricing = usePricing();
 
   useEffect(() => {
-    document.title = "The Builder Suite \u2014 GTM Builder & Product Builder | Whitehorse Labs";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 36 AI prompts \u2014 the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
+    document.title = "The Builder Suite - GTM Builder & Product Builder | Whitehorse Labs";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 36 AI prompts - the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
   }, []);
 
   const handleBuy = async (product) => {
@@ -135,12 +135,12 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#f7f7f8] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Self-serve \xb7 Notion-based \xb7 AI-guided</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Self-serve · Notion-based · AI-guided</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Do the groundwork yourself. Bring on fractional expertise when you're ready to scale.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
-              The GTM Builder and Product Builder are self-guided Notion systems \u2014 a step-by-step series of frameworks augmented with detailed AI prompts, that will guide you through building the commercial foundations that every investor wants to see.
+              The GTM Builder and Product Builder are self-guided Notion systems - a step-by-step series of frameworks augmented with detailed AI prompts, that will guide you through building the commercial foundations that every investor wants to see.
               <br /><br />
               The same baseline frameworks used by big consulting firms and SaaS companies, adapted for product and SaaS founders who need to move fast.
             </p>
@@ -150,13 +150,13 @@ export default function BuyTheFrameworks() {
                 disabled={loading === 'gtm'}
                 className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70"
               >
-                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder \u2014 AUD $349'}
+                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
               </button>
               <a
                 href="#gtm-builder"
                 className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors"
               >
-                See what's inside \u2193
+                See what's inside &darr;
               </a>
             </div>
           </motion.div>
@@ -176,7 +176,7 @@ export default function BuyTheFrameworks() {
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-2">GTM Builder</p>
                 <p className="text-[#e8195a] font-bold text-3xl mb-5">AUD $349</p>
                 <p className="text-white/60 text-sm leading-relaxed mb-8">
-                  A self-guided Notion system that walks you through seven modules of commercial groundwork \u2014 from market sizing to launch planning. Work through it at your own pace, guided by 36 AI prompts designed to draw out the thinking that most founders skip.
+                  A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 36 AI prompts designed to draw out the thinking that most founders skip.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {tags.map((tag, i) => (
@@ -186,9 +186,9 @@ export default function BuyTheFrameworks() {
                   ))}
                 </div>
                 <div className="rounded-xl border border-[#e8195a]/25 p-5" style={{ background: "rgba(232,25,90,0.06)" }}>
-                  <p className="text-white font-semibold text-sm mb-2">Free accelerator session \u2014 limited availability each month</p>
+                  <p className="text-white font-semibold text-sm mb-2">Free accelerator session - limited availability each month</p>
                   <p className="text-white/50 text-sm leading-relaxed">
-                    Book a 1-hour session with Toni after purchase. We'll work through your GTM Builder outputs together \u2014 I'll add the strategic layer specific to your product, your market, and your stage. Included with your purchase while sessions are available.
+                    Book a 1-hour session with Toni after purchase. We'll work through your GTM Builder outputs together - I'll add the strategic layer specific to your product, your market, and your stage. Included with your purchase while sessions are available.
                   </p>
                 </div>
               </div>
@@ -210,7 +210,7 @@ export default function BuyTheFrameworks() {
                 disabled={loading === 'gtm'}
                 className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 w-full sm:w-auto"
               >
-                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder \u2014 AUD $349'}
+                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
               </button>
               <p className="text-white/30 text-xs mt-3">
                 Free accelerator session included while available. Calendar link provided after purchase.
@@ -307,10 +307,10 @@ export default function BuyTheFrameworks() {
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">Product Builder</h3>
             <p className="text-white/50 text-sm leading-relaxed max-w-xl mb-8">
-              A self-guided Notion system for founders who are building a product and need a structured approach to scoping, validating, and shipping. Same format as the GTM Builder \u2014 AI-guided, modular, self-paced.
+              A self-guided Notion system for founders who are building a product and need a structured approach to scoping, validating, and shipping. Same format as the GTM Builder - AI-guided, modular, self-paced.
             </p>
             <a href="#" className="inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm border border-white/25 hover:border-white/50 transition-colors">
-              Notify me when it launches \u2192
+              Notify me when it launches &rarr;
             </a>
           </motion.div>
         </div>
@@ -326,14 +326,14 @@ export default function BuyTheFrameworks() {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-[#0a0a0a]">Get both. Save AUD $149.</h2>
             <p className="text-[#666] text-base leading-relaxed max-w-2xl mb-8">
-              The GTM Builder and Product Builder together \u2014 AUD $549. Pre-purchase the bundle now and get instant access to the GTM Builder. Product Builder access is added automatically when it launches.
+              The GTM Builder and Product Builder together - AUD $549. Pre-purchase the bundle now and get instant access to the GTM Builder. Product Builder access is added automatically when it launches.
             </p>
             <button
               onClick={() => handleBuy('bundle')}
               disabled={loading === 'bundle'}
               className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70"
             >
-              {loading === 'bundle' ? 'Redirecting...' : 'Get the bundle \u2014 AUD $549'}
+              {loading === 'bundle' ? 'Redirecting...' : 'Get the bundle - AUD $549'}
             </button>
             <p className="text-[#aaa] text-xs mt-3">
               Product Builder access added automatically at launch. No further payment required.
@@ -350,14 +350,14 @@ export default function BuyTheFrameworks() {
           <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Upgrade Path</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">Same starting point. Different depth.</h2>
           <p className="text-white/50 text-base leading-relaxed mb-5">
-            The Builder products give you the baseline foundations fast \u2014 the frameworks that matter most at early stage, structured so you can work through them yourself. Consulting goes further: tailored frameworks, additional models specific to your product and market, and an experienced operator helping you embed those foundations and build a GTM that scales.
+            The Builder products give you the baseline foundations fast - the frameworks that matter most at early stage, structured so you can work through them yourself. Consulting goes further: tailored frameworks, additional models specific to your product and market, and an experienced operator helping you embed those foundations and build a GTM that scales.
           </p>
           <p className="text-white/50 text-base leading-relaxed mb-10">
-            Any Builder purchase is credited toward a consulting engagement. You're not throwing money away by starting here \u2014 you're getting a head start, and you'll walk into the first consulting session already knowing your market, your buyer, and your competitive position.
+            Any Builder purchase is credited toward a consulting engagement. You're not throwing money away by starting here - you're getting a head start, and you'll walk into the first consulting session already knowing your market, your buyer, and your competitive position.
           </p>
           <Link to={createPageUrl("Services")}
             className="inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm border border-white/25 hover:border-white/50 transition-colors">
-            View Services &amp; Pricing \u2192
+            View Services &amp; Pricing &rarr;
           </Link>
         </div>
       </section>
