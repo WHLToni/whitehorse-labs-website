@@ -46,11 +46,11 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-8 text-[#0a0a0a]">
-              You've built the product. Now comes the hard part.
+              You've built something complex. Getting it to market is a different skill set entirely.
             </h1>
 
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">
-              Commercialising a complex product takes more than a launch plan. Building a Go-To-Market strategy that drives growth requires deep understanding of the full journey - from product development through to sales. I've operated across the full spectrum, in regulated industries where the stakes are high and the buyers are hard to reach.
+              I help founders and product teams in regulated industries build the commercial foundations that actually move product - market segmentation, positioning, GTM strategy, and launch architecture. Fifteen years operating across medtech, healthtech, veterinary technology, and regulated SaaS, from seed stage to publicly listed. I don't run workshops and hand you a deck. I build the systems your team can execute.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-12">
               <Link
@@ -61,11 +61,10 @@ export default function HeroSection() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                to={createPageUrl("Contact")}
+                to={createPageUrl("Services")}
                 className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors"
               >
-                Book a Call
-                <ArrowRight className="w-4 h-4" />
+                See How It Works →
               </Link>
             </div>
           </motion.div>
