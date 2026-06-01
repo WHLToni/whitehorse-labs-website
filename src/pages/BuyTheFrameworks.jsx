@@ -185,10 +185,10 @@ export default function BuyTheFrameworks() {
                     </span>
                   ))}
                 </div>
-                <div className="rounded-xl border border-[#e8195a]/25 p-5" style={{ background: "rgba(232,25,90,0.06)" }}>
-                  <p className="text-white font-semibold text-sm mb-2">Free accelerator session - limited availability each month</p>
-                  <p className="text-white/50 text-sm leading-relaxed">
-                    Book a 1-hour session with Toni after purchase. We'll work through your GTM Builder outputs together - I'll add the strategic layer specific to your product, your market, and your stage. Included with your purchase while sessions are available.
+                <div className="rounded-xl border border-white/15 p-5" style={{ background: "rgba(255,255,255,0.05)" }}>
+                  <p className="text-white font-semibold text-sm mb-2">Free Accelerator Session - Limited Availability</p>
+                  <p className="text-white/55 text-sm leading-relaxed">
+                    For the month of June, I'm offering a limited number of 60 minute 1:1 Accelerator sessions with purchase of the GTM Builder. We'll work through your GTM Builder outputs together - I'll add the strategic layer specific to your product, your market and your stage. Included with your purchase while sessions are available.
                   </p>
                 </div>
               </div>
