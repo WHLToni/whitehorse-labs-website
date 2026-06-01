@@ -173,7 +173,7 @@ export default function BuyTheFrameworks() {
             className="rounded-2xl border border-white/10 p-8 md:p-12" style={{ background: "#1a1a18" }}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-2">GTM Builder</p>
+                <h3 className="text-2xl font-bold text-white mb-2">GTM Builder</h3>
                 <p className="text-white font-bold text-3xl mb-5">AUD $349</p>
                 <p className="text-white/60 text-sm leading-relaxed mb-8">
                   A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 36 AI prompts designed to draw out the thinking that most founders skip.
