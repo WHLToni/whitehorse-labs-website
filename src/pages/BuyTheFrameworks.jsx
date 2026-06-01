@@ -148,7 +148,7 @@ export default function BuyTheFrameworks() {
               <button
                 onClick={() => handleBuy('gtm')}
                 disabled={loading === 'gtm'}
-                className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70"
+                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#e8195a] to-[#7B5FB5] hover:opacity-90 transition-opacity"
               >
                 {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
               </button>
@@ -168,19 +168,19 @@ export default function BuyTheFrameworks() {
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">THE BUILDER SUITE</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border border-white/10 p-8 md:p-12" style={{ background: "#1a1a18" }}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-2">GTM Builder</p>
-                <p className="text-[#e8195a] font-bold text-3xl mb-5">AUD $349</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-2">GTM Builder</p>
+                <p className="text-white font-bold text-3xl mb-5">AUD $349</p>
                 <p className="text-white/60 text-sm leading-relaxed mb-8">
                   A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 36 AI prompts designed to draw out the thinking that most founders skip.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {tags.map((tag, i) => (
-                    <span key={i} className="text-xs font-medium px-3 py-1.5 rounded-full border border-[#e8195a]/30 text-[#e8195a]/80">
+                    <span key={i} className="text-xs font-medium px-3 py-1.5 rounded-full border border-white/20 text-white/50">
                       {tag}
                     </span>
                   ))}
@@ -197,7 +197,7 @@ export default function BuyTheFrameworks() {
                 <div className="space-y-3">
                   {modules.map((m, i) => (
                     <div key={i} className="flex items-center gap-4">
-                      <span className={`text-xs font-bold flex-shrink-0 w-6 ${m.bonus ? "text-[#e8195a]" : "text-white/25"}`}>{m.num}</span>
+                      <span className={`text-xs font-bold flex-shrink-0 w-6 ${m.bonus ? "text-[#c97a8a]" : "text-white/25"}`}>{m.num}</span>
                       <span className={`text-sm leading-snug ${m.bonus ? "text-white/70 font-medium" : "text-white/60"}`}>{m.title}</span>
                     </div>
                   ))}
@@ -325,7 +325,7 @@ export default function BuyTheFrameworks() {
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
         <div className="relative max-w-3xl mx-auto px-6 lg:px-10 z-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">The Upgrade Path</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">The Upgrade Path</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">Same starting point. Different depth.</h2>
           <p className="text-white/50 text-base leading-relaxed mb-5">
             The Builder products give you the baseline foundations fast - the frameworks that matter most at early stage, structured so you can work through them yourself. Consulting goes further: tailored frameworks, additional models specific to your product and market, and an experienced operator helping you embed those foundations and build a GTM that scales.
