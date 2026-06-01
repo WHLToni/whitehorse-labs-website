@@ -186,9 +186,9 @@ export default function BuyTheFrameworks() {
                   ))}
                 </div>
                 <div className="rounded-xl border border-white/15 p-5" style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <p className="text-white font-semibold text-sm mb-2">Free Accelerator Session - Limited Availability</p>
+                  <p className="text-white font-semibold text-sm mb-2">June Only: Free 1-Hour Strategy Session With Me</p>
                   <p className="text-white/55 text-sm leading-relaxed">
-                    For the month of June, I'm offering a limited number of 60 minute 1:1 Accelerator sessions with purchase of the GTM Builder. We'll work through your GTM Builder outputs together - I'll add the strategic layer specific to your product, your market and your stage. Included with your purchase while sessions are available.
+                    I'm opening a limited number of personal strategy sessions to GTM Builder buyers this month. We'll work through your outputs together and I'll add the strategic layer you can't get from a template - specific to your product, your market, and where you're headed. It won't always be free - book before June is out.
                   </p>
                 </div>
               </div>
