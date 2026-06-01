@@ -213,7 +213,7 @@ export default function BuyTheFrameworks() {
                 {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
               </button>
               <p className="text-white/30 text-xs mt-3">
-                Free accelerator session included while available. Calendar link provided after purchase.
+                Free Strategy Session included while available. Calendar link provided after purchase.
               </p>
             </div>
           </motion.div>
