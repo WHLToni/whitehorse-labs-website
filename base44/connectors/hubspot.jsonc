@@ -1,0 +1,8 @@
+{
+  "type": "hubspot",
+  "scopes": [
+    "crm.objects.contacts.read",
+    "crm.objects.contacts.write",
+    "oauth"
+  ]
+}
