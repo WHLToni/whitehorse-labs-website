@@ -72,43 +72,65 @@ Deno.serve(async (req) => {
         // Sync to HubSpot CRM
         try {
           const { accessToken } = await base44.asServiceRole.connectors.getConnection("hubspot");
+          const headers = { "Authorization": `Bearer ${accessToken}`, "Content-Type": "application/json" };
           const nameParts = customerName.trim().split(" ");
           const firstName = nameParts[0] || "";
           const lastName = nameParts.slice(1).join(" ") || "";
           const productLabel = PRODUCT_NAMES[product] || product;
 
-          // Search for existing contact by email
+          // Find or create contact
           const searchRes = await fetch("https://api.hubapi.com/crm/v3/objects/contacts/search", {
             method: "POST",
-            headers: { "Authorization": `Bearer ${accessToken}`, "Content-Type": "application/json" },
+            headers,
             body: JSON.stringify({ filterGroups: [{ filters: [{ propertyName: "email", operator: "EQ", value: customerEmail }] }], limit: 1 })
           });
           const searchData = await searchRes.json();
           const existingContact = searchData.results?.[0];
 
-          const contactProps = {
-            email: customerEmail,
-            firstname: firstName,
-            lastname: lastName,
-            lifecyclestage: "customer",
-            jobtitle: productLabel
-          };
-
+          let contactId;
           if (existingContact) {
-            await fetch(`https://api.hubapi.com/crm/v3/objects/contacts/${existingContact.id}`, {
+            contactId = existingContact.id;
+            await fetch(`https://api.hubapi.com/crm/v3/objects/contacts/${contactId}`, {
               method: "PATCH",
-              headers: { "Authorization": `Bearer ${accessToken}`, "Content-Type": "application/json" },
-              body: JSON.stringify({ properties: contactProps })
+              headers,
+              body: JSON.stringify({ properties: { firstname: firstName, lastname: lastName, lifecyclestage: "customer" } })
             });
             console.log(`HubSpot contact updated: ${customerEmail}`);
           } else {
-            await fetch("https://api.hubapi.com/crm/v3/objects/contacts", {
+            const createRes = await fetch("https://api.hubapi.com/crm/v3/objects/contacts", {
               method: "POST",
-              headers: { "Authorization": `Bearer ${accessToken}`, "Content-Type": "application/json" },
-              body: JSON.stringify({ properties: contactProps })
+              headers,
+              body: JSON.stringify({ properties: { email: customerEmail, firstname: firstName, lastname: lastName, lifecyclestage: "customer" } })
             });
+            const createData = await createRes.json();
+            contactId = createData.id;
             console.log(`HubSpot contact created: ${customerEmail}`);
           }
+
+          // Create a Deal for this purchase
+          const dealRes = await fetch("https://api.hubapi.com/crm/v3/objects/deals", {
+            method: "POST",
+            headers,
+            body: JSON.stringify({
+              properties: {
+                dealname: `${productLabel} — ${customerName || customerEmail}`,
+                amount: (amountTotal / 100).toFixed(2),
+                dealstage: "closedwon",
+                pipeline: "default",
+                closedate: new Date().toISOString()
+              }
+            })
+          });
+          const dealData = await dealRes.json();
+          const dealId = dealData.id;
+          console.log(`HubSpot deal created: ${dealId}`);
+
+          // Associate deal with contact (association type 3 = deal to contact)
+          await fetch(`https://api.hubapi.com/crm/v3/objects/deals/${dealId}/associations/contacts/${contactId}/3`, {
+            method: "PUT",
+            headers
+          });
+          console.log(`HubSpot deal ${dealId} associated with contact ${contactId}`);
         } catch (hubErr) {
           console.error("HubSpot sync error:", hubErr.message);
         }
