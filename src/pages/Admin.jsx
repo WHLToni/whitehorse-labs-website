@@ -9,6 +9,7 @@ export default function Admin() {
   const [customers, setCustomers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [authChecked, setAuthChecked] = useState(false);
+  const [needsLogin, setNeedsLogin] = useState(false);
   const [activeTab, setActiveTab] = useState("Customers");
   const [pageViews, setPageViews] = useState(null);
   const [analyticsLoading, setAnalyticsLoading] = useState(false);
@@ -16,15 +17,15 @@ export default function Admin() {
   const [notionPages, setNotionPages] = useState([]);
   const [notionParent, setNotionParent] = useState("");
   const [notionLoading, setNotionLoading] = useState(false);
-  const [notionStatus, setNotionStatus] = useState(null); // { type: "success"|"error", message, url }
+  const [notionStatus, setNotionStatus] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
     base44.auth.me().then((user) => {
-      if (!user) { base44.auth.redirectToLogin("/admin"); return; }
+      if (!user) { setNeedsLogin(true); return; }
       if (user.role !== "admin") { alert("Permission Denied"); navigate("/"); return; }
       setAuthChecked(true);
-    }).catch(() => base44.auth.redirectToLogin("/admin"));
+    }).catch(() => setNeedsLogin(true));
   }, []);
 
   useEffect(() => {
@@ -75,6 +76,23 @@ export default function Admin() {
       setNotionLoading(false);
     });
   };
+
+  if (needsLogin) {
+    return (
+      <div className="min-h-screen bg-[#f7f7f8] flex items-center justify-center">
+        <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-10 text-center max-w-sm w-full">
+          <h1 className="text-xl font-bold text-[#0a0a0a] mb-2">Admin Access</h1>
+          <p className="text-sm text-[#888] mb-6">Sign in with your admin account to continue.</p>
+          <button
+            onClick={() => base44.auth.redirectToLogin("/admin")}
+            className="btn-gradient text-white text-sm font-semibold px-6 py-2.5 rounded-lg w-full"
+          >
+            Sign In
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (!authChecked) return null;
 
