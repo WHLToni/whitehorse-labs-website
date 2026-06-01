@@ -14,6 +14,8 @@ const PRODUCTS = {
 };
 
 const ALLOWED_ORIGINS = [
+  "https://whitehorselabs.com.au",
+  "https://www.whitehorselabs.com.au",
   "https://whitehorselabs.com",
   "https://www.whitehorselabs.com",
   "https://whitehorselabs.base44.app",
