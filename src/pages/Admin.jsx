@@ -3,7 +3,7 @@ import { base44 } from "@/api/base44Client";
 import { useNavigate } from "react-router-dom";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from "recharts";
 
-const TABS = ["Customers", "Analytics"];
+const TABS = ["Customers", "Analytics", "Docs"];
 
 export default function Admin() {
   const [customers, setCustomers] = useState([]);
@@ -13,6 +13,10 @@ export default function Admin() {
   const [pageViews, setPageViews] = useState(null);
   const [analyticsLoading, setAnalyticsLoading] = useState(false);
   const [analyticsError, setAnalyticsError] = useState(null);
+  const [notionPages, setNotionPages] = useState([]);
+  const [notionParent, setNotionParent] = useState("");
+  const [notionLoading, setNotionLoading] = useState(false);
+  const [notionStatus, setNotionStatus] = useState(null); // { type: "success"|"error", message, url }
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -45,6 +49,32 @@ export default function Admin() {
       setAnalyticsLoading(false);
     });
   }, [authChecked, activeTab]);
+
+  useEffect(() => {
+    if (!authChecked || activeTab !== "Docs") return;
+    if (notionPages.length > 0) return;
+    base44.functions.invoke("generateNotionDocs", { action: "search" }).then((res) => {
+      setNotionPages(res.data?.pages || []);
+      if (res.data?.pages?.length > 0) setNotionParent(res.data.pages[0].id);
+    }).catch(() => {});
+  }, [authChecked, activeTab]);
+
+  const handlePushDocs = async () => {
+    if (!notionParent) return;
+    setNotionLoading(true);
+    setNotionStatus(null);
+    base44.functions.invoke("generateNotionDocs", { parentPageId: notionParent }).then((res) => {
+      if (res.data?.success) {
+        setNotionStatus({ type: "success", message: "Documentation page created!", url: res.data.pageUrl });
+      } else {
+        setNotionStatus({ type: "error", message: res.data?.error || "Failed to create page." });
+      }
+      setNotionLoading(false);
+    }).catch((err) => {
+      setNotionStatus({ type: "error", message: err.message });
+      setNotionLoading(false);
+    });
+  };
 
   if (!authChecked) return null;
 
@@ -113,6 +143,54 @@ export default function Admin() {
           </>
         )}
 
+        {/* Docs Tab */}
+        {activeTab === "Docs" && (
+          <div className="max-w-xl">
+            <h2 className="text-base font-bold text-[#0a0a0a] mb-1">Push App Documentation to Notion</h2>
+            <p className="text-sm text-[#888] mb-6">This will create a detailed setup & architecture log page in your Notion workspace — covering Stripe, HubSpot, Google Analytics, database schema, and all backend functions.</p>
+
+            {notionPages.length === 0 ? (
+              <p className="text-sm text-[#888]">Loading your Notion pages...</p>
+            ) : (
+              <>
+                <label className="block text-xs font-semibold text-[#555] uppercase tracking-wider mb-2">Select parent page in Notion</label>
+                <select
+                  value={notionParent}
+                  onChange={(e) => setNotionParent(e.target.value)}
+                  className="w-full border border-[#e5e5e5] rounded-lg px-3 py-2.5 text-sm text-[#0a0a0a] bg-white mb-5 focus:outline-none focus:border-[#0a0a0a]"
+                >
+                  {notionPages.map((p) => (
+                    <option key={p.id} value={p.id}>{p.title}</option>
+                  ))}
+                </select>
+
+                <button
+                  onClick={handlePushDocs}
+                  disabled={notionLoading || !notionParent}
+                  className="btn-gradient text-white text-sm font-semibold px-6 py-2.5 rounded-lg disabled:opacity-50"
+                >
+                  {notionLoading ? "Creating page..." : "Push Docs to Notion"}
+                </button>
+              </>
+            )}
+
+            {notionStatus && (
+              <div className={`mt-5 rounded-xl border p-4 text-sm ${
+                notionStatus.type === "success"
+                  ? "border-green-200 bg-green-50 text-green-800"
+                  : "border-red-200 bg-red-50 text-red-700"
+              }`}>
+                {notionStatus.message}
+                {notionStatus.url && (
+                  <a href={notionStatus.url} target="_blank" rel="noopener noreferrer" className="block mt-2 underline font-semibold">
+                    Open in Notion →
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Analytics Tab */}
         {activeTab === "Analytics" && (
           <div>
@@ -123,30 +201,15 @@ export default function Admin() {
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
                   <StatCard label="Total Page Views" value={totalViews.toLocaleString()} sub="Last 30 days" />
                   <StatCard label="Pages Tracked" value={pageViews.rows.length} sub="Unique pages" />
-                  <StatCard
-                    label="Top Page"
-                    value={pageViews.rows[0]?.page || "—"}
-                    sub={`${pageViews.rows[0]?.views || 0} views`}
-                    mono
-                  />
+                  <StatCard label="Top Page" value={pageViews.rows[0]?.page || "—"} sub={`${pageViews.rows[0]?.views || 0} views`} mono />
                 </div>
-
-                {/* Bar chart */}
                 <div className="bg-white rounded-xl border border-[#e5e5e5] shadow-sm p-6 mb-6">
                   <h2 className="text-sm font-semibold text-[#0a0a0a] mb-4">Page Views by Page</h2>
                   <ResponsiveContainer width="100%" height={260}>
                     <BarChart data={pageViews.rows} layout="vertical" margin={{ left: 10, right: 20 }}>
                       <XAxis type="number" tick={{ fontSize: 11, fill: "#888" }} />
-                      <YAxis
-                        type="category"
-                        dataKey="page"
-                        width={160}
-                        tick={{ fontSize: 11, fill: "#555" }}
-                      />
-                      <Tooltip
-                        formatter={(val, name) => [val, name === "views" ? "Page Views" : "Sessions"]}
-                        contentStyle={{ fontSize: 12, borderRadius: 8, border: "1px solid #e5e5e5" }}
-                      />
+                      <YAxis type="category" dataKey="page" width={160} tick={{ fontSize: 11, fill: "#555" }} />
+                      <Tooltip formatter={(val, name) => [val, name === "views" ? "Page Views" : "Sessions"]} contentStyle={{ fontSize: 12, borderRadius: 8, border: "1px solid #e5e5e5" }} />
                       <Bar dataKey="views" radius={[0, 4, 4, 0]}>
                         {pageViews.rows.map((_, i) => (
                           <Cell key={i} fill={i === 0 ? "#e8195a" : "#7B5FB5"} fillOpacity={1 - i * 0.06} />
@@ -155,8 +218,6 @@ export default function Admin() {
                     </BarChart>
                   </ResponsiveContainer>
                 </div>
-
-                {/* Table */}
                 <div className="bg-white rounded-xl border border-[#e5e5e5] overflow-hidden shadow-sm">
                   <table className="w-full text-sm">
                     <thead>
@@ -173,9 +234,7 @@ export default function Admin() {
                           <td className="px-5 py-3 font-mono text-xs text-[#555]">{row.page}</td>
                           <td className="px-5 py-3 text-right text-[#0a0a0a] font-semibold">{row.views}</td>
                           <td className="px-5 py-3 text-right text-[#888]">{row.sessions}</td>
-                          <td className="px-5 py-3 text-right text-[#888] hidden sm:table-cell">
-                            {Math.floor(row.avgDuration / 60)}m {Math.round(row.avgDuration % 60)}s
-                          </td>
+                          <td className="px-5 py-3 text-right text-[#888] hidden sm:table-cell">{Math.floor(row.avgDuration / 60)}m {Math.round(row.avgDuration % 60)}s</td>
                         </tr>
                       ))}
                     </tbody>
