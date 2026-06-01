@@ -13,8 +13,21 @@ const PRODUCTS = {
   },
 };
 
+const ALLOWED_ORIGINS = [
+  "https://whitehorselabs.com",
+  "https://www.whitehorselabs.com",
+  "https://whitehorselabs.base44.app",
+  "https://app.base44.com",
+];
+
 Deno.serve(async (req) => {
   try {
+    const requestOrigin = req.headers.get("origin") || "";
+    if (!ALLOWED_ORIGINS.some((o) => requestOrigin.startsWith(o))) {
+      console.warn("Blocked request from origin:", requestOrigin);
+      return Response.json({ error: "Forbidden" }, { status: 403 });
+    }
+
     const { product } = await req.json();
 
     const productConfig = PRODUCTS[product];
@@ -22,14 +35,12 @@ Deno.serve(async (req) => {
       return Response.json({ error: "Invalid product" }, { status: 400 });
     }
 
-    const origin = req.headers.get("origin") || "https://app.base44.com";
-
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items: [{ price: productConfig.priceId, quantity: 1 }],
       allow_promotion_codes: true,
-      success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&product=${product}`,
-      cancel_url: `${origin}/BuyTheBuilderSuite`,
+      success_url: `${requestOrigin}/success?session_id={CHECKOUT_SESSION_ID}&product=${product}`,
+      cancel_url: `${requestOrigin}/BuyTheBuilderSuite`,
       metadata: {
         base44_app_id: Deno.env.get("BASE44_APP_ID"),
         product,
