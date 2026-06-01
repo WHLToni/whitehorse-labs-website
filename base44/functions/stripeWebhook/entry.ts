@@ -68,6 +68,50 @@ Deno.serve(async (req) => {
           });
         }
         console.log(`Customer saved: ${customerEmail}`);
+
+        // Sync to HubSpot CRM
+        try {
+          const { accessToken } = await base44.asServiceRole.connectors.getConnection("hubspot");
+          const nameParts = customerName.trim().split(" ");
+          const firstName = nameParts[0] || "";
+          const lastName = nameParts.slice(1).join(" ") || "";
+          const productLabel = PRODUCT_NAMES[product] || product;
+
+          // Search for existing contact by email
+          const searchRes = await fetch("https://api.hubapi.com/crm/v3/objects/contacts/search", {
+            method: "POST",
+            headers: { "Authorization": `Bearer ${accessToken}`, "Content-Type": "application/json" },
+            body: JSON.stringify({ filterGroups: [{ filters: [{ propertyName: "email", operator: "EQ", value: customerEmail }] }], limit: 1 })
+          });
+          const searchData = await searchRes.json();
+          const existingContact = searchData.results?.[0];
+
+          const contactProps = {
+            email: customerEmail,
+            firstname: firstName,
+            lastname: lastName,
+            lifecyclestage: "customer",
+            jobtitle: productLabel
+          };
+
+          if (existingContact) {
+            await fetch(`https://api.hubapi.com/crm/v3/objects/contacts/${existingContact.id}`, {
+              method: "PATCH",
+              headers: { "Authorization": `Bearer ${accessToken}`, "Content-Type": "application/json" },
+              body: JSON.stringify({ properties: contactProps })
+            });
+            console.log(`HubSpot contact updated: ${customerEmail}`);
+          } else {
+            await fetch("https://api.hubapi.com/crm/v3/objects/contacts", {
+              method: "POST",
+              headers: { "Authorization": `Bearer ${accessToken}`, "Content-Type": "application/json" },
+              body: JSON.stringify({ properties: contactProps })
+            });
+            console.log(`HubSpot contact created: ${customerEmail}`);
+          }
+        } catch (hubErr) {
+          console.error("HubSpot sync error:", hubErr.message);
+        }
       } catch (dbErr) {
         console.error("Customer save error:", dbErr.message);
       }
