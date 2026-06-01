@@ -4,11 +4,13 @@ import { createClientFromRequest } from "npm:@base44/sdk@0.8.21";
 const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY"));
 
 const NOTION_LINKS = {
-  gtm: "https://fresh-clownfish-6e5.notion.site/The-GTM-OS-3299886dc21e80609b82c49174f23014?source=copy_link",
+  gtm: "https://fresh-clownfish-6e5.notion.site/The-GTM-Builder-3299886dc21e80609b82c49174f23014",
+  bundle: "https://fresh-clownfish-6e5.notion.site/The-GTM-Builder-3299886dc21e80609b82c49174f23014",
 };
 
 const PRODUCT_NAMES = {
-  gtm: "The GTM OS",
+  gtm: "GTM Builder",
+  bundle: "Builder Bundle",
 };
 
 Deno.serve(async (req) => {
@@ -73,16 +75,17 @@ Deno.serve(async (req) => {
 
     if (customerEmail && product && NOTION_LINKS[product]) {
       try {
+        const isBundle = product === 'bundle';
         await base44.asServiceRole.integrations.Core.SendEmail({
           to: customerEmail,
           subject: `Your ${PRODUCT_NAMES[product]} — Access Inside`,
           body: `Hi there,
 
 Thank you for purchasing ${PRODUCT_NAMES[product]}!${discountLine}
-Here's your access link — click to duplicate the portal into your own Notion workspace:
+Here's your access link — click to duplicate the GTM Builder portal into your own Notion workspace:
 
 ${NOTION_LINKS[product]}
-
+${isBundle ? "\nProduct Builder: You'll receive a separate email with your Product Builder access link as soon as it launches. No further payment required.\n" : ""}
 If you have any questions, reply to this email.
 
 — Toni

@@ -4,8 +4,12 @@ const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY"));
 
 const PRODUCTS = {
   gtm: {
-    priceId: "price_1TE1toQ67iHZYw6wAYWf3Wvk",
-    name: "The GTM OS",
+    priceId: "price_1TclPKQ67iHZYw6w7k1doUjd",
+    name: "GTM Builder",
+  },
+  bundle: {
+    priceId: "price_1TdV6CQ67iHZYw6wxwocN39M",
+    name: "Builder Bundle",
   },
 };
 
@@ -25,7 +29,7 @@ Deno.serve(async (req) => {
       line_items: [{ price: productConfig.priceId, quantity: 1 }],
       allow_promotion_codes: true,
       success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&product=${product}`,
-      cancel_url: `${origin}/GetTheFrameworks`,
+      cancel_url: `${origin}/BuyTheBuilderSuite`,
       metadata: {
         base44_app_id: Deno.env.get("BASE44_APP_ID"),
         product,

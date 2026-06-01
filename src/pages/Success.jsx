@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { CheckCircle, ExternalLink } from "lucide-react";
+import { CheckCircle, ExternalLink, Calendar } from "lucide-react";
 
 const NOTION_LINKS = {
-  gtm: "https://fresh-clownfish-6e5.notion.site/The-GTM-OS-3299886dc21e80609b82c49174f23014?source=copy_link",
+  gtm: "https://fresh-clownfish-6e5.notion.site/The-GTM-Builder-3299886dc21e80609b82c49174f23014",
+  bundle: "https://fresh-clownfish-6e5.notion.site/The-GTM-Builder-3299886dc21e80609b82c49174f23014",
 };
 
 const PRODUCT_NAMES = {
-  gtm: "The GTM OS",
+  gtm: "GTM Builder",
+  bundle: "Builder Bundle",
 };
+
+const CALENDAR_LINK = "https://whitehorselabs.zohobookings.com.au";
 
 export default function Success() {
   const [product, setProduct] = useState("gtm");
@@ -46,15 +50,26 @@ export default function Success() {
           Thank you for purchasing <strong>{productName}</strong>. A confirmation email with your access link is on its way. Click below to access your Notion portal now.
         </p>
 
-        <a
-          href={notionLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm mb-4" style={{ color: '#e8195a', background: 'white', border: '2px solid #e8195a' }}
-        >
-          <ExternalLink className="w-4 h-4" />
-          Access {productName} →
-        </a>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href={notionLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 font-semibold px-8 py-4 rounded-lg text-sm border-2 border-[#e8195a] text-[#e8195a] hover:bg-[#e8195a]/5 transition-colors"
+          >
+            <ExternalLink className="w-4 h-4" />
+            Access Your Notion Portal →
+          </a>
+          <a
+            href={CALENDAR_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm bg-gradient-to-br from-[#e8195a] to-[#7B5FB5] hover:opacity-90 transition-opacity"
+          >
+            <Calendar className="w-4 h-4" />
+            Book Your Free Strategy Session
+          </a>
+        </div>
 
         <p className="text-[#aaa] text-xs mt-6">
           Check your inbox for a confirmation email with this link for your records.
