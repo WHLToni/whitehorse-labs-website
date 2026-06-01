@@ -320,25 +320,6 @@ export default function BuyTheFrameworks() {
         </div>
       </section>
 
-      {/* CONSULTING UPGRADE PATH */}
-      <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
-        <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
-        <div className="relative max-w-3xl mx-auto px-6 lg:px-10 z-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">The Upgrade Path</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">Same starting point. Different depth.</h2>
-          <p className="text-white/50 text-base leading-relaxed mb-5">
-            The Builder products give you the baseline foundations fast - the frameworks that matter most at early stage, structured so you can work through them yourself. Consulting goes further: tailored frameworks, additional models specific to your product and market, and an experienced operator helping you embed those foundations and build a GTM that scales.
-          </p>
-          <p className="text-white/50 text-base leading-relaxed mb-10">
-            Any Builder purchase is credited toward a consulting engagement. You're not throwing money away by starting here - you're getting a head start, and you'll walk into the first consulting session already knowing your market, your buyer, and your competitive position.
-          </p>
-          <Link to={createPageUrl("Services")}
-            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm border border-white/25 hover:border-white/50 transition-colors">
-            View Services &amp; Pricing &rarr;
-          </Link>
-        </div>
-      </section>
 
       {/* FAQs */}
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
