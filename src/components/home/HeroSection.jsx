@@ -46,7 +46,7 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-8 text-[#0a0a0a]">
-              You've built something complex. Getting it to market is a different skill set entirely.
+              You've built the product. Getting it to market is a different skill set entirely.
             </h1>
 
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">

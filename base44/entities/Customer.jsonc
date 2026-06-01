@@ -1,0 +1,57 @@
+{
+  "name": "Customer",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "purchase_date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Purchase Date"
+    },
+    "product_name": {
+      "type": "string",
+      "title": "Product Name"
+    },
+    "stripe_customer_id": {
+      "type": "string",
+      "title": "Stripe Customer ID"
+    }
+  },
+  "required": [
+    "email"
+  ],
+  "access_control": {
+    "list": {
+      "roles": [
+        "admin"
+      ]
+    },
+    "read": {
+      "roles": [
+        "admin"
+      ]
+    },
+    "create": {
+      "roles": [
+        "admin"
+      ]
+    },
+    "update": {
+      "roles": [
+        "admin"
+      ]
+    },
+    "delete": {
+      "roles": [
+        "admin"
+      ]
+    }
+  }
+}
