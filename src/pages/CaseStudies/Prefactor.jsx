@@ -201,16 +201,16 @@ export default function PrefactorCaseStudy() {
       </section>
 
       {/* PITCH DECK */}
-      <section className="bg-white">
+      <section style={{ background: "linear-gradient(160deg, #071a1a 0%, #0d2b2b 50%, #0a1f2e 100%)" }}>
         <div className="max-w-[900px] mx-auto px-10 py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
-            className="mb-8"
+            className="mb-12"
           >
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">Investor narrative</p>
-            <h2 className="text-2xl md:text-3xl text-[#0a0a0a] mb-5">A pitch deck built around the new positioning.</h2>
-            <p className="text-base leading-relaxed text-[#444] max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Investor narrative</p>
+            <h2 className="text-2xl md:text-3xl text-white mb-5">A pitch deck built around the new positioning.</h2>
+            <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
               The pitch deck was rebuilt from the ground up around the findings from our market research and ICP interviews — a new narrative positioning Prefactor as the MCP-Native Agent Control Plane for enterprise and regulated industries.
             </p>
           </motion.div>
@@ -227,35 +227,82 @@ export default function PrefactorCaseStudy() {
                 <img
                   src={src}
                   alt={`Pitch deck slide ${i + 1}`}
-                  className="w-full aspect-video object-cover rounded-lg bg-[#f0f0f0]"
-                  style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.1)" }}
+                  className="w-full aspect-video object-cover rounded-xl"
+                  style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }}
                 />
               </div>
             ))}
           </div>
 
-          {/* Desktop: 2x2 grid */}
-          <div className="hidden md:grid grid-cols-2 gap-4">
-            {[
-              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/06753bf6d_PitchDeckCover.png",
-              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/5930a19f6_PitchDeckMarket.png",
-              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/dd4c6e5f0_PitchDeckProduct.png",
-              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/9d30f934b_PitchDeckFeatures.png",
-            ].map((src, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.07 }}
-              >
-                <img
-                  src={src}
-                  alt={`Pitch deck slide ${i + 1}`}
-                  className="w-full aspect-video object-cover rounded-lg bg-[#f0f0f0]"
-                  style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.1)" }}
-                />
-              </motion.div>
-            ))}
-          </div>
+          {/* Desktop: Layered depth layout */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.7 }}
+            className="hidden md:flex items-center justify-center"
+            style={{ height: "340px", position: "relative" }}
+          >
+            {/* Left slide — angled back-left */}
+            <div style={{
+              position: "absolute",
+              left: "0%",
+              top: "20px",
+              width: "48%",
+              transformOrigin: "right center",
+              transform: "perspective(900px) rotateY(22deg) scale(0.85)",
+              zIndex: 1,
+              boxShadow: "-8px 20px 60px rgba(0,0,0,0.6)",
+              borderRadius: "10px",
+              overflow: "hidden",
+            }}>
+              <img
+                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/5930a19f6_PitchDeckMarket.png"
+                alt="Pitch deck slide 2"
+                className="w-full block"
+                style={{ aspectRatio: "16/9", objectFit: "cover" }}
+              />
+            </div>
+
+            {/* Centre slide — front and large */}
+            <div style={{
+              position: "absolute",
+              left: "50%",
+              top: "0",
+              width: "54%",
+              transform: "translateX(-50%)",
+              zIndex: 10,
+              boxShadow: "0 30px 80px rgba(0,0,0,0.7), 0 0 40px rgba(13,148,136,0.15)",
+              borderRadius: "10px",
+              overflow: "hidden",
+            }}>
+              <img
+                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/06753bf6d_PitchDeckCover.png"
+                alt="Pitch deck cover"
+                className="w-full block"
+                style={{ aspectRatio: "16/9", objectFit: "cover" }}
+              />
+            </div>
+
+            {/* Right slide — angled back-right */}
+            <div style={{
+              position: "absolute",
+              right: "0%",
+              top: "20px",
+              width: "48%",
+              transformOrigin: "left center",
+              transform: "perspective(900px) rotateY(-22deg) scale(0.85)",
+              zIndex: 1,
+              boxShadow: "8px 20px 60px rgba(0,0,0,0.6)",
+              borderRadius: "10px",
+              overflow: "hidden",
+            }}>
+              <img
+                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9d30f934b_PitchDeckFeatures.png"
+                alt="Pitch deck slide 4"
+                className="w-full block"
+                style={{ aspectRatio: "16/9", objectFit: "cover" }}
+              />
+            </div>
+          </motion.div>
         </div>
       </section>
 
