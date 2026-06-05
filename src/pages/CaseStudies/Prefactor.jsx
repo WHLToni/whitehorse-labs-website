@@ -257,6 +257,55 @@ export default function PrefactorCaseStudy() {
         </div>
       </section>
 
+      {/* ADDITIONAL DELIVERABLES */}
+      <section style={{ background: "#f7f7f8" }}>
+        <div className="max-w-[900px] mx-auto px-10 py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="mb-10"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">From strategy to execution</p>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">White paper. Ad creative. A Notion portal for everything.</h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* White paper */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.5 }}
+            >
+              <img src="/assets/prefactor/whitepaper.jpg" alt="White paper" className="w-full aspect-video object-cover rounded-lg bg-[#e5e5e5]" />
+              <p className="mt-3 font-semibold text-sm text-[#0a0a0a]">Redefining Digital Trust</p>
+              <p className="mt-1 text-sm text-[#555] leading-relaxed">Thought leadership white paper positioning Prefactor at the intersection of agentic AI and enterprise governance.</p>
+            </motion.div>
+
+            {/* Reddit ads */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.07 }}
+            >
+              <div className="flex flex-col gap-3">
+                <img src="/assets/prefactor/reddit-ad-1.jpg" alt="Reddit ad 1" className="w-full object-cover rounded-lg bg-[#e5e5e5]" />
+                <img src="/assets/prefactor/reddit-ad-2.jpg" alt="Reddit ad 2" className="w-full object-cover rounded-lg bg-[#e5e5e5]" />
+              </div>
+              <p className="mt-3 font-semibold text-sm text-[#0a0a0a]">Reddit ad creative</p>
+              <p className="mt-1 text-sm text-[#555] leading-relaxed">Campaign-ready ads built on the new brand system and messaging framework.</p>
+            </motion.div>
+
+            {/* Notion portal */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.14 }}
+            >
+              <img src="/assets/prefactor/notion-portal.jpg" alt="Notion portal" className="w-full aspect-video object-cover rounded-lg bg-[#e5e5e5]" />
+              <p className="mt-3 font-semibold text-sm text-[#0a0a0a]">Notion client portal</p>
+              <p className="mt-1 text-sm text-[#555] leading-relaxed">All strategic deliverables structured in a navigable client workspace — market research, interviews, segmentation, positioning, and brand assets.</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* DELIVERABLES GRID */}
       <section style={{ background: "#f7f7f8" }}>
         <div className="max-w-[900px] mx-auto px-10 py-20">
