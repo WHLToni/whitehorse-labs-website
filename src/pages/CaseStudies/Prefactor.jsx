@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Search, BarChart2, Target, Palette, FileText, Layout, Megaphone, BookOpen, RefreshCw, ShieldCheck, LayoutTemplate } from "lucide-react";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
 
 export default function PrefactorCaseStudy() {
   useEffect(() => {
@@ -413,6 +415,58 @@ export default function PrefactorCaseStudy() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section style={{ background: "linear-gradient(135deg, #0d2b2b 0%, #1a3a3a 100%)" }} className="w-full">
+        <div className="max-w-[700px] mx-auto px-10 py-[100px]">
+
+          {/* Sub-section A — GTM Builder */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>The GTM Builder</p>
+            <h3 className="text-white text-xl md:text-2xl mb-4">The frameworks from this engagement — in a system you can run yourself.</h3>
+            <p className="text-sm leading-relaxed mb-6" style={{ color: "#a8cccc" }}>
+              The ICP interview methodology, market research models, segmentation and targeting approach, and positioning framework used throughout this engagement form the foundation of the GTM Builder. Available as a self-guided Notion system.
+            </p>
+            <Link
+              to={createPageUrl("BuyTheBuilderSuite")}
+              className="inline-block text-sm font-semibold px-6 py-2.5 rounded-lg transition-all duration-200"
+              style={{ color: "white", border: "1.5px solid #0d9488", background: "transparent" }}
+              onMouseEnter={e => e.currentTarget.style.background = "#0d9488"}
+              onMouseLeave={e => e.currentTarget.style.background = "transparent"}
+            >
+              Explore the GTM Builder →
+            </Link>
+          </motion.div>
+
+          {/* Divider */}
+          <div className="my-12" style={{ borderTop: "1px solid rgba(13,148,136,0.2)" }} />
+
+          {/* Sub-section B — Consulting CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Work with Toni</p>
+            <h3 className="text-white text-xl md:text-2xl mb-4">Ready to do this for your product?</h3>
+            <p className="text-sm leading-relaxed mb-6" style={{ color: "#a8cccc" }}>
+              If you're preparing for a raise, planning international expansion, or going to market with a complex or regulated product — let's talk.
+            </p>
+            <Link
+              to={createPageUrl("Contact")}
+              className="inline-block text-sm font-semibold px-6 py-2.5 rounded-lg text-white transition-all duration-200"
+              style={{ background: "#0d9488" }}
+              onMouseEnter={e => e.currentTarget.style.background = "#0b7a70"}
+              onMouseLeave={e => e.currentTarget.style.background = "#0d9488"}
+            >
+              Book a call →
+            </Link>
+          </motion.div>
+
         </div>
       </section>
 
