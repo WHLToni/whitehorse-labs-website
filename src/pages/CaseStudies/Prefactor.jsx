@@ -324,7 +324,7 @@ export default function PrefactorCaseStudy() {
               initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ duration: 0.5 }}
             >
-              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/216786036_Whitepaper.png" alt="White paper" className="w-full aspect-video object-cover rounded-lg bg-[#e5e5e5]" />
+              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/216786036_Whitepaper.png" alt="White paper" className="w-full aspect-video object-cover object-top rounded-lg bg-[#e5e5e5]" />
               <p className="mt-3 font-semibold text-sm text-[#0a0a0a]">Redefining Digital Trust</p>
               <p className="mt-1 text-sm text-[#555] leading-relaxed">Thought leadership white paper positioning Prefactor at the intersection of agentic AI and enterprise governance.</p>
             </motion.div>
