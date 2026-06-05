@@ -198,6 +198,65 @@ export default function PrefactorCaseStudy() {
         </div>
       </section>
 
+      {/* PITCH DECK */}
+      <section className="bg-white">
+        <div className="max-w-[900px] mx-auto px-10 py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="mb-8"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">Investor narrative</p>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a] mb-5">A pitch deck built around the new positioning.</h2>
+            <p className="text-base leading-relaxed text-[#444] max-w-2xl">
+              The pitch deck was rebuilt from the ground up around the findings from our market research and ICP interviews — a new narrative positioning Prefactor as the MCP-Native Agent Control Plane for enterprise and regulated industries.
+            </p>
+          </motion.div>
+
+          {/* Mobile: horizontal scroll strip */}
+          <div className="flex md:hidden overflow-x-auto gap-4 pb-2">
+            {[
+              "/assets/prefactor/pitch-deck-cover.jpg",
+              "/assets/prefactor/pitch-deck-market.jpg",
+              "/assets/prefactor/pitch-deck-product.jpg",
+              "/assets/prefactor/pitch-deck-features.jpg",
+            ].map((src, i) => (
+              <div key={i} className="flex-shrink-0" style={{ minWidth: "260px" }}>
+                <img
+                  src={src}
+                  alt={`Pitch deck slide ${i + 1}`}
+                  className="w-full aspect-video object-cover rounded-lg bg-[#f0f0f0]"
+                  style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.1)" }}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop: 2x2 grid */}
+          <div className="hidden md:grid grid-cols-2 gap-4">
+            {[
+              "/assets/prefactor/pitch-deck-cover.jpg",
+              "/assets/prefactor/pitch-deck-market.jpg",
+              "/assets/prefactor/pitch-deck-product.jpg",
+              "/assets/prefactor/pitch-deck-features.jpg",
+            ].map((src, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.07 }}
+              >
+                <img
+                  src={src}
+                  alt={`Pitch deck slide ${i + 1}`}
+                  className="w-full aspect-video object-cover rounded-lg bg-[#f0f0f0]"
+                  style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.1)" }}
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* DELIVERABLES GRID */}
       <section style={{ background: "#f7f7f8" }}>
         <div className="max-w-[900px] mx-auto px-10 py-20">
