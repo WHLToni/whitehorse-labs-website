@@ -121,6 +121,46 @@ export default function PrefactorCaseStudy() {
         </div>
       </section>
 
+      {/* KEY FINDINGS */}
+      <section className="bg-white">
+        <div className="max-w-[900px] mx-auto px-10 py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="mb-12"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The insights</p>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Four findings that changed everything.</h2>
+          </motion.div>
+
+          <div>
+            {[
+              { num: "01", title: "The buyer is not the engineer.", body: "Engineers were Prefactor's existing user base, but engineers don't control budgets. The actual purchasing decision for an enterprise security and governance tool sits with the CTO, CISO, and in some cases the CPO. Prefactor needed to be speaking a completely different language to a completely different person." },
+              { num: "02", title: "MCP authentication isn't the problem.", body: "The market wasn't thinking about MCP authentication. Senior executives were concerned about auditability, visibility, control, and demonstrable ROI from their agentic AI investments. Authentication was a hygiene factor — table stakes, not a differentiator. The product needed to be much broader." },
+              { num: "03", title: "Regulated industries are the primary target.", body: "The assumption that regulated industries would be too cautious for early agentic AI adoption was wrong. Banking, financial services, and insurance are moving forward methodically — precisely because they have the governance frameworks and regulatory discipline to do it safely. They also have the most to gain, and the budget to act." },
+              { num: "04", title: "The product needed a different vision entirely.", body: "The market needed a platform for visibility, governance, auditability, and control of agents — a unified executive view across every agent in the organisation. Active monitoring, audit logs, a registry, security controls, ROI metrics. Not an auth tool. A control plane." },
+            ].map((finding, i) => (
+              <motion.div
+                key={finding.num}
+                initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="relative mb-12 pl-6"
+                style={{ borderLeft: "3px solid #0d9488" }}
+              >
+                <div
+                  className="absolute -left-3 top-0 font-bold select-none"
+                  style={{ fontSize: "64px", lineHeight: 1, color: "#0d9488", opacity: 0.12 }}
+                >
+                  {finding.num}
+                </div>
+                <h3 className="font-semibold text-[#0a0a0a] text-lg mb-2">{finding.title}</h3>
+                <p className="text-[#444] text-base leading-relaxed">{finding.body}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* DELIVERABLES GRID */}
       <section style={{ background: "#f7f7f8" }}>
         <div className="max-w-[900px] mx-auto px-10 py-20">
