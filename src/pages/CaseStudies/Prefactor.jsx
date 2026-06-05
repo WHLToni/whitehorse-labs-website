@@ -83,7 +83,7 @@ export default function PrefactorCaseStudy() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            src="/assets/prefactor/brand-guidelines-cover.jpg"
+            src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png"
             alt="Prefactor Brand Guidelines — designed by Whitehorse Labs"
             className="w-full mt-10"
             style={{ borderRadius: "12px" }}
@@ -180,10 +180,10 @@ export default function PrefactorCaseStudy() {
 
           <div className="grid grid-cols-2 gap-4">
             {[
-              { src: "/assets/prefactor/brand-guidelines-cover.jpg", caption: "Brand guidelines — cover" },
-              { src: "/assets/prefactor/brand-guidelines-logo.jpg", caption: "Logo usage guidelines" },
-              { src: "/assets/prefactor/brand-guidelines-typography.jpg", caption: "Typography system" },
-              { src: "/assets/prefactor/brand-guidelines-imagery.jpg", caption: "Imagery and icons direction" },
+              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png", caption: "Brand guidelines — cover" },
+              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png", caption: "Logo usage guidelines" },
+              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png", caption: "Typography system" },
+              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png", caption: "Imagery and icons direction" },
             ].map((img, i) => (
               <motion.div
                 key={img.caption}
@@ -218,10 +218,10 @@ export default function PrefactorCaseStudy() {
           {/* Mobile: horizontal scroll strip */}
           <div className="flex md:hidden overflow-x-auto gap-4 pb-2">
             {[
-              "/assets/prefactor/pitch-deck-cover.jpg",
-              "/assets/prefactor/pitch-deck-market.jpg",
-              "/assets/prefactor/pitch-deck-product.jpg",
-              "/assets/prefactor/pitch-deck-features.jpg",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/06753bf6d_PitchDeckCover.png",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/5930a19f6_PitchDeckMarket.png",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/dd4c6e5f0_PitchDeckProduct.png",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/9d30f934b_PitchDeckFeatures.png",
             ].map((src, i) => (
               <div key={i} className="flex-shrink-0" style={{ minWidth: "260px" }}>
                 <img
@@ -237,10 +237,10 @@ export default function PrefactorCaseStudy() {
           {/* Desktop: 2x2 grid */}
           <div className="hidden md:grid grid-cols-2 gap-4">
             {[
-              "/assets/prefactor/pitch-deck-cover.jpg",
-              "/assets/prefactor/pitch-deck-market.jpg",
-              "/assets/prefactor/pitch-deck-product.jpg",
-              "/assets/prefactor/pitch-deck-features.jpg",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/06753bf6d_PitchDeckCover.png",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/5930a19f6_PitchDeckMarket.png",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/dd4c6e5f0_PitchDeckProduct.png",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/9d30f934b_PitchDeckFeatures.png",
             ].map((src, i) => (
               <motion.div
                 key={i}
@@ -371,7 +371,7 @@ export default function PrefactorCaseStudy() {
               viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.08 }}
             >
               <p className="text-xs font-semibold uppercase tracking-widest text-[#aaa] mb-3">After</p>
-              <img src="/assets/prefactor/brand-guidelines-cover.jpg" alt="Brand guidelines" className="w-full rounded-xl object-cover bg-[#e5e5e5]" />
+              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines" className="w-full rounded-xl object-cover bg-[#e5e5e5]" />
             </motion.div>
           </div>
         </div>
