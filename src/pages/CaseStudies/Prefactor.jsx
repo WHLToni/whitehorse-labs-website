@@ -161,6 +161,43 @@ export default function PrefactorCaseStudy() {
         </div>
       </section>
 
+      {/* BRAND TRANSFORMATION */}
+      <section style={{ background: "linear-gradient(135deg, #0d2b2b 0%, #1a3a3a 100%)" }}>
+        <div className="max-w-[900px] mx-auto px-10 py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="mb-8"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Brand refresh</p>
+            <h2 className="text-2xl md:text-3xl text-white mb-5">From generic tech startup to enterprise-ready brand.</h2>
+            <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
+              Prefactor had no cohesive brand identity. The visual language was fragmented — dark templates, gradient fonts, AI-generated imagery that looked like every other early-stage tech company. We ran a brand strategy workshop with the founding team, defined their brand personality and visual direction, and briefed a freelance designer who developed the complete identity from strategy through to a production-ready style guide.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { src: "/assets/prefactor/brand-guidelines-cover.jpg", caption: "Brand guidelines — cover" },
+              { src: "/assets/prefactor/brand-guidelines-logo.jpg", caption: "Logo usage guidelines" },
+              { src: "/assets/prefactor/brand-guidelines-typography.jpg", caption: "Typography system" },
+              { src: "/assets/prefactor/brand-guidelines-imagery.jpg", caption: "Imagery and icons direction" },
+            ].map((img, i) => (
+              <motion.div
+                key={img.caption}
+                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }}
+              >
+                <div className="w-full aspect-video rounded-lg overflow-hidden bg-white/10">
+                  <img src={img.src} alt={img.caption} className="w-full h-full object-cover" />
+                </div>
+                <p className="text-xs mt-2" style={{ color: "#8ab8b8" }}>{img.caption}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* DELIVERABLES GRID */}
       <section style={{ background: "#f7f7f8" }}>
         <div className="max-w-[900px] mx-auto px-10 py-20">
