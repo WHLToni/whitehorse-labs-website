@@ -8,6 +8,7 @@ import PageNotFound from './lib/PageNotFound';
 import Success from './pages/Success';
 import BuyTheFrameworks from './pages/BuyTheFrameworks';
 import Admin from './pages/Admin.jsx';
+import PrefactorCaseStudy from './pages/CaseStudies/Prefactor.jsx';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
@@ -64,6 +65,7 @@ const AuthenticatedApp = () => {
       <Route path="/success" element={<LayoutWrapper currentPageName="success"><Success /></LayoutWrapper>} />
       <Route path="/BuyTheBuilderSuite" element={<LayoutWrapper currentPageName="BuyTheFrameworks"><BuyTheFrameworks /></LayoutWrapper>} />
       <Route path="/admin" element={<Admin />} />
+      <Route path="/CaseStudies/Prefactor" element={<LayoutWrapper currentPageName="CaseStudies"><PrefactorCaseStudy /></LayoutWrapper>} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
