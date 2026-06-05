@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Search, BarChart2, Target, Palette, FileText, Layout, Megaphone, BookOpen } from "lucide-react";
 
 export default function PrefactorCaseStudy() {
   useEffect(() => {
@@ -85,6 +86,79 @@ export default function PrefactorCaseStudy() {
             className="w-full mt-10"
             style={{ borderRadius: "12px" }}
           />
+        </div>
+      </section>
+
+      {/* ENGAGEMENT OVERVIEW */}
+      <section className="bg-white">
+        <div className="max-w-[900px] mx-auto px-10 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-16">
+            {/* Left */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.6 }}
+              className="md:col-span-2"
+            >
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The brief</p>
+              <h2 className="text-2xl md:text-3xl leading-snug text-[#0a0a0a]">
+                A US market introduction. A pitch deck. The commercial foundations to make it count.
+              </h2>
+            </motion.div>
+
+            {/* Right */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
+              className="md:col-span-3 space-y-5 text-[#444] text-base leading-relaxed"
+            >
+              <p>Prefactor came to Whitehorse Labs with a clear brief: they had secured their second round of Antler funding, were planning a US market introduction trip, and needed the commercial foundations to make it count. The immediate deliverables were a pitch deck, a white paper, and the product marketing fundamentals — segmentation, targeting, positioning, and messaging.</p>
+              <p>They had 45 users on a free tier. Plenty of conversations. Zero conversions. The product was an MCP authentication solution, originally built for software engineers navigating the emerging agentic AI landscape. On paper, the timing looked right. In practice, something wasn't working — and nobody had yet identified what.</p>
+              <p>Two weeks into the engagement, I asked to see a product demo. What I saw was an early-stage MVP solving a problem the intended audience hadn't yet recognised as a problem. The engagement brief changed. Before we could build commercial assets for a US launch, we needed to know whether the market actually wanted what Prefactor was building.</p>
+            </motion.div>
+          </div>
+
+          <hr className="mt-16 border-[#e5e5e5]" />
+        </div>
+      </section>
+
+      {/* DELIVERABLES GRID */}
+      <section style={{ background: "#f7f7f8" }}>
+        <div className="max-w-[900px] mx-auto px-10 py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="mb-10"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The work</p>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Seven workstreams. Fourteen weeks.</h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              { icon: <Search className="w-5 h-5 text-[#0d2b2b]" />, title: "ICP Interview Programme", body: "Hypothesis development, questionnaire design, senior-leader interviews from Toni's own network, thematic analysis, roadmap insights, and validation of key hypotheses." },
+              { icon: <BarChart2 className="w-5 h-5 text-[#0d2b2b]" />, title: "Market Research", body: "PESTEL analysis, VRIO model (competitive advantage assessment), competitive analysis and comparison matrix, market sizing, segment value, and targeting matrix." },
+              { icon: <Target className="w-5 h-5 text-[#0d2b2b]" />, title: "Positioning & Messaging", body: "New ICP personas, value proposition development, positioning statement, and full messaging architecture built for an executive buyer — not an engineering audience." },
+              { icon: <Palette className="w-5 h-5 text-[#0d2b2b]" />, title: "Brand Refresh", body: "Brand strategy workshop, complete visual identity, style guide, and designer briefing and facilitation across multiple collaborative workshops with the founding team." },
+              { icon: <FileText className="w-5 h-5 text-[#0d2b2b]" />, title: "White Paper", body: "Redefining Digital Trust — a thought leadership piece positioning Prefactor at the intersection of agentic AI and enterprise governance." },
+              { icon: <Layout className="w-5 h-5 text-[#0d2b2b]" />, title: "Pitch Deck", body: "Investor and sales pitch deck built on a branded, reusable template — structured around the new positioning and ICP narrative." },
+              { icon: <Megaphone className="w-5 h-5 text-[#0d2b2b]" />, title: "Digital Ad Creative", body: "Campaign-ready Reddit ad creative built on the new brand system, messaging framework, and ICP insights." },
+              { icon: <BookOpen className="w-5 h-5 text-[#0d2b2b]" />, title: "Notion Client Portal", body: "All strategic work delivered in a structured, navigable Notion workspace — including investor snapshot, market research, segmentation model, interview findings, and brand assets." },
+            ].map((card, i) => (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white rounded-xl px-6 py-5"
+                style={{ border: "0.5px solid #e5e5e5" }}
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  {card.icon}
+                  <h3 className="font-semibold text-[#0a0a0a] text-sm">{card.title}</h3>
+                </div>
+                <p className="text-sm text-[#555] leading-relaxed">{card.body}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
