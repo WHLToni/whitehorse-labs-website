@@ -340,6 +340,41 @@ export default function PrefactorCaseStudy() {
         </div>
       </section>
 
+      {/* BEFORE AND AFTER */}
+      <section style={{ background: "#f7f7f8" }}>
+        <div className="max-w-[900px] mx-auto px-10 py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="mb-10"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">Transformation</p>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a] mb-4">Before and after.</h2>
+            <p className="text-sm text-[#555] leading-relaxed max-w-xl">The brand transformation speaks for itself. From a fragmented, template-driven visual identity to a cohesive, enterprise-ready brand system — built to scale without ongoing designer dependency.</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.5 }}
+            >
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#aaa] mb-3">Before</p>
+              <div className="rounded-xl flex items-center justify-center h-[300px]" style={{ background: "#f0f0f0", border: "2px dashed #ccc" }}>
+                <span className="text-sm text-[#999]">Old website screenshot — coming soon</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.08 }}
+            >
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#aaa] mb-3">After</p>
+              <img src="/assets/prefactor/brand-guidelines-cover.jpg" alt="Brand guidelines" className="w-full rounded-xl object-cover bg-[#e5e5e5]" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* DELIVERABLES GRID */}
       <section style={{ background: "#f7f7f8" }}>
         <div className="max-w-[900px] mx-auto px-10 py-20">
