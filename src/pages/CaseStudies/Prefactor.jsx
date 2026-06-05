@@ -324,7 +324,7 @@ export default function PrefactorCaseStudy() {
               initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ duration: 0.5 }}
             >
-              <img src="/assets/prefactor/whitepaper.jpg" alt="White paper" className="w-full aspect-video object-cover rounded-lg bg-[#e5e5e5]" />
+              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/216786036_Whitepaper.png" alt="White paper" className="w-full aspect-video object-cover rounded-lg bg-[#e5e5e5]" />
               <p className="mt-3 font-semibold text-sm text-[#0a0a0a]">Redefining Digital Trust</p>
               <p className="mt-1 text-sm text-[#555] leading-relaxed">Thought leadership white paper positioning Prefactor at the intersection of agentic AI and enterprise governance.</p>
             </motion.div>
@@ -335,8 +335,8 @@ export default function PrefactorCaseStudy() {
               viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.07 }}
             >
               <div className="flex flex-col gap-3">
-                <img src="/assets/prefactor/reddit-ad-1.jpg" alt="Reddit ad 1" className="w-full object-cover rounded-lg bg-[#e5e5e5]" />
-                <img src="/assets/prefactor/reddit-ad-2.jpg" alt="Reddit ad 2" className="w-full object-cover rounded-lg bg-[#e5e5e5]" />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/bd35057d9_RedditAd1.png" alt="Reddit ad 1" className="w-full object-cover rounded-lg bg-[#e5e5e5]" />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/134fd91fe_RedditAd2.png" alt="Reddit ad 2" className="w-full object-cover rounded-lg bg-[#e5e5e5]" />
               </div>
               <p className="mt-3 font-semibold text-sm text-[#0a0a0a]">Reddit ad creative</p>
               <p className="mt-1 text-sm text-[#555] leading-relaxed">Campaign-ready ads built on the new brand system and messaging framework.</p>
@@ -347,7 +347,7 @@ export default function PrefactorCaseStudy() {
               initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.14 }}
             >
-              <img src="/assets/prefactor/notion-portal.jpg" alt="Notion portal" className="w-full aspect-video object-cover rounded-lg bg-[#e5e5e5]" />
+              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/4abc887fa_NotionPortal.png" alt="Notion portal" className="w-full aspect-video object-cover rounded-lg bg-[#e5e5e5]" />
               <p className="mt-3 font-semibold text-sm text-[#0a0a0a]">Notion client portal</p>
               <p className="mt-1 text-sm text-[#555] leading-relaxed">All strategic deliverables structured in a navigable client workspace — market research, interviews, segmentation, positioning, and brand assets.</p>
             </motion.div>
