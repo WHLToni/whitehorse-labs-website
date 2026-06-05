@@ -307,70 +307,60 @@ export default function PrefactorCaseStudy() {
       </section>
 
       {/* ADDITIONAL DELIVERABLES */}
-      <section style={{ background: "linear-gradient(160deg, #071a1a 0%, #0d2b2b 50%, #0a1f2e 100%)" }}>
-        <div className="max-w-[900px] mx-auto px-10 py-20">
+      <section style={{ background: "#0d5c55" }}>
+        <div className="max-w-[900px] mx-auto px-10 py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
-            className="mb-12"
+            className="mb-10"
           >
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>From strategy to execution</p>
-            <h2 className="text-2xl md:text-3xl text-white mb-5">White paper. Ad creative. A Notion portal for everything.</h2>
-            <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
+            <h2 className="text-3xl md:text-4xl text-white font-bold mb-3">From strategy to execution</h2>
+            <p className="text-lg text-white mb-2">White paper. Ad creative. A Notion portal for everything.</p>
+            <p className="text-sm leading-relaxed" style={{ color: "#a8d8d4" }}>
               Every deliverable built from the new positioning — a thought leadership white paper, campaign-ready ad creative, and a fully structured client workspace.
             </p>
           </motion.div>
 
-          {/* Mobile: horizontal scroll strip */}
-          <div className="flex md:hidden overflow-x-auto gap-4 pb-2">
-            {[
-              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/216786036_Whitepaper.png", alt: "White paper" },
-              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/bd35057d9_RedditAd1.png", alt: "Reddit ad 1" },
-              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/4abc887fa_NotionPortal.png", alt: "Notion portal" },
-            ].map((img, i) => (
-              <div key={i} className="flex-shrink-0" style={{ minWidth: "260px" }}>
-                <img src={img.src} alt={img.alt} className="w-full aspect-video object-cover object-top rounded-xl" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
-              </div>
-            ))}
-          </div>
-
-          {/* Desktop: Layered depth layout */}
+          {/* Masonry grid */}
           <motion.div
             initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }} transition={{ duration: 0.7 }}
-            className="hidden md:flex items-center justify-center"
-            style={{ height: "340px", position: "relative" }}
+            viewport={{ once: true }} transition={{ duration: 0.6 }}
+            className="grid grid-cols-3 gap-4 items-start"
           >
-            {/* Left slide */}
-            <div style={{
-              position: "absolute", left: "0%", top: "20px", width: "48%",
-              transformOrigin: "right center",
-              transform: "perspective(900px) rotateY(22deg) scale(0.85)",
-              zIndex: 1, boxShadow: "-8px 20px 60px rgba(0,0,0,0.6)",
-              borderRadius: "10px", overflow: "hidden",
-            }}>
-              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/bd35057d9_RedditAd1.png" alt="Reddit ad" className="w-full block" style={{ aspectRatio: "16/9", objectFit: "cover" }} />
+            {/* Left: Whitepaper — tall portrait */}
+            <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+              <img
+                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/216786036_Whitepaper.png"
+                alt="White paper"
+                className="w-full block"
+              />
             </div>
 
-            {/* Centre slide */}
-            <div style={{
-              position: "absolute", left: "50%", top: "0", width: "54%",
-              transform: "translateX(-50%)",
-              zIndex: 10, boxShadow: "0 30px 80px rgba(0,0,0,0.7), 0 0 40px rgba(13,148,136,0.15)",
-              borderRadius: "10px", overflow: "hidden",
-            }}>
-              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/216786036_Whitepaper.png" alt="White paper" className="w-full block" style={{ aspectRatio: "16/9", objectFit: "cover", objectPosition: "top" }} />
+            {/* Centre: Reddit ads stacked */}
+            <div className="flex flex-col gap-4">
+              <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+                <img
+                  src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/bd35057d9_RedditAd1.png"
+                  alt="Reddit ad 1"
+                  className="w-full block"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+                <img
+                  src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/134fd91fe_RedditAd2.png"
+                  alt="Reddit ad 2"
+                  className="w-full block"
+                />
+              </div>
             </div>
 
-            {/* Right slide */}
-            <div style={{
-              position: "absolute", right: "0%", top: "20px", width: "48%",
-              transformOrigin: "left center",
-              transform: "perspective(900px) rotateY(-22deg) scale(0.85)",
-              zIndex: 1, boxShadow: "8px 20px 60px rgba(0,0,0,0.6)",
-              borderRadius: "10px", overflow: "hidden",
-            }}>
-              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/4abc887fa_NotionPortal.png" alt="Notion portal" className="w-full block" style={{ aspectRatio: "16/9", objectFit: "cover" }} />
+            {/* Right: Notion portal */}
+            <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+              <img
+                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/4abc887fa_NotionPortal.png"
+                alt="Notion portal"
+                className="w-full block"
+              />
             </div>
           </motion.div>
         </div>
