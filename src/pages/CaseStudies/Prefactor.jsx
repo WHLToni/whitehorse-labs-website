@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Search, BarChart2, Target, Palette, FileText, Layout, Megaphone, BookOpen } from "lucide-react";
+import { Search, BarChart2, Target, Palette, FileText, Layout, Megaphone, BookOpen, RefreshCw, ShieldCheck, LayoutTemplate } from "lucide-react";
 
 export default function PrefactorCaseStudy() {
   useEffect(() => {
@@ -302,6 +302,40 @@ export default function PrefactorCaseStudy() {
               <p className="mt-3 font-semibold text-sm text-[#0a0a0a]">Notion client portal</p>
               <p className="mt-1 text-sm text-[#555] leading-relaxed">All strategic deliverables structured in a navigable client workspace — market research, interviews, segmentation, positioning, and brand assets.</p>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT CHANGED / OUTCOMES */}
+      <section className="bg-white">
+        <div className="max-w-[900px] mx-auto px-10 py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="mb-12"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The outcome</p>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">A redirected roadmap. A brand that works. Commercial foundations built for scale.</h2>
+          </motion.div>
+
+          <div className="flex flex-wrap gap-8">
+            {[
+              { icon: <RefreshCw className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Product roadmap redirected", body: "The ICP interviews validated a completely new product direction — a unified control plane for enterprise agent governance. Development accelerated from there. The product Prefactor is building today is fundamentally different from the one that existed at the start of the engagement." },
+              { icon: <ShieldCheck className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Brand built for enterprise", body: "The new visual identity gave Prefactor the credibility to walk into regulated-industry and enterprise conversations without the brand working against them. The style guide means the founding team can administer the brand themselves — no ongoing designer cost." },
+              { icon: <LayoutTemplate className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Commercial foundations in place", body: "Every asset — white paper, pitch deck, positioning framework, messaging architecture — was built around the new ICP and product direction. A coherent, credible story ready for the US market." },
+            ].map((block, i) => (
+              <motion.div
+                key={block.title}
+                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="flex flex-col gap-3"
+                style={{ flex: 1, minWidth: "200px" }}
+              >
+                {block.icon}
+                <h3 className="font-semibold text-[#0a0a0a] text-base">{block.title}</h3>
+                <p className="text-sm text-[#555] leading-relaxed">{block.body}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
