@@ -78,16 +78,7 @@ export default function PrefactorCaseStudy() {
             ))}
           </motion.div>
 
-          {/* Hero Image */}
-          <motion.img
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png"
-            alt="Prefactor Brand Guidelines — designed by Whitehorse Labs"
-            className="w-full mt-10"
-            style={{ borderRadius: "12px" }}
-          />
+
         </div>
       </section>
 
