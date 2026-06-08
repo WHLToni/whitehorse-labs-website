@@ -9,11 +9,11 @@ export default function PrefactorCaseStudy() {
     document.title = "Prefactor — Case Study | Whitehorse Labs";
     const meta = document.querySelector('meta[name="description"]');
     if (meta) {
-      meta.setAttribute("content", "How Whitehorse Labs helped Prefactor discover their real market, rebuild their brand, and redirect their product roadmap — in 14 weeks.");
+      meta.setAttribute("content", "How Whitehorse Labs helped Prefactor discover their real market, rebuild their brand, and redirect their product roadmap, in 14 weeks.");
     } else {
       const newMeta = document.createElement("meta");
       newMeta.name = "description";
-      newMeta.content = "How Whitehorse Labs helped Prefactor discover their real market, rebuild their brand, and redirect their product roadmap — in 14 weeks.";
+      newMeta.content = "How Whitehorse Labs helped Prefactor discover their real market, rebuild their brand, and redirect their product roadmap, in 14 weeks.";
       document.head.appendChild(newMeta);
     }
   }, []);
@@ -104,8 +104,8 @@ export default function PrefactorCaseStudy() {
               viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
               className="md:col-span-3 space-y-5 text-[#444] text-base leading-relaxed"
             >
-              <p>Prefactor came to Whitehorse Labs with a clear brief: they had secured their second round of Antler funding, were planning a US market introduction trip, and needed the commercial foundations to make it count. The immediate deliverables were a pitch deck, a white paper, and the product marketing fundamentals — segmentation, targeting, positioning, and messaging.</p>
-              <p>They had 45 users on a free tier. Plenty of conversations. Zero conversions. The product was an MCP authentication solution, originally built for software engineers navigating the emerging agentic AI landscape. On paper, the timing looked right. In practice, something wasn't working — and nobody had yet identified what.</p>
+              <p>Prefactor came to Whitehorse Labs with a clear brief: they had secured their second round of Antler funding, were planning a US market introduction trip, and needed the commercial foundations to make it count. The immediate deliverables were a pitch deck, a white paper, and the product marketing fundamentals: segmentation, targeting, positioning, and messaging.</p>
+              <p>They had 45 users on a free tier. Plenty of conversations. Zero conversions. The product was an MCP authentication solution, originally built for software engineers navigating the emerging agentic AI landscape. On paper, the timing looked right. In practice, something wasn't working, and nobody had yet identified what.</p>
               <p>Two weeks into the engagement, I asked to see a product demo. What I saw was an early-stage MVP solving a problem the intended audience hadn't yet recognised as a problem. The engagement brief changed. Before we could build commercial assets for a US launch, we needed to know whether the market actually wanted what Prefactor was building.</p>
             </motion.div>
           </div>
@@ -129,9 +129,9 @@ export default function PrefactorCaseStudy() {
           <div>
             {[
               { num: "01", title: "The buyer is not the engineer.", body: "Engineers were Prefactor's existing user base, but engineers don't control budgets. The actual purchasing decision for an enterprise security and governance tool sits with the CTO, CISO, and in some cases the CPO. Prefactor needed to be speaking a completely different language to a completely different person." },
-              { num: "02", title: "MCP authentication isn't the problem.", body: "The market wasn't thinking about MCP authentication. Senior executives were concerned about auditability, visibility, control, and demonstrable ROI from their agentic AI investments. Authentication was a hygiene factor — table stakes, not a differentiator. The product needed to be much broader." },
+              { num: "02", title: "MCP authentication isn't the problem.", body: "The market wasn't thinking about MCP authentication. Senior executives were concerned about auditability, visibility, control, and demonstrable ROI from their agentic AI investments. Authentication was a hygiene factor: table stakes, not a differentiator. The product needed to be much broader." },
               { num: "03", title: "Regulated industries are the primary target.", body: "The assumption that regulated industries would be too cautious for early agentic AI adoption was wrong. Banking, financial services, and insurance are moving forward methodically — precisely because they have the governance frameworks and regulatory discipline to do it safely. They also have the most to gain, and the budget to act." },
-              { num: "04", title: "The product needed a different vision entirely.", body: "The market needed a platform for visibility, governance, auditability, and control of agents — a unified executive view across every agent in the organisation. Active monitoring, audit logs, a registry, security controls, ROI metrics. Not an auth tool. A control plane." },
+              { num: "04", title: "The product needed a different vision entirely.", body: "The market needed a platform for visibility, governance, auditability, and control of agents: a unified executive view across every agent in the organisation. Active monitoring, audit logs, a registry, security controls, ROI metrics. Not an auth tool. A control plane." },
             ].map((finding, i) => (
               <motion.div
                 key={finding.num}
@@ -165,7 +165,7 @@ export default function PrefactorCaseStudy() {
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Brand refresh</p>
             <h2 className="text-2xl md:text-3xl text-white mb-5">From generic tech startup to enterprise-ready brand.</h2>
             <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
-              Prefactor had no cohesive brand identity. The visual language was fragmented — dark templates, gradient fonts, AI-generated imagery that looked like every other early-stage tech company. We ran a brand strategy workshop with the founding team, defined their brand personality and visual direction, and briefed a freelance designer who developed the complete identity from strategy through to a production-ready style guide.
+              Prefactor had no cohesive brand identity. The visual language was fragmented: dark templates, gradient fonts, AI-generated imagery that looked like every other early-stage tech company. We ran a brand strategy workshop with the founding team, defined their brand personality and visual direction, and briefed a freelance designer who developed the complete identity from strategy through to a production-ready style guide.
             </p>
           </motion.div>
 
@@ -202,7 +202,7 @@ export default function PrefactorCaseStudy() {
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Investor narrative</p>
             <h2 className="text-2xl md:text-3xl text-white mb-5">A pitch deck built around the new positioning.</h2>
             <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
-              The pitch deck was rebuilt from the ground up around the findings from our market research and ICP interviews — a new narrative positioning Prefactor as the MCP-Native Agent Control Plane for enterprise and regulated industries.
+              The pitch deck was rebuilt from the ground up around the findings from our market research and ICP interviews, a new narrative positioning Prefactor as the MCP-Native Agent Control Plane for enterprise and regulated industries.
             </p>
           </motion.div>
 
@@ -308,7 +308,7 @@ export default function PrefactorCaseStudy() {
             <h2 className="text-3xl md:text-4xl text-white font-bold mb-3">From strategy to execution</h2>
             <p className="text-lg text-white mb-2">White paper. Ad creative. A Notion portal for everything.</p>
             <p className="text-sm leading-relaxed" style={{ color: "#a8d8d4" }}>
-              Every deliverable built from the new positioning — a thought leadership white paper, campaign-ready ad creative, and a fully structured client workspace.
+              Every deliverable built from the new positioning: a thought leadership white paper, campaign-ready ad creative, and a fully structured client workspace.
             </p>
           </motion.div>
 
@@ -372,8 +372,8 @@ export default function PrefactorCaseStudy() {
           <div className="flex flex-wrap gap-8">
             {[
               { icon: <RefreshCw className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Product roadmap redirected", body: "The ICP interviews validated a completely new product direction — a unified control plane for enterprise agent governance. Development accelerated from there. The product Prefactor is building today is fundamentally different from the one that existed at the start of the engagement." },
-              { icon: <ShieldCheck className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Brand built for enterprise", body: "The new visual identity gave Prefactor the credibility to walk into regulated-industry and enterprise conversations without the brand working against them. The style guide means the founding team can administer the brand themselves — no ongoing designer cost." },
-              { icon: <LayoutTemplate className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Commercial foundations in place", body: "Every asset — white paper, pitch deck, positioning framework, messaging architecture — was built around the new ICP and product direction. A coherent, credible story ready for the US market." },
+              { icon: <ShieldCheck className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Brand built for enterprise", body: "The new visual identity gave Prefactor the credibility to walk into regulated-industry and enterprise conversations without the brand working against them. The style guide means the founding team can administer the brand themselves, with no ongoing designer cost." },
+              { icon: <LayoutTemplate className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Commercial foundations in place", body: "Every asset: white paper, pitch deck, positioning framework, messaging architecture. All built around the new ICP and product direction. A coherent, credible story ready for the US market." },
             ].map((block, i) => (
               <motion.div
                 key={block.title}
@@ -401,7 +401,7 @@ export default function PrefactorCaseStudy() {
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">Transformation</p>
             <h2 className="text-2xl md:text-3xl text-[#0a0a0a] mb-4">Before and after.</h2>
-            <p className="text-sm text-[#555] leading-relaxed max-w-xl">The brand transformation speaks for itself. From a fragmented, template-driven visual identity to a cohesive, enterprise-ready brand system — built to scale without ongoing designer dependency.</p>
+            <p className="text-sm text-[#555] leading-relaxed max-w-xl">The brand transformation speaks for itself. From a fragmented, template-driven visual identity to a cohesive, enterprise-ready brand system built to scale without ongoing designer dependency.</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -442,10 +442,10 @@ export default function PrefactorCaseStudy() {
             {[
               { icon: <Search className="w-5 h-5 text-[#0d2b2b]" />, title: "ICP Interview Programme", body: "Hypothesis development, questionnaire design, senior-leader interviews from Toni's own network, thematic analysis, roadmap insights, and validation of key hypotheses." },
               { icon: <BarChart2 className="w-5 h-5 text-[#0d2b2b]" />, title: "Market Research", body: "PESTEL analysis, VRIO model (competitive advantage assessment), competitive analysis and comparison matrix, market sizing, segment value, and targeting matrix." },
-              { icon: <Target className="w-5 h-5 text-[#0d2b2b]" />, title: "Positioning & Messaging", body: "New ICP personas, value proposition development, positioning statement, and full messaging architecture built for an executive buyer — not an engineering audience." },
+              { icon: <Target className="w-5 h-5 text-[#0d2b2b]" />, title: "Positioning & Messaging", body: "New ICP personas, value proposition development, positioning statement, and full messaging architecture built for an executive buyer, not an engineering audience." },
               { icon: <Palette className="w-5 h-5 text-[#0d2b2b]" />, title: "Brand Refresh", body: "Brand strategy workshop, complete visual identity, style guide, and designer briefing and facilitation across multiple collaborative workshops with the founding team." },
               { icon: <FileText className="w-5 h-5 text-[#0d2b2b]" />, title: "White Paper", body: "Redefining Digital Trust — a thought leadership piece positioning Prefactor at the intersection of agentic AI and enterprise governance." },
-              { icon: <Layout className="w-5 h-5 text-[#0d2b2b]" />, title: "Pitch Deck", body: "Investor and sales pitch deck built on a branded, reusable template — structured around the new positioning and ICP narrative." },
+              { icon: <Layout className="w-5 h-5 text-[#0d2b2b]" />, title: "Pitch Deck", body: "Investor and sales pitch deck built on a branded, reusable template, structured around the new positioning and ICP narrative." },
               { icon: <Megaphone className="w-5 h-5 text-[#0d2b2b]" />, title: "Digital Ad Creative", body: "Campaign-ready Reddit ad creative built on the new brand system, messaging framework, and ICP insights." },
               { icon: <BookOpen className="w-5 h-5 text-[#0d2b2b]" />, title: "Notion Client Portal", body: "All strategic work delivered in a structured, navigable Notion workspace — including investor snapshot, market research, segmentation model, interview findings, and brand assets." },
             ].map((card, i) => (
@@ -477,7 +477,7 @@ export default function PrefactorCaseStudy() {
             viewport={{ once: true }} transition={{ duration: 0.5 }}
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>The GTM Builder</p>
-            <h3 className="text-white text-xl md:text-2xl mb-4">The frameworks from this engagement — in a system you can run yourself.</h3>
+            <h3 className="text-white text-xl md:text-2xl mb-4">The frameworks from this engagement, in a system you can run yourself.</h3>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#a8cccc" }}>
               The ICP interview methodology, market research models, segmentation and targeting approach, and positioning framework used throughout this engagement form the foundation of the GTM Builder. Available as a self-guided Notion system.
             </p>
@@ -503,7 +503,7 @@ export default function PrefactorCaseStudy() {
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Work with Toni</p>
             <h3 className="text-white text-xl md:text-2xl mb-4">Ready to do this for your product?</h3>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#a8cccc" }}>
-              If you're preparing for a raise, planning international expansion, or going to market with a complex or regulated product — let's talk.
+              If you're preparing for a raise, planning international expansion, or going to market with a complex or regulated product, let's talk.
             </p>
             <Link
               to={createPageUrl("Contact")}
