@@ -78,6 +78,31 @@ export default function PrefactorCaseStudy() {
             ))}
           </motion.div>
 
+          {/* Before website screenshot */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-center"
+          >
+            <img
+              src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/dc0de8efa_PrefactorBeforeHomepage.png"
+              alt="Prefactor website before the brand refresh"
+              style={{
+                width: '100%',
+                maxWidth: '860px',
+                borderRadius: '12px',
+                marginTop: '40px',
+                display: 'block',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.3)'
+              }}
+            />
+            <p style={{ fontSize: '13px', color: '#7ecec4', marginTop: '8px', opacity: 0.7 }}>
+              prefactor.tech — prior to engagement
+            </p>
+          </motion.div>
 
         </div>
       </section>
@@ -94,7 +119,7 @@ export default function PrefactorCaseStudy() {
             >
               <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The brief</p>
               <h2 className="text-2xl md:text-3xl leading-snug text-[#0a0a0a]">
-                Over $1M raised | 45 users | Zero conversions | 3 months out from a US launch
+                Over $1M raised. 45 users. Zero conversions. Three months out from a US launch.
               </h2>
             </motion.div>
 
@@ -188,6 +213,40 @@ export default function PrefactorCaseStudy() {
               </motion.div>
             ))}
           </div>
+
+          {/* Before / After transformation */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="mt-14"
+          >
+            <h3 className="text-xl md:text-2xl text-white mb-3">The transformation</h3>
+            <p className="text-base leading-relaxed mb-8" style={{ color: "#a8cccc" }}>
+              The before speaks for itself — fragmented, template-driven, engineer-first. The after is a brand system built for enterprise credibility, with a style guide the founding team can administer themselves.
+            </p>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", alignItems: "flex-start" }}>
+              {/* LEFT — BEFORE */}
+              <div>
+                <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>Before</p>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/dc0de8efa_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/efb8b039f_PrefactorBeforeWhy.png" alt="Old Prefactor why section" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/b2dda518c_PrefactorBeforeProduct.png" alt="Old Prefactor product diagram" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/15ba0edd1_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                </div>
+                <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>prefactor.tech — prior to engagement</p>
+              </div>
+
+              {/* RIGHT — AFTER */}
+              <div>
+                <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>After</p>
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="New Prefactor brand identity" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>New brand identity — November 2025</p>
+              </div>
+            </div>
+          </motion.div>
+
         </div>
       </section>
 
@@ -387,41 +446,6 @@ export default function PrefactorCaseStudy() {
                 <p className="text-sm text-[#555] leading-relaxed">{block.body}</p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* BEFORE AND AFTER */}
-      <section style={{ background: "#f7f7f8" }}>
-        <div className="max-w-[900px] mx-auto px-10 py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }} transition={{ duration: 0.5 }}
-            className="mb-10"
-          >
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">Transformation</p>
-            <h2 className="text-2xl md:text-3xl text-[#0a0a0a] mb-4">Before and after.</h2>
-            <p className="text-sm text-[#555] leading-relaxed max-w-xl">The brand transformation speaks for itself. From a fragmented, template-driven visual identity to a cohesive, enterprise-ready brand system built to scale without ongoing designer dependency.</p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }} transition={{ duration: 0.5 }}
-            >
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#aaa] mb-3">Before</p>
-              <div className="rounded-xl flex items-center justify-center h-[300px]" style={{ background: "#f0f0f0", border: "2px dashed #ccc" }}>
-                <span className="text-sm text-[#999]">Old website screenshot — coming soon</span>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.08 }}
-            >
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#aaa] mb-3">After</p>
-              <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines" className="w-full rounded-xl object-cover bg-[#e5e5e5]" />
-            </motion.div>
           </div>
         </div>
       </section>
