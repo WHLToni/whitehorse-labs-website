@@ -50,7 +50,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-base md:text-lg text-[#555] leading-relaxed max-w-xl mb-4">
-              I help founders and product teams in regulated industries build the commercial foundations that actually move product - market segmentation, positioning, GTM strategy, and launch architecture. Fifteen years operating across medtech, healthtech, veterinary technology, and regulated SaaS, from seed stage to publicly listed. I don't run workshops and hand you a deck. I build the systems your team can execute.
+              I help founders and product teams in regulated industries build the commercial foundations that actually move product — market segmentation, positioning, GTM strategy, launch architecture. Fifteen years operating across regulated products and SaaS across med/healthtech, veterinarytech, fintech, and constructiontech — from seed stage through to IPO and publicly listed. I don't just run workshops and hand you a PPT deck — I work alongside your team, building the systems that your team will use into the future.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-12">
               <Link
