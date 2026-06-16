@@ -425,7 +425,7 @@ export default function PrefactorCaseStudy() {
             className="mb-12"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The outcome</p>
-            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">A redirected roadmap. A brand that works. Commercial foundations built for scale.</h2>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">A redirected roadmap that solves a real problem, and commercial foundations that are ready for scale.</h2>
           </motion.div>
 
           <div className="flex flex-wrap gap-8">
