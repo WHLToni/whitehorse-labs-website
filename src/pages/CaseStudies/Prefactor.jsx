@@ -222,7 +222,7 @@ export default function PrefactorCaseStudy() {
           >
             <h3 className="text-xl md:text-2xl text-white mb-3">The transformation</h3>
             <p className="text-base leading-relaxed mb-8" style={{ color: "#a8cccc" }}>
-              The before speaks for itself — fragmented, template-driven, engineer-first. The after is a brand system built for enterprise credibility, with a style guide the founding team can administer themselves.
+              From a fragmented, template-driven and engineer-first identity, to a brand system built for enterprise credibility. A visual identity that conveys gravitas, designed for a small team to apply it consistently across all media without a designer on call.
             </p>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", alignItems: "flex-start" }}>
