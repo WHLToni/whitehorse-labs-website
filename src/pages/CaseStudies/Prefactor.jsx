@@ -86,7 +86,7 @@ export default function PrefactorCaseStudy() {
             className="text-center"
           >
             <img
-              src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/dc0de8efa_PrefactorBeforeHomepage.png"
+              src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png"
               alt="Prefactor website before the brand refresh"
               style={{
                 width: '100%',
@@ -230,10 +230,10 @@ export default function PrefactorCaseStudy() {
               <div>
                 <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>Before</p>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/dc0de8efa_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/efb8b039f_PrefactorBeforeWhy.png" alt="Old Prefactor why section" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/b2dda518c_PrefactorBeforeProduct.png" alt="Old Prefactor product diagram" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/15ba0edd1_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0548ac6f7_PrefactorBeforeProduct.png" alt="Old Prefactor product diagram" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
                 </div>
                 <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>prefactor.tech — prior to engagement</p>
               </div>
