@@ -38,12 +38,9 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0, 1] }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#e5e5e5] bg-[#f7f7f8] mb-8">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#e8195a]" />
-              <span className="text-xs font-medium text-[#666] tracking-wide uppercase">
-                Fractional GTM · Regulated &amp; Complex Products
-              </span>
-            </div>
+            <p className="text-xs font-medium text-[#888] tracking-wide uppercase mb-8">
+              Fractional GTM · Regulated &amp; Complex Products
+            </p>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-8 text-[#0a0a0a]">
               You've built the product. Getting it to market is a different skill set entirely.
