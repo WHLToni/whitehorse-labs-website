@@ -247,7 +247,7 @@ export default function PrefactorCaseStudy() {
             viewport={{ once: true }} transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Investor narrative</p>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Strategic narrative</p>
             <h2 className="text-2xl md:text-3xl text-white mb-5">A pitch deck built around the new positioning.</h2>
             <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
               The pitch deck was rebuilt from the ground up around the findings from our market research and ICP interviews, a new narrative positioning Prefactor as the MCP-Native Agent Control Plane for enterprise and regulated industries.
