@@ -178,9 +178,9 @@ export default function BuyTheFrameworks() {
                 <p className="text-white/60 text-sm leading-relaxed mb-8">
                   A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 36 AI prompts designed to draw out the thinking that most founders skip.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-8">
+                <div className="flex flex-wrap gap-6 mb-8">
                   {tags.map((tag, i) => (
-                    <span key={i} className="text-xs font-medium px-3 py-1.5 rounded-full border border-white/20 text-white/50">
+                    <span key={i} className="text-xs font-medium text-white/50">
                       {tag}
                     </span>
                   ))}
@@ -281,7 +281,7 @@ export default function BuyTheFrameworks() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border border-white/10 p-8 md:p-12 relative" style={{ background: "#1a1a18" }}>
             <div className="absolute top-6 right-6">
-              <span className="bg-[#333] text-white/50 text-xs font-semibold px-3 py-1 rounded-full">Coming soon</span>
+              <span className="text-white/40 text-xs font-semibold uppercase tracking-widest">Coming soon</span>
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">Product Builder</h3>
             <p className="text-white/50 text-sm leading-relaxed max-w-xl mb-8">
@@ -299,8 +299,8 @@ export default function BuyTheFrameworks() {
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border-2 border-[#e8195a]/30 p-8 md:p-12 relative" style={{ background: "#fff9fa" }}>
-            <div className="absolute -top-3.5 left-8">
-              <span className="bg-[#e8195a] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Best Value</span>
+            <div className="mb-2">
+              <span className="text-[#e8195a] text-xs font-semibold uppercase tracking-widest">Best Value</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-[#0a0a0a]">Get both. Save AUD $149.</h2>
             <p className="text-[#666] text-base leading-relaxed max-w-2xl mb-8">

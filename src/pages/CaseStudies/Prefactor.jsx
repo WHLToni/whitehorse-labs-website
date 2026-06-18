@@ -28,16 +28,15 @@ export default function PrefactorCaseStudy() {
       >
         <div className="max-w-[800px] mx-auto px-10 py-[100px] text-center">
 
-          {/* Badge */}
-          <motion.div
+          <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6"
-            style={{ background: "rgba(255,255,255,0.1)", color: "#7ecec4", border: "1px solid rgba(255,255,255,0.15)" }}
+            className="text-xs font-semibold uppercase tracking-widest mb-6"
+            style={{ color: "#7ecec4" }}
           >
             Case Study · Agentic AI · B2B SaaS
-          </motion.div>
+          </motion.p>
 
           {/* H1 */}
           <motion.h1
@@ -60,20 +59,18 @@ export default function PrefactorCaseStudy() {
             How a 14-week GTM engagement helped Prefactor discover their real market, rebuild their brand from scratch, and redirect their entire product roadmap.
           </motion.p>
 
-          {/* Stat Pills */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap justify-center gap-3 mb-10"
+            className="flex flex-wrap justify-center gap-6 mb-10"
           >
-            {["14 weeks", "Pre-revenue · $1M+ seed funded", "Antler-backed"].map((pill) => (
+            {["14 weeks", "Pre-revenue · $1M+ seed funded", "Antler-backed"].map((item) => (
               <span
-                key={pill}
-                className="text-sm font-medium text-white px-4 py-1.5 rounded-full"
-                style={{ background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.2)" }}
+                key={item}
+                className="text-sm font-medium text-white/70"
               >
-                {pill}
+                {item}
               </span>
             ))}
           </motion.div>
