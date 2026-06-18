@@ -40,7 +40,7 @@ export default function Credentials() {
                 The Practitioner
               </p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
-                Full-Stack GTM. Strategy and Execution, End to End.
+                Full-Stack GTM, from strategy through to execution.
               </h2>
 
               <p className="text-[#555] text-sm leading-relaxed">
