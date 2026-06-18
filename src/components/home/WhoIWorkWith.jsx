@@ -18,7 +18,7 @@ const audiences = [
   },
   {
     title: "Pre-MVP Founders",
-    description: "You've built an MVP — with or without a development team. You don't know how to position it, who to sell it to, or how to launch it. You need a commercialisation framework, not a $20K consultant.",
+    description: "You've built an MVP, with or without a development team. You're not sure how to position it, who to sell it to or how to launch it and don't have budget for a marketing consultant. You need a guided tool that will help you build your own GTM.",
   },
 ];
 
