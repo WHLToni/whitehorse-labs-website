@@ -216,7 +216,7 @@ export default function PrefactorCaseStudy() {
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
                   <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0548ac6f7_PrefactorBeforeProduct.png" alt="Old Prefactor product diagram" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
+
                   <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
                 </div>
                 <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>prefactor.tech — prior to engagement</p>
