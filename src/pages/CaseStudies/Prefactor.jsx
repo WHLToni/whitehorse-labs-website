@@ -100,7 +100,7 @@ export default function PrefactorCaseStudy() {
               }}
             />
             <p style={{ fontSize: '13px', color: '#7ecec4', marginTop: '8px', opacity: 0.7 }}>
-              prefactor.tech — prior to engagement
+              Prefactor's early DIY brand identity didn't convey gravitas or credibility.
             </p>
           </motion.div>
 
