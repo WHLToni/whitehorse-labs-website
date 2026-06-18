@@ -397,7 +397,7 @@ export default function PrefactorCaseStudy() {
           <div className="flex flex-wrap gap-8">
             {[
               { icon: <RefreshCw className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Product roadmap redirected", body: "The Customer Discovery interviews validated a completely new product direction — a unified control plane for enterprise agent governance. Development accelerated from there. The product Prefactor is building today is fundamentally different from the one that existed at the start of the engagement." },
-              { icon: <ShieldCheck className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Brand built for enterprise", body: "The new visual identity gave Prefactor the credibility to walk into regulated-industry and enterprise conversations without the brand working against them. The style guide means the founding team can administer the brand themselves, with no ongoing designer cost." },
+              { icon: <ShieldCheck className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Brand built for enterprise", body: "The new visual identity gave Prefactor the credibility to walk into regulated-industry and enterprise conversations without the brand working against them. The style guide and visual elements were crafted to be easy for the founding team to use, no ongoing designer costs." },
               { icon: <LayoutTemplate className="w-6 h-6" style={{ color: "#0d9488" }} />, title: "Commercial foundations in place", body: "Every asset: white paper, pitch deck, positioning framework, messaging architecture. All built around the new ICP and product direction. A coherent, credible story ready for the US market." },
             ].map((block, i) => (
               <motion.div
