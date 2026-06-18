@@ -160,7 +160,7 @@ export default function PrefactorCaseStudy() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
             {[
-              { num: "01", title: "The product wasn't solving a real problem.", body: "Prefactor had built a technically sound product, but it wasn't solving a burning problem. They had built the wrong tool. Senior executives were concerned about auditability, visibility, control, and demonstrable ROI from their agentic AI investments, not MCP authentication." },
+              { num: "01", title: "The product wasn't solving a real problem.", body: "Prefactor was building a technically sound product, but it wasn't solving a burning problem. They'd built the wrong tool. Senior execs were concerned about auditability, visibility, control and demonstrable ROI from their agentic AI investments, not MCP authentication." },
               { num: "02", title: "They were targeting the wrong buyer.", body: "Engineers were the user base, but they didn't control budgets. Enterprise purchasing decisions rest with the CTO, CISO, or CPO. Prefactor needed a completely different language for a completely different buyer." },
               { num: "03", title: "They had dismissed a primary segment.", body: "The assumption that regulated industries were too cautious for agentic AI was wrong. Banking, finance, and insurance are moving methodically, leveraging existing governance frameworks to adopt safely. They have the most to gain—and the budget to act." },
             ].map((finding, i) => (
