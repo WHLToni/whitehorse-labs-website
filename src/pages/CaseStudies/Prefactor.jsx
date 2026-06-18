@@ -46,7 +46,7 @@ export default function PrefactorCaseStudy() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-white text-4xl md:text-5xl leading-tight mb-6"
           >
-            From engineer-facing auth tool to enterprise agent governance platform.
+            Taking Prefactor from stalling MVP to an enterprise-ready category definer.
           </motion.h1>
 
           {/* Subheading */}
