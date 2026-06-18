@@ -151,7 +151,7 @@ export default function PrefactorCaseStudy() {
             <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Four findings that changed everything.</h2>
           </motion.div>
 
-          <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
             {[
               { num: "01", title: "The buyer is not the engineer.", body: "Engineers were Prefactor's existing user base, but engineers don't control budgets. The actual purchasing decision for an enterprise security and governance tool sits with the CTO, CISO, and in some cases the CPO. Prefactor needed to be speaking a completely different language to a completely different person." },
               { num: "02", title: "MCP authentication isn't the problem.", body: "The market wasn't thinking about MCP authentication. Senior executives were concerned about auditability, visibility, control, and demonstrable ROI from their agentic AI investments. Authentication was a hygiene factor: table stakes, not a differentiator. The product needed to be much broader." },
@@ -162,7 +162,7 @@ export default function PrefactorCaseStudy() {
                 key={finding.num}
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="relative mb-12 pl-6"
+                className="relative pl-6"
                 style={{ borderLeft: "3px solid #0d9488" }}
               >
                 <div
