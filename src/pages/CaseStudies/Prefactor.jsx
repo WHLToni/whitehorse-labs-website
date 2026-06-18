@@ -157,8 +157,8 @@ export default function PrefactorCaseStudy() {
             viewport={{ once: true }} transition={{ duration: 0.5 }}
             className="mb-12"
           >
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The insights</p>
-            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Four findings that changed everything.</h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">Discovery Interview Insights</p>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Four findings changed everything.</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
