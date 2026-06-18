@@ -61,7 +61,7 @@ export default function ChoosePath() {
 
         {/* Header */}
         <div className="mb-12">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">
             The Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5">
@@ -130,8 +130,8 @@ export default function ChoosePath() {
             to={createPageUrl("Contact")}
             className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm"
             style={{
-              background: "#e8195a",
-              boxShadow: "0 4px 24px rgba(232,25,90,0.35)",
+              background: "#c0425e",
+              boxShadow: "0 4px 24px rgba(192,66,94,0.3)",
             }}
           >
             Book a Call →
@@ -194,7 +194,7 @@ export default function ChoosePath() {
             </span>
             <div className="flex-1 border-t border-white/[0.08]" />
           </div>
-          <p className="text-[10px] font-semibold uppercase tracking-widest text-[#e8195a]">
+          <p className="text-[10px] font-semibold uppercase tracking-widest text-[#c97a8a]">
             Fractional Leadership
           </p>
         </div>
@@ -234,7 +234,7 @@ export default function ChoosePath() {
           Not ready for a full engagement?{" "}
           <Link
             to={createPageUrl("GetTheFrameworks")}
-            className="text-white/40 hover:text-[#e8195a] transition-colors not-italic"
+            className="text-white/40 hover:text-[#c97a8a] transition-colors not-italic"
           >
             The Builder Suite{pricing ? ` — from ${pricing.from}` : ""} →
           </Link>
