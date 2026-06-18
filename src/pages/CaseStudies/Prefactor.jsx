@@ -131,7 +131,7 @@ export default function PrefactorCaseStudy() {
               <div className="mt-5">
                 <p className="text-base text-[#444] font-normal mb-2">We added:</p>
                 <ul className="space-y-1">
-                  {["A Customer Discovery Program", "Our Diagnostic Package (problem definition, competitive intel, ICP definition, segmentation & targeting)", "A light brand refresh and assets"].map((item) => (
+                  {["A Customer Discovery Program", "The Diagnostic Package (problem definition, competitive intel, ICP definition, segmentation & targeting)", "Brand refresh and core design assets"].map((item) => (
                     <li key={item} className="flex items-start gap-2 text-base text-[#444]">
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0d9488] flex-shrink-0" />
                       {item}
