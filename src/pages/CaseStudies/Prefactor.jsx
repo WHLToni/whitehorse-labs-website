@@ -201,27 +201,28 @@ export default function PrefactorCaseStudy() {
             </p>
           </motion.div>
 
-          {/* Before / After */}
+          {/* Before / After — stacked layout */}
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 items-start"
+            className="flex flex-col gap-10"
           >
-            {/* LEFT — BEFORE */}
+            {/* BEFORE — compact 4-image grid */}
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-widest mb-3" style={{ color: "#7ecec4", opacity: 0.7 }}>Before</p>
-              <div className="flex flex-col gap-2">
-                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" className="w-full block rounded-md" style={{ opacity: 0.75 }} />
-                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" className="w-full block rounded-md" style={{ opacity: 0.75 }} />
-                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" className="w-full block rounded-md" style={{ opacity: 0.75 }} />
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" className="w-full block rounded-md" style={{ opacity: 0.65 }} />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" className="w-full block rounded-md" style={{ opacity: 0.65 }} />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" className="w-full block rounded-md" style={{ opacity: 0.65 }} />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor additional page" className="w-full block rounded-md" style={{ opacity: 0.65 }} />
               </div>
               <p className="text-xs mt-2" style={{ color: "#7ecec4", opacity: 0.6 }}>prefactor.tech — prior to engagement</p>
             </div>
 
-            {/* RIGHT — AFTER */}
+            {/* AFTER — prominent single column */}
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-widest mb-3" style={{ color: "#7ecec4", opacity: 0.7 }}>After</p>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="flex flex-col gap-3">
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines — cover" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png" alt="Typography system" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
