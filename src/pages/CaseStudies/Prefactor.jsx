@@ -100,7 +100,7 @@ export default function PrefactorCaseStudy() {
               }}
             />
             <p style={{ fontSize: '13px', color: '#7ecec4', marginTop: '8px', opacity: 0.7 }}>
-              Prefactor's early DIY brand identity didn't convey gravitas or credibility.
+              A DIY brand identity lacking gravitas and credibility.
             </p>
           </motion.div>
 
