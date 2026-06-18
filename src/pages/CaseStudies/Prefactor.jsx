@@ -375,29 +375,11 @@ export default function PrefactorCaseStudy() {
               />
             </div>
 
-            {/* Centre: Reddit ads stacked */}
-            <div className="flex flex-col gap-4">
-              <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
-                <img
-                  src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/bd35057d9_RedditAd1.png"
-                  alt="Reddit ad 1"
-                  className="w-full block"
-                />
-              </div>
-              <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
-                <img
-                  src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/134fd91fe_RedditAd2.png"
-                  alt="Reddit ad 2"
-                  className="w-full block"
-                />
-              </div>
-            </div>
-
-            {/* Right: Notion portal */}
-            <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+            {/* Right: Combined Notion + Reddit ads image */}
+            <div className="col-span-2 rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
               <img
-                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/4abc887fa_NotionPortal.png"
-                alt="Notion portal"
+                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/50fee7a89_NotionandRedditAds.png"
+                alt="Notion portal and Reddit ads"
                 className="w-full block"
               />
             </div>
