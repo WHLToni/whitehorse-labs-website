@@ -155,7 +155,7 @@ export default function PrefactorCaseStudy() {
             className="mb-12"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">Discovery Interview Insights</p>
-            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Four findings changed everything.</h2>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Three findings changed everything.</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
@@ -163,7 +163,6 @@ export default function PrefactorCaseStudy() {
               { num: "01", title: "The product wasn't solving a real problem.", body: "Prefactor had built a technically sound product, but it wasn't solving a burning problem. They had built the wrong tool. Senior executives were concerned about auditability, visibility, control, and demonstrable ROI from their agentic AI investments, not MCP authentication." },
               { num: "02", title: "They were targeting the wrong buyer.", body: "Engineers were the user base, but they didn't control budgets. Enterprise purchasing decisions rest with the CTO, CISO, or CPO. Prefactor needed a completely different language for a completely different buyer." },
               { num: "03", title: "They had dismissed a primary segment.", body: "The assumption that regulated industries were too cautious for agentic AI was wrong. Banking, finance, and insurance are moving methodically, leveraging existing governance frameworks to adopt safely. They have the most to gain—and the budget to act." },
-              { num: "04", title: "The product needed a different vision.", body: "The market demanded a platform for agent visibility, governance, and auditability: a unified executive view. It needed active monitoring, registries, and security controls—a control plane, not an auth tool." },
             ].map((finding, i) => (
               <motion.div
                 key={finding.num}
