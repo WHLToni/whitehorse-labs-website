@@ -23,7 +23,7 @@ function Logo({ dark = false }) {
   );
 }
 
-const AUD_FROM = "AUD $149";
+const AUD_FROM = "AUD $349";
 
 export default function Layout({ children, currentPageName }) {
   const [mobileOpen, setMobileOpen] = useState(false);
