@@ -23,9 +23,7 @@ export default function Credentials() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-sm text-[#888] font-medium text-center lg:text-left">
-                Toni Morrow · 15 years in regulated GTM · Medtech, Healthtech, SaaS · Seed to IPO
-              </p>
+
             </motion.div>
 
             {/* Right — bio */}
@@ -44,17 +42,19 @@ export default function Credentials() {
               </h2>
 
               <p className="text-[#555] text-sm leading-relaxed">
-                Great products don't sell themselves. Someone has to own the journey from insight to revenue - the research, the positioning, the narrative, the launch.
+                Great products don't sell themselves. Someone has to own the journey from insight to revenue — the research, the positioning, the narrative, the launch, and everything that comes after.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                I started in medical device and pharmaceutical sales - an industry where regulatory rigour, clinical credibility, and commercial excellence aren't optional, they're the baseline. I finished an MBA and spent the next fifteen years moving through product and marketing management across medtech, healthtech, construction technology, veterinary technology, and commercial data - both enterprise and startups, from seed stage through to publicly listed brands across APAC and the US.
+                That kind of ownership can be hard to find in one person.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                That full-stack experience means I can lead upstream product strategy and downstream GTM execution, or step into just one part. What's different now is the speed: I work with an AI-augmented toolstack that compresses weeks of research and framework-building into days - so you get senior thinking without the senior timeline.
+                I started in the medical device and pharmaceutical industry, where product management and product marketing people are trained to carry a product through its entire commercial lifecycle: market intelligence and segmentation, positioning and messaging, launch, and ongoing lifecycle management. Regulatory rigour, clinical credibility, commercial accountability - all of it built on actual frameworks, models and data. It's an industry that treats marketing as a discipline, not an afterthought. That standard never left me.
               </p>
-
-              <p className="text-[#555] text-sm font-semibold leading-relaxed text-[#0a0a0a]">
-                I don't hand you a report and walk away. I build the foundations your team needs to take your product to market and win.
+              <p className="text-[#555] text-sm leading-relaxed">
+                After finishing an MBA, I spent the next fifteen years across product and marketing management in medtech, healthtech, construction technology, veterinary technology and fintech. Enterprise and startups. Seed stage through to publicly listed brands across APAC and the US.
+              </p>
+              <p className="text-[#555] text-sm leading-relaxed">
+                Now I work with early-stage and exit-ready businesses as a fractional product marketing lead. Alongside that, I work with businesses at the earlier end of the AI adoption curve: product prototyping, market research, workflow automation, and building the internal capability to use these tools well. Some clients want both, some want neither. The engagement is shaped around what your business actually needs.
               </p>
 
               <a
