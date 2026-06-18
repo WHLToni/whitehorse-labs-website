@@ -56,7 +56,7 @@ export default function PrefactorCaseStudy() {
             className="text-[#a8ccca] mb-8 leading-relaxed"
             style={{ fontSize: "18px" }}
           >
-            How a 14-week GTM engagement helped Prefactor discover their real market, rebuild their brand from scratch, and redirect their entire product roadmap.
+            How a 9-week GTM engagement helped Prefactor discover their real market, rebuild their brand from scratch, and redirect their entire product roadmap.
           </motion.p>
 
           <motion.div
@@ -425,7 +425,7 @@ export default function PrefactorCaseStudy() {
             className="mb-10"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The work</p>
-            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Seven workstreams. Fourteen weeks.</h2>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Seven workstreams. Nine weeks.</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
