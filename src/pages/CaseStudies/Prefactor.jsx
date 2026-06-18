@@ -378,7 +378,7 @@ export default function PrefactorCaseStudy() {
             {/* Right: Combined Notion + Reddit ads image */}
             <div className="col-span-2">
               <img
-                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/50fee7a89_NotionandRedditAds.png"
+                src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/42e764a1b_RedditNotion.png"
                 alt="Notion portal and Reddit ads"
                 className="w-full block"
               />
