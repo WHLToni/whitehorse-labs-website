@@ -130,7 +130,7 @@ export default function PrefactorCaseStudy() {
               className="md:col-span-3 space-y-5 text-[#444] text-base leading-relaxed"
             >
               <p>Prefactor approached us to build the commercial foundations for a US market entry: pitch deck, white paper, and messaging frameworks. But despite securing Antler funding and holding plenty of conversations, they had 45 users on a free tier and zero conversions. Their product — an MCP authentication solution — wasn't landing.</p>
-              <p>Two weeks into the engagement, a product demo revealed the core issue: the MVP was solving a problem their audience didn't yet recognise. The brief shifted immediately. Before building commercial assets for a US launch, we had to validate whether the market actually wanted what Prefactor was building.</p>
+              <p>A product demo revealed the core issue: the MVP was solving a problem their audience didn't yet recognise. The brief shifted fast - before building commercial assets for a US launch, we had to validate whether the market actually wanted what Prefactor was building.</p>
               <div className="mt-5">
                 <p className="text-sm font-semibold text-[#0a0a0a] mb-2">We added:</p>
                 <ul className="space-y-1">
