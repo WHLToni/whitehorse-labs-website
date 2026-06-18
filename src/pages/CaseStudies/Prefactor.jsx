@@ -45,7 +45,7 @@ export default function PrefactorCaseStudy() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-white text-4xl md:text-5xl leading-tight mb-6"
           >
-            Taking Prefactor from stalling MVP to an enterprise-ready category definer.
+            Taking Prefactor from stalling MVP to enterprise-ready category definer.
           </motion.h1>
 
           {/* Subheading */}
@@ -126,13 +126,13 @@ export default function PrefactorCaseStudy() {
               viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
               className="md:col-span-3 space-y-5 text-[#444] text-base leading-relaxed"
             >
-              <p>Prefactor approached us to build the commercial foundations for a US market entry: pitch deck, white paper, and messaging frameworks. But despite securing Antler funding and holding plenty of conversations, they had 45 users on a free tier and zero conversions. Their product — an MCP authentication solution — wasn't landing.</p>
-              <p>A product demo revealed the core issue: the MVP was solving a problem their audience didn't yet recognise. The brief shifted fast - before building commercial assets for a US launch, we had to validate whether the market actually wanted what Prefactor was building.</p>
+              <p>Prefactor approached us to build the commercial foundations for a US market entry: pitch deck, white paper, and messaging frameworks. But despite securing Antler funding and holding plenty of conversations, they had 45 users on a free tier and <strong>zero conversions</strong>. Their product — an MCP authentication solution — wasn't landing.</p>
+              <p>A product demo revealed the core issue: the MVP was <strong>solving a problem their audience didn't have</strong>. The brief shifted — before building commercial assets for US launch, we had to validate whether the market actually wanted what Prefactor was building.</p>
               <div className="mt-5">
-                <p className="text-sm font-semibold text-[#0a0a0a] mb-2">We added:</p>
+                <p className="text-base text-[#444] font-normal mb-2">We added:</p>
                 <ul className="space-y-1">
                   {["A Customer Discovery Program", "Our Diagnostic Package (problem definition, competitive intel, ICP definition, segmentation & targeting)", "A light brand refresh and assets"].map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm text-[#444]">
+                    <li key={item} className="flex items-start gap-2 text-base text-[#444]">
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0d9488] flex-shrink-0" />
                       {item}
                     </li>
@@ -148,7 +148,7 @@ export default function PrefactorCaseStudy() {
 
       {/* KEY FINDINGS */}
       <section className="bg-white">
-        <div className="max-w-[900px] mx-auto px-10 pt-10 pb-20">
+        <div className="max-w-[900px] mx-auto px-10 pt-4 pb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
@@ -161,9 +161,9 @@ export default function PrefactorCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
             {[
               { num: "01", title: "The product wasn't solving a real problem.", body: "Prefactor had built a technically sound product, but it wasn't solving a burning problem. They had built the wrong tool. Senior executives were concerned about auditability, visibility, control, and demonstrable ROI from their agentic AI investments, not MCP authentication." },
-              { num: "02", title: "The buyer is not the engineer.", body: "Engineers were the user base, but they didn't control budgets. Enterprise purchasing decisions rest with the CTO, CISO, or CPO. Prefactor needed a completely different language for a completely different buyer." },
-              { num: "03", title: "Regulated industries are the primary target.", body: "The assumption that regulated industries were too cautious for agentic AI was wrong. Banking, finance, and insurance are moving methodically, leveraging existing governance frameworks to adopt safely. They have the most to gain—and the budget to act." },
-              { num: "04", title: "The product needed a different vision entirely.", body: "The market demanded a platform for agent visibility, governance, and auditability: a unified executive view. It needed active monitoring, registries, and security controls—a control plane, not an auth tool." },
+              { num: "02", title: "They were targeting the wrong buyer.", body: "Engineers were the user base, but they didn't control budgets. Enterprise purchasing decisions rest with the CTO, CISO, or CPO. Prefactor needed a completely different language for a completely different buyer." },
+              { num: "03", title: "They had dismissed a primary segment.", body: "The assumption that regulated industries were too cautious for agentic AI was wrong. Banking, finance, and insurance are moving methodically, leveraging existing governance frameworks to adopt safely. They have the most to gain—and the budget to act." },
+              { num: "04", title: "The product needed a different vision.", body: "The market demanded a platform for agent visibility, governance, and auditability: a unified executive view. It needed active monitoring, registries, and security controls—a control plane, not an auth tool." },
             ].map((finding, i) => (
               <motion.div
                 key={finding.num}
@@ -197,7 +197,7 @@ export default function PrefactorCaseStudy() {
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Brand refresh</p>
             <h2 className="text-2xl md:text-3xl text-white mb-5">From generic tech startup to enterprise-ready brand.</h2>
             <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
-              While the founders got to work rebuilding the product, I started on brand. Prefactor had no cohesive visual identity — dark templates, gradient fonts, AI-generated imagery that looked like every other early-stage tech company. We ran a brand strategy workshop, defined their personality and visual direction, and briefed a freelance designer who took it from strategy through to a production-ready style guide. The result: a system built for enterprise credibility that a small team can apply consistently, without a designer on call.
+              The Founders started rebuilding, and I started on brand. Prefactor had no cohesive identity — dark templates, AI-generated imagery that looked like every other early-stage tech company. We ran a series of brand workshops with the Founders, then built out the brand from strategy to production-ready style guide and visual design assets. <strong>The result:</strong> an enterprise-ready brand system reflecting credibility and gravitas, built for a small team to apply easily and consistently themselves.
             </p>
           </motion.div>
 
@@ -245,7 +245,7 @@ export default function PrefactorCaseStudy() {
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Strategic narrative</p>
             <h2 className="text-2xl md:text-3xl text-white mb-5">A pitch deck built around the new positioning.</h2>
             <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
-              The pitch deck was rebuilt from the ground up around the findings from our market research and ICP interviews, a new narrative positioning Prefactor as the MCP-Native Agent Control Plane for enterprise and regulated industries.
+              We built the product pitch deck from the ground up, using the findings from our market research and ICP interviews. It centred around a new narrative positioning Prefactor as the MCP-Native Agent Control Plane for enterprise and regulated industries.
             </p>
           </motion.div>
 
@@ -466,9 +466,9 @@ export default function PrefactorCaseStudy() {
             viewport={{ once: true }} transition={{ duration: 0.5 }}
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>The GTM Builder</p>
-            <h3 className="text-white text-xl md:text-2xl mb-4">The frameworks from this engagement, in a system you can run yourself.</h3>
+            <h3 className="text-white text-xl md:text-2xl mb-4">The frameworks from this project, in a guided system you can run yourself.</h3>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#a8cccc" }}>
-              The ICP interview methodology, market research models, segmentation and targeting approach, and positioning framework used throughout this engagement form the foundation of the GTM Builder. Available as a self-guided Notion system.
+              Available as a guided Notion system with over 30 detailed JSON AI prompts to accelerate your research.
             </p>
             <Link
               to={createPageUrl("BuyTheBuilderSuite")}
