@@ -195,46 +195,23 @@ export default function PrefactorCaseStudy() {
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
-            className="mb-8"
+            className="mb-10"
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Brand refresh</p>
             <h2 className="text-2xl md:text-3xl text-white mb-5">From generic tech startup to enterprise-ready brand.</h2>
-            <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
+            <p className="text-base leading-relaxed max-w-2xl mb-4" style={{ color: "#a8cccc" }}>
               Prefactor had no cohesive brand identity. The visual language was fragmented: dark templates, gradient fonts, AI-generated imagery that looked like every other early-stage tech company. We ran a brand strategy workshop with the founding team, defined their brand personality and visual direction, and briefed a freelance designer who developed the complete identity from strategy through to a production-ready style guide.
+            </p>
+            <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
+              From a fragmented, template-driven and engineer-first identity, to a brand system built for enterprise credibility — designed for a small team to apply consistently across all media without a designer on call.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png", caption: "Brand guidelines — cover" },
-              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png", caption: "Logo usage guidelines" },
-              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png", caption: "Typography system" },
-              { src: "https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png", caption: "Imagery and icons direction" },
-            ].map((img, i) => (
-              <motion.div
-                key={img.caption}
-                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }}
-              >
-                <div className="w-full aspect-video rounded-lg overflow-hidden bg-white/10">
-                  <img src={img.src} alt={img.caption} className="w-full h-full object-cover" />
-                </div>
-                <p className="text-xs mt-2" style={{ color: "#8ab8b8" }}>{img.caption}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Before / After transformation */}
+          {/* Before / After */}
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
-            className="mt-14"
           >
-            <h3 className="text-xl md:text-2xl text-white mb-3">The transformation</h3>
-            <p className="text-base leading-relaxed mb-8" style={{ color: "#a8cccc" }}>
-              From a fragmented, template-driven and engineer-first identity, to a brand system built for enterprise credibility. A visual identity that conveys gravitas, designed for a small team to apply it consistently across all media without a designer on call.
-            </p>
-
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", alignItems: "flex-start" }}>
               {/* LEFT — BEFORE */}
               <div>
@@ -251,7 +228,12 @@ export default function PrefactorCaseStudy() {
               {/* RIGHT — AFTER */}
               <div>
                 <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>After</p>
-                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="New Prefactor brand identity" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines — cover" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png" alt="Typography system" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png" alt="Imagery and icons direction" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                </div>
                 <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>New brand identity — November 2025</p>
               </div>
             </div>
