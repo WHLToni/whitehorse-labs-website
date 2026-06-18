@@ -158,7 +158,7 @@ export default function PrefactorCaseStudy() {
             <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Three findings changed everything.</h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+          <div className="flex flex-col gap-10">
             {[
               { num: "01", title: "The product wasn't solving a real problem.", body: "Prefactor was building a technically sound product, but it wasn't solving a burning problem. They'd built the wrong tool. Senior execs were concerned about auditability, visibility, control and demonstrable ROI from their agentic AI investments, not MCP authentication." },
               { num: "02", title: "They were targeting the wrong buyer.", body: "Engineers were the user base, but they didn't control budgets. Enterprise purchasing decisions rest with the CTO, CISO, or CPO. Prefactor needed a completely different language for a completely different buyer." },
