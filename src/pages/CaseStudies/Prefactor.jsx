@@ -209,27 +209,27 @@ export default function PrefactorCaseStudy() {
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
           >
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", alignItems: "flex-start" }}>
-              {/* LEFT — BEFORE */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "32px", alignItems: "flex-start" }}>
+              {/* LEFT — BEFORE (single column) */}
               <div>
                 <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>Before</p>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0548ac6f7_PrefactorBeforeProduct.png" alt="Old Prefactor product diagram" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0548ac6f7_PrefactorBeforeProduct.png" alt="Old Prefactor product diagram" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
                 </div>
                 <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>prefactor.tech — prior to engagement</p>
               </div>
 
-              {/* RIGHT — AFTER */}
+              {/* RIGHT — AFTER (prominent 2×2 grid) */}
               <div>
                 <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>After</p>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines — cover" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png" alt="Typography system" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png" alt="Imagery and icons direction" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines — cover" style={{ borderRadius: "8px", width: "100%", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png" alt="Typography system" style={{ borderRadius: "8px", width: "100%", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" style={{ borderRadius: "8px", width: "100%", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png" alt="Imagery and icons direction" style={{ borderRadius: "8px", width: "100%", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
                 </div>
                 <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>New brand identity — November 2025</p>
               </div>
