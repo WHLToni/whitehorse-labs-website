@@ -230,8 +230,8 @@ export default function PrefactorCaseStudy() {
                 <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>After</p>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
                   <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines — cover" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
                   <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png" alt="Typography system" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
+                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
                   <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png" alt="Imagery and icons direction" style={{ borderRadius: "6px", width: "100%", display: "block" }} />
                 </div>
                 <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>New brand identity — November 2025</p>
