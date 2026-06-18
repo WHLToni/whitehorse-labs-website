@@ -65,7 +65,7 @@ export default function PrefactorCaseStudy() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-wrap justify-center gap-6 mb-10"
           >
-            {["14 weeks", "Pre-revenue · $1M+ seed funded", "Antler-backed"].map((item) => (
+            {["9 weeks", "Pre-revenue · $1M+ seed funded", "Antler-backed"].map((item) => (
               <span
                 key={item}
                 className="text-sm font-medium text-white/70"
@@ -126,10 +126,9 @@ export default function PrefactorCaseStudy() {
               viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
               className="md:col-span-3 space-y-5 text-[#444] text-base leading-relaxed"
             >
-              <p>When Prefactor approached me to build the foundations for a short, last-minute US market entry trip, the brief was lean: positioning and messaging frameworks, a fresh pitch deck, and a white paper.</p>
-              <p><strong>Goals:</strong> Positioning and content that would get them through the door and into at least 25 meetings in the US, and a pitch credible and polished enough for Silicone Valley boardrooms.</p>
+              <p>When Prefactor approached me to build the foundations for a short, last-minute US market entry trip, the brief was lean: positioning and messaging frameworks, a fresh pitch deck, and a white paper — credible and sharp enough for Silicon Valley boardrooms.</p>
               <p>But despite having secured Antler funding and holding plenty of conversations, they had 45 users on a free tier and zero conversions. Their product—an MCP authentication solution—wasn't landing.</p>
-              <p>A product demo revealed the core issue: the MVP was <strong>solving a problem their audience didn't have</strong>. The brief shifted — before building commercial assets for US launch, we had to validate whether the market actually wanted what Prefactor was building.</p>
+              <p>A product demo revealed the core issue: the MVP was <strong>solving a problem their audience didn't have</strong>. The brief shifted — before building commercial assets for US soft launch, we had to validate whether the market actually wanted what Prefactor was building.</p>
               <div className="mt-5">
                 <p className="text-base text-[#444] font-normal mb-2">We added:</p>
                 <ul className="space-y-1">
