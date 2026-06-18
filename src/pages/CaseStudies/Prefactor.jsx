@@ -376,7 +376,7 @@ export default function PrefactorCaseStudy() {
             </div>
 
             {/* Right: Combined Notion + Reddit ads image */}
-            <div className="col-span-2 rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+            <div className="col-span-2">
               <img
                 src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/50fee7a89_NotionandRedditAds.png"
                 alt="Notion portal and Reddit ads"
