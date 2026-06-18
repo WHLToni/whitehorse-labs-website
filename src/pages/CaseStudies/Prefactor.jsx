@@ -131,6 +131,17 @@ export default function PrefactorCaseStudy() {
             >
               <p>Prefactor approached us to build the commercial foundations for a US market entry: pitch deck, white paper, and messaging frameworks. But despite securing Antler funding and holding plenty of conversations, they had 45 users on a free tier and zero conversions. Their product — an MCP authentication solution — wasn't landing.</p>
               <p>Two weeks into the engagement, a product demo revealed the core issue: the MVP was solving a problem their audience didn't yet recognise. The brief shifted immediately. Before building commercial assets for a US launch, we had to validate whether the market actually wanted what Prefactor was building.</p>
+              <div className="mt-5">
+                <p className="text-sm font-semibold text-[#0a0a0a] mb-2">Added to the original brief:</p>
+                <ul className="space-y-1">
+                  {["A Customer Discovery Program", "Our Diagnostic Package (problem definition, competitive intel, ICP definition, segmentation & targeting)", "A light brand refresh and assets"].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-[#444]">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0d9488] flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </motion.div>
           </div>
 
