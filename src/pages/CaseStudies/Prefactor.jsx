@@ -116,7 +116,7 @@ export default function PrefactorCaseStudy() {
             >
               <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The brief</p>
               <h2 className="text-2xl md:text-3xl leading-snug text-[#0a0a0a]">
-                Over $1M raised. 45 Free users. Zero conversions. Three months out from a US launch.
+                Over $1.5M raised. 45 Free users. Zero conversions. Three months out from a US launch.
               </h2>
             </motion.div>
 
