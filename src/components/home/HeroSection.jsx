@@ -24,7 +24,7 @@ const comparisons = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-white">
+    <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-white" style={{ backgroundImage: "radial-gradient(circle, #c8c8c8 1px, transparent 1px)", backgroundSize: "24px 24px" }}>
       {/* Subtle gradient blobs */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-0 w-[700px] h-[700px] rounded-full bg-[#e8195a]/5 blur-[140px]" />
