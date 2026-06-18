@@ -96,8 +96,8 @@ export default function PrefactorCaseStudy() {
                 boxShadow: '0 4px 24px rgba(0,0,0,0.3)'
               }}
             />
-            <p style={{ fontSize: '13px', color: '#7ecec4', marginTop: '8px', opacity: 0.7 }}>
-              Before — scroll for the transformation.
+            <p style={{ fontSize: '13px', color: '#7ecec4', marginTop: '10px', letterSpacing: '0.05em', fontWeight: 500 }}>
+              Before — scroll down for the transformation
             </p>
           </motion.div>
 
