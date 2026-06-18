@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const audiences = [
   {
     title: "Funded Startups (Seed to Series B)",
-    description: "You've raised capital and need to build commercial foundations — segmentation, positioning, GTM strategy — without hiring a full team or paying agency retainers.",
+    description: "You've raised capital and need to build commercial foundations - segmentation, positioning, GTM strategy - without hiring a full team or paying agency retainers.",
   },
   {
     title: "Pre-Exit Business Owners",
