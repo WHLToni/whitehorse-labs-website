@@ -348,9 +348,9 @@ export default function PrefactorCaseStudy() {
             className="mb-10"
           >
             <h2 className="text-3xl md:text-4xl text-white font-bold mb-3">From strategy to execution</h2>
-            <p className="text-lg text-white mb-2">White paper. Ad creative. A Notion portal for everything.</p>
+            <p className="text-lg text-white mb-2">Fresh content reinforcing the new positioning.</p>
             <p className="text-sm leading-relaxed" style={{ color: "#a8d8d4" }}>
-              Every deliverable built from the new positioning: a thought leadership white paper, campaign-ready ad creative, and a fully structured client workspace.
+              Thought-leadership white paper, campaign-ready ad creative, pitch deck, a fully structured client workspace and asset library.
             </p>
           </motion.div>
 
