@@ -97,7 +97,7 @@ export default function PrefactorCaseStudy() {
               }}
             />
             <p style={{ fontSize: '13px', color: '#7ecec4', marginTop: '8px', opacity: 0.7 }}>
-              Before — scroll down to see the transformation.
+              Before — scroll for the transformation.
             </p>
           </motion.div>
 
