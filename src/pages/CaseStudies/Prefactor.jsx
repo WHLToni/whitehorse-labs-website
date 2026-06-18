@@ -199,11 +199,8 @@ export default function PrefactorCaseStudy() {
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Brand refresh</p>
             <h2 className="text-2xl md:text-3xl text-white mb-5">From generic tech startup to enterprise-ready brand.</h2>
-            <p className="text-base leading-relaxed max-w-2xl mb-4" style={{ color: "#a8cccc" }}>
-              Prefactor had no cohesive brand identity. The visual language was fragmented: dark templates, gradient fonts, AI-generated imagery that looked like every other early-stage tech company. We ran a brand strategy workshop with the founding team, defined their brand personality and visual direction, and briefed a freelance designer who developed the complete identity from strategy through to a production-ready style guide.
-            </p>
             <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
-              From a fragmented, template-driven and engineer-first identity, to a brand system built for enterprise credibility — designed for a small team to apply consistently across all media without a designer on call.
+              While the founders got to work rebuilding the product, I started on brand. Prefactor had no cohesive visual identity — dark templates, gradient fonts, AI-generated imagery that looked like every other early-stage tech company. We ran a brand strategy workshop, defined their personality and visual direction, and briefed a freelance designer who took it from strategy through to a production-ready style guide. The result: a system built for enterprise credibility that a small team can apply consistently, without a designer on call.
             </p>
           </motion.div>
 
