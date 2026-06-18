@@ -129,9 +129,8 @@ export default function PrefactorCaseStudy() {
               viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
               className="md:col-span-3 space-y-5 text-[#444] text-base leading-relaxed"
             >
-              <p>Prefactor came to Whitehorse Labs with a fairly clear and simple brief: they'd secured their second round of Antler funding, were planning a US market introduction trip, and needed the commercial foundations to make it fruitful. Their immediate needs were a pitch deck, a white paper and the product marketing fundamentals: segmentation, targeting, positioning and messaging frameworks.</p>
-              <p>They had 45 users on a free tier and plenty of conversations, but zero conversions. The product was an MCP authentication solution, originally built for software engineers navigating the emerging agentic AI landscape. On paper, the timing looked right but in practice it wasn't landing.</p>
-              <p>Two weeks into the engagement, I asked to see a product demo. What I saw was an early-stage MVP solving a problem the intended audience hadn't yet recognised as a problem. The engagement brief changed. Before we could build commercial assets for a US launch, we needed to know whether the market actually wanted what Prefactor was building.</p>
+              <p>Prefactor approached us to build the commercial foundations for a US market entry: pitch deck, white paper, and messaging frameworks. But despite securing Antler funding and holding plenty of conversations, they had 45 users on a free tier and zero conversions. Their product — an MCP authentication solution — wasn't landing.</p>
+              <p>Two weeks into the engagement, a product demo revealed the core issue: the MVP was solving a problem their audience didn't yet recognise. The brief shifted immediately. Before building commercial assets for a US launch, we had to validate whether the market actually wanted what Prefactor was building.</p>
             </motion.div>
           </div>
 
