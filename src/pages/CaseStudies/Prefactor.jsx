@@ -26,7 +26,7 @@ export default function PrefactorCaseStudy() {
         style={{ background: "linear-gradient(135deg, #0d2b2b 0%, #1a3a3a 100%)" }}
         className="w-full"
       >
-        <div className="max-w-[800px] mx-auto px-10 py-[100px] text-center">
+        <div className="max-w-[800px] mx-auto px-5 md:px-10 py-16 md:py-[100px] text-center">
 
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -188,7 +188,7 @@ export default function PrefactorCaseStudy() {
 
       {/* BRAND TRANSFORMATION */}
       <section style={{ background: "linear-gradient(135deg, #0d2b2b 0%, #1a3a3a 100%)" }}>
-        <div className="max-w-[900px] mx-auto px-10 py-20">
+        <div className="max-w-[900px] mx-auto px-5 md:px-10 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
@@ -205,31 +205,29 @@ export default function PrefactorCaseStudy() {
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 items-start"
           >
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "32px", alignItems: "flex-start" }}>
-              {/* LEFT — BEFORE (single column) */}
-              <div>
-                <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>Before</p>
-                <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
-
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" style={{ borderRadius: "6px", width: "100%", display: "block", opacity: 0.75 }} />
-                </div>
-                <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>prefactor.tech — prior to engagement</p>
+            {/* LEFT — BEFORE */}
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-widest mb-3" style={{ color: "#7ecec4", opacity: 0.7 }}>Before</p>
+              <div className="flex flex-col gap-2">
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" className="w-full block rounded-md" style={{ opacity: 0.75 }} />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" className="w-full block rounded-md" style={{ opacity: 0.75 }} />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" className="w-full block rounded-md" style={{ opacity: 0.75 }} />
               </div>
+              <p className="text-xs mt-2" style={{ color: "#7ecec4", opacity: 0.6 }}>prefactor.tech — prior to engagement</p>
+            </div>
 
-              {/* RIGHT — AFTER (prominent 2×2 grid) */}
-              <div>
-                <p style={{ fontSize: "11px", color: "#7ecec4", opacity: 0.7, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px", fontWeight: 600 }}>After</p>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines — cover" style={{ borderRadius: "8px", width: "100%", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png" alt="Typography system" style={{ borderRadius: "8px", width: "100%", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" style={{ borderRadius: "8px", width: "100%", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
-                  <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png" alt="Imagery and icons direction" style={{ borderRadius: "8px", width: "100%", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
-                </div>
-                <p style={{ fontSize: "12px", color: "#7ecec4", opacity: 0.6, marginTop: "6px" }}>New brand identity — November 2025</p>
+            {/* RIGHT — AFTER */}
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-widest mb-3" style={{ color: "#7ecec4", opacity: 0.7 }}>After</p>
+              <div className="grid grid-cols-2 gap-3">
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines — cover" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png" alt="Typography system" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
+                <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png" alt="Imagery and icons direction" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
               </div>
+              <p className="text-xs mt-2" style={{ color: "#7ecec4", opacity: 0.6 }}>New brand identity — November 2025</p>
             </div>
           </motion.div>
 
@@ -238,7 +236,7 @@ export default function PrefactorCaseStudy() {
 
       {/* PITCH DECK */}
       <section style={{ background: "linear-gradient(160deg, #071a1a 0%, #0d2b2b 50%, #0a1f2e 100%)" }}>
-        <div className="max-w-[900px] mx-auto px-10 py-20">
+        <div className="max-w-[900px] mx-auto px-5 md:px-10 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
@@ -251,22 +249,21 @@ export default function PrefactorCaseStudy() {
             </p>
           </motion.div>
 
-          {/* Mobile: horizontal scroll strip */}
-          <div className="flex md:hidden overflow-x-auto gap-4 pb-2">
+          {/* Mobile: 2x2 grid */}
+          <div className="grid grid-cols-2 gap-3 md:hidden">
             {[
               "https://media.base44.com/images/public/6995347084af76a3154d3f6b/06753bf6d_PitchDeckCover.png",
               "https://media.base44.com/images/public/6995347084af76a3154d3f6b/5930a19f6_PitchDeckMarket.png",
               "https://media.base44.com/images/public/6995347084af76a3154d3f6b/dd4c6e5f0_PitchDeckProduct.png",
               "https://media.base44.com/images/public/6995347084af76a3154d3f6b/9d30f934b_PitchDeckFeatures.png",
             ].map((src, i) => (
-              <div key={i} className="flex-shrink-0" style={{ minWidth: "260px" }}>
-                <img
-                  src={src}
-                  alt={`Pitch deck slide ${i + 1}`}
-                  className="w-full aspect-video object-cover rounded-xl"
-                  style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }}
-                />
-              </div>
+              <img
+                key={i}
+                src={src}
+                alt={`Pitch deck slide ${i + 1}`}
+                className="w-full aspect-video object-cover rounded-lg"
+                style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }}
+              />
             ))}
           </div>
 
@@ -344,7 +341,7 @@ export default function PrefactorCaseStudy() {
 
       {/* ADDITIONAL DELIVERABLES */}
       <section style={{ background: "#0d5c55" }}>
-        <div className="max-w-[900px] mx-auto px-10 py-16">
+        <div className="max-w-[900px] mx-auto px-5 md:px-10 py-14 md:py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
@@ -361,7 +358,7 @@ export default function PrefactorCaseStudy() {
           <motion.div
             initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.6 }}
-            className="grid grid-cols-3 gap-4 items-start"
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start"
           >
             {/* Left: Whitepaper — tall portrait */}
             <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
@@ -373,7 +370,7 @@ export default function PrefactorCaseStudy() {
             </div>
 
             {/* Right: Combined Notion + Reddit ads image */}
-            <div className="col-span-2">
+            <div className="md:col-span-2">
               <img
                 src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/42e764a1b_RedditNotion.png"
                 alt="Notion portal and Reddit ads"
