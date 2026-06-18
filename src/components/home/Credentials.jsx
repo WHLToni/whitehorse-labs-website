@@ -23,6 +23,12 @@ export default function Credentials() {
                   className="w-full h-full object-cover"
                 />
               </div>
+              <div className="w-full max-w-[280px] lg:max-w-full mt-1">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-1.5">Industry Experience</p>
+                <p className="text-xs text-[#aaa] leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontStyle: "italic" }}>
+                  Agentic AI & Automation · MedTech · HealthTech · ConstructionTech · FinTech · VeterinaryTech · Marine · Equine · Public Sector Workforce Training
+                </p>
+              </div>
 
             </motion.div>
 
@@ -42,19 +48,19 @@ export default function Credentials() {
               </h2>
 
               <p className="text-[#555] text-sm leading-relaxed">
-                Great products don't sell themselves. Someone has to own the journey from insight to revenue — the research, the positioning, the narrative, the launch, and everything that comes after.
+                Great products don't sell themselves. Someone has to own the journey from insight to revenue - the research, the positioning, the narrative, the launch, and everything that comes after.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
                 That kind of ownership can be hard to find in one person.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                I started in the medical device and pharmaceutical industry, where product management and product marketing people are trained to carry a product through its entire commercial lifecycle: market intelligence and segmentation, positioning and messaging, launch, and ongoing lifecycle management. Regulatory rigour, clinical credibility, commercial accountability - all of it built on actual frameworks, models and data. It's an industry that treats marketing as a discipline, not an afterthought. That standard never left me.
+                I started in the medical device and pharmaceutical industry, where product management and product marketing people are trained to carry a product through its entire commercial lifecycle: market intelligence and segmentation, positioning and messaging, launch and ongoing lifecycle management. Regulatory rigour, clinical credibility, commercial accountability - all of it built on actual frameworks, models, and data. It's an industry that treats marketing as a discipline, not an afterthought. That standard never left me.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                After finishing an MBA, I spent the next fifteen years across product and marketing management in medtech, healthtech, construction technology, veterinary technology and fintech. Enterprise and startups. Seed stage through to publicly listed brands across APAC and the US.
+                After finishing an MBA, I spent the next fifteen years across product and marketing management in B2B SaaS across medical, veterinary, fintech and construction verticals. Enterprise and startups. Seed stage through to publicly listed brands across APAC and the US.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                Now I work with early-stage and exit-ready businesses as a fractional product marketing lead. Alongside that, I work with businesses at the earlier end of the AI adoption curve: product prototyping, market research, workflow automation, and building the internal capability to use these tools well. Some clients want both, some want neither. The engagement is shaped around what your business actually needs.
+                Now I work with early-stage and exit-ready businesses as a fractional product marketing lead. Alongside that, I work with businesses at the earlier end of the AI adoption curve: product prototyping, market research, workflow automation, and building the internal capability to use these tools well. Some clients want both. Some want neither. The engagement is shaped around what the business actually needs.
               </p>
 
               <a
