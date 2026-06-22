@@ -170,12 +170,15 @@ export default function BuyTheFrameworks() {
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border border-[#e5e5e5] p-8 md:p-10"
           >
-            <blockquote className="text-[#0a0a0a] text-lg md:text-xl leading-relaxed mb-6">
+            <blockquote className="text-[#555] text-base leading-relaxed mb-6 italic">
               "Figuring out an international GTM strategy is challenging, but The GTM Builder made it clear and helped us shape our way step by step. Beyond the amazing platform, working with Toni and her team was a highlight! She's incredibly helpful, professional, and always brings great energy. It's so important to work with good people, and Toni is exactly that."
             </blockquote>
-            <div>
-              <p className="text-sm font-semibold text-[#0a0a0a]">Guy Jakobi</p>
-              <p className="text-sm text-[#888]">Managing Director, Pacific Grow</p>
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-[2px] bg-[#e8195a]" />
+              <div>
+                <p className="text-sm font-semibold text-[#0a0a0a]">Guy Jakobi</p>
+                <p className="text-sm text-[#888]">Managing Director, Pacific Grow</p>
+              </div>
             </div>
           </motion.div>
         </div>
