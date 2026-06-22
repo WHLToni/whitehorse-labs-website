@@ -203,10 +203,13 @@ export default function BuyTheFrameworks() {
                     </span>
                   ))}
                 </div>
-                <div className="rounded-xl border border-white/15 p-5" style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <p className="text-white font-semibold text-sm mb-2">June Only: Free 1-Hour Strategy Session With Me</p>
-                  <p className="text-white/55 text-sm leading-relaxed">
-                    I'm opening a limited number of personal strategy sessions to GTM Builder buyers this month. We'll work through your outputs together and I'll add the strategic layer you can't get from a template - specific to your product, your market, and where you're headed. It won't always be free - book before June is out.
+                <div className="rounded-xl border-2 border-[#e8195a] p-6" style={{ background: "rgba(232,25,90,0.12)" }}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="bg-[#e8195a] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
+                  </div>
+                  <p className="text-white font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
+                  <p className="text-white/75 text-sm leading-relaxed">
+                    I'm opening a limited number of personal strategy sessions to GTM Builder buyers. We'll work through your outputs together and I'll add the strategic layer you can't get from a template — specific to your product, your market, and where you're headed. This won't always be included. Calendar link provided after purchase.
                   </p>
                 </div>
               </div>
@@ -230,9 +233,7 @@ export default function BuyTheFrameworks() {
               >
                 {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
               </button>
-              <p className="text-white/30 text-xs mt-3">
-                Free Strategy Session included while available. Calendar link provided after purchase.
-              </p>
+
             </div>
           </motion.div>
         </div>
