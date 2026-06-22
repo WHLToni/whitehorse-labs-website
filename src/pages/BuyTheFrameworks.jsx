@@ -203,7 +203,7 @@ export default function BuyTheFrameworks() {
                 </div>
               </div>
               <p className="text-white/70 text-base leading-relaxed mb-6 max-w-2xl">
-                A self-guided Notion system that walks you through seven modules of commercial groundwork — from market sizing to launch planning. Work through it at your own pace, guided by 34 detailed AI prompts (JSON) designed to draw out the thinking that most founders skip.
+                A self-guided Notion system that walks you through seven modules of commercial groundwork — from market sizing to launch planning. Work through it at your own pace, guided by 34 detailed AI prompts (JSON) designed to draw out the thinking that many early-stage founders skip.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 {tags.map((tag, i) => (
