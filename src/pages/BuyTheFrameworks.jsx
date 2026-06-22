@@ -317,7 +317,7 @@ export default function BuyTheFrameworks() {
                 </div>
               </div>
               <p className="text-white/50 text-base leading-relaxed mb-6 max-w-2xl">
-                A self-guided Notion system for founders who are actively building a product. A structured approach to scoping, validating, and shipping — the same format as the GTM Builder, with AI-guided modules designed to take you from idea to a defensible product roadmap.
+                A self-guided Notion system for founders who are actively building a product. A structured approach to scoping, validating, documenting and shipping — the same format as the GTM Builder, with AI-guided modules designed to take you from idea to a defensible product roadmap.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 {["Notion-based", "AI-guided prompts", "Modular & self-paced"].map((tag, i) => (
