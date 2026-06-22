@@ -137,7 +137,7 @@ export default function BuyTheFrameworks() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Self-serve · Notion-based · AI-guided</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
-              Do the groundwork yourself. Bring on fractional expertise when you're ready to scale.
+              Do the groundwork yourself.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
               The GTM Builder and Product Builder are self-guided Notion systems - a step-by-step series of frameworks augmented with detailed AI prompts, that will guide you through building the commercial foundations that every investor wants to see.
