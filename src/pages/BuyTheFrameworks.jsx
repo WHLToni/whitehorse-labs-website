@@ -265,11 +265,11 @@ export default function BuyTheFrameworks() {
               </motion.div>
             ))}
           </div>
-          <motion.p
+          <motion.h2
             initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}
-            className="mt-12 text-[#555] text-base md:text-lg leading-relaxed border-t border-[#e5e5e5] pt-10 max-w-2xl">
-            Good GTM strategy is crucial, but it can be expensive. The GTM Builder makes it cheaper.
-          </motion.p>
+            className="mt-12 text-2xl md:text-3xl font-bold tracking-tight text-[#0a0a0a] border-t border-[#e5e5e5] pt-10 max-w-2xl">
+            Expert GTM strategy usually comes with a five-figure price tag. The GTM Builder gives you the same architectural rigor for a fraction of the cost.
+          </motion.h2>
         </div>
       </section>
 
