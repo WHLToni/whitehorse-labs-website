@@ -295,20 +295,52 @@ export default function BuyTheFrameworks() {
       {/* PRODUCT BUILDER CARD */}
       <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.03) 0%, transparent 70%)" }} />
+          style={{ background: "radial-gradient(ellipse at top right, rgba(123,95,181,0.08) 0%, transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border border-white/10 p-8 md:p-12 relative" style={{ background: "#1a1a18" }}>
-            <div className="mb-6">
-              <span className="inline-block bg-white/10 text-white text-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-white/20">🚧 In Development — Coming Soon</span>
+            className="rounded-2xl border border-white/10 overflow-hidden opacity-75" style={{ background: "#1a1a18" }}>
+
+            {/* Top: title, price, description */}
+            <div className="p-8 md:p-12 border-b border-white/10">
+              <div className="mb-5">
+                <span className="inline-block bg-[#7B5FB5]/20 text-[#b89de0] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-[#7B5FB5]/30">🚧 In Development — Coming Soon</span>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
+                <div>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white/60 mb-1">Product Builder</h3>
+                  <p className="text-white/30 text-sm">Self-guided · Notion-based · AI-guided</p>
+                </div>
+                <div className="sm:text-right flex-shrink-0">
+                  <p className="text-white/40 font-bold text-3xl">Coming Soon</p>
+                  <p className="text-white/30 text-xs mt-1">Included in the bundle</p>
+                </div>
+              </div>
+              <p className="text-white/50 text-base leading-relaxed mb-6 max-w-2xl">
+                A self-guided Notion system for founders who are actively building a product. A structured approach to scoping, validating, and shipping — the same format as the GTM Builder, with AI-guided modules designed to take you from idea to a defensible product roadmap.
+              </p>
+              <div className="flex flex-wrap gap-4 mb-8">
+                {["Notion-based", "AI-guided prompts", "Modular & self-paced"].map((tag, i) => (
+                  <span key={i} className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/30 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <button disabled className="inline-flex items-center justify-center gap-2 text-white/30 font-semibold px-8 py-4 rounded-lg text-sm cursor-not-allowed border border-white/10">
+                Not yet available
+              </button>
             </div>
-            <h3 className="text-2xl font-bold text-white/50 mb-4">Product Builder</h3>
-            <p className="text-white/50 text-sm leading-relaxed max-w-xl mb-8">
-              A self-guided Notion system for founders who are building a product and need a structured approach to scoping, validating, and shipping. Same format as the GTM Builder - AI-guided, modular, self-paced.
-            </p>
-            <a href="#" className="inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm border border-white/25 hover:border-white/50 transition-colors">
-              Notify me when it launches &rarr;
-            </a>
+
+            {/* Bottom: notify */}
+            <div className="p-8 md:p-12">
+              <div className="rounded-xl border border-white/10 p-6" style={{ background: "rgba(123,95,181,0.08)" }}>
+                <p className="text-white/60 font-bold text-base mb-2">Pre-purchase via the bundle and get access the moment it launches</p>
+                <p className="text-white/40 text-sm leading-relaxed">
+                  Buy the Builder Bundle today for AUD $549 and get instant access to the GTM Builder now. Product Builder access is added automatically when it launches — no further payment required.
+                </p>
+              </div>
+            </div>
+
           </motion.div>
         </div>
       </section>
