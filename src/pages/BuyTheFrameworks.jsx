@@ -252,24 +252,6 @@ export default function BuyTheFrameworks() {
         </div>
       </section>
 
-      {/* WHAT YOU PRODUCE */}
-      <section className="py-12 md:py-16 bg-[#f7f7f8]">
-        <div className="max-w-4xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Outcomes</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[#0a0a0a]">What you produce</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {outcomes.map((o, i) => (
-              <motion.div key={i}
-                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-                className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-7">
-                <h3 className="text-base font-bold text-[#0a0a0a] mb-2">{o.title}</h3>
-                <p className="text-[#666] text-sm leading-relaxed">{o.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* STATS */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
@@ -283,6 +265,11 @@ export default function BuyTheFrameworks() {
               </motion.div>
             ))}
           </div>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}
+            className="mt-12 text-[#555] text-base md:text-lg leading-relaxed border-t border-[#e5e5e5] pt-10 max-w-2xl">
+            Good GTM strategy is crucial, but it can be expensive. The GTM Builder makes it cheaper.
+          </motion.p>
         </div>
       </section>
 
