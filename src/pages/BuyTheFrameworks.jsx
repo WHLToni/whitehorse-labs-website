@@ -18,7 +18,7 @@ const modules = [
 ];
 
 const tags = [
-  "36 AI prompts throughout",
+  "34 detailed AI prompts in JSON",
   "~4-6 hours to complete",
   "Instant Notion access",
 ];
@@ -112,7 +112,7 @@ export default function BuyTheFrameworks() {
 
   useEffect(() => {
     document.title = "The Builder Suite - GTM Builder & Product Builder | Whitehorse Labs";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 36 AI prompts - the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 34 detailed AI prompts in JSON - the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
   }, []);
 
   const handleBuy = async (product) => {
@@ -194,7 +194,7 @@ export default function BuyTheFrameworks() {
                 <h3 className="text-2xl font-bold text-white mb-2">GTM Builder</h3>
                 <p className="text-white font-bold text-3xl mb-5">AUD $349</p>
                 <p className="text-white/60 text-sm leading-relaxed mb-8">
-                  A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 36 AI prompts designed to draw out the thinking that most founders skip.
+                  A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 34 detailed AI prompts in JSON designed to draw out the thinking that most founders skip.
                 </p>
                 <div className="flex flex-wrap gap-6 mb-8">
                   {tags.map((tag, i) => (
