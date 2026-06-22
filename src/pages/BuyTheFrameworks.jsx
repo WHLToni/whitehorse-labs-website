@@ -184,57 +184,70 @@ export default function BuyTheFrameworks() {
       {/* GTM BUILDER PRODUCT CARD */}
       <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.05) 0%, transparent 70%)" }} />
+          style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.08) 0%, transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border border-white/10 p-8 md:p-12" style={{ background: "#1a1a18" }}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-2">GTM Builder</h3>
-                <p className="text-white font-bold text-3xl mb-5">AUD $349</p>
-                <p className="text-white/60 text-sm leading-relaxed mb-8">
-                  A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 34 detailed AI prompts (JSON) designed to draw out the thinking that most founders skip.
-                </p>
-                <div className="flex flex-wrap gap-6 mb-8">
-                  {tags.map((tag, i) => (
-                    <span key={i} className="text-xs font-medium text-white/50">
-                      {tag}
-                    </span>
-                  ))}
+            className="rounded-2xl border border-white/10 overflow-hidden" style={{ background: "#1a1a18" }}>
+
+            {/* Top: title, price, description, CTA */}
+            <div className="p-8 md:p-12 border-b border-white/10">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
+                <div>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-1">GTM Builder</h3>
+                  <p className="text-white/50 text-sm">Self-guided · Notion-based · AI-guided</p>
                 </div>
-                <div className="rounded-xl border-2 border-[#e8195a] p-6" style={{ background: "rgba(232,25,90,0.12)" }}>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="bg-[#e8195a] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
-                  </div>
-                  <p className="text-white font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
-                  <p className="text-white/75 text-sm leading-relaxed">
-                    I'm opening a limited number of personal strategy sessions to GTM Builder buyers. We'll work through your outputs together and I'll add the strategic layer you can't get from a template — specific to your product, your market, and where you're headed. This won't always be included. Calendar link provided after purchase.
-                  </p>
+                <div className="sm:text-right flex-shrink-0">
+                  <p className="text-white font-bold text-3xl">AUD $349</p>
+                  <p className="text-white/40 text-xs mt-1">One-time · Instant access</p>
                 </div>
               </div>
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-white/30 mb-5">7 Modules + Bonus</p>
-                <div className="space-y-3">
-                  {modules.map((m, i) => (
-                    <div key={i} className="flex items-center gap-4">
-                      <span className={`text-xs font-bold flex-shrink-0 w-6 ${m.bonus ? "text-[#c97a8a]" : "text-white/25"}`}>{m.num}</span>
-                      <span className={`text-sm leading-snug ${m.bonus ? "text-white/70 font-medium" : "text-white/60"}`}>{m.title}</span>
-                    </div>
-                  ))}
-                </div>
+              <p className="text-white/70 text-base leading-relaxed mb-6 max-w-2xl">
+                A self-guided Notion system that walks you through seven modules of commercial groundwork — from market sizing to launch planning. Work through it at your own pace, guided by 34 detailed AI prompts (JSON) designed to draw out the thinking that most founders skip.
+              </p>
+              <div className="flex flex-wrap gap-4 mb-8">
+                {tags.map((tag, i) => (
+                  <span key={i} className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                    {tag}
+                  </span>
+                ))}
               </div>
-            </div>
-            <div className="mt-10 pt-8 border-t border-white/10">
               <button
                 onClick={() => handleBuy('gtm')}
                 disabled={loading === 'gtm'}
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 w-full sm:w-auto bg-gradient-to-br from-[#e8195a] to-[#7B5FB5] hover:opacity-90 transition-opacity"
+                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#e8195a] to-[#7B5FB5] hover:opacity-90 transition-opacity"
               >
-                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
+                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder — AUD $349 →'}
               </button>
-
             </div>
+
+            {/* Middle: Modules grid */}
+            <div className="p-8 md:p-12 border-b border-white/10">
+              <p className="text-base font-bold text-white mb-6">7 Modules + Bonus</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {modules.map((m, i) => (
+                  <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${m.bonus ? "border border-[#e8195a]/40 bg-[#e8195a]/8" : "border border-white/8 bg-white/3"}`}
+                    style={m.bonus ? { background: "rgba(232,25,90,0.08)" } : { background: "rgba(255,255,255,0.03)" }}>
+                    <span className={`text-xs font-bold flex-shrink-0 w-5 ${m.bonus ? "text-[#e8195a]" : "text-white/30"}`}>{m.num}</span>
+                    <span className={`text-sm leading-snug ${m.bonus ? "text-white font-semibold" : "text-white/75"}`}>{m.title}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Bottom: Limited time offer */}
+            <div className="p-8 md:p-12">
+              <div className="rounded-xl border-2 border-[#e8195a] p-6" style={{ background: "rgba(232,25,90,0.12)" }}>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="bg-[#e8195a] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
+                </div>
+                <p className="text-white font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
+                <p className="text-white/75 text-sm leading-relaxed">
+                  I'm opening a limited number of personal strategy sessions to GTM Builder buyers. We'll work through your outputs together and I'll add the strategic layer you can't get from a template — specific to your product, your market, and where you're headed. This won't always be included. Calendar link provided after purchase.
+                </p>
+              </div>
+            </div>
+
           </motion.div>
         </div>
       </section>
