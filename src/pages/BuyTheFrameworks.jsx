@@ -18,7 +18,7 @@ const modules = [
 ];
 
 const tags = [
-  "34 detailed AI prompts in JSON",
+  "34 detailed AI prompts (JSON)",
   "~4-6 hours to complete",
   "Instant Notion access",
 ];
@@ -112,7 +112,7 @@ export default function BuyTheFrameworks() {
 
   useEffect(() => {
     document.title = "The Builder Suite - GTM Builder & Product Builder | Whitehorse Labs";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 34 detailed AI prompts in JSON - the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 34 detailed AI prompts (JSON) - the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
   }, []);
 
   const handleBuy = async (product) => {
@@ -140,7 +140,7 @@ export default function BuyTheFrameworks() {
               Do the groundwork yourself.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
-              The GTM Builder and Product Builder are self-guided Notion systems - a step-by-step series of frameworks augmented with detailed AI prompts in JSON, that will guide you through building the commercial foundations that every investor wants to see.
+              The GTM Builder and Product Builder are self-guided Notion systems - a step-by-step series of frameworks augmented with detailed AI prompts (JSON), that will guide you through building the commercial foundations that every investor wants to see.
               <br /><br />
               The same baseline frameworks used by big consulting firms and SaaS companies, adapted for founders who need to move fast.
             </p>
@@ -194,7 +194,7 @@ export default function BuyTheFrameworks() {
                 <h3 className="text-2xl font-bold text-white mb-2">GTM Builder</h3>
                 <p className="text-white font-bold text-3xl mb-5">AUD $349</p>
                 <p className="text-white/60 text-sm leading-relaxed mb-8">
-                  A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 34 detailed AI prompts in JSON designed to draw out the thinking that most founders skip.
+                  A self-guided Notion system that walks you through seven modules of commercial groundwork - from market sizing to launch planning. Work through it at your own pace, guided by 34 detailed AI prompts (JSON) designed to draw out the thinking that most founders skip.
                 </p>
                 <div className="flex flex-wrap gap-6 mb-8">
                   {tags.map((tag, i) => (
