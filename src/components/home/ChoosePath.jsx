@@ -52,7 +52,7 @@ export default function ChoosePath() {
 
         {/* Header */}
         <div className="mb-12">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
             The Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5">
@@ -86,7 +86,7 @@ export default function ChoosePath() {
                 <p className="text-[15px] font-bold text-white mb-1.5">{tier.name}</p>
                 <p className="text-white/50 text-sm leading-relaxed">{tier.description}</p>
                 {tier.output && (
-                  <p className="text-sm mt-2 leading-relaxed" style={{ color: "#d44d6e" }}>
+                  <p className="text-sm mt-2 leading-relaxed" style={{ color: "#b3475c" }}>
                     ↳ {tier.output}
                   </p>
                 )}
@@ -119,7 +119,7 @@ export default function ChoosePath() {
         <div className="mt-7">
           <Link
             to={createPageUrl("Contact")}
-            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm bg-[#c0425e] hover:bg-[#a63750] transition-colors"
+            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm bg-[#b3475c] hover:bg-[#96394c] transition-colors"
           >
             Book a Call →
           </Link>
@@ -217,7 +217,7 @@ export default function ChoosePath() {
           Not ready for a full engagement?{" "}
           <Link
             to={createPageUrl("GetTheFrameworks")}
-            className="text-white/40 hover:text-[#c97a8a] transition-colors not-italic"
+            className="text-white/40 hover:text-[#b3475c] transition-colors not-italic"
           >
             The Builder Suite{pricing ? ` — from ${pricing.from}` : ""} →
           </Link>
