@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -40,7 +40,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Anton', 'AgencyFB', 'Agency FB', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'AgencyFB', 'Agency FB', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 0.01em;
 }
 
