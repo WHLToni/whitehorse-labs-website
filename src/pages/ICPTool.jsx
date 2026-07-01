@@ -11,7 +11,7 @@ import Step4Fields from "@/components/icp-tool/fields/Step4Fields";
 import Step5Fields from "@/components/icp-tool/fields/Step5Fields";
 import Step6Fields from "@/components/icp-tool/fields/Step6Fields";
 import Step7Fields from "@/components/icp-tool/fields/Step7Fields";
-import { downloadProfileText } from "@/lib/icpProfileText";
+import { downloadProfilePdf } from "@/lib/icpProfilePdf";
 
 const TOTAL_STEPS = 7;
 
@@ -138,7 +138,7 @@ export default function ICPTool() {
 
         {stage === "email" && <EmailCapture onSubmit={handleEmailSubmit} onSkip={handleSkipEmail} />}
 
-        {stage === "profile" && <ProfileOutput formData={formData} onDownload={() => downloadProfileText(formData)} onReset={handleReset} />}
+        {stage === "profile" && <ProfileOutput formData={formData} onDownload={() => downloadProfilePdf(formData)} onReset={handleReset} />}
       </main>
 
       <div className="text-center pb-10 text-xs text-[#888]">
