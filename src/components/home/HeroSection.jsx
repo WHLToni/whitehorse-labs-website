@@ -67,7 +67,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
             className="hidden lg:block"
           >
-            <div className="bg-[#0a0a0a] rounded-3xl p-10 relative overflow-hidden bg-grid-dark">
+            <div className="bg-[#1E1F23] rounded-3xl p-10 relative overflow-hidden bg-grid-dark">
               {/* Logo watermark */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <img
