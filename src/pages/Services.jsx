@@ -97,7 +97,7 @@ const steps = [
   },
 ];
 
-function ServiceCard({ name, subheading, price, duration, deliverables, bestFor, ctaLabel, ctaPage, darkBg = false, priceColor = "#e8195a", outputLine = null }) {
+function ServiceCard({ name, subheading, price, duration, deliverables, bestFor, ctaLabel, ctaPage, darkBg = false, priceColor = "#b3475c", outputLine = null }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -130,7 +130,7 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
           <ul className="space-y-2">
             {deliverables.map((item, i) => (
               <li key={i} className={`text-sm leading-relaxed flex gap-3 ${darkBg ? "text-[#aaa]" : "text-[#555]"}`}>
-                <span className={`font-bold flex-shrink-0 ${darkBg ? "text-[#c97a8a]" : "text-[#e8195a]"}`} aria-hidden="true">•</span>
+                <span className={`font-bold flex-shrink-0 ${darkBg ? "text-[#c97a8a]" : "text-[#b3475c]"}`} aria-hidden="true">•</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -157,8 +157,8 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
               to={createPageUrl(ctaPage)}
               className={`inline-flex items-center gap-2 font-semibold text-sm px-6 py-3 rounded-lg transition-all ${
                 darkBg
-                  ? "border border-white/20 text-white hover:border-[#e8195a] hover:text-[#e8195a]"
-                  : "border border-[#e8195a] text-[#e8195a] hover:bg-[#e8195a]/5"
+                  ? "border border-white/20 text-white hover:border-[#b3475c] hover:text-[#b3475c]"
+                  : "border border-[#b3475c] text-[#b3475c] hover:bg-[#b3475c]/5"
               }`}
             >
               {ctaLabel}
@@ -182,7 +182,7 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Services & Pricing</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Services & Pricing</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Fixed Scope. Fixed Price. Delivered in Weeks.
             </h1>
@@ -206,18 +206,16 @@ export default function Services() {
           </div>
 
           {/* Fractional divider */}
-          <div className="relative flex flex-col items-center mt-10 mb-6 gap-1.5">
-            <div className="flex items-center w-full">
-              <div className="flex-1 border-t border-[#e5e5e5]" />
-              <span className="mx-4 text-[10px] font-semibold uppercase tracking-widest text-[#888]">
-                Also Available
-              </span>
-              <div className="flex-1 border-t border-[#e5e5e5]" />
-            </div>
-            <p className="text-[10px] font-semibold uppercase tracking-widest text-[#c97a8a]">
-              Fractional Leadership
-            </p>
+          <div className="relative flex items-center mt-10 mb-6">
+            <div className="flex-1 border-t border-[#e5e5e5]" />
+            <span className="mx-4 text-sm font-semibold uppercase tracking-widest text-[#888]">
+              Also Available
+            </span>
+            <div className="flex-1 border-t border-[#e5e5e5]" />
           </div>
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] text-center mb-6">
+            Fractional Leadership
+          </p>
 
           <ServiceCard
             name="Fractional GTM Leadership"
@@ -240,12 +238,12 @@ export default function Services() {
 
       {/* ALSO AVAILABLE SECTION */}
       <section className="py-10 md:py-12 bg-[#0a0a0a] relative overflow-hidden">
-        <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-[#e8195a]/5 blur-[120px]" />
+        <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-[#b3475c]/5 blur-[120px]" />
         <div className="max-w-5xl mx-auto px-6 lg:px-10 relative">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#666] mb-4 text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#666] mb-4 text-center">
             Also Available
           </p>
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#d4678c] mb-12 text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#d4678c] mb-12 text-center">
             Pre-Build
           </p>
           <ServiceCard
@@ -272,7 +270,7 @@ export default function Services() {
       <section className="py-10 md:py-12 bg-[#f7f7f8]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">How It Works</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">How It Works</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-2">Clear Process. No Surprises.</h2>
           </motion.div>
 
@@ -286,7 +284,7 @@ export default function Services() {
                 transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="bg-white rounded-xl p-6 border border-[#e5e5e5]"
               >
-                <div className="text-3xl font-bold text-[#e8195a] mb-4">{step.num}</div>
+                <div className="text-3xl font-bold text-[#b3475c] mb-4">{step.num}</div>
                 <h3 className="text-lg font-bold text-[#0a0a0a] mb-3">{step.title}</h3>
                 <p className="text-sm text-[#666] leading-relaxed">{step.desc}</p>
               </motion.div>
@@ -301,7 +299,7 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Not Ready to Commit?</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Not Ready to Commit?</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
               Buy the Frameworks.
             </h2>

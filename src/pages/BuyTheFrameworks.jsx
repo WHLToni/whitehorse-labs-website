@@ -135,7 +135,7 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#f7f7f8] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Self-serve · Notion-based · AI-guided</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Self-serve · Notion-based · AI-guided</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Do the groundwork yourself.
             </h1>
@@ -148,13 +148,13 @@ export default function BuyTheFrameworks() {
               <button
                 onClick={() => handleBuy('gtm')}
                 disabled={loading === 'gtm'}
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#e8195a] to-[#7B5FB5] hover:opacity-90 transition-opacity"
+                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#b3475c] to-[#7B5FB5] hover:opacity-90 transition-opacity"
               >
                 {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
               </button>
               <a
                 href="#gtm-builder"
-                className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors"
+                className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#b3475c]/40 transition-colors"
               >
                 See what's inside &darr;
               </a>
@@ -174,7 +174,7 @@ export default function BuyTheFrameworks() {
               "Figuring out an international GTM strategy is challenging, but The GTM Builder made it clear and helped us shape our way step by step. Beyond the amazing platform, working with Toni and her team was a highlight! She's incredibly helpful, professional, and always brings great energy. It's so important to work with good people, and Toni is exactly that."
             </blockquote>
             <div className="flex items-center gap-3">
-              <div className="w-8 h-[2px] bg-[#e8195a]" />
+              <div className="w-8 h-[2px] bg-[#b3475c]" />
               <div>
                 <p className="text-sm font-semibold text-[#0a0a0a]">Guy Jakobi</p>
                 <p className="text-sm text-[#888]">Managing Director, Pacific Grow</p>
@@ -187,7 +187,7 @@ export default function BuyTheFrameworks() {
       {/* GTM BUILDER PRODUCT CARD */}
       <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at top right, rgba(232,25,90,0.08) 0%, transparent 70%)" }} />
+          style={{ background: "radial-gradient(ellipse at top right, rgba(179,71,92,0.08) 0%, transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
@@ -218,7 +218,7 @@ export default function BuyTheFrameworks() {
               <button
                 onClick={() => handleBuy('gtm')}
                 disabled={loading === 'gtm'}
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#e8195a] to-[#7B5FB5] hover:opacity-90 transition-opacity"
+                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#b3475c] to-[#7B5FB5] hover:opacity-90 transition-opacity"
               >
                 {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder — AUD $349 →'}
               </button>
@@ -229,9 +229,9 @@ export default function BuyTheFrameworks() {
               <p className="text-base font-bold text-white mb-6">7 Modules + Bonus</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {modules.map((m, i) => (
-                  <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${m.bonus ? "border border-[#e8195a]/40 bg-[#e8195a]/8" : "border border-white/8 bg-white/3"}`}
-                    style={m.bonus ? { background: "rgba(232,25,90,0.08)" } : { background: "rgba(255,255,255,0.03)" }}>
-                    <span className={`text-xs font-bold flex-shrink-0 w-5 ${m.bonus ? "text-[#e8195a]" : "text-white/30"}`}>{m.num}</span>
+                  <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${m.bonus ? "border border-[#b3475c]/40 bg-[#b3475c]/8" : "border border-white/8 bg-white/3"}`}
+                    style={m.bonus ? { background: "rgba(179,71,92,0.08)" } : { background: "rgba(255,255,255,0.03)" }}>
+                    <span className={`text-xs font-bold flex-shrink-0 w-5 ${m.bonus ? "text-[#b3475c]" : "text-white/30"}`}>{m.num}</span>
                     <span className={`text-sm leading-snug ${m.bonus ? "text-white font-semibold" : "text-white/75"}`}>{m.title}</span>
                   </div>
                 ))}
@@ -240,9 +240,9 @@ export default function BuyTheFrameworks() {
 
             {/* Bottom: Limited time offer */}
             <div className="p-8 md:p-12">
-              <div className="rounded-xl border-2 border-[#e8195a] p-6" style={{ background: "rgba(232,25,90,0.12)" }}>
+              <div className="rounded-xl border-2 border-[#b3475c] p-6" style={{ background: "rgba(179,71,92,0.12)" }}>
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#e8195a] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
+                  <span className="bg-[#b3475c] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
                 </div>
                 <p className="text-white font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
                 <p className="text-white/75 text-sm leading-relaxed">
@@ -279,14 +279,14 @@ export default function BuyTheFrameworks() {
       {/* WHO IT'S FOR */}
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">Who It's For</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Who It's For</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[#0a0a0a]">Built for founders who need to move fast</h2>
           <div className="space-y-5">
             {whoFor.map((item, i) => (
               <motion.div key={i}
                 initial={{ opacity: 0, x: -12 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
                 className="flex items-start gap-4">
-                <div className="w-[3px] self-stretch rounded-full bg-[#e8195a]/50 flex-shrink-0 mt-1" />
+                <div className="w-[3px] self-stretch rounded-full bg-[#b3475c]/50 flex-shrink-0 mt-1" />
                 <p className="text-[#555] text-base leading-relaxed">{item}</p>
               </motion.div>
             ))}
@@ -352,9 +352,9 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border-2 border-[#e8195a]/30 p-8 md:p-12 relative" style={{ background: "#fff9fa" }}>
+            className="rounded-2xl border-2 border-[#b3475c]/30 p-8 md:p-12 relative" style={{ background: "#fff9fa" }}>
             <div className="mb-2">
-              <span className="text-[#e8195a] text-xs font-semibold uppercase tracking-widest">Best Value</span>
+              <span className="text-[#b3475c] text-xs font-semibold uppercase tracking-widest">Best Value</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-[#0a0a0a]">Get both. Save AUD $149.</h2>
             <p className="text-[#666] text-base leading-relaxed max-w-2xl mb-8">
@@ -363,7 +363,7 @@ export default function BuyTheFrameworks() {
             <button
               onClick={() => handleBuy('bundle')}
               disabled={loading === 'bundle'}
-              className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#e8195a] to-[#7B5FB5] hover:opacity-90 transition-opacity"
+              className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#b3475c] to-[#7B5FB5] hover:opacity-90 transition-opacity"
             >
               {loading === 'bundle' ? 'Redirecting...' : 'Get the bundle - AUD $549'}
             </button>
@@ -378,7 +378,7 @@ export default function BuyTheFrameworks() {
       {/* FAQs */}
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#e8195a] mb-4">FAQs</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">FAQs</p>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Frequently Asked Questions</h2>
           {faqs.map((f, i) => <FAQItem key={i} question={f.q} answer={f.a} />)}
         </div>

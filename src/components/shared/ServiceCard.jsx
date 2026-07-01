@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
-export default function ServiceCard({ title, price, duration, description, deliverables, bestFor, ctaLabel, ctaAction, index = 0, accentColor = "#E91E8C" }) {
+export default function ServiceCard({ title, price, duration, description, deliverables, bestFor, ctaLabel, ctaAction, index = 0, accentColor = "#b3475c" }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
-      className="p-8 md:p-10 rounded-2xl bg-white border border-[#e5e5e5] hover:border-[#E91E8C]/20 transition-all"
+      className="p-8 md:p-10 rounded-2xl bg-white border border-[#e5e5e5] hover:border-[#b3475c]/20 transition-all"
       style={{ borderLeftColor: accentColor, borderLeftWidth: "3px" }}
     >
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">

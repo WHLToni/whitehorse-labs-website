@@ -11,7 +11,7 @@ export default function FAQItem({ question, answer }) {
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-6 text-left group"
       >
-        <span className="text-base font-semibold pr-4 text-[#0a0a0a] group-hover:text-[#E91E8C] transition-colors">
+        <span className="text-base font-semibold pr-4 text-[#0a0a0a] group-hover:text-[#b3475c] transition-colors">
           {question}
         </span>
         <ChevronDown

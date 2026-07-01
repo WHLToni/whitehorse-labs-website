@@ -64,7 +64,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Stack label */}
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-white mb-6">
+        <p className="text-sm font-semibold uppercase tracking-widest text-white mb-6">
           The Commercialisation Stack
         </p>
 
@@ -86,7 +86,7 @@ export default function ChoosePath() {
                 <p className="text-[15px] font-bold text-white mb-1.5">{tier.name}</p>
                 <p className="text-white/50 text-sm leading-relaxed">{tier.description}</p>
                 {tier.output && (
-                  <p className="text-xs mt-2 leading-relaxed" style={{ color: "#d44d6e" }}>
+                  <p className="text-sm mt-2 leading-relaxed" style={{ color: "#d44d6e" }}>
                     ↳ {tier.output}
                   </p>
                 )}
@@ -128,14 +128,14 @@ export default function ChoosePath() {
         {/* Divider */}
         <div className="relative flex items-center my-10">
           <div className="flex-1 border-t border-white/[0.08]" />
-          <span className="mx-4 text-[10px] font-semibold uppercase tracking-widest text-white">
+          <span className="mx-4 text-sm font-semibold uppercase tracking-widest text-white">
             Also Available
           </span>
           <div className="flex-1 border-t border-white/[0.08]" />
         </div>
 
         {/* Pre-Build label */}
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-white mb-6">
+        <p className="text-sm font-semibold uppercase tracking-widest text-white mb-6">
           Pre-Build
         </p>
 
@@ -173,18 +173,14 @@ export default function ChoosePath() {
         </div>
 
         {/* Fractional divider */}
-        <div className="relative flex flex-col items-center my-10 gap-1.5">
-          <div className="flex items-center w-full">
-            <div className="flex-1 border-t border-white/[0.08]" />
-            <span className="mx-4 text-[10px] font-semibold uppercase tracking-widest text-white">
-              Also Available
-            </span>
-            <div className="flex-1 border-t border-white/[0.08]" />
-          </div>
-          <p className="text-[10px] font-semibold uppercase tracking-widest text-[#c97a8a]">
-            Fractional Leadership
-          </p>
+        <div className="relative flex items-center my-10">
+          <div className="flex-1 border-t border-white/[0.08]" />
         </div>
+
+        {/* Fractional Leadership label */}
+        <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] mb-6">
+          Fractional Leadership
+        </p>
 
         {/* Fractional GTM Leadership */}
         <motion.div
