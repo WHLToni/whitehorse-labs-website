@@ -43,20 +43,11 @@ export default function ChoosePath() {
   const pricing = usePricing();
   return (
     <section
-      className="py-24 md:py-32 relative overflow-hidden"
+      className="py-24 md:py-32 relative overflow-hidden bg-grid-dark"
       style={{
         background: "#111110",
       }}
     >
-      {/* Radial glow top-right */}
-      <div
-        className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse at top right, rgba(233,30,140,0.06) 0%, transparent 70%)",
-        }}
-      />
-
       <div className="max-w-4xl mx-auto px-6 lg:px-10 relative z-10">
 
         {/* Header */}
@@ -128,11 +119,7 @@ export default function ChoosePath() {
         <div className="mt-7">
           <Link
             to={createPageUrl("Contact")}
-            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm"
-            style={{
-              background: "#c0425e",
-              boxShadow: "0 4px 24px rgba(192,66,94,0.3)",
-            }}
+            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm bg-[#c0425e] hover:bg-[#a63750] transition-colors"
           >
             Book a Call →
           </Link>

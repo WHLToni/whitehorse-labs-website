@@ -24,13 +24,7 @@ const comparisons = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-white">
-      {/* Subtle gradient blobs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-[700px] h-[700px] rounded-full bg-[#e8195a]/5 blur-[140px]" />
-        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] rounded-full bg-[#00C4E0]/5 blur-[120px]" />
-      </div>
-
+    <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-white bg-grid-light">
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-24 md:py-32 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -38,7 +32,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0, 1] }}
           >
-            <p className="text-xs font-medium text-[#e8195a] tracking-wide uppercase mb-8">
+            <p className="text-xs font-semibold text-[#b3475c] tracking-widest uppercase mb-8">
               Fractional GTM · Regulated &amp; Complex Products
             </p>
 
@@ -52,14 +46,14 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 mt-12">
               <Link
                 to={createPageUrl("Contact")}
-                className="btn-gradient inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
+                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm bg-[#b3475c] hover:bg-[#96394c] transition-colors"
               >
                 Book a Call
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 to={createPageUrl("Services")}
-                className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#e8195a]/40 transition-colors"
+                className="inline-flex items-center justify-center gap-2 text-[#555] font-semibold px-8 py-4 rounded-lg text-sm border border-[#e5e5e5] hover:border-[#b3475c]/40 transition-colors"
               >
                 See How It Works →
               </Link>
@@ -73,9 +67,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
             className="hidden lg:block"
           >
-            <div className="bg-[#0a0a0a] rounded-3xl p-10 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#e8195a]/10 blur-[80px]" />
-              <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#00C4E0]/10 blur-[60px]" />
+            <div className="bg-[#0a0a0a] rounded-3xl p-10 relative overflow-hidden bg-grid-dark">
               {/* Logo watermark */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <img
