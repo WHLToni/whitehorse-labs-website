@@ -91,16 +91,12 @@
   background-image:
     linear-gradient(rgba(10, 10, 10, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(10, 10, 10, 0.05) 1px, transparent 1px);
-  background-size: 62px 62px;
-  -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 80%);
-  mask-image: radial-gradient(ellipse at center, black 60%, transparent 80%);
+  background-size: 48px 48px;
 }
 
 .bg-grid-dark {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 62px 62px;
-  -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 80%);
-  mask-image: radial-gradient(ellipse at center, black 60%, transparent 80%);
+  background-size: 48px 48px;
 }
