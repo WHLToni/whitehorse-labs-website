@@ -24,7 +24,7 @@ const comparisons = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-[#E8FAFA] bg-grid-light">
+    <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-[#F0F7FA] bg-grid-light">
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-24 md:py-32 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
