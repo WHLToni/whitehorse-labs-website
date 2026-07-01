@@ -24,14 +24,12 @@ export default function ICPCallout() {
             <p className="text-[#666] text-sm mt-2 leading-relaxed max-w-lg">
               Not sure who your ideal customer is? Our ICP Framework tool gets you to a clear, usable definition in under 15 minutes.
             </p>
-            <a
-              href="https://icp-builder-tool.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/ICPTool"
               className="mt-6 self-start inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-lg text-sm border border-[#0a0a0a] text-[#0a0a0a] hover:bg-[#0a0a0a] hover:text-white transition-colors"
             >
               Get the ICP Framework →
-            </a>
+            </Link>
           </motion.div>
 
           <motion.div
