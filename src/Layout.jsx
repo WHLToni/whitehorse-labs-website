@@ -57,7 +57,7 @@ export default function Layout({ children, currentPageName }) {
                 href="https://icp-builder-tool.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-semibold px-5 py-2.5 rounded-lg border-2 border-[#e8195a] text-[#e8195a] hover:bg-[#e8195a] hover:text-white transition-colors duration-200"
+                className="text-sm font-semibold px-5 py-2.5 rounded-lg border-2 border-[#b3475c] text-[#b3475c] hover:bg-[#b3475c] hover:text-white transition-colors duration-200"
               >
                 Free ICP Framework
               </a>
