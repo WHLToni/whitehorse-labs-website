@@ -9,6 +9,7 @@ import Success from './pages/Success';
 import BuyTheFrameworks from './pages/BuyTheFrameworks';
 import Admin from './pages/Admin.jsx';
 import PrefactorCaseStudy from './pages/CaseStudies/Prefactor.jsx';
+import ICPTool from './pages/ICPTool.jsx';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
@@ -66,6 +67,7 @@ const AuthenticatedApp = () => {
       <Route path="/BuyTheBuilderSuite" element={<LayoutWrapper currentPageName="BuyTheFrameworks"><BuyTheFrameworks /></LayoutWrapper>} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/CaseStudies/Prefactor" element={<LayoutWrapper currentPageName="CaseStudies"><PrefactorCaseStudy /></LayoutWrapper>} />
+      <Route path="/ICPTool" element={<LayoutWrapper currentPageName="ICPTool"><ICPTool /></LayoutWrapper>} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

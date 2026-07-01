@@ -1,0 +1,45 @@
+{
+  "name": "NewsletterSubscriber",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "source": {
+      "type": "string",
+      "title": "Source",
+      "default": "ICP Framework Tool"
+    }
+  },
+  "required": [
+    "email"
+  ],
+  "access_control": {
+    "list": {
+      "roles": [
+        "admin"
+      ]
+    },
+    "read": {
+      "roles": [
+        "admin"
+      ]
+    },
+    "create": {
+      "roles": [
+        "all"
+      ]
+    },
+    "update": {
+      "roles": [
+        "admin"
+      ]
+    },
+    "delete": {
+      "roles": [
+        "admin"
+      ]
+    }
+  }
+}

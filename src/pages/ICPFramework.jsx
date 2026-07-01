@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
@@ -26,9 +27,9 @@ const outcomes = [
 function CTABlock() {
   return (
     <div className="flex flex-col items-start gap-2">
-      <a href="https://icp-builder-tool.netlify.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-8 py-4 rounded-lg text-base border-2 border-[#e8195a] hover:bg-[#e8195a] hover:text-white transition-colors">
+      <Link to="/ICPTool" className="inline-flex items-center gap-2 text-[#e8195a] font-semibold px-8 py-4 rounded-lg text-base border-2 border-[#e8195a] hover:bg-[#e8195a] hover:text-white transition-colors">
         Access the ICP Framework Tool (Free)
-      </a>
+      </Link>
       <p className="text-[#888] text-sm">Get to a clear, usable definition in under 10 minutes.</p>
     </div>
   );
