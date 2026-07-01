@@ -7,17 +7,17 @@ import { motion } from "framer-motion";
 const comparisons = [
   {
     title: "Consultant",
-    body: "Diagnoses the problem, hands you a report, exits. Implementation is on you.",
+    body: "Diagnoses the problem, hands you a report and exits - the implementation is up to you.",
     highlight: false,
   },
   {
     title: "Contractor",
-    body: "Executes what you brief them on. No strategy, no ownership.",
+    body: "Executes what you brief them on - no strategy and ultimately no real ownership.",
     highlight: false,
   },
   {
     title: "Fractional GTM",
-    body: "Embedded senior expertise. Owns the outcome — strategy and execution — without the six-figure hire.",
+    body: "Embedded senior expertise. Owns the outcome - strategy and execution - without the six-figure hire.",
     highlight: true,
   },
 ];
