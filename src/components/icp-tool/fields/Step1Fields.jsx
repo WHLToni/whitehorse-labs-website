@@ -8,7 +8,7 @@ export default function Step1Fields({ formData, setField, errors }) {
 
   return (
     <>
-      <div className="bg-[#e8195a]/5 border-l-[3px] border-[#e8195a] rounded-r-lg px-4 py-3 text-sm italic text-[#555] mb-5">
+      <div className="bg-[#b3475c]/5 border-l-[3px] border-[#b3475c] rounded-r-lg px-4 py-3 text-sm italic text-[#555] mb-5">
         Start with your best current hypothesis. You will refine this as you learn — getting specific now is more valuable than waiting for certainty.
       </div>
       <div className="grid sm:grid-cols-2 gap-4 mb-5">

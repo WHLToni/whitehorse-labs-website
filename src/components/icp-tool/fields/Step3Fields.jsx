@@ -6,7 +6,7 @@ import { inputClass, invalidClass } from "@/lib/icpToolStyles";
 export default function Step3Fields({ formData, setField, errors }) {
   return (
     <>
-      <div className="bg-[#e8195a]/5 border-l-[3px] border-[#e8195a] rounded-r-lg px-4 py-3 text-sm italic text-[#555] mb-5">
+      <div className="bg-[#b3475c]/5 border-l-[3px] border-[#b3475c] rounded-r-lg px-4 py-3 text-sm italic text-[#555] mb-5">
         Triggers explain when your customer goes from "this would be nice" to "I need to solve this now."
       </div>
       <FormField label="Primary Buying Trigger" error={errors.trigger1}>

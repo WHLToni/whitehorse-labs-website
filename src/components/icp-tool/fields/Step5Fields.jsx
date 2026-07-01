@@ -28,7 +28,7 @@ export default function Step5Fields({ formData, setField, toggleChip }) {
                 key={opt}
                 onClick={() => toggleChip(opt)}
                 className={`px-3.5 py-1.5 rounded-full text-sm font-medium cursor-pointer select-none border-[1.5px] transition-colors ${
-                  selected ? "bg-[#e8195a] border-[#e8195a] text-white font-semibold" : "bg-[#f7f7f8] border-[#e5e5e5] text-[#555] hover:border-[#e8195a] hover:text-[#b8123f]"
+                  selected ? "bg-[#b3475c] border-[#b3475c] text-white font-semibold" : "bg-[#f7f7f8] border-[#e5e5e5] text-[#555] hover:border-[#b3475c] hover:text-[#96394c]"
                 }`}
               >
                 {opt}

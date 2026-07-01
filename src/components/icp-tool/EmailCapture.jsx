@@ -27,9 +27,9 @@ export default function EmailCapture({ onSubmit, onSkip }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
-          className="flex-1 min-w-[220px] px-4 py-2.5 rounded-lg bg-white/10 border-[1.5px] border-white/15 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-[#e8195a]"
+          className="flex-1 min-w-[220px] px-4 py-2.5 rounded-lg bg-white/10 border-[1.5px] border-white/15 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-[#b3475c]"
         />
-        <Button type="submit" disabled={submitting} className="bg-gradient-to-br from-[#b8123f] to-[#e8195a] hover:opacity-90 text-white font-semibold px-8">
+        <Button type="submit" disabled={submitting} className="bg-gradient-to-br from-[#96394c] to-[#b3475c] hover:opacity-90 text-white font-semibold px-8">
           {submitting ? "Joining..." : "Join & Download"}
         </Button>
       </form>

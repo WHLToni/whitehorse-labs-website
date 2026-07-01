@@ -21,8 +21,8 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
   return (
     <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}>
       <div className="bg-[#0a0a0a] rounded-t-xl px-6 md:px-9 pt-9 pb-8 relative overflow-hidden">
-        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#b8123f] via-[#e8195a] to-[#e8195a]/30" />
-        <div className="text-xs font-semibold tracking-widest uppercase text-[#e8195a] mb-2.5">Whitehorse Labs — ICP Framework Tool</div>
+        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#96394c] via-[#b3475c] to-[#b3475c]/30" />
+        <div className="text-xs font-semibold tracking-widest uppercase text-[#b3475c] mb-2.5">Whitehorse Labs — ICP Framework Tool</div>
         <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide text-white mb-1.5">{formData.icpName || "Ideal Customer Profile"}</h2>
         <div className="text-white/40 text-xs">
           Generated {new Date().toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" })} — Whitehorse Labs ICP Framework Tool
@@ -100,7 +100,7 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
       </div>
 
       <div className="flex flex-wrap gap-3 mt-7 items-center">
-        <Button onClick={onDownload} className="bg-gradient-to-br from-[#b8123f] to-[#e8195a] hover:opacity-90 text-white font-semibold px-8">
+        <Button onClick={onDownload} className="bg-gradient-to-br from-[#96394c] to-[#b3475c] hover:opacity-90 text-white font-semibold px-8">
           ↓ Download ICP Profile
         </Button>
         <Button variant="outline" onClick={onReset} className="border-[#e5e5e5] text-[#888]">
@@ -116,7 +116,7 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
           </p>
         </div>
         <Link to="/BuyTheBuilderSuite">
-          <Button className="bg-gradient-to-br from-[#b8123f] to-[#e8195a] hover:opacity-90 text-white font-semibold whitespace-nowrap px-8">
+          <Button className="bg-gradient-to-br from-[#96394c] to-[#b3475c] hover:opacity-90 text-white font-semibold whitespace-nowrap px-8">
             Get the GTM OS →
           </Button>
         </Link>

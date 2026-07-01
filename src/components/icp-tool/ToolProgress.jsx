@@ -9,7 +9,7 @@ export default function ToolProgress({ step, total }) {
         </div>
         <div className="flex-1 h-[3px] bg-[#e5e5e5] rounded-full overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-[#b8123f] to-[#e8195a] rounded-full transition-all duration-500"
+            className="h-full bg-gradient-to-r from-[#96394c] to-[#b3475c] rounded-full transition-all duration-500"
             style={{ width: `${((step - 1) / total) * 100}%` }}
           />
         </div>
@@ -18,7 +18,7 @@ export default function ToolProgress({ step, total }) {
             <div
               key={i}
               className={`w-2 h-2 rounded-full transition-all ${
-                i + 1 < step ? "bg-[#e8195a]" : i + 1 === step ? "bg-[#b8123f] scale-125" : "bg-[#e5e5e5]"
+                i + 1 < step ? "bg-[#b3475c]" : i + 1 === step ? "bg-[#96394c] scale-125" : "bg-[#e5e5e5]"
               }`}
             />
           ))}

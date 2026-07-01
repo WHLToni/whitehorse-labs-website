@@ -17,7 +17,7 @@ function AltRow({ label, hint, nameVal, limitVal, onNameChange, onLimitChange, n
 export default function Step4Fields({ formData, setField, errors }) {
   return (
     <>
-      <div className="bg-[#e8195a]/5 border-l-[3px] border-[#e8195a] rounded-r-lg px-4 py-3 text-sm italic text-[#555] mb-5">
+      <div className="bg-[#b3475c]/5 border-l-[3px] border-[#b3475c] rounded-r-lg px-4 py-3 text-sm italic text-[#555] mb-5">
         Be specific — name tools, agencies, workarounds, or the status quo. The status quo is always a competitor.
       </div>
       <AltRow label="Current Solution 1" nameVal={formData.alt1name} limitVal={formData.alt1limit}

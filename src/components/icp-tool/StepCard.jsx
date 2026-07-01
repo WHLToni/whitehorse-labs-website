@@ -11,7 +11,7 @@ export default function StepCard({ number, title, description, children, onBack,
       className="bg-white border border-[#e5e5e5] rounded-xl overflow-hidden"
     >
       <div className="px-6 md:px-8 pt-6 pb-4 border-b border-[#e5e5e5] flex items-start gap-4">
-        <div className="text-4xl md:text-5xl font-extrabold text-[#e8195a]/15 leading-none min-w-[44px]">{number}</div>
+        <div className="text-4xl md:text-5xl font-extrabold text-[#b3475c]/15 leading-none min-w-[44px]">{number}</div>
         <div>
           <h2 className="text-lg md:text-xl font-bold uppercase tracking-wide text-[#0a0a0a] mb-1">{title}</h2>
           <p className="text-sm text-[#555]">{description}</p>
@@ -24,7 +24,7 @@ export default function StepCard({ number, title, description, children, onBack,
             ← Back
           </Button>
         ) : <div />}
-        <Button type="button" onClick={onNext} className="bg-[#0a0a0a] hover:bg-[#b8123f] text-white">
+        <Button type="button" onClick={onNext} className="bg-[#0a0a0a] hover:bg-[#96394c] text-white">
           {nextLabel}
         </Button>
       </div>

@@ -114,18 +114,15 @@ export default function ICPTool() {
   return (
     <div className="bg-[#f7f7f8] min-h-screen">
       <div className="bg-[#0a0a0a] px-6 py-16 md:py-20 text-center relative overflow-hidden">
-        <div className="inline-block bg-[#e8195a]/15 border border-[#e8195a]/40 text-[#e8195a] text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-7">
-          Free Tool — No Account Required
-        </div>
-        <h1 className="text-4xl md:text-6xl font-extrabold uppercase text-white leading-none tracking-wide max-w-3xl mx-auto mb-5">
-          Define Your <span className="text-[#e8195a]">Ideal Customer</span> Profile in 10 Minutes
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight max-w-3xl mx-auto mb-5">
+          Define Your <span className="text-[#b3475c]">Ideal Customer</span> Profile in 10 Minutes
         </h1>
         <p className="text-white/55 text-base max-w-lg mx-auto mb-8 font-light leading-relaxed">
-          The same ICP framework used in the Whitehorse Labs GTM OS — walked through step by step. Answer the questions, download your one-page profile.
+          Answer the questions in as much detail as your can - then download your one-page profile.
         </p>
         <div className="max-w-xl mx-auto bg-white/[0.06] border border-white/10 rounded-lg px-5 py-3.5 text-left mb-2">
           <p className="text-sm text-white/60 leading-relaxed m-0">
-            <strong className="text-white/85 font-semibold">Before you start:</strong> this tool is a thinking guide, not a content generator. The clearer and more specific you are, the more useful your output will be.
+            <strong className="text-white/85 font-semibold">Before you start:</strong> this tool is a thinking guide, not a content generator. It walks you through the questions experienced GTM practitioners use to define an ICP — your answers build the profile. The clearer and more specific you are, the more useful your output will be.
           </p>
         </div>
       </div>
