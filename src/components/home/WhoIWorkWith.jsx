@@ -27,7 +27,7 @@ export default function WhoIWorkWith() {
     <section className="py-24 md:py-32 bg-[#E8FAFA]">
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
         <div className="mb-12">
-          <p className="text-base font-semibold uppercase tracking-widest text-[#F0340E] mb-4">
+          <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
             Are We a Good Fit?
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">
@@ -52,7 +52,7 @@ export default function WhoIWorkWith() {
                   href="https://icp-builder-tool.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#F0340E] mt-3 hover:underline"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#b3475c] mt-3 hover:underline"
                 >
                   Start with the Free ICP Tool →
                 </a>
