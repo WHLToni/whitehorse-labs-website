@@ -182,7 +182,7 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Services & Pricing</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Services & Pricing</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Fixed Scope. Fixed Price. Delivered in Weeks.
             </h1>
@@ -270,7 +270,7 @@ export default function Services() {
       <section className="py-10 md:py-12 bg-[#f7f7f8]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">How It Works</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">How It Works</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-2">Clear Process. No Surprises.</h2>
           </motion.div>
 
@@ -299,7 +299,7 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Not Ready to Commit?</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Not Ready to Commit?</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
               Buy the Frameworks.
             </h2>

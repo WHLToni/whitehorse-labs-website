@@ -52,7 +52,7 @@ export default function ChoosePath() {
 
         {/* Header */}
         <div className="mb-12">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">
             The Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5">
@@ -178,7 +178,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Fractional Leadership label */}
-        <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] mb-6">
+        <p className="text-sm font-semibold uppercase tracking-widest text-white mb-6">
           Fractional Leadership
         </p>
 
