@@ -68,6 +68,8 @@ ${form.message}
       `.trim(),
     });
 
+    await base44.entities.NewsletterSubscriber.create({ email: form.email, source: "Contact Form" });
+
     setStatus("success");
     setForm(initialForm);
   };
