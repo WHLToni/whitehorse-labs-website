@@ -78,7 +78,7 @@ ${form.message}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Contact</p>
+            <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Contact</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a] max-w-3xl">
               Let's Talk
             </h1>

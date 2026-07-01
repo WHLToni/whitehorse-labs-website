@@ -52,7 +52,7 @@ export default function ChoosePath() {
 
         {/* Header */}
         <div className="mb-12">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
+          <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
             The Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5">
@@ -64,7 +64,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Stack label */}
-        <p className="text-sm font-semibold uppercase tracking-widest text-white mb-6">
+        <p className="text-base font-semibold uppercase tracking-widest text-white mb-6">
           The Commercialisation Stack
         </p>
 
@@ -128,14 +128,14 @@ export default function ChoosePath() {
         {/* Divider */}
         <div className="relative flex items-center my-10">
           <div className="flex-1 border-t border-white/[0.08]" />
-          <span className="mx-4 text-sm font-semibold uppercase tracking-widest text-white">
+          <span className="mx-4 text-base font-semibold uppercase tracking-widest text-white">
             Also Available
           </span>
           <div className="flex-1 border-t border-white/[0.08]" />
         </div>
 
         {/* Pre-Build label */}
-        <p className="text-sm font-semibold uppercase tracking-widest text-white mb-6">
+        <p className="text-base font-semibold uppercase tracking-widest text-white mb-6">
           Pre-Build
         </p>
 
@@ -178,7 +178,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Fractional Leadership label */}
-        <p className="text-sm font-semibold uppercase tracking-widest text-white mb-6">
+        <p className="text-base font-semibold uppercase tracking-widest text-white mb-6">
           Fractional Leadership
         </p>
 

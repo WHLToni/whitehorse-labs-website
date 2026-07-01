@@ -13,7 +13,7 @@ export default function ICPCallout() {
           className="flex flex-col sm:flex-row items-center justify-between gap-6"
         >
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-2">Free Resource</p>
+            <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-2">Free Resource</p>
             <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[#0a0a0a]">
               Nail your foundations for free.
             </h3>

@@ -8,7 +8,7 @@ export default function StartHere() {
   return (
     <section className="py-24 md:py-32 bg-[#f7f7f8]">
       <div className="max-w-2xl mx-auto px-6 lg:px-10 text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
+        <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
           Ready to Start?
         </p>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-4">

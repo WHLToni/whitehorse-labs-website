@@ -32,7 +32,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0, 1] }}
           >
-            <p className="text-xs font-semibold text-[#b3475c] tracking-widest uppercase mb-8">
+            <p className="text-base font-semibold text-[#b3475c] tracking-widest uppercase mb-8">
               Fractional GTM · Regulated &amp; Complex Products
             </p>
 

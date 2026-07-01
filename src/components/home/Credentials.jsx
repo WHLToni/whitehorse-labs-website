@@ -24,7 +24,7 @@ export default function Credentials() {
                 />
               </div>
               <div className="w-full max-w-[280px] lg:max-w-full mt-1">
-                <p className="text-sm font-semibold uppercase tracking-widest text-[#888] mb-1.5">Industry Experience</p>
+                <p className="text-base font-semibold uppercase tracking-widest text-[#888] mb-1.5">Industry Experience</p>
                 <p className="text-xs text-[#aaa] leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontStyle: "italic" }}>
                   Agentic AI & Automation · MedTech · HealthTech · ConstructionTech · FinTech · VeterinaryTech · Marine · Equine · Public Sector Workforce Training
                 </p>
@@ -40,7 +40,7 @@ export default function Credentials() {
               transition={{ delay: 0.1 }}
               className="lg:col-span-2 flex flex-col gap-5"
             >
-              <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c]">
+              <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c]">
                 The Practitioner
               </p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">

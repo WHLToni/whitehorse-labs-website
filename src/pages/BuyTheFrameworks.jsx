@@ -135,7 +135,7 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#f7f7f8] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Self-serve · Notion-based · AI-guided</p>
+            <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Self-serve · Notion-based · AI-guided</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Do the groundwork yourself.
             </h1>
@@ -189,7 +189,7 @@ export default function BuyTheFrameworks() {
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(179,71,92,0.08) 0%, transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
+          <p className="text-base font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border border-white/10 overflow-hidden" style={{ background: "#1a1a18" }}>
 
@@ -279,7 +279,7 @@ export default function BuyTheFrameworks() {
       {/* WHO IT'S FOR */}
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Who It's For</p>
+          <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Who It's For</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[#0a0a0a]">Built for founders who need to move fast</h2>
           <div className="space-y-5">
             {whoFor.map((item, i) => (
@@ -300,7 +300,7 @@ export default function BuyTheFrameworks() {
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(123,95,181,0.08) 0%, transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
+          <p className="text-base font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border border-white/10 overflow-hidden opacity-75" style={{ background: "#1a1a18" }}>
 
@@ -354,7 +354,7 @@ export default function BuyTheFrameworks() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border-2 border-[#b3475c]/30 p-8 md:p-12 relative" style={{ background: "#fff9fa" }}>
             <div className="mb-2">
-              <span className="text-[#b3475c] text-sm font-semibold uppercase tracking-widest">Best Value</span>
+              <span className="text-[#b3475c] text-base font-semibold uppercase tracking-widest">Best Value</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-[#0a0a0a]">Get both. Save AUD $149.</h2>
             <p className="text-[#666] text-base leading-relaxed max-w-2xl mb-8">
@@ -378,7 +378,7 @@ export default function BuyTheFrameworks() {
       {/* FAQs */}
       <section className="py-12 md:py-16 bg-[#f7f7f8]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">FAQs</p>
+          <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">FAQs</p>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Frequently Asked Questions</h2>
           {faqs.map((f, i) => <FAQItem key={i} question={f.q} answer={f.a} />)}
         </div>
