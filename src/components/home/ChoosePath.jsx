@@ -45,7 +45,7 @@ export default function ChoosePath() {
     <section
       className="py-24 md:py-32 relative overflow-hidden bg-grid-dark"
       style={{
-        background: "#111110",
+        background: "#1E1F23",
       }}
     >
       <div className="max-w-4xl mx-auto px-6 lg:px-10 relative z-10">

@@ -185,7 +185,7 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* GTM BUILDER PRODUCT CARD */}
-      <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
+      <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#1E1F23" }}>
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(179,71,92,0.08) 0%, transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
@@ -296,7 +296,7 @@ export default function BuyTheFrameworks() {
 
 
       {/* PRODUCT BUILDER CARD */}
-      <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#111110" }}>
+      <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#1E1F23" }}>
         <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
           style={{ background: "radial-gradient(ellipse at top right, rgba(123,95,181,0.08) 0%, transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">

@@ -104,7 +104,7 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className={`rounded-2xl p-8 md:p-12 ${darkBg ? "bg-[#0a0a0a] border border-[#222]" : "bg-white border border-[#e5e5e5] shadow-sm"}`}
+      className={`rounded-2xl p-8 md:p-12 ${darkBg ? "bg-[#1E1F23] border border-[#222]" : "bg-white border border-[#e5e5e5] shadow-sm"}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
         {/* Left: Title and Price */}
@@ -237,7 +237,7 @@ export default function Services() {
       </section>
 
       {/* ALSO AVAILABLE SECTION */}
-      <section className="py-10 md:py-12 bg-[#0a0a0a] relative overflow-hidden">
+      <section className="py-10 md:py-12 bg-[#1E1F23] relative overflow-hidden">
         <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-[#b3475c]/5 blur-[120px]" />
         <div className="max-w-5xl mx-auto px-6 lg:px-10 relative">
           <p className="text-sm font-semibold uppercase tracking-widest text-[#666] mb-4 text-center">

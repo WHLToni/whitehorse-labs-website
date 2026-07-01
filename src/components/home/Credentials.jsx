@@ -77,7 +77,7 @@ export default function Credentials() {
       </div>
 
       {/* Brands strip — dark band */}
-      <div className="bg-[#0a0a0a] py-12 px-6 lg:px-10">
+      <div className="bg-[#1E1F23] py-12 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto">
           <p className="text-base font-semibold uppercase tracking-widest text-[#666] mb-8 text-center">Brands I've worked with</p>
           <div className="flex flex-wrap gap-8 items-center justify-center">
