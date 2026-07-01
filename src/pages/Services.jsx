@@ -179,7 +179,7 @@ export default function Services() {
   return (
     <div>
       {/* PAGE HEADER */}
-      <section className="py-12 md:py-16 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-[#E8FAFA]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Services & Pricing</p>
@@ -194,7 +194,7 @@ export default function Services() {
       </section>
 
       {/* THE COMMERCIALISATION STACK */}
-      <section className="py-10 md:py-12 bg-white">
+      <section className="py-10 md:py-12 bg-[#E8FAFA]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-8 text-center">
             The Commercialisation Stack
@@ -267,7 +267,7 @@ export default function Services() {
       </section>
 
       {/* HOW IT WORKS SECTION */}
-      <section className="py-10 md:py-12 bg-[#f7f7f8]">
+      <section className="py-10 md:py-12 bg-[#E8FAFA]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
             <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">How It Works</p>
@@ -296,7 +296,7 @@ export default function Services() {
       </section>
 
       {/* BOTTOM CTA SECTION */}
-      <section className="py-12 md:py-16 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-[#E8FAFA]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Not Ready to Commit?</p>

@@ -6,7 +6,7 @@ import { usePricing } from "../shared/usePricing";
 export default function StartHere() {
   const pricing = usePricing();
   return (
-    <section className="py-24 md:py-32 bg-[#f7f7f8]">
+    <section className="py-24 md:py-32 bg-[#E8FAFA]">
       <div className="max-w-2xl mx-auto px-6 lg:px-10 text-center">
         <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
           Ready to Start?

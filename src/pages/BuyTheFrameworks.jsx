@@ -132,7 +132,7 @@ export default function BuyTheFrameworks() {
     <div>
 
       {/* HERO */}
-      <section className="py-12 md:py-16 bg-[#f7f7f8] text-center">
+      <section className="py-12 md:py-16 bg-[#E8FAFA] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Self-serve · Notion-based · AI-guided</p>
@@ -164,7 +164,7 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="py-10 md:py-12 bg-white">
+      <section className="py-10 md:py-12 bg-[#E8FAFA]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
@@ -256,7 +256,7 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* STATS */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-[#E8FAFA]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {stats.map((s, i) => (
@@ -277,7 +277,7 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* WHO IT'S FOR */}
-      <section className="py-12 md:py-16 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-[#E8FAFA]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Who It's For</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[#0a0a0a]">Built for founders who need to move fast</h2>
@@ -349,7 +349,7 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* BUNDLE OFFER */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-[#E8FAFA]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border-2 border-[#b3475c]/30 p-8 md:p-12 relative" style={{ background: "#fff9fa" }}>
@@ -376,7 +376,7 @@ export default function BuyTheFrameworks() {
 
 
       {/* FAQs */}
-      <section className="py-12 md:py-16 bg-[#f7f7f8]">
+      <section className="py-12 md:py-16 bg-[#E8FAFA]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">FAQs</p>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Frequently Asked Questions</h2>

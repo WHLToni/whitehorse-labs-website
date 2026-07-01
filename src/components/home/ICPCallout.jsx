@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function ICPCallout() {
   return (
-    <section className="py-14 md:py-16 bg-white border-y border-[#e5e5e5]">
+    <section className="py-14 md:py-16 bg-[#E8FAFA] border-y border-[#e5e5e5]">
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 16 }}

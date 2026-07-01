@@ -24,7 +24,7 @@ const audiences = [
 
 export default function WhoIWorkWith() {
   return (
-    <section className="py-24 md:py-32 bg-[#f7f7f8]">
+    <section className="py-24 md:py-32 bg-[#E8FAFA]">
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
         <div className="mb-12">
           <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">

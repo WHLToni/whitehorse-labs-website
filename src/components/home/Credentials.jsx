@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 
 export default function Credentials() {
   return (
-    <section className="bg-[#f7f7f8]">
+    <section className="bg-[#E8FAFA]">
       {/* Main about content — light grey bg */}
       <div className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">

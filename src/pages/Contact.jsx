@@ -75,7 +75,7 @@ ${form.message}
   return (
     <div>
       {/* Hero */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-[#E8FAFA]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Contact</p>
@@ -90,7 +90,7 @@ ${form.message}
       </section>
 
       {/* Form Section */}
-      <section className="pb-32 bg-white">
+      <section className="pb-32 bg-[#E8FAFA]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           {status === "success" ? (
             <motion.div

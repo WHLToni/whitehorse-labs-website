@@ -105,7 +105,7 @@ export default function PrefactorCaseStudy() {
       </section>
 
       {/* ENGAGEMENT OVERVIEW */}
-      <section className="bg-white">
+      <section className="bg-[#E8FAFA]">
         <div className="max-w-[900px] mx-auto px-10 py-20">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-16">
             {/* Left */}
@@ -148,7 +148,7 @@ export default function PrefactorCaseStudy() {
       </section>
 
       {/* KEY FINDINGS */}
-      <section className="bg-white">
+      <section className="bg-[#E8FAFA]">
         <div className="max-w-[900px] mx-auto px-10 pt-4 pb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -383,7 +383,7 @@ export default function PrefactorCaseStudy() {
       </section>
 
       {/* WHAT CHANGED / OUTCOMES */}
-      <section className="bg-white">
+      <section className="bg-[#E8FAFA]">
         <div className="max-w-[900px] mx-auto px-10 py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -417,7 +417,7 @@ export default function PrefactorCaseStudy() {
       </section>
 
       {/* DELIVERABLES GRID */}
-      <section style={{ background: "#f7f7f8" }}>
+      <section style={{ background: "#E8FAFA" }}>
         <div className="max-w-[900px] mx-auto px-10 py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
