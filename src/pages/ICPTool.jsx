@@ -118,7 +118,7 @@ export default function ICPTool() {
           Define Your <span className="text-[#b3475c]">Ideal Customer</span> Profile in 10 Minutes
         </h1>
         <p className="text-white/55 text-base max-w-lg mx-auto mb-8 font-light leading-relaxed">
-          Answer the questions in as much detail as your can - then download your one-page profile.
+          A clear ICP sharpens your marketing, aligns your sales team, and guides product decisions — helping every part of your business focus on the customers most likely to convert and succeed.
         </p>
         <div className="max-w-xl mx-auto bg-white/[0.06] border border-white/10 rounded-lg px-5 py-3.5 text-left mb-2">
           <p className="text-sm text-white/60 leading-relaxed m-0">
