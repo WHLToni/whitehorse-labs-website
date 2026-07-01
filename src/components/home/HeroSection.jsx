@@ -32,7 +32,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0, 1] }}
           >
-            <p className="text-base font-semibold text-[#b3475c] tracking-widest uppercase mb-8">
+            <p className="text-base font-semibold text-[#F0340E] tracking-widest uppercase mb-8">
               Fractional GTM · Regulated &amp; Complex Products
             </p>
 
@@ -82,7 +82,7 @@ export default function HeroSection() {
                   {comparisons.map((item, i) => (
                     <div key={item.title} className={`pb-6 ${i < comparisons.length - 1 ? "border-b border-white/20" : ""}`}>
                       <p className={`text-base font-bold mb-2 ${item.highlight ? "" : "text-[#888]"}`}
-                        style={item.highlight ? { color: "#d44d6e" } : {}}>
+                        style={item.highlight ? { color: "#F0340E" } : {}}>
                         {item.title}
                       </p>
                       <p className="text-[#ccc] text-base leading-relaxed">{item.body}</p>

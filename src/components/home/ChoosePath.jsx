@@ -52,7 +52,7 @@ export default function ChoosePath() {
 
         {/* Header */}
         <div className="mb-12">
-          <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
+          <p className="text-base font-semibold uppercase tracking-widest text-[#F0340E] mb-4">
             The Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5">
@@ -217,7 +217,7 @@ export default function ChoosePath() {
           Not ready for a full engagement?{" "}
           <Link
             to={createPageUrl("GetTheFrameworks")}
-            className="text-white/40 hover:text-[#b3475c] transition-colors not-italic"
+            className="text-white/40 hover:text-[#F0340E] transition-colors not-italic"
           >
             The Builder Suite{pricing ? ` — from ${pricing.from}` : ""} →
           </Link>
