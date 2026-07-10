@@ -18,7 +18,7 @@ const modules = [
 ];
 
 const tags = [
-  "34 detailed AI prompts (JSON)",
+  "34 structured AI prompts",
   "~4-6 hours to complete",
   "Instant Notion access",
 ];
@@ -108,11 +108,13 @@ const faqs = [
 
 export default function BuyTheFrameworks() {
   const [loading, setLoading] = useState(false);
+  const [waitlistEmail, setWaitlistEmail] = useState("");
+  const [waitlistSubmitted, setWaitlistSubmitted] = useState(false);
   const pricing = usePricing();
 
   useEffect(() => {
     document.title = "The Builder Suite - GTM Builder & Product Builder | Whitehorse Labs";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 34 detailed AI prompts (JSON) - the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 34 structured AI prompts - the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
   }, []);
 
   const handleBuy = async (product) => {
@@ -128,6 +130,13 @@ export default function BuyTheFrameworks() {
     }
   };
 
+  const handleWaitlist = async (e) => {
+    e.preventDefault();
+    if (!waitlistEmail) return;
+    await base44.entities.NewsletterSubscriber.create({ email: waitlistEmail, source: "Product Builder Waitlist" });
+    setWaitlistSubmitted(true);
+  };
+
   return (
     <div>
 
@@ -140,7 +149,7 @@ export default function BuyTheFrameworks() {
               Do the groundwork yourself.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
-              The GTM Builder and Product Builder are self-guided Notion systems - a step-by-step series of frameworks augmented with detailed AI prompts (JSON), that will guide you through building the commercial foundations that every investor wants to see.
+              The GTM Builder and Product Builder are self-guided Notion systems - a step-by-step series of frameworks augmented with structured AI prompts, that will guide you through building the commercial foundations that every investor wants to see.
               <br /><br />
               The same baseline frameworks used by big consulting firms and SaaS companies, adapted for founders who need to move fast.
             </p>
@@ -206,7 +215,7 @@ export default function BuyTheFrameworks() {
                 </div>
               </div>
               <p className="text-white/70 text-base leading-relaxed mb-6 max-w-2xl">
-                A self-guided Notion system that walks you through seven modules of commercial groundwork — from market sizing to launch planning. Work through it at your own pace, guided by 34 detailed AI prompts (JSON) designed to draw out the thinking that many early-stage founders skip.
+                A self-guided Notion system that walks you through seven modules of commercial groundwork — from market sizing to launch planning. Work through it at your own pace, guided by 34 structured AI prompts designed to draw out the thinking that many early-stage founders skip.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 {tags.map((tag, i) => (
@@ -224,8 +233,21 @@ export default function BuyTheFrameworks() {
               </button>
             </div>
 
-            {/* Middle: Modules grid */}
+            {/* Strategy session - directly below price */}
             <div className="p-8 md:p-12 border-b border-white/10">
+              <div className="rounded-xl border-2 border-[#b3475c] p-6" style={{ background: "rgba(179,71,92,0.12)" }}>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="bg-[#b3475c] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
+                </div>
+                <p className="text-white font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
+                <p className="text-white/75 text-sm leading-relaxed">
+                  I'm opening a limited number of personal strategy sessions to GTM Builder clients. Book it before you start - so we can align on your market and focus before you dive in - or after you've completed the work, so we can pressure-test your outputs together. Either way, it's your call. Calendar link provided after purchase, and within the Notion package for easy booking.
+                </p>
+              </div>
+            </div>
+
+            {/* Modules grid */}
+            <div className="p-8 md:p-12">
               <p className="text-base font-bold text-white mb-6">7 Modules + Bonus</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {modules.map((m, i) => (
@@ -235,19 +257,6 @@ export default function BuyTheFrameworks() {
                     <span className={`text-sm leading-snug ${m.bonus ? "text-white font-semibold" : "text-white/75"}`}>{m.title}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-
-            {/* Bottom: Limited time offer */}
-            <div className="p-8 md:p-12">
-              <div className="rounded-xl border-2 border-[#b3475c] p-6" style={{ background: "rgba(179,71,92,0.12)" }}>
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#b3475c] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
-                </div>
-                <p className="text-white font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
-                <p className="text-white/75 text-sm leading-relaxed">
-                  I'm opening a limited number of personal strategy sessions to GTM Builder clients. Book it before you start - so we can align on your market and focus before you dive in - or after you've completed the work, so we can pressure-test your outputs together. Either way, it's your call. This won't always be included. Calendar link provided after purchase, and within the Notion package for easy booking.
-                </p>
               </div>
             </div>
 
@@ -295,81 +304,35 @@ export default function BuyTheFrameworks() {
       </section>
 
 
-      {/* PRODUCT BUILDER CARD */}
-      <section className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#1E1F23" }}>
-        <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at top right, rgba(123,95,181,0.08) 0%, transparent 70%)" }} />
-        <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
-          <p className="text-base font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">THE BUILDER SUITE</p>
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border border-white/10 overflow-hidden opacity-75" style={{ background: "#1a1a18" }}>
-
-            {/* Top: title, price, description */}
-            <div className="p-8 md:p-12 border-b border-white/10">
-              <div className="mb-5">
-                <span className="inline-block bg-[#7B5FB5]/20 text-[#b89de0] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-[#7B5FB5]/30">🚧 In Development — Coming Soon</span>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-bold text-white/60 mb-1">Product Builder</h3>
-                  <p className="text-white/30 text-sm">Self-guided · Notion-based · AI-guided</p>
-                </div>
-                <div className="sm:text-right flex-shrink-0">
-                  <p className="text-white/40 font-bold text-3xl">Coming Soon</p>
-                  <p className="text-white/30 text-xs mt-1">Included in the bundle</p>
-                </div>
-              </div>
-              <p className="text-white/50 text-base leading-relaxed mb-6 max-w-2xl">
-                A self-guided Notion system for founders who are actively building a product. A structured approach to scoping, validating, documenting and shipping — the same format as the GTM Builder, with AI-guided modules designed to take you from idea to a defensible product roadmap.
-              </p>
-              <div className="flex flex-wrap gap-4 mb-8">
-                {["Notion-based", "AI-guided prompts", "Modular & self-paced"].map((tag, i) => (
-                  <span key={i} className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/30 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <button disabled className="inline-flex items-center justify-center gap-2 text-white/30 font-semibold px-8 py-4 rounded-lg text-sm cursor-not-allowed border border-white/10">
-                Not yet available
-              </button>
-            </div>
-
-            {/* Bottom: notify */}
-            <div className="p-8 md:p-12">
-              <div className="rounded-xl border border-white/10 p-6" style={{ background: "rgba(123,95,181,0.08)" }}>
-                <p className="text-white/60 font-bold text-base mb-2">Pre-purchase via the bundle and get access the moment it launches</p>
-                <p className="text-white/40 text-sm leading-relaxed">
-                  Buy the Builder Bundle today for AUD $549 and get instant access to the GTM Builder now. Product Builder access is added automatically when it launches — no further payment required.
-                </p>
-              </div>
-            </div>
-
-          </motion.div>
-        </div>
-      </section>
-
-      {/* BUNDLE OFFER */}
+      {/* PRODUCT BUILDER - COMING SOON */}
       <section className="py-12 md:py-16 bg-[#F0F7FA]">
-        <div className="max-w-4xl mx-auto px-6 lg:px-10">
+        <div className="max-w-2xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border-2 border-[#b3475c]/30 p-8 md:p-12 relative" style={{ background: "#fff9fa" }}>
-            <div className="mb-2">
-              <span className="text-[#b3475c] text-base font-semibold uppercase tracking-widest">Best Value</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-[#0a0a0a]">Get both. Save AUD $149.</h2>
-            <p className="text-[#666] text-base leading-relaxed max-w-2xl mb-8">
-              The GTM Builder and Product Builder together - AUD $549. Pre-purchase the bundle now and get instant access to the GTM Builder. Product Builder access is added automatically when it launches.
+            className="rounded-2xl border border-[#e5e5e5] p-8 md:p-10 bg-white text-center">
+            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[#0a0a0a] mb-3">Product Builder — Coming Soon</h3>
+            <p className="text-[#666] text-sm leading-relaxed mb-6 max-w-lg mx-auto">
+              A self-guided system for founders actively building a product - same format as the GTM Builder. Join the waitlist to be first in when it launches.
             </p>
-            <button
-              onClick={() => handleBuy('bundle')}
-              disabled={loading === 'bundle'}
-              className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-gradient-to-br from-[#b3475c] to-[#7B5FB5] hover:opacity-90 transition-opacity"
-            >
-              {loading === 'bundle' ? 'Redirecting...' : 'Get the bundle - AUD $549'}
-            </button>
-            <p className="text-[#aaa] text-xs mt-3">
-              Product Builder access added automatically at launch. No further payment required.
-            </p>
+            {waitlistSubmitted ? (
+              <p className="text-[#b3475c] text-sm font-semibold">You're on the list. We'll be in touch when it launches.</p>
+            ) : (
+              <form onSubmit={handleWaitlist} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input
+                  type="email"
+                  required
+                  value={waitlistEmail}
+                  onChange={(e) => setWaitlistEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="flex-1 px-4 py-3 rounded-lg text-sm border border-[#e5e5e5] focus:outline-none focus:border-[#b3475c]/40"
+                />
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm bg-[#b3475c] hover:bg-[#96394c] transition-colors whitespace-nowrap"
+                >
+                  Join the waitlist →
+                </button>
+              </form>
+            )}
           </motion.div>
         </div>
       </section>
