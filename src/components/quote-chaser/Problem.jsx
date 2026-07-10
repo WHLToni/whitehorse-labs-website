@@ -14,8 +14,8 @@ export default function Problem() {
         <div className="w-10 h-[3px] bg-[#b3475c] mb-6" />
         <p className="text-lg md:text-xl text-[#333] leading-relaxed">
           Think about the last ten quotes you sent. How many did you follow up? If the honest answer
-          is "none, I'm too flat out" — you're normal. You're also leaving paid work on the table
-          every single week, and handing it to whoever calls the customer back first.
+          is 'none, I'm too flat out' - that's the gap. Every quote you don't chase is paid work
+          handed to whoever calls the customer back first.
         </p>
       </motion.div>
     </section>

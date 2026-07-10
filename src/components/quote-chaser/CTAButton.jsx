@@ -7,7 +7,7 @@ export default function CTAButton({ label = "Book a 15-minute chat", showMobile 
     <div className="flex flex-col items-center gap-2 w-full">
       <Link
         to={createPageUrl("Contact")}
-        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm bg-gradient-to-br from-[#b3475c] to-[#7B5FB5] hover:opacity-90 transition-opacity"
+        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm bg-[#b3475c] hover:bg-[#96394c] transition-colors"
       >
         {label}
       </Link>

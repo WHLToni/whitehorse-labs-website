@@ -18,8 +18,8 @@ export default function Hero() {
           Stop losing jobs you already quoted.
         </h1>
         <p className="text-white/55 text-base md:text-lg max-w-lg mx-auto font-light leading-relaxed mb-8">
-          Most trade businesses never follow up their quotes. The first business to respond wins
-          the work — Quote Chaser makes sure that's you, without you lifting a finger.
+          You quoted the job. Someone else called them back. Quote Chaser follows up every quote
+          you send - under your name, without you lifting a finger.
         </p>
         <div className="max-w-xs sm:max-w-none mx-auto">
           <CTAButton label="Book a 15-minute chat" />

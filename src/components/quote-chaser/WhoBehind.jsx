@@ -17,9 +17,9 @@ export default function WhoBehind() {
         </p>
         <p className="text-base md:text-lg text-[#444] leading-relaxed">
           Quote Chaser is a service line of Whitehorse Labs, a Gold Coast consultancy that helps
-          businesses stop leaking revenue. Most of our work has been with tech companies — but the
-          biggest leak we see is the same everywhere: quotes that never get followed up. Tradies have
-          it worst and the least time to fix it, so we built a service that just does it for you.
+          businesses stop leaking revenue. Our background is in tech companies - but the biggest
+          revenue leak is the same in every industry: quotes that never get followed up. Tradies have
+          the least time to fix it, so we built a service that just does it for you.
         </p>
       </motion.div>
     </section>
