@@ -156,6 +156,12 @@ export default function Layout({ children, currentPageName }) {
                 >
                   Book a Service
                 </Link>
+                <Link
+                  to="/tradie-quote-chaser"
+                  className="block text-sm text-[#999] hover:text-white transition-colors"
+                >
+                  Quote Chaser →
+                </Link>
               </div>
             </div>
           </div>
