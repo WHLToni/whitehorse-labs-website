@@ -84,12 +84,17 @@ export default function ChoosePath() {
               {/* Left */}
               <div className="flex-1 min-w-0">
                 <p className="text-[15px] font-bold text-white mb-1.5">{tier.name}</p>
-                <p className="text-white/50 text-sm leading-relaxed">{tier.description}</p>
                 {tier.output && (
                   <p className="text-sm mt-2 leading-relaxed text-white">
                     ↳ {tier.output}
                   </p>
                 )}
+                <Link
+                  to={createPageUrl("Services")}
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#c97a8a] mt-2.5 hover:underline"
+                >
+                  See details →
+                </Link>
               </div>
               {/* Right — price */}
               <div className="sm:text-right shrink-0 sm:pt-0.5">

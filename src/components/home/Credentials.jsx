@@ -60,7 +60,7 @@ export default function Credentials() {
                 After finishing an MBA, I spent the next fifteen years across product and marketing management in B2B SaaS across medical, veterinary, fintech and construction verticals. Enterprise and startups. Seed stage through to publicly listed brands across APAC and the US.
               </p>
               <p className="text-[#555] text-sm leading-relaxed">
-                Now I work with early-stage and exit-ready businesses as a fractional product marketing lead. Alongside that, I work with businesses at the earlier end of the AI adoption curve: product prototyping, market research, workflow automation, and building the internal capability to use these tools well. Some clients want both. Some want neither. The engagement is shaped around what the business actually needs.
+                Now I work with early-stage and exit-ready businesses as a fractional product marketing lead — and I run an AI-native practice. The GTM work is built with the current toolstack, not slideware: custom Claude skills that encode your frameworks, AI-assisted market research, image and video generation for launch assets, working MVPs built in days, and systems your team keeps using long after I've gone. Some clients want the GTM strategy, some want the AI capability build. The engagement is shaped around what the business actually needs.
               </p>
 
               <a
