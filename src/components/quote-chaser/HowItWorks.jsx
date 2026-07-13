@@ -27,7 +27,7 @@ export default function HowItWorks() {
           How It Works
         </p>
         <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-[#0a0a0a] mb-10">
-          Three steps. You do one of them.
+          Three steps. You only do one of them.
         </h2>
         <div className="space-y-6">
           {steps.map((step, i) => (
