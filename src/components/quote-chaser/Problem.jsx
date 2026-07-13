@@ -13,9 +13,13 @@ export default function Problem() {
       >
         <div className="w-10 h-[3px] bg-[#b3475c] mb-6" />
         <p className="text-lg md:text-xl text-[#333] leading-relaxed">
-          Think about the last ten quotes you sent. How many did you follow up? If the honest answer
-          is 'none, I'm too flat out' - that's the gap. Every quote you don't chase is paid work
-          handed to whoever calls the customer back first.
+          Of the last ten quotes you sent, how many did you follow up?
+          <br /><br />
+          Right now, probably none - and fair enough. The industry's flat out, the work comes to you, and chasing someone who asked YOU for the quote feels backwards. If they want it, they'll call.
+          <br /><br />
+          But flat out doesn't last forever, and flat out also doesnt necessarily mean profitable - especially with the current cost of labour and materials. When the phone slows down, the businesses that stay busy are the ones that spent the good times filling the pipeline and stacking up five-star reviews. That's exactly the work that never gets done while you're on the tools. And if you're carrying a crew and a payroll, a quiet month isn't just annoying - it's expensive.
+          <br /><br />
+          Quote Chaser does that work for you, every week, while you're busy doing the real work. Here's how it works:
         </p>
       </motion.div>
     </section>
