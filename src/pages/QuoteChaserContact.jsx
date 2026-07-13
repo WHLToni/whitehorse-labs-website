@@ -192,7 +192,7 @@ Best time to call: ${form.bestTimeToCall || "Not specified"}
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="btn-gradient w-full inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-60"
+                className="w-full inline-flex items-center justify-center gap-2 text-white font-bold px-8 py-5 rounded-lg text-base bg-[#b3475c] hover:bg-[#96394c] disabled:opacity-60 transition-colors shadow-[0_8px_30px_rgba(179,71,92,0.3)]"
               >
                 {status === "sending" ? (
                   <><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Sending…</>
