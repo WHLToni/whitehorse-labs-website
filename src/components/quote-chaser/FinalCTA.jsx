@@ -20,7 +20,7 @@ export default function FinalCTA() {
           is worth your money.
         </p>
         <div className="max-w-xs sm:max-w-none mx-auto">
-          <CTAButton label="Book a 15-minute chat" />
+          <CTAButton label="Book a 15-minute chat" showMobile={false} />
         </div>
       </motion.div>
     </section>
