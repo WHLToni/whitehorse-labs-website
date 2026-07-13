@@ -18,8 +18,7 @@ export default function Hero() {
           Stop losing jobs you already quoted.
         </h1>
         <p className="text-white/55 text-base md:text-lg max-w-lg mx-auto font-light leading-relaxed mb-8">
-          You quoted the job. Someone else called them back. Quote Chaser follows up every quote
-          you send - under your name, without you lifting a finger.
+          You quoted the job. So did your competitor — and they followed up. Quote Chaser makes sure that's you: every quote chased, under your name, without you lifting a finger.
         </p>
         <div className="max-w-xs sm:max-w-none mx-auto">
           <CTAButton label="Book a 15-minute chat" />
