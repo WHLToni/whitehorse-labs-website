@@ -16,7 +16,7 @@ export default function TheMaths() {
         <p className="text-base md:text-lg text-[#444] leading-relaxed">
           What's your average job worth? If it's $1,500 or more, one recovered job pays for months
           of Quote Chaser. Win back one job a quarter and the service has paid for itself - everything
-          after that is profit you were previously donating to your competitors.
+          after that is <strong>profit you were previously donating to your competitors.</strong>
         </p>
       </motion.div>
     </section>
