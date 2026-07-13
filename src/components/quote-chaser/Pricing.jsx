@@ -49,9 +49,10 @@ export default function Pricing() {
           </motion.div>
         </div>
         <p className="text-xs text-[#999] leading-relaxed mt-8 max-w-2xl mx-auto text-center">
-          Fixed monthly fee. No lock-in - 30 days notice, and your customer data is always yours.
-          90-day review: if we haven't recovered you a single job by then, that's exactly the
-          conversation we'll have.
+          Plus a one-off $[AMOUNT] setup fee — covers onboarding, message templates written in your
+          business's voice, and registered SMS sender ID setup. Fixed monthly fee after that. No
+          lock-in — 30 days notice, and your customer data is always yours. 90-day review: if we
+          haven't recovered you a single job by then, that's exactly the conversation we'll have.
         </p>
       </div>
     </section>
