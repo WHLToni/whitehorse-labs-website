@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 const steps = [
   {
     num: "01",
-    title: "Forward us the quote.",
-    body: "That's your entire involvement. One email, done.",
+    title: "Forward us the paperwork.",
+    body: "Quote sent, invoice overdue, or job finished - forward the email to us. That's your entire involvement, and it takes ten seconds.",
   },
   {
     num: "02",
-    title: "We chase it.",
-    body: "Three polite touches over ten days - text and email, under your business name, written like a human, not a robot. The last message literally says it's the last one. No hassling, ever.",
+    title: "We do the chasing.",
+    body: "Quotes get three polite touches over ten days. Overdue invoices get nudged until they're paid. Finished jobs get a review request while the customer's still happy. All of it by text and email, under your business name, written like a human - and nobody ever gets hassled. The last message always says it's the last one.",
   },
   {
     num: "03",
-    title: "You win the job or learn why you didn't.",
-    body: "Every response logged. Every recovered job reported. You'll know exactly what your quote book is doing for the first time.",
+    title: "You win the work and see the results.",
+    body: "Replies land with you same-day. Every recovered job, paid invoice and new review goes into a one-page monthly report - so you'll know exactly what your quote book is doing, for the first time.",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function HowItWorks() {
           How It Works
         </p>
         <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-[#0a0a0a] mb-10">
-          Three steps. You only do one of them.
+          Three steps. You do one of them.
         </h2>
         <div className="space-y-6">
           {steps.map((step, i) => (

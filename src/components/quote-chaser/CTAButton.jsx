@@ -13,7 +13,7 @@ export default function CTAButton({ label = "Book a 15-minute chat", showMobile 
       </Link>
       {showMobile && (
         <p className="text-base text-[#888]">
-          Or text me on <span className="text-[#b3475c] font-semibold">[MOBILE]</span>
+          Or text me on <span className="text-[#b3475c] font-semibold">0431 979 981</span>
         </p>
       )}
     </div>
