@@ -22,7 +22,7 @@ export default function Hero() {
         </p>
         <div className="max-w-xs sm:max-w-none mx-auto">
           <CTAButton label="Book a 15-minute chat" />
-          <p className="text-white/35 text-xs mt-3">We chase quotes, not debts.</p>
+          <p className="text-white/50 text-base mt-3">We chase quotes, not debts.</p>
         </div>
       </motion.div>
     </section>
