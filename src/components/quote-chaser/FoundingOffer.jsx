@@ -18,8 +18,7 @@ export default function FoundingOffer() {
             Founding Client Offer
           </span>
           <p className="text-base md:text-lg text-[#333] leading-relaxed mb-8 max-w-xl mx-auto">
-            First three clients: Chase+ at $449/mo, setup fee waived - in exchange for an honest
-            testimonial once we've recovered your first job. When these spots are gone, they're gone.
+            First three clients: $449/mo instead of $549, setup fee waived - in exchange for an honest testimonial once we've recovered your first job. When these spots are gone, they're gone.
           </p>
           <div className="max-w-xs sm:max-w-none mx-auto">
             <CTAButton label="Grab a founding spot" showMobile={false} />
