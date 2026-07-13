@@ -17,7 +17,7 @@ export default function Problem() {
           <br /><br />
           Right now, probably none - and fair enough. The industry's flat out, the work comes to you, and chasing someone who asked YOU for the quote feels backwards. If they want it, they'll call.
           <br /><br />
-          But flat out doesn't last forever, and flat out also doesnt necessarily mean profitable - especially with the current cost of labour and materials. When the phone slows down, the businesses that stay busy are the ones that spent the good times filling the pipeline and stacking up five-star reviews. And if you're carrying a crew and a payroll, a quiet month isn't just annoying - it's expensive.
+          But flat out doesn't last forever. When the phone slows down, the businesses that stay busy are the ones that spent the good times filling the pipeline and stacking up five-star reviews. And if you're carrying a crew and a payroll, a quiet month isn't just annoying - it's expensive.
           <br /><br />
           Quote Chaser does that work for you, every week, while you're busy doing the real work. Here's how it works:
         </p>
