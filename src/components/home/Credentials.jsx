@@ -91,6 +91,7 @@ export default function Credentials() {
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/f1cf92dd3_8.png",
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/c2ba0ee53_9.png",
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e8e4da89e_Prospection.png",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/2867a3ffe_YarningForChange.png",
             ].map((src, i) => (
               <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70" />
             ))}
