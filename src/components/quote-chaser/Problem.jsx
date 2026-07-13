@@ -19,7 +19,7 @@ export default function Problem() {
           <br /><br />
           But flat out doesn't last forever. When the phone slows down, the businesses that stay busy are the ones that spent the good times filling the pipeline and stacking up five-star reviews. And if you're carrying a crew and a payroll, a quiet month isn't just annoying - it's expensive.
           <br /><br />
-          Quote Chaser does that work for you, every week, while you're busy doing the real work. Here's how it works:
+          Quote Chaser does the pipeline work for you, every week, while you're busy doing the real work. Here's how:
         </p>
       </motion.div>
     </section>
