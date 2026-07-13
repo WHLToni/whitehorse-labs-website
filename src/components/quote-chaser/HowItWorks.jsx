@@ -26,7 +26,7 @@ export default function HowItWorks() {
         <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
           How It Works
         </p>
-        <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-[#0a0a0a] mb-10">
+        <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-[#0a0a0a] mb-10">
           Three steps. You only do one of them.
         </h2>
         <div className="space-y-6">
