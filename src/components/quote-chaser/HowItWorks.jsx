@@ -10,7 +10,7 @@ const steps = [
   {
     num: "02",
     title: "We chase it.",
-    body: "Three polite touches over ten days — text and email, under your business name, written like a human, not a robot. The last message literally says it's the last one. No hassling, ever.",
+    body: "Three polite touches over ten days - text and email, under your business name, written like a human, not a robot. The last message literally says it's the last one. No hassling, ever.",
   },
   {
     num: "03",

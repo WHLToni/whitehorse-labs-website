@@ -11,12 +11,12 @@ import FinalCTA from "@/components/quote-chaser/FinalCTA";
 export default function QuoteChaser() {
   useEffect(() => {
     document.title =
-      "Quote Chaser — Stop losing jobs you already quoted | Whitehorse Labs";
+      "Quote Chaser - Stop losing jobs you already quoted | Whitehorse Labs";
     document
       .querySelector('meta[name="description"]')
       ?.setAttribute(
         "content",
-        "Most trade businesses never follow up their quotes. Quote Chaser does it for you — three polite touches over ten days, under your name. From $249/mo."
+        "Most trade businesses never follow up their quotes. Quote Chaser does it for you - three polite touches over ten days, under your name. From $249/mo."
       );
   }, []);
 

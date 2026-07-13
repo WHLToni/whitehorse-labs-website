@@ -8,7 +8,7 @@ const plans = [
     price: "$249/mo",
     tagline: "For businesses with full books who still bleed time on admin.",
     bullets: [
-      "Overdue invoice nudges — polite, persistent, under your name",
+      "Overdue invoice nudges - polite, persistent, under your name",
       "Google review requests after every completed job",
       "Monthly one-page report",
     ],
@@ -72,7 +72,7 @@ export default function Pricing() {
           ))}
         </div>
         <p className="text-xs text-[#999] leading-relaxed mt-8 max-w-2xl mx-auto text-center">
-          Fixed monthly fee. No lock-in — 30 days notice, and your customer data is always yours.
+          Fixed monthly fee. No lock-in - 30 days notice, and your customer data is always yours.
           90-day review: if we haven't recovered you a single job by then, that's exactly the
           conversation we'll have.
         </p>
