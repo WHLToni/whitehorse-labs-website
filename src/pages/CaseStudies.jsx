@@ -221,10 +221,11 @@ export default function CaseStudies() {
           <div className="carousel reveal" ref={carouselRef}>
             <button className="cbtn prev" aria-label="Previous page">‹</button>
             <div className="track">
-              <div className="slide"><div className="img-ph">Hannover Lodge brochure — Lot 78 cover</div></div>
-              <div className="slide"><div className="img-ph">Hannover Lodge brochure — Lot 78 inside spread</div></div>
-              <div className="slide"><div className="img-ph">Hannover Lodge brochure — Lot 82 cover</div></div>
-              <div className="slide"><div className="img-ph">Hannover Lodge brochure — Lot 85 cover</div></div>
+              <div className="slide"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/5aeff2cd1_HannoverLodge1-mostimportant.png" alt="Hannover Lodge — Lot 78 showcase with gallop video and testimonial" /></div>
+              <div className="slide"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/6e016f490_HannoverLodgecoverexample.png" alt="Hannover Lodge — Lot 78 cover: Complacent | Thunderchine" /></div>
+              <div className="slide"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/65eae48a0_HannoverLodge-Inside.png" alt="Hannover Lodge — Lot 78 History timeline inside spread" /></div>
+              <div className="slide"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/6bb9e95c0_Hannover_Lodge-secondmostimportant.png" alt="Hannover Lodge — Conformation page, Lot 128" /></div>
+              <div className="slide"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/3aed90027_HannoverLodgeTeampage-thisistheleastimportant.png" alt="Hannover Lodge — Our Vision and team page" /></div>
             </div>
             <button className="cbtn next" aria-label="Next page">›</button>
           </div>
