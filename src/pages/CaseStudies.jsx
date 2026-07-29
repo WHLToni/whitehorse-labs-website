@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import './CaseStudies.css';
+import ProductionStills from '@/components/case-studies/ProductionStills';
 
 export default function CaseStudies() {
   const carouselRef = useRef(null);
@@ -322,10 +323,7 @@ export default function CaseStudies() {
               </ul>
             </div>
             <div className="case-media">
-              <div className="media">
-                <span className="tag">Video</span>
-                <span className="desc">Delegate &amp; speaker interview series (paste Vimeo embed here)</span>
-              </div>
+              <ProductionStills />
             </div>
           </article>
         </div>
