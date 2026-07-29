@@ -1,0 +1,389 @@
+import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { createPageUrl } from '@/utils';
+import './CaseStudies.css';
+
+export default function CaseStudies() {
+  const carouselRef = useRef(null);
+  const carouselDotsRef = useRef(null);
+  const bwShotsRef = useRef(null);
+  const bwDotsRef = useRef(null);
+
+  // SEO
+  useEffect(() => {
+    document.title = 'Whitehorse Labs — Selected Work';
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      meta.setAttribute('content', 'Selected work from Whitehorse Labs — fractional marketing, websites, social media, print and AI tools.');
+    }
+  }, []);
+
+  // Reveal animations (IntersectionObserver)
+  useEffect(() => {
+    const items = document.querySelectorAll('.cs-page .reveal');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(el => el.classList.add('in'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(el => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  // 3D carousel
+  useEffect(() => {
+    const root = carouselRef.current;
+    if (!root) return;
+    const slides = Array.from(root.querySelectorAll('.slide'));
+    const dotsWrap = carouselDotsRef.current;
+    if (!dotsWrap || slides.length === 0) return;
+
+    let n = slides.length, active = 0, timer = null, dir = 1;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    slides.forEach((s, i) => {
+      s.addEventListener('click', () => { if (i !== active) go(i); });
+    });
+
+    const dots = slides.map((_, i) => {
+      const b = document.createElement('button');
+      b.setAttribute('aria-label', `Go to page ${i + 1}`);
+      b.addEventListener('click', () => go(i));
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    const prevBtn = root.querySelector('.prev');
+    const nextBtn = root.querySelector('.next');
+    if (prevBtn) prevBtn.addEventListener('click', () => go((active - 1 + n) % n));
+    if (nextBtn) nextBtn.addEventListener('click', () => go((active + 1) % n));
+
+    function render() {
+      const cw = slides[0].offsetWidth || 280;
+      slides.forEach((s, i) => {
+        const d = i - active, ad = Math.abs(d), sign = d < 0 ? -1 : 1;
+        let x, sc, ry, op, z;
+        if (d === 0) { x = 0; sc = 1; ry = 0; op = 1; z = 30; }
+        else if (ad === 1) { x = sign * cw * 0.60; sc = .82; ry = sign * -20; op = .9; z = 20; }
+        else if (ad === 2) { x = sign * cw * 1.02; sc = .66; ry = sign * -24; op = .55; z = 10; }
+        else { x = sign * cw * 1.3; sc = .6; ry = 0; op = 0; z = 0; }
+        s.style.transform = `translate(-50%,-50%) translateX(${x}px) scale(${sc}) rotateY(${ry}deg)`;
+        s.style.opacity = op;
+        s.style.zIndex = z;
+        s.style.pointerEvents = op ? 'auto' : 'none';
+      });
+      dots.forEach((b, i) => { b.className = i === active ? 'on' : ''; });
+    }
+
+    function go(i) { active = i; render(); restart(); }
+    function auto() { if (active >= n - 1) dir = -1; else if (active <= 0) dir = 1; active += dir; render(); }
+    function restart() { if (reduce) return; if (timer) clearInterval(timer); timer = setInterval(auto, 3800); }
+
+    root.addEventListener('mouseenter', () => { if (timer) clearInterval(timer); });
+    root.addEventListener('mouseleave', restart);
+    window.addEventListener('resize', render);
+
+    render();
+    restart();
+
+    return () => {
+      if (timer) clearInterval(timer);
+      dotsWrap.innerHTML = '';
+      window.removeEventListener('resize', render);
+    };
+  }, []);
+
+  // AI tool screenshot rotation
+  useEffect(() => {
+    const wrap = bwShotsRef.current;
+    if (!wrap) return;
+    const panes = Array.from(wrap.querySelectorAll('.shot-pane'));
+    const dotsWrap = bwDotsRef.current;
+    if (!dotsWrap || panes.length === 0) return;
+
+    let active = 0, timer = null;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const dots = panes.map((_, i) => {
+      const b = document.createElement('button');
+      b.setAttribute('aria-label', `Tool screen ${i + 1}`);
+      if (i === 0) b.className = 'on';
+      b.addEventListener('click', () => show(i));
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function show(i) {
+      panes[active].classList.remove('on');
+      dots[active].className = '';
+      active = i;
+      panes[active].classList.add('on');
+      dots[active].className = 'on';
+      restart();
+    }
+    function next() { show((active + 1) % panes.length); }
+    function restart() { if (reduce) return; if (timer) clearInterval(timer); timer = setInterval(next, 2800); }
+
+    const frame = wrap.closest('.reveal');
+    if (frame) {
+      frame.addEventListener('mouseenter', () => { if (timer) clearInterval(timer); });
+      frame.addEventListener('mouseleave', restart);
+    }
+    restart();
+
+    return () => {
+      if (timer) clearInterval(timer);
+      dotsWrap.innerHTML = '';
+    };
+  }, []);
+
+  const bookingUrl = createPageUrl('Contact');
+
+  return (
+    <div className="cs-page">
+      {/* HEADER */}
+      <header>
+        <div className="wrap header-inner">
+          <Link to="/" className="brand">
+            <span className="mark">WHL</span>
+            <span className="sub">WHITEHORSE LABS</span>
+          </Link>
+          <Link to={bookingUrl} className="btn btn-outline">Book a call</Link>
+        </div>
+      </header>
+
+      {/* HERO */}
+      <section className="hero">
+        <div className="wrap">
+          <div className="eyebrow reveal">Selected work</div>
+          <h1 className="reveal">Big-brand marketing, without the big-brand budget.</h1>
+          <p className="lede reveal">I'm a fractional marketing lead with 15+ years across global and startup brands, most of it in tech, commercialising products from development through to lifecycle marketing. I bring all of that to growing local businesses, at fractional pricing. I work to your budget and help you decide where it's best spent, then either build a plan and show your team how to run it, or run it for you. On my own, or with brilliant freelancers from my network when the job calls for it.</p>
+          <div className="hero-actions reveal">
+            <Link to={bookingUrl} className="btn btn-solid">Book a call</Link>
+            <a className="textlink" href="#work">See the work →</a>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT I DO */}
+      <section className="band band--glass">
+        <div className="wrap">
+          <div className="cap-head reveal">
+            <div className="eyebrow grey">What I do</div>
+            <h2>One person, the whole marketing job.</h2>
+          </div>
+          <div className="cap-grid">
+            <div className="cap reveal">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" /><circle cx="12" cy="12" r="3.4" /></svg>
+              <h3>Fractional marketing</h3>
+              <p>I run the marketing function so you don't have to hire a marketer.</p>
+            </div>
+            <div className="cap reveal">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="1.5" /><path d="M9 20h6M12 17v3" /></svg>
+              <h3>Websites</h3>
+              <p>Built, maintained and kept current, on real budgets.</p>
+            </div>
+            <div className="cap reveal">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="12" r="2.4" /><circle cx="18" cy="6" r="2.4" /><circle cx="18" cy="18" r="2.4" /><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6" /></svg>
+              <h3>Social media</h3>
+              <p>On-brand content, filmed and posted like clockwork.</p>
+            </div>
+            <div className="cap reveal">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 3h9l3 3v15H6z" /><path d="M15 3v3h3M9 12h6M9 16h6" /></svg>
+              <h3>Print &amp; signage</h3>
+              <p>Brochures and signage that are designed, not templated.</p>
+            </div>
+            <div className="cap reveal">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" rx="1.5" /><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" /></svg>
+              <h3>AI tools</h3>
+              <p>Custom tools that make a real difference to your business and your team's productivity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CASE 01 · HANNOVER LODGE */}
+      <section className="band band--mist hann" id="work">
+        <div className="wrap">
+          <div className="hann-head reveal">
+            <div className="eyebrow mint">Case 01 · Equestrian</div>
+            <h2>Hannover Lodge</h2>
+            <p className="kicker">Sales and marketing collateral for premium brand positioning.</p>
+            <p className="hann-lead">A young lodge, four years in and still building a premium name, Hannover needed to stand out at the annual bloodstock sales and warm buyers up beforehand. So I built a full showcase brochure for every horse in the draft, around ten a sale, telling its whole story: history, health, training, pedigree, personality and temperament. The result was a premium, distinctive experience that set Hannover apart, and buyers who arrived with a shortlist before they'd met a single horse.</p>
+            <div className="hann-facts">
+              <span>Digital brochure with interactive video, emailed pre-sale</span>
+              <span>Gloss print on every stall, plus an interactive web version</span>
+              <span>Branded signage, note cards &amp; social tiles for sale day</span>
+            </div>
+          </div>
+          <div className="carousel reveal" ref={carouselRef}>
+            <button className="cbtn prev" aria-label="Previous page">‹</button>
+            <div className="track">
+              <div className="slide"><div className="img-ph">Hannover Lodge brochure — Lot 78 cover</div></div>
+              <div className="slide"><div className="img-ph">Hannover Lodge brochure — Lot 78 inside spread</div></div>
+              <div className="slide"><div className="img-ph">Hannover Lodge brochure — Lot 82 cover</div></div>
+              <div className="slide"><div className="img-ph">Hannover Lodge brochure — Lot 85 cover</div></div>
+            </div>
+            <button className="cbtn next" aria-label="Next page">›</button>
+          </div>
+          <div className="cdots" ref={carouselDotsRef}></div>
+        </div>
+      </section>
+
+      {/* CASE 02 · STAYBLE */}
+      <section className="band">
+        <div className="wrap">
+          <article className="case reveal">
+            <div className="case-head">
+              <div className="eyebrow">Case 02 · Equestrian · My own product</div>
+              <h2>Stayble</h2>
+              <p className="kicker">A horse-sitting app I designed and built end to end.</p>
+              <p className="case-body">Stayble is my own product, an app that connects horse owners with experienced sitters and carers, and I've just added agistment matching too. I designed and built the whole thing and launched its social presence from scratch. It's a spare-time project, so it's been slow moving, but it's almost there.</p>
+              <ul className="facts">
+                <li>App designed and built end to end</li>
+                <li>Social presence launched from zero</li>
+                <li>In final pre-launch testing</li>
+              </ul>
+            </div>
+            <div className="case-media">
+              <div className="combo">
+                <div className="device-browser">
+                  <div className="bar"><i className="r"></i><i className="y"></i><i className="g"></i><span className="addr"></span></div>
+                  <div className="screen"><div className="img-ph">Stayble website homepage</div></div>
+                </div>
+                <div className="device-phone"><div className="screen"><div className="img-ph">Stayble social post</div></div></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* CASE 03 · YATALA */}
+      <section className="band band--mist">
+        <div className="wrap">
+          <article className="case reveal">
+            <div className="case-head">
+              <div className="eyebrow">Case 03 · Marine &amp; caravans</div>
+              <h2>Yatala Boats &amp; Caravans</h2>
+              <p className="kicker">From a business running on paper, to running a digitised marketing engine.</p>
+              <p className="case-body">The owner is five years out from retirement, with a loyal customer base living entirely on paper and a new product line to launch as a fresh distributor. I'm his fractional marketing manager. I moved all of his paper client records into a marketing automation platform, which activated and drives regular email campaigns to the whole database. I've been slowly introducing brand standards (as budget allows) into socials, and produced footage to position the owner as the expert that he is. The website brief was deliberate: no rebuild, so I keep an established site current and working rather than overhauling it.</p>
+            </div>
+            <div className="case-media">
+              <div className="phone-pair">
+                <div className="device-phone p1"><div className="screen"><div className="img-ph">Yatala email newsletter</div></div></div>
+                <div className="device-phone p2"><div className="screen"><div className="img-ph">Yatala branded Instagram grid</div></div></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* CASE 04 · PREFACTOR */}
+      <section className="band">
+        <div className="wrap">
+          <article className="case reveal">
+            <div className="case-head">
+              <div className="eyebrow">Case 04 · Tech / software</div>
+              <h2>Prefactor</h2>
+              <p className="kicker">Brand, strategy and a US launch for an Aussie tech startup.</p>
+              <p className="case-body">Prefactor had just received Series B funding ($1.5M) and was looking for help preparing for a US soft-launch. They had a scrappy product and brand they'd built themselves, and needed polish, gravitas and credibility before hitting US shores.</p>
+              <p className="case-body">Working with the CEO, I ran the customer discovery programme, built out market research and strategic plan, and helped shape the roadmap for product development using real market data and insights.</p>
+              <ul className="facts">
+                <li>Brand refresh and strategic plan</li>
+                <li>US launch preparation</li>
+                <li>Customer discovery programme and market research</li>
+                <li>Software product roadmapping</li>
+              </ul>
+              <Link to="/CaseStudies/Prefactor" className="textlink">Read the full Prefactor case study →</Link>
+            </div>
+            <div className="case-media">
+              <div className="shot"><div className="img-ph">Prefactor deliverables: white paper, client hub and campaign creative</div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* CASE 05 · SCADA */}
+      <section className="band band--mist">
+        <div className="wrap">
+          <article className="case reveal">
+            <div className="case-head">
+              <div className="eyebrow">Case 05 · Cyber security</div>
+              <h2>OT, ICS &amp; SCADA Automation Conference</h2>
+              <p className="kicker">Fractional marketing and a twelve-part video series.</p>
+              <p className="case-body">As fractional marketing manager for this annual cyber security conference, I run the email campaigns that drive registrations. I interviewed and filmed delegates and speakers on site, then produced twelve social videos to reinforce its position as the leading conference of its kind and to seed its European launch next year.</p>
+              <ul className="facts">
+                <li>Registration-driving email campaigns</li>
+                <li>Twelve delegate and speaker interviews, filmed and produced</li>
+                <li>Video series supporting positioning and the Europe launch</li>
+              </ul>
+            </div>
+            <div className="case-media">
+              <div className="media">
+                <span className="tag">Video</span>
+                <span className="desc">Delegate &amp; speaker interview series (paste Vimeo embed here)</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* AI FEATURE */}
+      <section className="band band--paper">
+        <div className="wrap ai-grid">
+          <div className="reveal">
+            <div className="eyebrow mint">AI, built not borrowed</div>
+            <h2>I don't just talk about AI. I <em>build</em> with it.</h2>
+            <p>Here's a working example. A quoting tool for bricklayers that interviews the tradie about the job, gathers what it needs, and produces a quote in minutes instead of hours. I built the tool and the site it lives on. The same idea works anywhere a small business is buried in admin: quotes, bookings, follow-ups, onboarding.</p>
+            <a className="btn btn-solid" href="https://demo-brickwork-quote.base44.app" target="_blank" rel="noopener noreferrer">Try it live</a>
+          </div>
+          <div className="reveal">
+            <div className="device-browser bwframe">
+              <div className="bar"><i className="r"></i><i className="y"></i><i className="g"></i><span className="addr"></span></div>
+              <div className="screen">
+                <div className="bwshots" ref={bwShotsRef}>
+                  <div className="shot-pane on"><div className="img-ph">InStyle Masonry landing page</div></div>
+                  <div className="shot-pane"><div className="img-ph">Tool step 1: upload a property photo</div></div>
+                  <div className="shot-pane"><div className="img-ph">Tool: a property photo uploaded</div></div>
+                  <div className="shot-pane"><div className="img-ph">Tool: a few tailored questions</div></div>
+                </div>
+              </div>
+            </div>
+            <div className="cdots" ref={bwDotsRef}></div>
+          </div>
+        </div>
+      </section>
+
+      {/* CLOSING */}
+      <section className="band">
+        <div className="wrap close">
+          <div className="eyebrow reveal">Let's talk</div>
+          <h2 className="reveal">Your business, running like it's got a marketing team.</h2>
+          <p className="reveal">If any of this looks like what you need, let's have a chat about where I could help.</p>
+          <div className="reveal"><Link to={bookingUrl} className="btn btn-solid">Book a call</Link></div>
+          <div className="sign reveal">— Whitehorse Labs</div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer>
+        <div className="wrap foot-inner">
+          <Link to="/" className="foot-brand">WHL<span>WHITEHORSE LABS</span></Link>
+          <div className="foot-links">
+            <a href="https://whitehorselabs.com.au">whitehorselabs.com.au</a>
+            <a href="mailto:hello@whitehorselabs.com.au">hello@whitehorselabs.com.au</a>
+            <Link to={bookingUrl}>Book a call</Link>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

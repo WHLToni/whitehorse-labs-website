@@ -12,6 +12,7 @@ import PrefactorCaseStudy from './pages/CaseStudies/Prefactor.jsx';
 import ICPTool from './pages/ICPTool.jsx';
 import QuoteChaser from './pages/QuoteChaser.jsx';
 import QuoteChaserContact from './pages/QuoteChaserContact.jsx';
+import CaseStudies from './pages/CaseStudies.jsx';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
@@ -72,6 +73,7 @@ const AuthenticatedApp = () => {
       <Route path="/ICPTool" element={<LayoutWrapper currentPageName="ICPTool"><ICPTool /></LayoutWrapper>} />
       <Route path="/tradie-quote-chaser" element={<LayoutWrapper currentPageName="QuoteChaser"><QuoteChaser /></LayoutWrapper>} />
       <Route path="/quote-chaser-contact" element={<LayoutWrapper currentPageName="QuoteChaserContact"><QuoteChaserContact /></LayoutWrapper>} />
+      <Route path="/case-studies" element={<CaseStudies />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
