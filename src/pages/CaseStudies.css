@@ -124,6 +124,7 @@
 
 .cs-page .shot { border-radius: 14px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,.10), 0 22px 46px rgba(15,16,18,.20); }
 .cs-page .shot .img-ph { display: block; width: 100%; min-height: 300px; }
+.cs-page .shot img { width: 100%; display: block; }
 
 /* Hannover feature + carousel */
 .cs-page .band--paper .kicker { color: #e8e2d8; }
