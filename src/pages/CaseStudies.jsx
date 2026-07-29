@@ -329,28 +329,36 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      {/* AI FEATURE */}
+      {/* CASE 06 · INSTYLE MASONRY */}
       <section className="band band--paper">
-        <div className="wrap ai-grid">
-          <div className="reveal">
-            <div className="eyebrow mint">AI, built not borrowed</div>
-            <h2>I don't just talk about AI. I <em>build</em> with it.</h2>
-            <p>Here's a working example. A quoting tool for bricklayers that interviews the tradie about the job, gathers what it needs, and produces a quote in minutes instead of hours. I built the tool and the site it lives on. The same idea works anywhere a small business is buried in admin: quotes, bookings, follow-ups, onboarding.</p>
-            <a className="btn btn-solid" href="https://demo-brickwork-quote.base44.app" target="_blank" rel="noopener noreferrer">Try it live</a>
-          </div>
-          <div className="reveal">
-            <div className="device-browser bwframe">
-              <div className="bar"><i className="r"></i><i className="y"></i><i className="g"></i><span className="addr"></span></div>
-              <div className="screen">
-                <div className="bwshots" ref={bwShotsRef}>
-                  <div className="shot-pane on"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/fa31f707c_InStyleMasonryLandingPage.png" alt="InStyle Masonry landing page with instant bricklaying quote tool" /></div>
-                  <div className="shot-pane"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/192625c37_Page1ofthetoolwithahousephotouploaded.png" alt="Quote tool step 1: upload a property photo" /></div>
-                  <div className="shot-pane"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c22d2cbdc_Page2ofthetool.png" alt="Quote tool step 3: tailored project questions" /></div>
+        <div className="wrap">
+          <article className="case reveal">
+            <div className="case-head">
+              <div className="eyebrow">Case 06 · AI Tradie Quoting Tool</div>
+              <h2>InStyle Masonry</h2>
+              <p className="kicker">I don't just talk about AI. I build with it.</p>
+              <p className="case-body">A quoting tool for bricklayers that interviews the tradie about the job, gathers what it needs, and produces a quote in minutes instead of hours. I built the tool and the site it lives on. The same idea works anywhere a small business is buried in admin: quotes, bookings, follow-ups, onboarding.</p>
+              <ul className="facts">
+                <li>AI-assisted photo-to-quote wizard</li>
+                <li>Site and tool built end to end</li>
+                <li>Repeatable pattern for admin-heavy trades</li>
+              </ul>
+              <a className="textlink" href="https://demo-brickwork-quote.base44.app" target="_blank" rel="noopener noreferrer">Try it live →</a>
+            </div>
+            <div className="case-media">
+              <div className="device-browser bwframe">
+                <div className="bar"><i className="r"></i><i className="y"></i><i className="g"></i><span className="addr"></span></div>
+                <div className="screen">
+                  <div className="bwshots" ref={bwShotsRef}>
+                    <div className="shot-pane on"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/fa31f707c_InStyleMasonryLandingPage.png" alt="InStyle Masonry landing page with instant bricklaying quote tool" /></div>
+                    <div className="shot-pane"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/192625c37_Page1ofthetoolwithahousephotouploaded.png" alt="Quote tool step 1: upload a property photo" /></div>
+                    <div className="shot-pane"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c22d2cbdc_Page2ofthetool.png" alt="Quote tool step 3: tailored project questions" /></div>
+                  </div>
                 </div>
               </div>
+              <div className="cdots" ref={bwDotsRef}></div>
             </div>
-            <div className="cdots" ref={bwDotsRef}></div>
-          </div>
+          </article>
         </div>
       </section>
 
