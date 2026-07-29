@@ -160,7 +160,7 @@ export default function CaseStudies() {
         <div className="wrap">
           <div className="eyebrow reveal">Selected work</div>
           <h1 className="reveal">Big-brand marketing, without the big-brand budget.</h1>
-          <p className="lede reveal">I'm a fractional marketing lead with 15+ years across global and startup brands, most of it in tech, commercialising products from development through to lifecycle marketing. I bring all of that to growing local businesses, at fractional pricing. I work to your budget and help you decide where it's best spent, then either build a plan and show your team how to run it, or run it for you. On my own, or with brilliant freelancers from my network when the job calls for it.</p>
+          <p className="lede reveal">I'm a fractional marketing lead with 15+ years across global and startup brands, most of it in tech, commercialising products from development through to lifecycle marketing. Now, I bring all of that to growing local businesses, at fractional pricing. I work to your budget and help you decide where it's best spent, then either build a plan and show your team how to run it, or run it for you. On my own, or with brilliant freelancers from my network when the job calls for it.</p>
           <div className="hero-actions reveal">
             <Link to={bookingUrl} className="btn btn-solid">Book a call</Link>
             <a className="textlink" href="#work">See the work →</a>
