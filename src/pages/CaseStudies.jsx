@@ -336,8 +336,8 @@ export default function CaseStudies() {
             <div className="case-head">
               <div className="eyebrow">Case 06 · AI Tradie Quoting Tool</div>
               <h2>InStyle Masonry</h2>
-              <p className="kicker">I don't just talk about AI. I build with it.</p>
-              <p className="case-body">A quoting tool for bricklayers that interviews the tradie about the job, gathers what it needs, and produces a quote in minutes instead of hours. I built the tool and the site it lives on. The same idea works anywhere a small business is buried in admin: quotes, bookings, follow-ups, onboarding.</p>
+              <p className="kicker">Custom-built AI quoting tool</p>
+              <p className="case-body">I built this quoting tool for a bricklaying company, after the owner told me he wastes so much time travelling out to properties to view the site, then back to the office to produce the quote. This AI tool asks the potential customer to upload photos, then asks a series of questions to get the info it needs, and produces a quote in minutes. The same idea works anywhere a small business is buried in admin: quotes, bookings, follow ups, onboarding.</p>
               <ul className="facts">
                 <li>AI-assisted photo-to-quote wizard</li>
                 <li>Site and tool built end to end</li>
