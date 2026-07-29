@@ -318,12 +318,12 @@ export default function CaseStudies() {
             <div className="case-head">
               <div className="eyebrow">Case 05 · Cyber security</div>
               <h2>OT, ICS &amp; SCADA Automation Conference</h2>
-              <p className="kicker">Fractional marketing and a twelve-part video series.</p>
-              <p className="case-body">As fractional marketing manager for this annual cyber security conference, I run the email campaigns that drive registrations. I interviewed and filmed delegates and speakers on site, then produced twelve social videos to reinforce its position as the leading conference of its kind and to seed its European launch next year.</p>
+              <p className="kicker">Fractional marketing for an annual southern hemisphere cyber-security conference.</p>
+              <p className="case-body">I build and run the annual multi-channel marketing campaign for this annual conference to a very niche, corporate audience. At last year's conference, I interviewed and filmed delegates and speakers throughout the day and produced a twelve-part series of social media videos, to promote this year's conference and seed the European launch early next year.</p>
               <ul className="facts">
                 <li>Registration-driving email campaigns</li>
                 <li>Twelve delegate and speaker interviews, filmed and produced</li>
-                <li>Video series supporting positioning and the Europe launch</li>
+                <li>Video series supporting APAC positioning and the Europe launch</li>
               </ul>
             </div>
             <div className="case-media">
