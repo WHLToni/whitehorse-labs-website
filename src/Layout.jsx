@@ -162,6 +162,12 @@ export default function Layout({ children, currentPageName }) {
                 >
                   Quote Chaser →
                 </Link>
+                <a
+                  href="mailto:toni@whitehorselabs.com.au"
+                  className="block text-sm text-[#999] hover:text-white transition-colors"
+                >
+                  toni@whitehorselabs.com.au
+                </a>
               </div>
             </div>
           </div>

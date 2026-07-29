@@ -151,6 +151,11 @@ export default function CaseStudies() {
     <div className="cs-page">
       {/* HERO */}
       <section className="hero">
+        <img
+          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b6cb39724_Headshot.jpeg"
+          alt="Toni Morrow"
+          className="hero-headshot reveal"
+        />
         <div className="wrap">
           <div className="eyebrow reveal">Selected work</div>
           <h1 className="reveal">Big-brand marketing, without the big-brand budget.</h1>

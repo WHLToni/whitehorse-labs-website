@@ -62,6 +62,8 @@
 
 /* hero */
 .cs-page .hero { position: relative; background: var(--mist); padding: 104px 0 92px; overflow: hidden; }
+.cs-page .hero-headshot { position: absolute; top: 56px; right: 34px; width: 88px; height: 88px; border-radius: 50%; object-fit: cover; object-position: center top; border: 3px solid #fff; box-shadow: 0 4px 18px rgba(20,40,45,.14); z-index: 2; }
+@media (max-width: 560px) { .cs-page .hero-headshot { display: none; } }
 .cs-page .hero .wrap { position: relative; }
 .cs-page .hero .eyebrow { margin-bottom: 22px; }
 .cs-page .hero h1 { font-size: clamp(46px, 8vw, 104px); max-width: 15ch; color: var(--accent); }
