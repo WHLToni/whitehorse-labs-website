@@ -292,7 +292,7 @@ export default function CaseStudies() {
               <h2>Prefactor</h2>
               <p className="kicker">Brand, strategy and a US launch for an Aussie tech startup.</p>
               <p className="case-body">Prefactor had just received Series B funding ($1.5M) and was looking for help preparing for a US soft-launch. They had a scrappy product and brand they'd built themselves, and needed polish, gravitas and credibility before hitting US shores.</p>
-              <p className="case-body">Working with the CEO, I ran the customer discovery programme, built out market research and strategic plan, and helped shape the roadmap for product development using real market data and insights.</p>
+              <p className="case-body">Working with the CEO, I ran the customer discovery programme, built out market research and strategic plan, built out a complete brand identity and collateral, and helped shape the roadmap for product development using real market data and insights.</p>
               <ul className="facts">
                 <li>Brand refresh and strategic plan</li>
                 <li>US launch preparation</li>
