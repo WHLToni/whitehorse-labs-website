@@ -252,9 +252,9 @@ export default function CaseStudies() {
               <div className="combo">
                 <div className="device-browser">
                   <div className="bar"><i className="r"></i><i className="y"></i><i className="g"></i><span className="addr"></span></div>
-                  <div className="screen"><div className="img-ph">Stayble website homepage</div></div>
+                  <div className="screen"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/babfe5800_StaybleHomescreenLaptop.png" alt="Stayble website homepage on desktop" /></div>
                 </div>
-                <div className="device-phone"><div className="screen"><div className="img-ph">Stayble social post</div></div></div>
+                <div className="device-phone"><div className="screen"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c7a54c37c_StaybleInstaEarlyPostMobile.jpg" alt="Stayble Instagram social post on mobile" /></div></div>
               </div>
             </div>
           </article>
