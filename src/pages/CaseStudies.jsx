@@ -273,8 +273,8 @@ export default function CaseStudies() {
             </div>
             <div className="case-media">
               <div className="phone-pair">
-                <div className="device-phone p1"><div className="screen"><div className="img-ph">Yatala email newsletter</div></div></div>
-                <div className="device-phone p2"><div className="screen"><div className="img-ph">Yatala branded Instagram grid</div></div></div>
+                <div className="device-phone p1"><div className="screen"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/d545791b1_YatalaNewsletterMobile1.jpg" alt="Yatala Boats &amp; Caravans email newsletter" /></div></div>
+                <div className="device-phone p2"><div className="screen"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9d2f9b7ee_YatalaInstaGridMobile.jpg" alt="Yatala branded Instagram grid" /></div></div>
               </div>
             </div>
           </article>
