@@ -311,7 +311,7 @@ export default function CaseStudies() {
               <div className="eyebrow">Case 05 · Cyber security</div>
               <h2>OT, ICS &amp; SCADA Automation Conference</h2>
               <p className="kicker">Fractional marketing for an annual southern hemisphere cyber-security conference.</p>
-              <p className="case-body">I build and run the annual multi-channel marketing campaign for this annual conference to a very niche, corporate audience. At last year's conference, I interviewed and filmed delegates and speakers throughout the day,  producing a twelve-part series for social media - to promote this year's conference and seed the European launch early next year.</p>
+              <p className="case-body">I build and run the annual multi-channel marketing campaign for this yearly conference, to a very niche, corporate audience. Tickets are around $2000 - last year we sold out, smashing a challenging target. I create the plan, write the copy, produce and distribute the content across key channels. I keep content production efficient and lean - at last year's event, I interviewed and filmed delegates and speakers throughout the day, producing a twelve-part series for social media - to promote this year's conference and seed the European launch early next year.</p>
               <ul className="facts">
                 <li>Registration-driving email campaigns</li>
                 <li>Twelve delegate and speaker interviews, filmed and produced</li>
