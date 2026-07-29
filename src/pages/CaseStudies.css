@@ -121,8 +121,6 @@
 .cs-page .device-browser .screen { aspect-ratio: 16/10; position: relative; background: #fff; overflow: hidden; }
 .cs-page .device-browser .screen img { width: 100%; height: 100%; object-fit: contain; object-position: center top; }
 .cs-page .device-phone .screen img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-.cs-page .device-browser .screen.yatala-email { aspect-ratio: 16/14; }
-.cs-page .device-browser .screen.yatala-email img { object-fit: contain; }
 
 .cs-page .shot { border-radius: 14px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,.10), 0 22px 46px rgba(15,16,18,.20); }
 .cs-page .shot .img-ph { display: block; width: 100%; min-height: 300px; }

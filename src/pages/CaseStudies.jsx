@@ -272,12 +272,9 @@ export default function CaseStudies() {
               <p className="case-body">The owner is five years out from retirement, with a loyal customer base living entirely on paper and a new product line to launch as a fresh distributor. I'm his fractional marketing manager. I moved all of his paper client records into a marketing automation platform, which activated and drives regular email campaigns to the whole database. I've been slowly introducing brand standards (as budget allows) into socials, and produced footage to position the owner as the expert that he is. The website brief was deliberate: no rebuild, so I keep an established site current and working rather than overhauling it.</p>
             </div>
             <div className="case-media">
-              <div className="combo">
-                <div className="device-browser">
-                  <div className="bar"><i className="r"></i><i className="y"></i><i className="g"></i><span className="addr"></span></div>
-                  <div className="screen yatala-email"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/a5c981919_YatalaNewsletterScreenshotDesktop.png" alt="Yatala Boats &amp; Caravans email newsletter" /></div>
-                </div>
-                <div className="device-phone"><div className="screen"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9d2f9b7ee_YatalaInstaGridMobile.jpg" alt="Yatala Boats &amp; Caravans Instagram grid on mobile" /></div></div>
+              <div className="phone-pair">
+                <div className="device-phone p1"><div className="screen"><div className="img-ph">Yatala email newsletter</div></div></div>
+                <div className="device-phone p2"><div className="screen"><div className="img-ph">Yatala branded Instagram grid</div></div></div>
               </div>
             </div>
           </article>
