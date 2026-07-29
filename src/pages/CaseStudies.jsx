@@ -149,17 +149,6 @@ export default function CaseStudies() {
 
   return (
     <div className="cs-page">
-      {/* HEADER */}
-      <header>
-        <div className="wrap header-inner">
-          <Link to="/" className="brand">
-            <span className="mark">WHL</span>
-            <span className="sub">WHITEHORSE LABS</span>
-          </Link>
-          <Link to={bookingUrl} className="btn btn-outline">Book a call</Link>
-        </div>
-      </header>
-
       {/* HERO */}
       <section className="hero">
         <div className="wrap">
@@ -373,17 +362,6 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer>
-        <div className="wrap foot-inner">
-          <Link to="/" className="foot-brand">WHL<span>WHITEHORSE LABS</span></Link>
-          <div className="foot-links">
-            <a href="https://whitehorselabs.com.au">whitehorselabs.com.au</a>
-            <a href="mailto:hello@whitehorselabs.com.au">hello@whitehorselabs.com.au</a>
-            <Link to={bookingUrl}>Book a call</Link>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
