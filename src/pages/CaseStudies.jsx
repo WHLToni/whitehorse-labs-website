@@ -343,10 +343,9 @@ export default function CaseStudies() {
               <div className="bar"><i className="r"></i><i className="y"></i><i className="g"></i><span className="addr"></span></div>
               <div className="screen">
                 <div className="bwshots" ref={bwShotsRef}>
-                  <div className="shot-pane on"><div className="img-ph">InStyle Masonry landing page</div></div>
-                  <div className="shot-pane"><div className="img-ph">Tool step 1: upload a property photo</div></div>
-                  <div className="shot-pane"><div className="img-ph">Tool: a property photo uploaded</div></div>
-                  <div className="shot-pane"><div className="img-ph">Tool: a few tailored questions</div></div>
+                  <div className="shot-pane on"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/fa31f707c_InStyleMasonryLandingPage.png" alt="InStyle Masonry landing page with instant bricklaying quote tool" /></div>
+                  <div className="shot-pane"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/192625c37_Page1ofthetoolwithahousephotouploaded.png" alt="Quote tool step 1: upload a property photo" /></div>
+                  <div className="shot-pane"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c22d2cbdc_Page2ofthetool.png" alt="Quote tool step 3: tailored project questions" /></div>
                 </div>
               </div>
             </div>

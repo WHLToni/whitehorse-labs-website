@@ -153,6 +153,7 @@
 .cs-page .bwshots { position: absolute; inset: 0; }
 .cs-page .bwshots .shot-pane { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .6s ease; }
 .cs-page .bwshots .shot-pane.on { opacity: 1; }
+.cs-page .bwshots .shot-pane img { width: 100%; height: 100%; object-fit: contain; object-position: center top; }
 
 /* AI band */
 .cs-page .ai-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 60px; align-items: center; }
