@@ -270,8 +270,8 @@ export default function CaseStudies() {
             <div className="case-head">
               <div className="eyebrow">Case 03 · Marine &amp; caravans</div>
               <h2>Yatala Boats &amp; Caravans</h2>
-              <p className="kicker">From a business running on paper, to running a digitised marketing engine.</p>
-              <p className="case-body">The owner is five years out from retirement, with a loyal customer base living entirely on paper and a new product line to launch as a fresh distributor. I'm his fractional marketing manager. I moved all of his paper client records into a marketing automation platform, which activated and drives regular email campaigns to the whole database. I've been slowly introducing brand standards (as budget allows) into socials, and produced footage to position the owner as the expert that he is. The website brief was deliberate: no rebuild, so I keep an established site current and working rather than overhauling it.</p>
+              <p className="kicker">Turning a business running on paper records, into a digitised marketing engine.</p>
+              <p className="case-body">The owner is five years out from retirement, with a loyal customer base entirely on paper records, and a new product to launch. He knew that selling his business would be challenging without digitising, but is on a tight budget. I'm his Fractional Marketing Manager.</p>
             </div>
             <div className="case-media">
               <div className="phone-pair">
