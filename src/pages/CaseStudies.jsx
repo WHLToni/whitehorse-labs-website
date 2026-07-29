@@ -13,7 +13,7 @@ export default function CaseStudies() {
 
   // SEO
   useEffect(() => {
-    document.title = 'Whitehorse Labs — Selected Work';
+    document.title = 'Whitehorse Labs — Work Examples';
     const meta = document.querySelector('meta[name="description"]');
     if (meta) {
       meta.setAttribute('content', 'Selected work from Whitehorse Labs — fractional marketing, websites, social media, print and AI tools.');
