@@ -146,7 +146,7 @@
 .cs-page .hann .hann-head h2 { font-size: clamp(32px, 5vw, 60px); margin-bottom: 14px; }
 .cs-page .hann-lead { color: #3a4649; font-size: 17px; max-width: 62ch; margin: 0 auto 22px; }
 .cs-page .hann-facts { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-.cs-page .hann-facts span { font-size: 12.5px; color: #2b3639; border: 1px solid var(--line); border-radius: 20px; padding: 6px 14px; }
+.cs-page .hann-facts span { font-size: 12.5px; color: #2b3639; background: #fff; border: 1px solid var(--accent); border-radius: 20px; padding: 6px 14px; box-shadow: 0 2px 8px rgba(193,59,84,.10); }
 .cs-page .carousel { position: relative; height: clamp(370px, 54vw, 500px); perspective: 1600px; margin-top: 6px; }
 .cs-page .carousel .track { position: absolute; inset: 0; transform-style: preserve-3d; }
 .cs-page .slide { position: absolute; top: 50%; left: 50%; width: clamp(210px, 40vw, 315px); aspect-ratio: 795/1030; border-radius: 10px; overflow: hidden; background: #e9edee; box-shadow: 0 2px 6px rgba(20,30,35,.12), 0 24px 48px rgba(20,30,35,.22); transition: transform .55s cubic-bezier(.4,.1,.2,1), opacity .5s ease; will-change: transform, opacity; cursor: pointer; }
