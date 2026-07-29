@@ -126,6 +126,17 @@
 .cs-page .shot .img-ph { display: block; width: 100%; min-height: 300px; }
 .cs-page .shot img { width: 100%; display: block; }
 
+/* Prefactor deliverables collage / stack */
+.cs-page .pf-collage { position: relative; padding: 0 6px 56px 6px; }
+.cs-page .pf-collage__main { width: 100%; border-radius: 14px; display: block; box-shadow: 0 4px 10px rgba(0,0,0,.12), 0 30px 60px rgba(15,16,18,.28); }
+.cs-page .pf-collage__wp { position: absolute; left: -4px; bottom: -32px; width: 44%; border-radius: 10px; display: block; transform: rotate(-2.4deg); z-index: 3; box-shadow: 0 6px 16px rgba(0,0,0,.20), 0 28px 54px rgba(15,16,18,.42); }
+.cs-page .pf-collage__ad { position: absolute; right: -2px; bottom: -22px; width: 40%; border-radius: 10px; display: block; transform: rotate(2.6deg); z-index: 2; box-shadow: 0 6px 16px rgba(0,0,0,.20), 0 24px 48px rgba(15,16,18,.38); }
+@media (max-width: 560px) {
+  .cs-page .pf-collage { padding: 0 4px 44px 4px; }
+  .cs-page .pf-collage__wp { width: 46%; bottom: -24px; }
+  .cs-page .pf-collage__ad { width: 42%; bottom: -16px; }
+}
+
 /* Hannover feature + carousel */
 .cs-page .band--paper .kicker { color: #e8e2d8; }
 .cs-page .band--paper .facts { color: #fff; }

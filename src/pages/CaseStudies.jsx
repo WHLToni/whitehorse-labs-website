@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import './CaseStudies.css';
 import ProductionStills from '@/components/case-studies/ProductionStills';
+import PrefactorCollage from '@/components/case-studies/PrefactorCollage';
 
 export default function CaseStudies() {
   const carouselRef = useRef(null);
@@ -301,7 +302,7 @@ export default function CaseStudies() {
               <Link to="/CaseStudies/Prefactor" className="textlink">Read the full Prefactor case study →</Link>
             </div>
             <div className="case-media">
-              <div className="shot"><img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/e929414e6_Screenshot2026-07-28at42926pm.png" alt="Prefactor deliverables: white paper, client hub, pitch deck and campaign creative" /></div>
+              <PrefactorCollage />
             </div>
           </article>
         </div>
