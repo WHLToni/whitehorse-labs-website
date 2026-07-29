@@ -242,13 +242,8 @@ export default function CaseStudies() {
             <div className="case-head">
               <div className="eyebrow">Case 02 · Equestrian · My own product</div>
               <h2>Stayble</h2>
-              <p className="kicker">A horse-sitting app I designed and built end to end.</p>
-              <p className="case-body">Stayble is my own product, an app that connects horse owners with experienced sitters and carers, and I've just added agistment matching too. I designed and built the whole thing and launched its social presence from scratch. It's a spare-time project, so it's been slow moving, but it's almost there.</p>
-              <ul className="facts">
-                <li>App designed and built end to end</li>
-                <li>Social presence launched from zero</li>
-                <li>In final pre-launch testing</li>
-              </ul>
+              <p className="kicker">A full-stack equine connectivity platform.</p>
+              <p className="case-body">Stayble is a digital marketplace connecting horse owners with experienced carers and agistment services. I designed and built the entire platform, architecting the product roadmap, design and build. It's currently in final stages of testing, and I've kicked off pre-launch socials. It represents a complete lifecycle project — turning niche industry insights into a functional, scalable software product.</p>
             </div>
             <div className="case-media">
               <div className="combo">
