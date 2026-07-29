@@ -34,9 +34,9 @@ const DEFAULT_STILLS = [
   },
 ];
 
-export default function ProductionStills({ stills = DEFAULT_STILLS, label = 'Production stills' }) {
+export default function ProductionStills({ stills = DEFAULT_STILLS, label = 'Production stills', scale = 100 }) {
   return (
-    <div className="contact-sheet reveal">
+    <div className="contact-sheet reveal" style={scale !== 100 ? { maxWidth: `${scale}%`, marginLeft: 'auto', marginRight: 'auto' } : undefined}>
       <div className="cs-strip">
         <span className="cs-strip__dot" />
         <span className="cs-strip__label">{label}</span>

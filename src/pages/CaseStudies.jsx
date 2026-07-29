@@ -324,7 +324,7 @@ export default function CaseStudies() {
               </ul>
             </div>
             <div className="case-media">
-              <ProductionStills />
+              <ProductionStills scale={80} />
             </div>
           </article>
         </div>
