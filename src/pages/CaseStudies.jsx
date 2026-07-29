@@ -213,7 +213,7 @@ export default function CaseStudies() {
             <div className="eyebrow mint">Case 01 · Equestrian</div>
             <h2>Hannover Lodge</h2>
             <p className="kicker">Sales and marketing collateral for premium brand positioning.</p>
-            <p className="hann-lead">A young lodge, four years in and still building a premium name, Hannover needed to stand out at the annual bloodstock sales and warm buyers up beforehand. So I built a full showcase brochure for every horse in the draft, around ten a sale, telling its whole story: history, health, training, pedigree, personality and temperament. The result was a premium, distinctive experience that set Hannover apart, and buyers who arrived with a shortlist before they'd met a single horse.</p>
+            <p className="hann-lead">Hannover Lodge, a four year old spelling &amp; training business establishing premium positioning. The brief: make an impact at the annual bloodstock sales, and warm buyers up beforehand.</p>
             <div className="hann-facts">
               <span>Digital brochure with interactive video components, emailed pre-sale</span>
               <span>Gloss print brochures on every stall, and interactive digital version on website</span>
