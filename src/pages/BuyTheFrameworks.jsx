@@ -155,6 +155,9 @@ export default function BuyTheFrameworks() {
               <br /><br />
               Ideal for founders who have a bootstrapped MVP that's almost ready for market, founders seeking seed or Series A funding, and vibe coders who have built a product and don't know how to get their first customers.
             </p>
+            <p className="text-[#3a4649] text-base leading-relaxed max-w-[600px] mx-auto mt-4">
+              <span className="font-semibold">Bonus!</span> GTM Strategy Shadow Board Reviewer prompt. This AI prompt assembles three ruthless critics to stress test your final plan — a Cynical VC, a Risk-Averse Lawyer and a Burned Customer will argue with each other, give brutally honest feedback, and will each identify one key element that could kill your strategy entirely.
+            </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
               <button
                 onClick={() => handleBuy('gtm')}
