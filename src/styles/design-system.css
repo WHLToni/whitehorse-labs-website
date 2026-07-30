@@ -61,6 +61,18 @@
 .ds-textlink { color: var(--accent); font-weight: 600; }
 .ds-textlink:hover { text-decoration: underline; }
 
+/* ─── Marquee ──────────────────────────────────────────── */
+.ds-marquee {
+  animation: ds-marquee-scroll 40s linear infinite;
+}
+.ds-marquee:hover {
+  animation-play-state: paused;
+}
+@keyframes ds-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 /* ─── Grid backgrounds ─────────────────────────────────── */
 .ds-grid-light {
   background-image:

@@ -59,11 +59,13 @@ export default function Credentials() {
         </div>
       </div>
 
-      {/* Brands strip — dark band */}
-      <div className="ds-band--paper mt-20 py-12 px-6 lg:px-10" style={{ background: "#0e0e0e" }}>
+      {/* Brands strip — scrolling marquee */}
+      <div className="mt-20 py-12" style={{ background: "#0e0e0e" }}>
         <div className="ds-wrap">
           <p className="ds-eyebrow grey mb-8 text-center" style={{ color: "#666" }}>Brands I've worked with</p>
-          <div className="flex flex-wrap gap-8 items-center justify-center">
+        </div>
+        <div className="overflow-hidden relative" style={{ maskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)", WebkitMaskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)" }}>
+          <div className="flex items-center gap-12 w-max ds-marquee">
             {[
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/97a75526b_2.png",
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/9a353716a_3.png",
@@ -76,7 +78,22 @@ export default function Credentials() {
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e8e4da89e_Prospection.png",
               "https://media.base44.com/images/public/6995347084af76a3154d3f6b/2867a3ffe_YarningForChange.png",
             ].map((src, i) => (
-              <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70" />
+              <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70 flex-shrink-0" style={src.includes("YarningForChange") ? { height: "112px", width: "auto" } : undefined} />
+            ))}
+            {/* Duplicate for seamless loop */}
+            {[
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/97a75526b_2.png",
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/9a353716a_3.png",
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e780a8a30_6.png",
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/2020d9e3a_5.png",
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/7958509e5_4.png",
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b3a8bc7b3_7.png",
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/f1cf92dd3_8.png",
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/c2ba0ee53_9.png",
+              "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e8e4da89e_Prospection.png",
+              "https://media.base44.com/images/public/6995347084af76a3154d3f6b/2867a3ffe_YarningForChange.png",
+            ].map((src, i) => (
+              <img key={`dup-${i}`} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70 flex-shrink-0" style={src.includes("YarningForChange") ? { height: "112px", width: "auto" } : undefined} />
             ))}
           </div>
         </div>
