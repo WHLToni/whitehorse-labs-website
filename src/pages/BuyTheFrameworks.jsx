@@ -173,15 +173,15 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="py-16 md:py-24 bg-[#E7F0E3]">
-        <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
+      <section className="py-16 md:py-20 bg-[#E7F0E3]">
+        <div className="max-w-2xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <blockquote className="text-[var(--ink)] text-2xl md:text-[30px] leading-snug font-medium">
+            <blockquote className="text-[var(--ink)] text-lg md:text-xl leading-relaxed">
               "Figuring out an international GTM strategy is challenging, but The GTM Builder made it clear and helped us shape our way step by step. Beyond the amazing platform, working with Toni and her team was a highlight! She's incredibly helpful, professional, and always brings great energy. It's so important to work with good people, and Toni is exactly that."
             </blockquote>
-            <div className="mt-8 flex items-center justify-center gap-3">
+            <div className="mt-7 flex items-center gap-3">
               <div className="w-8 h-[2px] bg-[#C13B54]" />
-              <div className="text-left">
+              <div>
                 <p className="text-base font-bold text-[var(--ink)]">Guy Jakobi</p>
                 <p className="text-sm text-[var(--muted)]">Managing Director, Pacific Grow</p>
               </div>
