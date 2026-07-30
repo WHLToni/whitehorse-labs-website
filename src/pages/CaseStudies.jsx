@@ -164,7 +164,7 @@ export default function CaseStudies() {
           <p className="lede reveal">I'm a fractional marketing lead with 15+ years across global and startup brands, most of it in tech, commercialising products from development through to lifecycle marketing. Now, I bring all of that to growing local businesses, at fractional pricing. I work to your budget and help you decide where it's best spent, then either build a plan and show your team how to run it, or run it for you. On my own, or with brilliant freelancers from my network when the job calls for it.</p>
           <div className="hero-actions reveal">
             <Link to={bookingUrl} className="btn btn-solid">Book a call</Link>
-            <a className="textlink" href="#work">See the work →</a>
+            <a className="textlink" href="#work">See the work</a>
           </div>
         </div>
       </section>
@@ -295,7 +295,7 @@ export default function CaseStudies() {
                 <li>US Launch plan and preparation</li>
                 <li>Software product roadmapping</li>
               </ul>
-              <Link to="/CaseStudies/Prefactor" className="textlink">Read the full Prefactor case study →</Link>
+              <Link to="/CaseStudies/Prefactor" className="textlink">Read the full Prefactor case study</Link>
             </div>
             <div className="case-media">
               <PrefactorCollage />
@@ -340,7 +340,7 @@ export default function CaseStudies() {
                 <li>Site and tool built end to end</li>
                 <li>Repeatable pattern for admin-heavy trades</li>
               </ul>
-              <a className="textlink" href="https://demo-brickwork-quote.base44.app" target="_blank" rel="noopener noreferrer">Try it live →</a>
+              <a className="textlink" href="https://demo-brickwork-quote.base44.app" target="_blank" rel="noopener noreferrer">Try it live</a>
             </div>
             <div className="case-media">
               <div className="device-browser bwframe">

@@ -19,7 +19,7 @@ const serviceCards = [
       "Strategy document and presentation",
     ],
     bestFor: "Funded startups building commercial foundations before scaling. Pre-exit owners who need to sharpen positioning before a sale. Any team that suspects they're talking to the wrong buyers or saying the wrong things.",
-    ctaLabel: "Book The Diagnostic →",
+    ctaLabel: "Book The Diagnostic",
     ctaPage: "Contact",
   },
   {
@@ -36,7 +36,7 @@ const serviceCards = [
       "GTM strategy with channel recommendations",
     ],
     bestFor: "Startups preparing for launch. Scale-ups entering new markets. Innovation teams building internal alignment around a new product.",
-    ctaLabel: "Book GTM Strategy →",
+    ctaLabel: "Book GTM Strategy",
     ctaPage: "Contact",
   },
   {
@@ -53,7 +53,7 @@ const serviceCards = [
       "Launch execution plan",
     ],
     bestFor: "Funded startups preparing for a major launch. Pre-exit owners modernising their brand. In-house product teams launching new products inside larger organisations.",
-    ctaLabel: "Book Launch Architecture →",
+    ctaLabel: "Book Launch Architecture",
     ctaPage: "Contact",
   },
   {
@@ -69,7 +69,7 @@ const serviceCards = [
       "Brand refresh aligned to acquisition positioning",
     ],
     bestFor: "Business owners planning to sell or step back in the next 3–5 years. Particularly valuable for owners who need to digitise, systemise and strengthen the brand to increase valuation.",
-    ctaLabel: "Book a Call →",
+    ctaLabel: "Book a Call",
     ctaPage: "Contact",
   },
 ];
@@ -310,7 +310,7 @@ export default function Services() {
               to={createPageUrl("BuyTheFrameworks")}
               className="ds-btn ds-btn-solid inline-flex items-center gap-2"
             >
-              Buy the Frameworks →
+              Buy the Frameworks
             </Link>
           </motion.div>
         </div>

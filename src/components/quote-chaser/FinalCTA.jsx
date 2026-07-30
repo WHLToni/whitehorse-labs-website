@@ -15,7 +15,7 @@ export default function FinalCTA() {
         <h2 className="text-2xl md:text-4xl font-bold text-white tracking-tight mb-4">
           Book a 15-minute chat.
         </h2>
-        <p className="text-white/55 text-base leading-relaxed mb-8 max-w-md mx-auto">
+        <p className="text-white/70 text-base leading-relaxed mb-8 max-w-md mx-auto">
           No pitch, no obligation. We'll look at your quote book and tell you honestly whether this
           is worth your money.
         </p>

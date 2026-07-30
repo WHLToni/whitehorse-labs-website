@@ -16,7 +16,7 @@ function Logo({ dark = false }) {
       <img
         src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b061673c1_PrimaryLogo.png"
         alt="Whitehorse Labs"
-        className="h-28 w-auto"
+        className="h-10 md:h-12 w-auto"
       />
     </div>
   );
@@ -148,7 +148,7 @@ export default function Layout({ children, currentPageName }) {
                   to="/BuyTheFrameworks"
                   className="block text-sm text-[#999] hover:text-white transition-colors"
                 >
-                  Buy the Frameworks — from {AUD_FROM} →
+                  Buy the Frameworks — from {AUD_FROM}
                 </Link>
                 <Link
                   to={createPageUrl("Services")}
@@ -160,7 +160,7 @@ export default function Layout({ children, currentPageName }) {
                   to="/tradie-quote-chaser"
                   className="block text-sm text-[#999] hover:text-white transition-colors"
                 >
-                  Quote Chaser →
+                  Quote Chaser
                 </Link>
                 <a
                   href="mailto:toni@whitehorselabs.com.au"

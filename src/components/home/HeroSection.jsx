@@ -28,7 +28,7 @@ export default function HeroSection() {
                 Book a Call <ArrowRight className="w-4 h-4" />
               </Link>
               <Link to={createPageUrl("Services")} className="ds-btn ds-btn-outline inline-flex items-center gap-2">
-                See How It Works →
+                See How It Works
               </Link>
             </div>
           </motion.div>

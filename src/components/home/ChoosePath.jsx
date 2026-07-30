@@ -43,9 +43,9 @@ export default function ChoosePath() {
             >
               <div className="flex-1 min-w-0">
                 <p className="text-[15px] font-bold text-[var(--ink)] mb-1.5">{tier.name}</p>
-                {tier.output && <p className="text-sm mt-2 leading-relaxed text-[#3a4649]">↳ {tier.output}</p>}
+                {tier.output && <p className="text-sm mt-2 leading-relaxed text-[#3a4649]">{tier.output}</p>}
                 <Link to={createPageUrl("Services")} className="ds-textlink inline-flex items-center gap-1 text-xs mt-2.5">
-                  See details →
+                  See details
                 </Link>
               </div>
               <div className="sm:text-right shrink-0 sm:pt-0.5">
@@ -60,13 +60,13 @@ export default function ChoosePath() {
         <div className="mt-4 px-7 py-4 border border-[var(--line)] bg-white rounded-md flex items-center justify-between gap-4 flex-wrap">
           <p className="text-[var(--muted)] text-sm italic">On a bootstrap budget?</p>
           <a href="https://icp-builder-tool.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[var(--ink)] hover:text-[#C13B54] border border-[var(--line)] hover:border-[#C13B54] px-4 py-1.5 rounded-md transition-colors">
-            Get the Free ICP Framework →
+            Get the Free ICP Framework
           </a>
         </div>
 
         <div className="mt-7">
           <Link to={createPageUrl("Contact")} className="ds-btn ds-btn-solid inline-flex items-center gap-2">
-            Book a Call →
+            Book a Call
           </Link>
         </div>
 
@@ -102,7 +102,7 @@ export default function ChoosePath() {
 
         <div className="mt-7">
           <Link to={createPageUrl("Contact")} className="ds-btn ds-btn-solid inline-flex items-center gap-2">
-            Book a Call →
+            Book a Call
           </Link>
         </div>
 
@@ -133,14 +133,14 @@ export default function ChoosePath() {
 
         <div className="mt-7">
           <Link to={createPageUrl("Contact")} className="ds-btn ds-btn-solid inline-flex items-center gap-2">
-            Book a Call →
+            Book a Call
           </Link>
         </div>
 
         <p className="mt-10 text-sm text-[var(--muted)] italic">
           Not ready for a full engagement?{" "}
           <Link to={createPageUrl("BuyTheFrameworks")} className="ds-textlink not-italic">
-            The Builder Suite{pricing ? ` — from ${pricing.from}` : ""} →
+            The Builder Suite{pricing ? ` — from ${pricing.from}` : ""}
           </Link>
         </p>
       </div>

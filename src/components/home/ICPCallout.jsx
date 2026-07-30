@@ -19,7 +19,7 @@ export default function ICPCallout() {
               Not sure who your ideal customer is? Our ICP Framework tool gets you to a clear, usable definition in under 15 minutes.
             </p>
             <Link to="/ICPTool" className="ds-btn ds-btn-outline mt-6 self-start inline-flex items-center gap-2">
-              Get the ICP Framework →
+              Get the ICP Framework
             </Link>
           </motion.div>
 
@@ -32,12 +32,12 @@ export default function ICPCallout() {
               We'll work out where you are, what you need, and whether we're a good fit.
             </p>
             <Link to={createPageUrl("Contact")} className="ds-btn ds-btn-solid mt-6 self-start inline-flex items-center gap-2">
-              Book a Call →
+              Book a Call
             </Link>
             <p className="mt-4 text-sm text-[#555] italic">
               Not ready for a call?{" "}
               <Link to={createPageUrl("BuyTheFrameworks")} className="hover:text-[var(--ink)] transition-colors">
-                Start with the DIY Toolkits{pricing ? ` from ${pricing.from}` : ""} →
+                Start with the DIY Toolkits{pricing ? ` from ${pricing.from}` : ""}
               </Link>
             </p>
           </motion.div>

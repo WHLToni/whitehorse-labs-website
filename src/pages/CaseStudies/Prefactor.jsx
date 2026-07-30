@@ -216,7 +216,7 @@ export default function PrefactorCaseStudy() {
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/9927049a4_PrefactorBeforeIntegration.png" alt="Old Prefactor integration page" className="w-full block rounded-md" style={{ opacity: 0.65 }} />
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor additional page" className="w-full block rounded-md" style={{ opacity: 0.65 }} />
               </div>
-              <p className="text-xs mt-2" style={{ color: "#7ecec4", opacity: 0.6 }}>prefactor.tech — prior to engagement</p>
+              <p className="text-xs mt-2" style={{ color: "#7ecec4", opacity: 0.7 }}>prefactor.tech — prior to engagement</p>
             </div>
 
             {/* AFTER — prominent single column */}
@@ -228,7 +228,7 @@ export default function PrefactorCaseStudy() {
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/1420c6849_BrandGuidelines2.png" alt="Logo usage guidelines" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/c63b28e39_BrandGuidelines4.png" alt="Imagery and icons direction" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
               </div>
-              <p className="text-xs mt-2" style={{ color: "#7ecec4", opacity: 0.6 }}>New brand identity — November 2025</p>
+              <p className="text-xs mt-2" style={{ color: "#7ecec4", opacity: 0.7 }}>New brand identity — November 2025</p>
             </div>
           </motion.div>
 
@@ -478,7 +478,7 @@ export default function PrefactorCaseStudy() {
               onMouseEnter={e => e.currentTarget.style.background = "#0d9488"}
               onMouseLeave={e => e.currentTarget.style.background = "transparent"}
             >
-              Explore the GTM Builder →
+              Explore the GTM Builder
             </Link>
           </motion.div>
 
@@ -502,7 +502,7 @@ export default function PrefactorCaseStudy() {
               onMouseEnter={e => e.currentTarget.style.background = "#0b7a70"}
               onMouseLeave={e => e.currentTarget.style.background = "#0d9488"}
             >
-              Book a call →
+              Book a call
             </Link>
           </motion.div>
 

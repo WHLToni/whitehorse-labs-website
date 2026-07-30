@@ -17,7 +17,7 @@ export default function Hero() {
         <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-6">
           Stop losing jobs you already quoted.
         </h1>
-        <p className="text-white/55 text-base md:text-lg max-w-lg mx-auto font-light leading-relaxed mb-8">
+        <p className="text-white/70 text-base md:text-lg max-w-lg mx-auto font-light leading-relaxed mb-8">
           You quoted the job. So did your competitor - and they followed up. Quote Chaser makes sure that's you: every quote chased, under your name, without you lifting a finger.
         </p>
         <div className="max-w-xs sm:max-w-none mx-auto">

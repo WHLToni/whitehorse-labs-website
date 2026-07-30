@@ -227,7 +227,7 @@ export default function BuyTheFrameworks() {
                 disabled={loading === 'gtm'}
                 className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 disabled:opacity-70"
               >
-                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder — AUD $349 →'}
+                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder — AUD $349'}
               </button>
             </div>
 
@@ -326,7 +326,7 @@ export default function BuyTheFrameworks() {
                   type="submit"
                   className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 whitespace-nowrap"
                 >
-                  Join the waitlist →
+                  Join the waitlist
                 </button>
               </form>
             )}

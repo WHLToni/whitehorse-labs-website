@@ -40,7 +40,7 @@ export default function WhoIWorkWith() {
                   rel="noopener noreferrer"
                   className="ds-textlink inline-flex items-center gap-1 text-xs mt-3"
                 >
-                  Start with the Free ICP Tool →
+                  Start with the Free ICP Tool
                 </a>
               )}
             </motion.div>
