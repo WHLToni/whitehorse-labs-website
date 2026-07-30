@@ -173,7 +173,7 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="py-10 md:py-12 bg-[#F3F8F1]">
+      <section className="py-10 md:py-12 bg-[#E7F0E3]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
@@ -283,7 +283,7 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* WHO IT'S FOR */}
-      <section className="py-12 md:py-16 bg-[#F3F8F1]">
+      <section className="py-12 md:py-16 bg-[#E7F0E3]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <p className="ds-eyebrow mb-4">Who It's For</p>
           <h2 className="ds-display text-3xl md:text-4xl mb-10">Built for founders who need to move fast</h2>
@@ -336,7 +336,7 @@ export default function BuyTheFrameworks() {
 
 
       {/* FAQs */}
-      <section className="py-12 md:py-16 bg-[#F3F8F1]">
+      <section className="py-12 md:py-16 bg-[#E7F0E3]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <p className="ds-eyebrow mb-4">FAQs</p>
           <h2 className="ds-display text-2xl md:text-3xl mb-8">Frequently Asked Questions</h2>

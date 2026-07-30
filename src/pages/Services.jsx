@@ -194,7 +194,7 @@ export default function Services() {
       </section>
 
       {/* THE COMMERCIALISATION STACK */}
-      <section className="py-10 md:py-12 bg-[#F3F8F1]">
+      <section className="py-10 md:py-12 bg-[#E7F0E3]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <p className="ds-eyebrow grey mb-8 text-center">
             The Commercialisation Stack
@@ -296,7 +296,7 @@ export default function Services() {
       </section>
 
       {/* BOTTOM CTA SECTION */}
-      <section className="py-12 md:py-16 bg-[#F3F8F1]">
+      <section className="py-12 md:py-16 bg-[#E7F0E3]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <p className="ds-eyebrow mb-4">Not Ready to Commit?</p>

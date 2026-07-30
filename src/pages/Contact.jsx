@@ -92,7 +92,7 @@ ${form.message}
       </section>
 
       {/* Form Section */}
-      <section className="pb-32 bg-[#F3F8F1]">
+      <section className="pb-32 bg-[#E7F0E3]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           {status === "success" ? (
             <motion.div

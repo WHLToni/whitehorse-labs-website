@@ -115,7 +115,7 @@ export default function ICPFramework() {
       </section>
 
       {/* OUTCOME + CTA */}
-      <section className="py-16 md:py-24 bg-[#f7f7f8]">
+      <section className="py-16 md:py-24 bg-[#E7F0E3]">
         <div className="max-w-2xl mx-auto px-6 lg:px-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8">How does this improve growth?</h2>
           <div className="space-y-4 mb-12">
