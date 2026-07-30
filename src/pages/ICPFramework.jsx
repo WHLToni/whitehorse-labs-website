@@ -60,7 +60,7 @@ export default function ICPFramework() {
 
             {/* Right: video (1/3) */}
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="md:w-1/3 flex justify-center md:justify-end">
-              <div style={{ position: 'relative', width: '220px', height: '312px', flexShrink: 0 }}>
+              <div style={{ position: 'relative', width: '264px', height: '374px', flexShrink: 0 }}>
                 <iframe
                   allow="fullscreen;autoplay"
                   allowFullScreen
