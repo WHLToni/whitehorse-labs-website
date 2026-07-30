@@ -109,10 +109,10 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
         {/* Left: Title and Price */}
         <div className="lg:col-span-1">
-          <h3 className={`text-2xl md:text-3xl font-bold mb-2 ${darkBg ? "text-white" : "text-[#0a0a0a]"}`}>
+          <h3 className={`text-2xl md:text-3xl font-bold mb-2 ${darkBg ? "text-white" : "text-[var(--ink)]"}`}>
             {name}
           </h3>
-          <p className={`italic text-base mb-6 ${darkBg ? "text-[#ccc]" : "text-[#666]"}`}>
+          <p className={`italic text-base mb-6 ${darkBg ? "text-[#ccc]" : "text-[var(--muted)]"}`}>
             {subheading}
           </p>
           <div className="mb-8">
@@ -124,12 +124,12 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
 
         {/* Middle: Deliverables */}
         <div className="lg:col-span-1">
-          <p className={`font-bold text-sm mb-4 uppercase tracking-widest ${darkBg ? "text-[#999]" : "text-[#0a0a0a]"}`}>
+          <p className={`font-bold text-sm mb-4 uppercase tracking-widest ${darkBg ? "text-[#999]" : "text-[var(--ink)]"}`}>
             What you get:
           </p>
           <ul className="space-y-2">
             {deliverables.map((item, i) => (
-              <li key={i} className={`text-sm leading-relaxed flex gap-3 ${darkBg ? "text-[#aaa]" : "text-[#555]"}`}>
+              <li key={i} className={`text-sm leading-relaxed flex gap-3 ${darkBg ? "text-[#aaa]" : "text-[var(--muted)]"}`}>
                 <span className={`font-bold flex-shrink-0 ${darkBg ? "text-[#d4657a]" : "text-[#C13B54]"}`} aria-hidden="true">•</span>
                 <span>{item}</span>
               </li>
@@ -140,10 +140,10 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
         {/* Right: Best For + CTA */}
         <div className="lg:col-span-1 flex flex-col justify-between">
           <div className="mb-8">
-            <p className={`font-bold text-sm mb-3 uppercase tracking-widest ${darkBg ? "text-[#999]" : "text-[#0a0a0a]"}`}>
+            <p className={`font-bold text-sm mb-3 uppercase tracking-widest ${darkBg ? "text-[#999]" : "text-[var(--ink)]"}`}>
               Best for:
             </p>
-            <p className={`text-sm leading-relaxed ${darkBg ? "text-[#999]" : "text-[#666]"}`}>
+            <p className={`text-sm leading-relaxed ${darkBg ? "text-[#999]" : "text-[var(--muted)]"}`}>
               {bestFor}
             </p>
             {outputLine && (
@@ -182,11 +182,11 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Services & Pricing</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
+            <p className="ds-eyebrow mb-4">Services & Pricing</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[var(--ink)]">
               Fixed Scope. Fixed Price. Delivered in Weeks.
             </h1>
-            <p className="text-base md:text-lg text-[#666] max-w-2xl leading-relaxed mx-auto text-center">
+            <p className="text-base md:text-lg text-[var(--muted)] max-w-2xl leading-relaxed mx-auto text-center">
               No retainers or open-ended hourly billing. Every engagement starts with a defined scope, a clear price and a delivery timeline - so you know what you're committing to before we start. Adjustments are always agreed upfront, never a surprise.
             </p>
           </motion.div>
@@ -196,7 +196,7 @@ export default function Services() {
       {/* THE COMMERCIALISATION STACK */}
       <section className="py-10 md:py-12 bg-[#F3F8F1]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-8 text-center">
+          <p className="ds-eyebrow grey mb-8 text-center">
             The Commercialisation Stack
           </p>
           <div className="space-y-6">
@@ -208,12 +208,12 @@ export default function Services() {
           {/* Fractional divider */}
           <div className="relative flex items-center mt-10 mb-6">
             <div className="flex-1 border-t border-[#E1E7E9]" />
-            <span className="mx-4 text-sm font-semibold uppercase tracking-widest text-[#888]">
+            <span className="mx-4 text-sm font-semibold uppercase tracking-widest text-[var(--muted)]">
               Also Available
             </span>
             <div className="flex-1 border-t border-[#E1E7E9]" />
           </div>
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#d4657a] text-center mb-6">
+          <p className="ds-eyebrow grey text-center mb-6">
             Fractional Leadership
           </p>
 
@@ -240,10 +240,10 @@ export default function Services() {
       <section className="py-10 md:py-12 bg-[#0e0e0e] relative overflow-hidden">
         <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-[#C13B54]/5 blur-[120px]" />
         <div className="max-w-5xl mx-auto px-6 lg:px-10 relative">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#666] mb-4 text-center">
+          <p className="ds-eyebrow grey mb-4 text-center">
             Also Available
           </p>
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#d4657a] mb-12 text-center">
+          <p className="ds-eyebrow grey mb-12 text-center">
             Pre-Build
           </p>
           <ServiceCard
@@ -270,8 +270,8 @@ export default function Services() {
       <section className="py-10 md:py-12 bg-[#F3F8F1]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
-            <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">How It Works</p>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-2">Clear Process. No Surprises.</h2>
+            <p className="ds-eyebrow mb-4">How It Works</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--ink)] mb-2">Clear Process. No Surprises.</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
@@ -285,8 +285,8 @@ export default function Services() {
                 className="bg-white rounded-xl p-6 border border-[#E1E7E9]"
               >
                 <div className="text-3xl font-bold text-[#C13B54] mb-4">{step.num}</div>
-                <h3 className="text-lg font-bold text-[#0a0a0a] mb-3">{step.title}</h3>
-                <p className="text-sm text-[#666] leading-relaxed">{step.desc}</p>
+                <h3 className="text-lg font-bold text-[var(--ink)] mb-3">{step.title}</h3>
+                <p className="text-sm text-[var(--muted)] leading-relaxed">{step.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -299,11 +299,11 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Not Ready to Commit?</p>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
+            <p className="ds-eyebrow mb-4">Not Ready to Commit?</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--ink)] mb-6">
               Buy the Frameworks.
             </h2>
-            <p className="text-base md:text-lg text-[#666] max-w-2xl mx-auto leading-relaxed mb-8">
+            <p className="text-base md:text-lg text-[var(--muted)] max-w-2xl mx-auto leading-relaxed mb-8">
               The exact frameworks, models and templates I use with every client — available as self-serve Notion portals with AI prompts included. The GTM Builder for commercialisation, the Product Builder for development. DIY your build and launch, then come back when you need execution support.
             </p>
             <Link

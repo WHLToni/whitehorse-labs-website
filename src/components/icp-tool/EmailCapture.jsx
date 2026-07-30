@@ -15,7 +15,7 @@ export default function EmailCapture({ onSubmit, onSkip }) {
   };
 
   return (
-    <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} className="bg-[#0a0a0a] rounded-xl p-9 md:p-10 relative overflow-hidden">
+    <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} className="bg-[#0e0e0e] rounded-xl p-9 md:p-10 relative overflow-hidden">
       <h3 className="text-2xl font-bold uppercase tracking-wide text-white mb-2">Your ICP Profile Is Ready.</h3>
       <p className="text-white/50 text-sm mb-6 max-w-md">
         Join our newsletter and be the first to access new free tools, frameworks, and GTM resources from Whitehorse Labs — no spam, unsubscribe any time.
@@ -27,9 +27,9 @@ export default function EmailCapture({ onSubmit, onSkip }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
-          className="flex-1 min-w-[220px] px-4 py-2.5 rounded-lg bg-white/10 border-[1.5px] border-white/15 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-[#b3475c]"
+          className="flex-1 min-w-[220px] px-4 py-2.5 rounded-lg bg-white/10 border-[1.5px] border-white/15 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-[#C13B54]"
         />
-        <Button type="submit" disabled={submitting} className="bg-gradient-to-br from-[#96394c] to-[#b3475c] hover:opacity-90 text-white font-semibold px-8">
+        <Button type="submit" disabled={submitting} className="bg-[#C13B54] hover:bg-[#A02E44] text-white font-semibold px-8">
           {submitting ? "Joining..." : "Join & Download"}
         </Button>
       </form>

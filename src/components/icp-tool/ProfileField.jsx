@@ -4,8 +4,8 @@ export default function ProfileField({ label, value, preLine }) {
   const empty = !value;
   return (
     <div>
-      <div className="text-[10px] font-bold text-[#888] tracking-wider uppercase mb-1">{label}</div>
-      <div className={`text-sm text-[#0a0a0a] leading-relaxed ${empty ? "text-[#ccc] italic" : ""} ${preLine ? "whitespace-pre-line" : ""}`}>
+      <div className="text-[10px] font-bold text-[var(--muted)] tracking-wider uppercase mb-1">{label}</div>
+      <div className={`text-sm text-[var(--ink)] leading-relaxed ${empty ? "text-[var(--muted)] italic" : ""} ${preLine ? "whitespace-pre-line" : ""}`}>
         {value || "Not specified"}
       </div>
     </div>

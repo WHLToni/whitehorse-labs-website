@@ -112,10 +112,10 @@ export default function ICPTool() {
   const meta = stepMeta[step];
 
   return (
-    <div className="bg-[#f7f7f8] min-h-screen">
-      <div className="bg-[#0a0a0a] px-6 py-16 md:py-20 text-center relative overflow-hidden">
+    <div className="ds-page min-h-screen">
+      <div className="ds-band--paper px-6 py-16 md:py-20 text-center relative overflow-hidden">
         <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight max-w-3xl mx-auto mb-5">
-          Define Your <span className="text-[#b3475c]">Ideal Customer</span> Profile in 10 Minutes
+          Define Your <span className="text-[var(--accent)]">Ideal Customer</span> Profile in 10 Minutes
         </h1>
         <p className="text-white/55 text-base max-w-lg mx-auto mb-8 font-light leading-relaxed">
           A clear ICP sharpens your marketing, aligns your sales team, and guides product decisions — helping every part of your business focus on the customers most likely to convert and succeed.
@@ -141,7 +141,7 @@ export default function ICPTool() {
         {stage === "profile" && <ProfileOutput formData={formData} onDownload={() => downloadProfilePdf(formData)} onReset={handleReset} />}
       </main>
 
-      <div className="text-center pb-10 text-xs text-[#888]">
+      <div className="text-center pb-10 text-xs text-[var(--muted)]">
         Built by Whitehorse Labs — Free to use, share, and keep.
       </div>
     </div>

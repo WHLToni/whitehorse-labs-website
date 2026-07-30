@@ -80,11 +80,11 @@ ${form.message}
       <section className="py-24 md:py-32 bg-[#F3F8F1]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Contact</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a] max-w-3xl">
+            <p className="ds-eyebrow mb-4">Contact</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[var(--ink)] max-w-3xl">
               Let's Talk
             </h1>
-            <p className="text-lg text-[#666] max-w-xl leading-relaxed">
+            <p className="text-lg text-[var(--muted)] max-w-xl leading-relaxed">
               Whether you're ready to kick off a project or just exploring your options, fill in the form below and I'll be in touch within one business day.
             </p>
           </motion.div>
@@ -103,8 +103,8 @@ ${form.message}
               <div className="w-14 h-14 rounded-full bg-[#C13B54]/10 flex items-center justify-center mx-auto mb-6">
                 <Send className="w-6 h-6 text-[#C13B54]" aria-hidden="true" />
               </div>
-              <h2 className="text-2xl font-bold text-[#0a0a0a] mb-3">Message Sent</h2>
-              <p className="text-[#666] text-sm leading-relaxed max-w-sm mx-auto">
+              <h2 className="text-2xl font-bold text-[var(--ink)] mb-3">Message Sent</h2>
+              <p className="text-[var(--muted)] text-sm leading-relaxed max-w-sm mx-auto">
                 Thanks for reaching out. I'll review your message and get back to you within one business day.
               </p>
               <button
@@ -214,7 +214,7 @@ ${form.message}
                         onChange={handleChange}
                         className="accent-[#C13B54]"
                       />
-                      <span className="text-sm text-[#555]">{opt}</span>
+                      <span className="text-sm text-[var(--muted)]">{opt}</span>
                     </label>
                   ))}
                 </div>
@@ -252,12 +252,12 @@ ${form.message}
   );
 }
 
-const inputCls = "w-full px-4 py-3 rounded-lg border border-[#E1E7E9] bg-[#fff] text-[#0a0a0a] text-sm placeholder:text-[#aaa] focus:outline-none focus:border-[#C13B54] focus:ring-2 focus:ring-[#C13B54]/10 transition-colors";
+const inputCls = "w-full px-4 py-3 rounded-lg border border-[#E1E7E9] bg-[#fff] text-[var(--ink)] text-sm placeholder:text-[#aaa] focus:outline-none focus:border-[#C13B54] focus:ring-2 focus:ring-[#C13B54]/10 transition-colors";
 
 function Field({ label, hint, required, children }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-sm font-medium text-[#0a0a0a]">
+      <label className="text-sm font-medium text-[var(--ink)]">
         {label}
         {required && <span className="text-[#C13B54] ml-0.5">*</span>}
         {hint && <span className="text-[#aaa] font-normal ml-1.5 text-xs">({hint})</span>}

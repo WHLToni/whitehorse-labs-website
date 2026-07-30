@@ -6,7 +6,7 @@ import { invalidClass } from "@/lib/icpToolStyles";
 export default function Step2Fields({ formData, setField, errors }) {
   return (
     <>
-      <div className="bg-[#b3475c]/5 border-l-[3px] border-[#b3475c] rounded-r-lg px-4 py-3 text-sm italic text-[#555] mb-5">
+      <div className="bg-[#C13B54]/5 border-l-[3px] border-[#C13B54] rounded-r-lg px-4 py-3 text-sm italic text-[var(--muted)] mb-5">
         Write this in your customer's language — the words they would use to describe the problem, not the words you use to describe your solution.
       </div>
       <FormField label="Primary Problem" error={errors.primaryProblem}>

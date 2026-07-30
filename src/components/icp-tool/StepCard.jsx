@@ -8,23 +8,23 @@ export default function StepCard({ number, title, description, children, onBack,
       initial={{ opacity: 0, y: 14 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35 }}
-      className="bg-white border border-[#e5e5e5] rounded-xl overflow-hidden"
+      className="bg-white border border-[#E1E7E9] rounded-xl overflow-hidden"
     >
-      <div className="px-6 md:px-8 pt-6 pb-4 border-b border-[#e5e5e5] flex items-start gap-4">
-        <div className="text-4xl md:text-5xl font-extrabold text-[#b3475c]/15 leading-none min-w-[44px]">{number}</div>
+      <div className="px-6 md:px-8 pt-6 pb-4 border-b border-[#E1E7E9] flex items-start gap-4">
+        <div className="text-4xl md:text-5xl font-extrabold text-[#C13B54]/15 leading-none min-w-[44px]">{number}</div>
         <div>
-          <h2 className="text-lg md:text-xl font-bold uppercase tracking-wide text-[#0a0a0a] mb-1">{title}</h2>
-          <p className="text-sm text-[#555]">{description}</p>
+          <h2 className="text-lg md:text-xl font-bold uppercase tracking-wide text-[var(--ink)] mb-1">{title}</h2>
+          <p className="text-sm text-[var(--muted)]">{description}</p>
         </div>
       </div>
       <div className="px-6 md:px-8 py-6">{children}</div>
-      <div className="flex justify-between items-center px-6 md:px-8 py-4 border-t border-[#e5e5e5] bg-[#f7f7f8]">
+      <div className="flex justify-between items-center px-6 md:px-8 py-4 border-t border-[#E1E7E9] bg-[#F3F8F1]">
         {!isFirst ? (
-          <Button type="button" variant="outline" onClick={onBack} className="border-[#e5e5e5] text-[#888]">
+          <Button type="button" variant="outline" onClick={onBack} className="border-[#E1E7E9] text-[var(--muted)]">
             ← Back
           </Button>
         ) : <div />}
-        <Button type="button" onClick={onNext} className="bg-[#0a0a0a] hover:bg-[#96394c] text-white">
+        <Button type="button" onClick={onNext} className="bg-[#0e0e0e] hover:bg-[#A02E44] text-white">
           {nextLabel}
         </Button>
       </div>

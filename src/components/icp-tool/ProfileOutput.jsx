@@ -6,7 +6,7 @@ import ProfileSection from "./ProfileSection";
 import ProfileField from "./ProfileField";
 
 function Tag({ children }) {
-  return <span className="bg-[#f7f7f8] border border-[#e5e5e5] rounded-full px-3 py-1 text-xs font-medium text-[#0a0a0a]">{children}</span>;
+  return <span className="bg-[#F3F8F1] border border-[#E1E7E9] rounded-full px-3 py-1 text-xs font-medium text-[#0e0e0e]">{children}</span>;
 }
 
 export default function ProfileOutput({ formData, onDownload, onReset }) {
@@ -20,16 +20,16 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
 
   return (
     <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}>
-      <div className="bg-[#0a0a0a] rounded-t-xl px-6 md:px-9 pt-9 pb-8 relative overflow-hidden">
-        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#96394c] via-[#b3475c] to-[#b3475c]/30" />
-        <div className="text-xs font-semibold tracking-widest uppercase text-[#b3475c] mb-2.5">Whitehorse Labs — ICP Framework Tool</div>
+      <div className="bg-[#0e0e0e] rounded-t-xl px-6 md:px-9 pt-9 pb-8 relative overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#A02E44] via-[#C13B54] to-[#C13B54]/30" />
+        <div className="text-xs font-semibold tracking-widest uppercase text-[#C13B54] mb-2.5">Whitehorse Labs — ICP Framework Tool</div>
         <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide text-white mb-1.5">{formData.icpName || "Ideal Customer Profile"}</h2>
         <div className="text-white/40 text-xs">
           Generated {new Date().toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" })} — Whitehorse Labs ICP Framework Tool
         </div>
       </div>
 
-      <div className="bg-white border border-t-0 border-[#e5e5e5] rounded-b-xl overflow-hidden">
+      <div className="bg-white border border-t-0 border-[#E1E7E9] rounded-b-xl overflow-hidden">
         <ProfileSection title="01 — Customer Profile">
           <div className="grid sm:grid-cols-2 gap-4">
             <ProfileField label="Business Model" value={formData.businessModel} />
@@ -55,7 +55,7 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
 
         <ProfileSection title="03 — Buying Triggers">
           <div className="flex flex-wrap gap-1.5 mb-3">
-            {triggers.length ? triggers.map((t, i) => <Tag key={i}>{t}</Tag>) : <span className="text-sm text-[#ccc] italic">Not specified</span>}
+            {triggers.length ? triggers.map((t, i) => <Tag key={i}>{t}</Tag>) : <span className="text-sm text-[var(--muted)] italic">Not specified</span>}
           </div>
           <ProfileField label="Urgency Driver" value={formData.urgency} />
         </ProfileSection>
@@ -65,13 +65,13 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
             <div className="grid sm:grid-cols-2 gap-4 mb-3.5">
               {alts.map((a, i) => (
                 <div key={i}>
-                  <div className="text-[10px] font-bold text-[#888] tracking-wider uppercase mb-1">{a.n}</div>
-                  <div className="text-sm text-[#555]">{a.l || "—"}</div>
+                  <div className="text-[10px] font-bold text-[var(--muted)] tracking-wider uppercase mb-1">{a.n}</div>
+                  <div className="text-sm text-[var(--muted)]">{a.l || "—"}</div>
                 </div>
               ))}
             </div>
           ) : (
-            <p className="text-sm text-[#ccc] italic mb-3.5">No alternatives specified</p>
+            <p className="text-sm text-[var(--muted)] italic mb-3.5">No alternatives specified</p>
           )}
           <ProfileField label="Why You Win" value={formData.differentiator} />
         </ProfileSection>
@@ -84,9 +84,9 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
             <ProfileField label="Primary Objection" value={formData.primaryObjection} />
           </div>
           <div className="mt-3.5">
-            <div className="text-[10px] font-bold text-[#888] tracking-wider uppercase mb-1.5">How They Discover Solutions</div>
+            <div className="text-[10px] font-bold text-[var(--muted)] tracking-wider uppercase mb-1.5">How They Discover Solutions</div>
             <div className="flex flex-wrap gap-1.5">
-              {formData.discovery.length ? formData.discovery.map((d, i) => <Tag key={i}>{d}</Tag>) : <span className="text-sm text-[#ccc] italic">Not specified</span>}
+              {formData.discovery.length ? formData.discovery.map((d, i) => <Tag key={i}>{d}</Tag>) : <span className="text-sm text-[var(--muted)] italic">Not specified</span>}
             </div>
           </div>
         </ProfileSection>
@@ -100,15 +100,15 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
       </div>
 
       <div className="flex flex-wrap gap-3 mt-7 items-center">
-        <Button onClick={onDownload} className="bg-gradient-to-br from-[#96394c] to-[#b3475c] hover:opacity-90 text-white font-semibold px-8">
+        <Button onClick={onDownload} className="bg-[#C13B54] hover:bg-[#A02E44] text-white font-semibold px-8">
           ↓ Download ICP Profile
         </Button>
-        <Button variant="outline" onClick={onReset} className="border-[#e5e5e5] text-[#888]">
+        <Button variant="outline" onClick={onReset} className="border-[#E1E7E9] text-[var(--muted)]">
           Start Over
         </Button>
       </div>
 
-      <div className="mt-8 bg-[#0a0a0a] rounded-xl p-8 md:p-9 flex items-center gap-8 flex-wrap relative overflow-hidden">
+      <div className="mt-8 bg-[#0e0e0e] rounded-xl p-8 md:p-9 flex items-center gap-8 flex-wrap relative overflow-hidden">
         <div className="flex-1 min-w-[240px]">
           <h3 className="text-xl font-bold uppercase tracking-wide text-white mb-2">Your ICP is the foundation.</h3>
           <p className="text-sm text-white/50 leading-relaxed">
@@ -116,7 +116,7 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
           </p>
         </div>
         <Link to="/BuyTheBuilderSuite">
-          <Button className="bg-gradient-to-br from-[#96394c] to-[#b3475c] hover:opacity-90 text-white font-semibold whitespace-nowrap px-8">
+          <Button className="bg-[#C13B54] hover:bg-[#A02E44] text-white font-semibold whitespace-nowrap px-8">
             Get the GTM OS →
           </Button>
         </Link>

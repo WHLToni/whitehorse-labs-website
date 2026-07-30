@@ -1,6 +1,6 @@
 export const inputClass =
-  "w-full px-4 py-2.5 border-[1.5px] border-[#e5e5e5] rounded-lg text-sm text-[#0a0a0a] bg-[#f7f7f8] focus:outline-none focus:border-[#b3475c] focus:ring-2 focus:ring-[#b3475c]/10 focus:bg-white transition-colors placeholder:text-[#bbb]";
+  "w-full px-4 py-2.5 border-[1.5px] border-[#E1E7E9] rounded-lg text-sm text-[var(--ink)] bg-white focus:outline-none focus:border-[#C13B54] focus:ring-2 focus:ring-[#C13B54]/10 focus:bg-white transition-colors placeholder:text-[var(--muted)]";
 
-export const invalidClass = "border-[#c0392b] focus:border-[#c0392b]";
+export const invalidClass = "border-[#A02E44] focus:border-[#A02E44]";
 
 export const selectClass = inputClass + " cursor-pointer appearance-none";

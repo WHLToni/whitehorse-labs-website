@@ -1,7 +1,7 @@
 import { jsPDF } from "jspdf";
 
-const MAGENTA = [179, 71, 92]; // #b3475c
-const DARK = [10, 10, 10];
+const MAGENTA = [193, 59, 84]; // #C13B54
+const DARK = [14, 14, 14]; // #0e0e0e
 const GRAY = [85, 85, 85];
 const LIGHT_GRAY = [136, 136, 136];
 const PAGE_W = 210;

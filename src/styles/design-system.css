@@ -41,6 +41,8 @@
 
 /* ─── Typography ────────────────────────────────────────── */
 .ds-page h1, .ds-page h2, .ds-page h3 { font-weight: 800; letter-spacing: -.022em; line-height: 1.06; }
+.ds-page h1, .ds-page h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; line-height: .94; color: var(--accent); }
+.ds-band--paper h1, .ds-band--paper h2 { color: #fff; }
 .ds-display { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; line-height: .94; }
 
 .ds-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
