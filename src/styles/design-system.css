@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
 
+html { font-size: 106.25%; }
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--sage-pale);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 { font-family: var(--font); font-weight: 700; letter-spacing: -0.01em; }
+
 /* ─── Design Tokens ─────────────────────────────────────── */
 :root {
   --ink: #111111;
@@ -14,6 +24,19 @@
   --muted: #5C686B;
   --line: #E1E7E9;
   --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* shadcn theme tokens */
+  --primary: 348 53% 49%;
+  --primary-foreground: 0 0% 100%;
+  --ring: 348 53% 49%;
+  --background: 103 30% 96%;
+  --foreground: 0 0% 7%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 7%;
+  --secondary: 102 30% 92%;
+  --secondary-foreground: 0 0% 7%;
+  --border: 195 15% 90%;
+  --input: 195 15% 90%;
+  --radius: 0.25rem;
 }
 
 /* ─── Base ──────────────────────────────────────────────── */
