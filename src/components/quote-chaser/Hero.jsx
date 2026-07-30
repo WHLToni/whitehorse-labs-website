@@ -11,10 +11,10 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="max-w-2xl mx-auto"
       >
-        <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] mb-4">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[#C13B54] mb-4">
           Quote Chaser
         </p>
-        <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-6">
+        <h1 className="ds-display text-3xl md:text-5xl text-white leading-tight tracking-tight mb-6">
           Stop losing jobs you already quoted.
         </h1>
         <p className="text-white/55 text-base md:text-lg max-w-lg mx-auto font-light leading-relaxed mb-8">

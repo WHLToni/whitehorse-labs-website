@@ -112,10 +112,10 @@ export default function ICPTool() {
   const meta = stepMeta[step];
 
   return (
-    <div className="bg-[#f7f7f8] min-h-screen">
+    <div className="ds-page bg-[#F3F8F1] min-h-screen">
       <div className="bg-[#0a0a0a] px-6 py-16 md:py-20 text-center relative overflow-hidden">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight max-w-3xl mx-auto mb-5">
-          Define Your <span className="text-[#b3475c]">Ideal Customer</span> Profile in 10 Minutes
+        <h1 className="ds-display text-4xl md:text-6xl text-white leading-tight tracking-tight max-w-3xl mx-auto mb-5">
+          Define Your <span className="text-white">Ideal Customer</span> Profile in 10 Minutes
         </h1>
         <p className="text-white/55 text-base max-w-lg mx-auto mb-8 font-light leading-relaxed">
           A clear ICP sharpens your marketing, aligns your sales team, and guides product decisions — helping every part of your business focus on the customers most likely to convert and succeed.

@@ -21,7 +21,7 @@ export default function QuoteChaser() {
   }, []);
 
   return (
-    <div>
+    <div className="ds-page">
       <Hero />
       <Problem />
       <HowItWorks />

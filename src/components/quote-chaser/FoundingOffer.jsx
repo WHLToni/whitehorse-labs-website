@@ -11,10 +11,10 @@ export default function FoundingOffer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="rounded-2xl border-2 border-[#b3475c] p-8 md:p-10 text-center"
+          className="rounded-2xl border-2 border-[#C13B54] p-8 md:p-10 text-center"
           style={{ background: "rgba(179,71,92,0.06)" }}
         >
-          <span className="bg-[#b3475c] text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+          <span className="bg-[#C13B54] text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
             Founding Client Offer
           </span>
           <p className="text-base md:text-lg text-[#333] leading-relaxed mb-8 max-w-xl mx-auto mt-10">

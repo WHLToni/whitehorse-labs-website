@@ -23,10 +23,10 @@ export default function HowItWorks() {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="max-w-3xl mx-auto px-6 lg:px-10">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[#C13B54] mb-4">
           How It Works
         </p>
-        <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-[#0a0a0a] mb-10">
+        <h2 className="ds-display text-4xl md:text-6xl tracking-tight text-[#0a0a0a] mb-10">
           Three steps. You do one of them.
         </h2>
         <div className="space-y-6">
@@ -37,11 +37,11 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.4 }}
-              className="flex gap-5 bg-[#F0F7FA] rounded-xl p-6 md:p-8 border border-[#e5e5e5]"
+              className="flex gap-5 bg-[#F3F8F1] rounded-xl p-6 md:p-8 border border-[#E1E7E9]"
             >
-              <div className="text-3xl font-bold text-[#b3475c] flex-shrink-0">{step.num}</div>
+              <div className="text-3xl font-bold text-[#C13B54] flex-shrink-0">{step.num}</div>
               <div>
-                <h3 className="text-lg font-bold text-[#0a0a0a] mb-2">{step.title}</h3>
+                <h3 className="ds-display text-lg text-[#0a0a0a] mb-2">{step.title}</h3>
                 <p className="text-sm text-[#666] leading-relaxed">{step.body}</p>
               </div>
             </motion.div>

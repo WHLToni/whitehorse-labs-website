@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function WhoBehind() {
   return (
-    <section className="py-16 md:py-20 bg-[#F0F7FA]">
+    <section className="py-16 md:py-20 bg-[#F3F8F1]">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -11,7 +11,7 @@ export default function WhoBehind() {
         transition={{ duration: 0.5 }}
         className="max-w-2xl mx-auto px-6 lg:px-10"
       >
-        <div className="w-10 h-[3px] bg-[#b3475c] mb-6" />
+        <div className="w-10 h-[3px] bg-[#C13B54] mb-6" />
         <p className="text-sm font-semibold uppercase tracking-widest text-[#888] mb-3">
           Who's Behind This
         </p>
