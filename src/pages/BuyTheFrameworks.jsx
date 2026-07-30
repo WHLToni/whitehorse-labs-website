@@ -173,14 +173,21 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="py-16 md:py-20 bg-[#E7F0E3]">
-        <div className="max-w-2xl mx-auto px-6 lg:px-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <blockquote className="text-[var(--ink)] text-lg md:text-xl leading-relaxed">
-              "Figuring out an international GTM strategy is challenging, but The GTM Builder made it clear and helped us shape our way step by step. Beyond the amazing platform, working with Toni and her team was a highlight! She's incredibly helpful, professional, and always brings great energy. It's so important to work with good people, and Toni is exactly that."
+      <section className="py-20 md:py-24 bg-[#E7F0E3]">
+        <div className="relative max-w-[680px] mx-auto px-6">
+          <span className="absolute top-6 left-6 w-6 h-6 border-t-[2.5px] border-l-[2.5px] border-[#C13B54]" />
+          <span className="absolute top-6 right-6 w-6 h-6 border-t-[2.5px] border-r-[2.5px] border-[#C13B54]" />
+          <span className="absolute bottom-0 left-6 w-6 h-6 border-b-[2.5px] border-l-[2.5px] border-[#C13B54]" />
+          <span className="absolute bottom-0 right-6 w-6 h-6 border-b-[2.5px] border-r-[2.5px] border-[#C13B54]" />
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+            className="bg-white shadow-[0_12px_44px_rgba(20,45,35,0.09)] px-8 py-10 md:px-14 md:py-12">
+            <p className="ds-eyebrow mb-3">What founders say</p>
+            <span className="ds-display text-[#C13B54] text-7xl leading-none block mb-1">&ldquo;</span>
+            <blockquote className="text-[var(--ink)] text-lg md:text-xl leading-relaxed font-medium max-w-[46ch]">
+              Figuring out an international GTM strategy is challenging, but The GTM Builder made it clear and helped us shape our way step by step. Beyond the amazing platform, working with Toni and her team was a highlight. She's incredibly helpful, professional, and always brings great energy. It's so important to work with good people, and Toni is exactly that.
             </blockquote>
             <div className="mt-7 flex items-center gap-3">
-              <div className="w-8 h-[2px] bg-[#C13B54]" />
+              <div className="w-9 h-[2.5px] bg-[#C13B54]" />
               <div>
                 <p className="text-base font-bold text-[var(--ink)]">Guy Jakobi</p>
                 <p className="text-sm text-[var(--muted)]">Managing Director, Pacific Grow</p>
