@@ -244,7 +244,13 @@ export default function BuyTheFrameworks() {
                 </div>
                 <p className="text-[var(--ink)] font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
                 <p className="text-[#3a4649] text-sm leading-relaxed">
-                  I'm opening a limited number of personal strategy sessions to GTM Builder clients. Book it before you start - so we can align on your market and focus before you dive in - or after you've completed the work, so we can pressure-test your outputs together. Either way, it's your call. Calendar link provided after purchase, and within the Notion package for easy booking.
+                  Calendar link provided after purchase, and within the Notion package for easy booking.
+                </p>
+                <p className="text-[#3a4649] text-sm leading-relaxed mt-3">
+                  Use this session to align on your market and focus before you dive in — or after you've completed the work, we can pressure-test your outputs together.
+                </p>
+                <p className="text-[#3a4649] text-sm leading-relaxed mt-3 font-semibold">
+                  Limited sessions available — once they're gone, they're gone!
                 </p>
               </div>
             </div>
