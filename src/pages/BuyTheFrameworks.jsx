@@ -181,7 +181,6 @@ export default function BuyTheFrameworks() {
           <span className="absolute bottom-0 right-6 w-6 h-6 border-b-[2.5px] border-r-[2.5px] border-[#C13B54]" />
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="bg-white shadow-[0_12px_44px_rgba(20,45,35,0.09)] px-8 py-10 md:px-14 md:py-12">
-            <p className="ds-eyebrow mb-3">What founders say</p>
             <span className="ds-display text-[#C13B54] text-7xl leading-none block mb-1">&ldquo;</span>
             <blockquote className="text-[var(--ink)] text-lg md:text-xl leading-relaxed font-medium max-w-[46ch]">
               Figuring out an international GTM strategy is challenging, but The GTM Builder made it clear and helped us shape our way step by step. Beyond the amazing platform, working with Toni and her team was a highlight. She's incredibly helpful, professional, and always brings great energy. It's so important to work with good people, and Toni is exactly that.
