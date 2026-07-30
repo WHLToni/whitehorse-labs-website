@@ -279,7 +279,7 @@ export default function BuyTheFrameworks() {
           </div>
           <motion.h2
             initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}
-            className="mt-12 text-2xl md:text-3xl font-bold tracking-tight text-[var(--ink)] border-t border-[#E1E7E9] pt-10 max-w-2xl">
+            className="ds-display mt-12 text-2xl md:text-3xl border-t border-[#E1E7E9] pt-10 max-w-2xl">
             Expert GTM strategy usually comes with a five-figure price tag. The GTM Builder gives you the same architectural rigor for a fraction of the cost.
           </motion.h2>
         </div>
