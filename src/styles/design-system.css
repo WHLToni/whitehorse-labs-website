@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ─── Design Tokens ─────────────────────────────────────── */
+:root {
+  --ink: #111111;
+  --paper: #ffffff;
+  --mist: #E7F0E3;
+  --pine: #0F3B31;
+  --mint: #8FCBB9;
+  --accent: #C13B54;
+  --accent-dark: #A02E44;
+  --display: "Anton", Impact, sans-serif;
+  --sage-pale: #F3F8F1;
+  --muted: #5C686B;
+  --line: #E1E7E9;
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ─── Base ──────────────────────────────────────────────── */
+.ds-page {
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--sage-pale);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ds-page *, .ds-page *::before, .ds-page *::after { box-sizing: border-box; }
+.ds-page img { max-width: 100%; display: block; }
+.ds-page a { color: inherit; text-decoration: none; }
+
+/* ─── Layout ────────────────────────────────────────────── */
+.ds-wrap { max-width: 1150px; margin: 0 auto; padding: 0 34px; }
+
+.ds-band { padding: 88px 0; }
+.ds-band--mist { background: var(--mist); }
+.ds-band--paper { background: #0e0e0e; color: #fff; }
+.ds-band--paper h2 { color: #fff; }
+.ds-band--paper p { color: #c9c5bd; }
+.ds-band--glass { padding: 58px 0; background: var(--sage-pale); }
+
+/* ─── Typography ────────────────────────────────────────── */
+.ds-page h1, .ds-page h2, .ds-page h3 { font-weight: 800; letter-spacing: -.022em; line-height: 1.06; }
+.ds-display { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; line-height: .94; }
+
+.ds-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.ds-eyebrow.grey { color: var(--muted); }
+.ds-eyebrow.mint { color: var(--accent); }
+
+.ds-kicker { font-size: 19px; font-weight: 600; color: var(--ink); line-height: 1.35; margin-bottom: 16px; letter-spacing: -.01em; }
+.ds-body { color: #3a4649; max-width: 52ch; margin-bottom: 20px; }
+
+/* ─── Buttons ───────────────────────────────────────────── */
+.ds-btn { display: inline-block; font-weight: 600; font-size: 15px; border-radius: 4px; padding: 13px 24px; transition: background .18s ease, color .18s ease, transform .18s ease, border-color .18s ease; cursor: pointer; border: none; text-decoration: none; }
+.ds-btn-solid { background: var(--accent); color: #fff; border: 1.6px solid var(--accent); }
+.ds-btn-solid:hover { background: var(--accent-dark); border-color: var(--accent-dark); transform: translateY(-1px); }
+.ds-btn-outline { border: 2px solid var(--ink); color: var(--ink); background: transparent; }
+.ds-btn-outline:hover { background: var(--ink); color: #fff; transform: translateY(-1px); }
+.ds-textlink { color: var(--accent); font-weight: 600; }
+.ds-textlink:hover { text-decoration: underline; }
+
+/* ─── Grid backgrounds ─────────────────────────────────── */
+.ds-grid-light {
+  background-image:
+    linear-gradient(rgba(10, 10, 10, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 10, 10, 0.04) 1px, transparent 1px);
+  background-size: 62px 62px;
+}
+.ds-grid-dark {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 62px 62px;
+}
+
+/* ─── Facts list (diamond bullets) ─────────────────────── */
+.ds-facts { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 20px; padding: 0; }
+.ds-facts li { position: relative; padding-left: 22px; font-size: 15px; color: #2b3639; }
+.ds-facts li::before { content: ""; position: absolute; left: 0; top: 9px; width: 8px; height: 8px; background: var(--accent); border-radius: 2px; transform: rotate(45deg); }
+
+/* ─── Reveal animation ─────────────────────────────────── */
+.ds-reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.ds-reveal.in { opacity: 1; transform: none; }
+
+/* ─── Responsive ───────────────────────────────────────── */
+@media (max-width: 920px) {
+  .ds-band { padding: 64px 0; }
+}
+@media (max-width: 560px) {
+  .ds-wrap { padding: 0 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ds-reveal { opacity: 1; transform: none; transition: none; }
+  .ds-btn:hover { transform: none; }
+}

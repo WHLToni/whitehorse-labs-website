@@ -28,7 +28,7 @@ export default function Layout({ children, currentPageName }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#F0F7FA] text-[#0a0a0a]">
+    <div className="min-h-screen bg-[#F3F8F1] text-[#0a0a0a]">
       {/* Navigation - light */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -54,7 +54,7 @@ export default function Layout({ children, currentPageName }) {
               ))}
               <Link
                 to="/ICPTool"
-                className="text-sm font-semibold px-5 py-2.5 rounded-lg border-2 border-[#b3475c] text-[#b3475c] hover:bg-[#b3475c] hover:text-white transition-colors duration-200"
+                className="text-sm font-semibold px-5 py-2.5 rounded-lg border-2 border-[#C13B54] text-[#C13B54] hover:bg-[#C13B54] hover:text-white transition-colors duration-200"
               >
                 Free ICP Framework
               </Link>
@@ -108,7 +108,7 @@ export default function Layout({ children, currentPageName }) {
 
       {/* Footer - dark section */}
       {currentPageName !== "CaseStudies" && (
-      <footer className="bg-[#1E1F23] text-white">
+      <footer className="bg-[#0e0e0e] text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 md:py-20">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
             <div className="md:col-span-2">

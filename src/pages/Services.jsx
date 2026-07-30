@@ -97,14 +97,14 @@ const steps = [
   },
 ];
 
-function ServiceCard({ name, subheading, price, duration, deliverables, bestFor, ctaLabel, ctaPage, darkBg = false, priceColor = "#b3475c", outputLine = null }) {
+function ServiceCard({ name, subheading, price, duration, deliverables, bestFor, ctaLabel, ctaPage, darkBg = false, priceColor = "#C13B54", outputLine = null }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className={`rounded-2xl p-8 md:p-12 ${darkBg ? "bg-[#1E1F23] border border-[#222]" : "bg-white border border-[#e5e5e5] shadow-sm"}`}
+      className={`rounded-2xl p-8 md:p-12 ${darkBg ? "bg-[#0e0e0e] border border-[#222]" : "bg-white border border-[#E1E7E9] shadow-sm"}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
         {/* Left: Title and Price */}
@@ -130,7 +130,7 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
           <ul className="space-y-2">
             {deliverables.map((item, i) => (
               <li key={i} className={`text-sm leading-relaxed flex gap-3 ${darkBg ? "text-[#aaa]" : "text-[#555]"}`}>
-                <span className={`font-bold flex-shrink-0 ${darkBg ? "text-[#c97a8a]" : "text-[#b3475c]"}`} aria-hidden="true">•</span>
+                <span className={`font-bold flex-shrink-0 ${darkBg ? "text-[#d4657a]" : "text-[#C13B54]"}`} aria-hidden="true">•</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -157,8 +157,8 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
               to={createPageUrl(ctaPage)}
               className={`inline-flex items-center gap-2 font-semibold text-sm px-6 py-3 rounded-lg transition-all ${
                 darkBg
-                  ? "border border-white/20 text-white hover:border-[#b3475c] hover:text-[#b3475c]"
-                  : "border border-[#b3475c] text-[#b3475c] hover:bg-[#b3475c]/5"
+                  ? "border border-white/20 text-white hover:border-[#C13B54] hover:text-[#C13B54]"
+                  : "border border-[#C13B54] text-[#C13B54] hover:bg-[#C13B54]/5"
               }`}
             >
               {ctaLabel}
@@ -177,12 +177,12 @@ export default function Services() {
   }, []);
 
   return (
-    <div>
+    <div className="ds-page">
       {/* PAGE HEADER */}
-      <section className="py-12 md:py-16 bg-[#F0F7FA]">
+      <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Services & Pricing</p>
+            <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Services & Pricing</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Fixed Scope. Fixed Price. Delivered in Weeks.
             </h1>
@@ -194,7 +194,7 @@ export default function Services() {
       </section>
 
       {/* THE COMMERCIALISATION STACK */}
-      <section className="py-10 md:py-12 bg-[#F0F7FA]">
+      <section className="py-10 md:py-12 bg-[#F3F8F1]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-8 text-center">
             The Commercialisation Stack
@@ -207,13 +207,13 @@ export default function Services() {
 
           {/* Fractional divider */}
           <div className="relative flex items-center mt-10 mb-6">
-            <div className="flex-1 border-t border-[#e5e5e5]" />
+            <div className="flex-1 border-t border-[#E1E7E9]" />
             <span className="mx-4 text-sm font-semibold uppercase tracking-widest text-[#888]">
               Also Available
             </span>
-            <div className="flex-1 border-t border-[#e5e5e5]" />
+            <div className="flex-1 border-t border-[#E1E7E9]" />
           </div>
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#c97a8a] text-center mb-6">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#d4657a] text-center mb-6">
             Fractional Leadership
           </p>
 
@@ -237,13 +237,13 @@ export default function Services() {
       </section>
 
       {/* ALSO AVAILABLE SECTION */}
-      <section className="py-10 md:py-12 bg-[#1E1F23] relative overflow-hidden">
-        <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-[#b3475c]/5 blur-[120px]" />
+      <section className="py-10 md:py-12 bg-[#0e0e0e] relative overflow-hidden">
+        <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-[#C13B54]/5 blur-[120px]" />
         <div className="max-w-5xl mx-auto px-6 lg:px-10 relative">
           <p className="text-sm font-semibold uppercase tracking-widest text-[#666] mb-4 text-center">
             Also Available
           </p>
-          <p className="text-sm font-semibold uppercase tracking-widest text-[#d4678c] mb-12 text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#d4657a] mb-12 text-center">
             Pre-Build
           </p>
           <ServiceCard
@@ -251,7 +251,7 @@ export default function Services() {
             subheading="You have a problem worth solving but no product yet."
             price="Custom"
             duration="Scope dependent"
-            priceColor="#d4678c"
+            priceColor="#d4657a"
             deliverables={[
               "Problem definition and opportunity framing",
               "Solution design and concept validation",
@@ -267,10 +267,10 @@ export default function Services() {
       </section>
 
       {/* HOW IT WORKS SECTION */}
-      <section className="py-10 md:py-12 bg-[#F0F7FA]">
+      <section className="py-10 md:py-12 bg-[#F3F8F1]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
-            <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">How It Works</p>
+            <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">How It Works</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-2">Clear Process. No Surprises.</h2>
           </motion.div>
 
@@ -282,9 +282,9 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="bg-white rounded-xl p-6 border border-[#e5e5e5]"
+                className="bg-white rounded-xl p-6 border border-[#E1E7E9]"
               >
-                <div className="text-3xl font-bold text-[#b3475c] mb-4">{step.num}</div>
+                <div className="text-3xl font-bold text-[#C13B54] mb-4">{step.num}</div>
                 <h3 className="text-lg font-bold text-[#0a0a0a] mb-3">{step.title}</h3>
                 <p className="text-sm text-[#666] leading-relaxed">{step.desc}</p>
               </motion.div>
@@ -296,10 +296,10 @@ export default function Services() {
       </section>
 
       {/* BOTTOM CTA SECTION */}
-      <section className="py-12 md:py-16 bg-[#F0F7FA]">
+      <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Not Ready to Commit?</p>
+            <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Not Ready to Commit?</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
               Buy the Frameworks.
             </h2>
@@ -308,7 +308,7 @@ export default function Services() {
             </p>
             <Link
               to={createPageUrl("BuyTheFrameworks")}
-              className="btn-gradient inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
+              className="ds-btn-solid inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
             >
               Buy the Frameworks →
             </Link>

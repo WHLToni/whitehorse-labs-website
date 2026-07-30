@@ -75,12 +75,12 @@ ${form.message}
   };
 
   return (
-    <div>
+    <div className="ds-page">
       {/* Hero */}
-      <section className="py-24 md:py-32 bg-[#F0F7FA]">
+      <section className="py-24 md:py-32 bg-[#F3F8F1]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">Contact</p>
+            <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Contact</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a] max-w-3xl">
               Let's Talk
             </h1>
@@ -92,16 +92,16 @@ ${form.message}
       </section>
 
       {/* Form Section */}
-      <section className="pb-32 bg-[#F0F7FA]">
+      <section className="pb-32 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           {status === "success" ? (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="p-12 rounded-2xl bg-[#f7f7f8] border border-[#e5e5e5] text-center"
+              className="p-12 rounded-2xl bg-[#fff] border border-[#E1E7E9] text-center"
             >
-              <div className="w-14 h-14 rounded-full bg-[#b3475c]/10 flex items-center justify-center mx-auto mb-6">
-                <Send className="w-6 h-6 text-[#b3475c]" aria-hidden="true" />
+              <div className="w-14 h-14 rounded-full bg-[#C13B54]/10 flex items-center justify-center mx-auto mb-6">
+                <Send className="w-6 h-6 text-[#C13B54]" aria-hidden="true" />
               </div>
               <h2 className="text-2xl font-bold text-[#0a0a0a] mb-3">Message Sent</h2>
               <p className="text-[#666] text-sm leading-relaxed max-w-sm mx-auto">
@@ -109,7 +109,7 @@ ${form.message}
               </p>
               <button
                 onClick={() => setStatus("idle")}
-                className="mt-8 text-sm font-semibold text-[#b3475c] hover:underline"
+                className="mt-8 text-sm font-semibold text-[#C13B54] hover:underline"
               >
                 Send another message
               </button>
@@ -212,7 +212,7 @@ ${form.message}
                         value={opt}
                         checked={form.preferredContact === opt}
                         onChange={handleChange}
-                        className="accent-[#b3475c]"
+                        className="accent-[#C13B54]"
                       />
                       <span className="text-sm text-[#555]">{opt}</span>
                     </label>
@@ -236,7 +236,7 @@ ${form.message}
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="btn-gradient w-full inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-60"
+                className="ds-btn-solid w-full inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-60"
               >
                 {status === "sending" ? (
                   <><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Sending…</>
@@ -252,14 +252,14 @@ ${form.message}
   );
 }
 
-const inputCls = "w-full px-4 py-3 rounded-lg border border-[#e5e5e5] bg-[#f7f7f8] text-[#0a0a0a] text-sm placeholder:text-[#aaa] focus:outline-none focus:border-[#b3475c] focus:ring-2 focus:ring-[#b3475c]/10 transition-colors";
+const inputCls = "w-full px-4 py-3 rounded-lg border border-[#E1E7E9] bg-[#fff] text-[#0a0a0a] text-sm placeholder:text-[#aaa] focus:outline-none focus:border-[#C13B54] focus:ring-2 focus:ring-[#C13B54]/10 transition-colors";
 
 function Field({ label, hint, required, children }) {
   return (
     <div className="flex flex-col gap-1.5">
       <label className="text-sm font-medium text-[#0a0a0a]">
         {label}
-        {required && <span className="text-[#b3475c] ml-0.5">*</span>}
+        {required && <span className="text-[#C13B54] ml-0.5">*</span>}
         {hint && <span className="text-[#aaa] font-normal ml-1.5 text-xs">({hint})</span>}
       </label>
       {children}

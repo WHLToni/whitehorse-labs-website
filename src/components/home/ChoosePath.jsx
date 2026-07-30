@@ -5,57 +5,21 @@ import { motion } from "framer-motion";
 import { usePricing } from "../shared/usePricing";
 
 const tiers = [
-  {
-    name: "The Diagnostic",
-    price: "AUD $6K",
-    duration: "2 weeks",
-    description:
-      "Market research, segmentation, ICP definition, competitive analysis and problem definition. Optional: customer interviews including hypothesis design and insight analysis.",
-    output: "A clear picture of your market, your buyer and where you fit.",
-  },
-  {
-    name: "GTM Strategy",
-    price: "AUD $12K",
-    duration: "4 weeks",
-    description:
-      "Everything in The Diagnostic, plus positioning framework, messaging framework and brand foundations.",
-    output: "You know who you're selling to, what you're saying and how you're showing up.",
-  },
-  {
-    name: "Launch Architecture",
-    price: "AUD $20K",
-    duration: "6 weeks",
-    description:
-      "Everything in GTM Strategy, plus sales enablement tools — pitch deck, competitive battlecards, talk tracks and persona cards — and a full launch plan.",
-    output: "You're ready to go to market.",
-  },
-  {
-    name: "Pre-Exit Readiness",
-    price: "Custom",
-    duration: null,
-    description:
-      "Commercial systems, brand refresh, digital foundations and sales enablement built for acquisition readiness.",
-    output: "Priced on scope.",
-  },
+  { name: "The Diagnostic", price: "AUD $6K", duration: "2 weeks", description: "Market research, segmentation, ICP definition, competitive analysis and problem definition. Optional: customer interviews including hypothesis design and insight analysis.", output: "A clear picture of your market, your buyer and where you fit." },
+  { name: "GTM Strategy", price: "AUD $12K", duration: "4 weeks", description: "Everything in The Diagnostic, plus positioning framework, messaging framework and brand foundations.", output: "You know who you're selling to, what you're saying and how you're showing up." },
+  { name: "Launch Architecture", price: "AUD $20K", duration: "6 weeks", description: "Everything in GTM Strategy, plus sales enablement tools — pitch deck, competitive battlecards, talk tracks and persona cards — and a full launch plan.", output: "You're ready to go to market." },
+  { name: "Pre-Exit Readiness", price: "Custom", duration: null, description: "Commercial systems, brand refresh, digital foundations and sales enablement built for acquisition readiness.", output: "Priced on scope." },
 ];
 
 export default function ChoosePath() {
   const pricing = usePricing();
   return (
-    <section
-      className="py-24 md:py-32 relative overflow-hidden bg-grid-dark"
-      style={{
-        background: "#1E1F23",
-      }}
-    >
-      <div className="max-w-4xl mx-auto px-6 lg:px-10 relative z-10">
-
+    <section className="ds-band ds-band--paper ds-grid-dark relative overflow-hidden" style={{ background: "#0e0e0e" }}>
+      <div className="ds-wrap relative z-10">
         {/* Header */}
         <div className="mb-12">
-          <p className="text-base font-semibold uppercase tracking-widest text-[#b3475c] mb-4">
-            The Work
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5">
+          <span className="ds-eyebrow mb-4 block">The Work</span>
+          <h2 className="ds-display text-[clamp(28px,4vw,44px)] text-white mt-4 mb-5">
             Choose Your Starting Point
           </h2>
           <p className="text-white/50 text-base leading-relaxed max-w-2xl">
@@ -64,9 +28,7 @@ export default function ChoosePath() {
         </div>
 
         {/* Stack label */}
-        <p className="text-base font-semibold uppercase tracking-widest text-white mb-6">
-          The Commercialisation Stack
-        </p>
+        <p className="ds-eyebrow text-white mb-6 block">The Commercialisation Stack</p>
 
         {/* Tiers */}
         <div className="border border-white/10 rounded-2xl overflow-hidden">
@@ -77,31 +39,18 @@ export default function ChoosePath() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.45 }}
-              className={`px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3 ${
-                i < tiers.length - 1 ? "border-b border-white/[0.07]" : ""
-              }`}
+              className={`px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3 ${i < tiers.length - 1 ? "border-b border-white/[0.07]" : ""}`}
             >
-              {/* Left */}
               <div className="flex-1 min-w-0">
                 <p className="text-[15px] font-bold text-white mb-1.5">{tier.name}</p>
-                {tier.output && (
-                  <p className="text-sm mt-2 leading-relaxed text-white">
-                    ↳ {tier.output}
-                  </p>
-                )}
-                <Link
-                  to={createPageUrl("Services")}
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#c97a8a] mt-2.5 hover:underline"
-                >
+                {tier.output && <p className="text-sm mt-2 leading-relaxed text-white">↳ {tier.output}</p>}
+                <Link to={createPageUrl("Services")} className="ds-textlink inline-flex items-center gap-1 text-xs mt-2.5" style={{ color: "#d4657a" }}>
                   See details →
                 </Link>
               </div>
-              {/* Right — price */}
               <div className="sm:text-right shrink-0 sm:pt-0.5">
                 <p className="text-white font-semibold text-sm">From {tier.price}</p>
-                {tier.duration && (
-                  <p className="text-white/30 text-xs mt-0.5">{tier.duration}</p>
-                )}
+                {tier.duration && <p className="text-white/30 text-xs mt-0.5">{tier.duration}</p>}
               </div>
             </motion.div>
           ))}
@@ -110,22 +59,13 @@ export default function ChoosePath() {
         {/* Bootstrap budget nudge */}
         <div className="mt-4 px-7 py-4 border border-white/10 rounded-xl flex items-center justify-between gap-4 flex-wrap">
           <p className="text-white/40 text-sm italic">On a bootstrap budget?</p>
-          <a
-            href="https://icp-builder-tool.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-semibold text-white/60 hover:text-white border border-white/20 hover:border-white/40 px-4 py-1.5 rounded-lg transition-colors"
-          >
+          <a href="https://icp-builder-tool.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-white/60 hover:text-white border border-white/20 hover:border-white/40 px-4 py-1.5 rounded-lg transition-colors">
             Get the Free ICP Framework →
           </a>
         </div>
 
-        {/* Book a Call — primary */}
         <div className="mt-7">
-          <Link
-            to={createPageUrl("Contact")}
-            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm bg-[#b3475c] hover:bg-[#96394c] transition-colors"
-          >
+          <Link to={createPageUrl("Contact")} className="ds-btn ds-btn-solid inline-flex items-center gap-2">
             Book a Call →
           </Link>
         </div>
@@ -133,61 +73,45 @@ export default function ChoosePath() {
         {/* Divider */}
         <div className="relative flex items-center my-10">
           <div className="flex-1 border-t border-white/[0.08]" />
-          <span className="mx-4 text-base font-semibold uppercase tracking-widest text-white">
-            Also Available
-          </span>
+          <span className="mx-4 ds-eyebrow text-white">Also Available</span>
           <div className="flex-1 border-t border-white/[0.08]" />
         </div>
 
-        {/* Pre-Build label */}
-        <p className="text-base font-semibold uppercase tracking-widest text-white mb-6">
-          Pre-Build
-        </p>
+        <p className="ds-eyebrow text-white mb-6 block">Pre-Build</p>
 
         {/* MVP Sprint */}
-         <motion.div
-           initial={{ opacity: 0, y: 14 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           transition={{ duration: 0.45 }}
-           className="border border-white/10 rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
-         >
-           <div className="flex-1 min-w-0">
-             <p className="text-[15px] font-bold text-white mb-1.5">The MVP Sprint <span className="text-[#999] text-xs font-normal">(Tech Products Only)</span></p>
-             <p className="text-white/50 text-sm leading-relaxed">
-               You have a problem worth solving but no product yet. I'll help you define the problem, design the solution and build a working proof of concept using an AI-augmented toolstack, compressing months of build time into weeks - and ready for real-world validation faster than a traditional development approach.
-             </p>
-             <p className="text-xs text-white/40 mt-3">
-               Current toolstack: Base44, Replit, Figma, Relume, Notion (for documentation)
-             </p>
-           </div>
-           <div className="sm:text-right shrink-0 sm:pt-0.5">
-             <p className="text-white font-semibold text-sm">From AUD $3,000</p>
-             <p className="text-white/30 text-xs mt-0.5">1 week</p>
-           </div>
-         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.45 }}
+          className="border border-white/10 rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
+        >
+          <div className="flex-1 min-w-0">
+            <p className="text-[15px] font-bold text-white mb-1.5">The MVP Sprint <span className="text-[#999] text-xs font-normal">(Tech Products Only)</span></p>
+            <p className="text-white/50 text-sm leading-relaxed">
+              You have a problem worth solving but no product yet. I'll help you define the problem, design the solution and build a working proof of concept using an AI-augmented toolstack, compressing months of build time into weeks — and ready for real-world validation faster than a traditional development approach.
+            </p>
+            <p className="text-xs text-white/40 mt-3">Current toolstack: Base44, Replit, Figma, Relume, Notion (for documentation)</p>
+          </div>
+          <div className="sm:text-right shrink-0 sm:pt-0.5">
+            <p className="text-white font-semibold text-sm">From AUD $3,000</p>
+            <p className="text-white/30 text-xs mt-0.5">1 week</p>
+          </div>
+        </motion.div>
 
-        {/* Book a Call — secondary */}
         <div className="mt-7">
-          <Link
-            to={createPageUrl("Contact")}
-            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm border border-white/25 hover:border-white/50 transition-colors"
-          >
+          <Link to={createPageUrl("Contact")} className="ds-btn ds-btn-outline inline-flex items-center gap-2" style={{ borderColor: "rgba(255,255,255,.25)", color: "#fff" }}>
             Book a Call →
           </Link>
         </div>
 
-        {/* Fractional divider */}
         <div className="relative flex items-center my-10">
           <div className="flex-1 border-t border-white/[0.08]" />
         </div>
 
-        {/* Fractional Leadership label */}
-        <p className="text-base font-semibold uppercase tracking-widest text-white mb-6">
-          Fractional Leadership
-        </p>
+        <p className="ds-eyebrow text-white mb-6 block">Fractional Leadership</p>
 
-        {/* Fractional GTM Leadership */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -207,27 +131,18 @@ export default function ChoosePath() {
           </div>
         </motion.div>
 
-        {/* Book a Call — fractional */}
         <div className="mt-7">
-          <Link
-            to={createPageUrl("Contact")}
-            className="inline-flex items-center gap-2 text-white font-semibold px-6 py-2.5 rounded-lg text-sm border border-white/25 hover:border-white/50 transition-colors"
-          >
+          <Link to={createPageUrl("Contact")} className="ds-btn ds-btn-outline inline-flex items-center gap-2" style={{ borderColor: "rgba(255,255,255,.25)", color: "#fff" }}>
             Book a Call →
           </Link>
         </div>
 
-        {/* Footer line */}
         <p className="mt-10 text-sm text-white italic">
           Not ready for a full engagement?{" "}
-          <Link
-            to={createPageUrl("GetTheFrameworks")}
-            className="text-white/40 hover:text-[#b3475c] transition-colors not-italic"
-          >
+          <Link to={createPageUrl("GetTheFrameworks")} className="text-white/40 hover:text-[var(--accent)] transition-colors not-italic">
             The Builder Suite{pricing ? ` — from ${pricing.from}` : ""} →
           </Link>
         </p>
-
       </div>
     </section>
   );
