@@ -149,9 +149,9 @@ export default function BuyTheFrameworks() {
               Do the groundwork yourself.
             </h1>
             <p className="text-[#3a4649] text-base leading-relaxed max-w-[600px] mx-auto">
-              Don't have budget for a consultant or marketer? The GTM Builder is a guided Notion-based system to generate your GTM plan, and secure your first customers or your first round of investor funding.
-              <br /><br />
-              Each module builds on the last, generating the essential components of your GTM strategy, from market research through to launch planning — with 34 detailed AI prompts included to accelerate your progress.
+              <span className="font-semibold">Don't have budget for a consultant or marketer?</span>
+              <br />
+              Generate your go-to-market plan with the GTM Builder — a guided Notion-based tool that builds the fundamental components of credible, razor-sharp GTM strategy for your product. Includes 34 detailed AI prompts for deeper research and rapid speed to market, and investor snapshot.
               <br /><br />
               Ideal for founders who have a bootstrapped MVP that's almost ready for market, founders seeking seed or Series A funding, and vibe coders who have built a product and don't know how to get their first customers.
             </p>
