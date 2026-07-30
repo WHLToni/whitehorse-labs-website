@@ -34,26 +34,23 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.1, 0, 1] }} className="hidden lg:block">
-            <div className="ds-band--paper rounded-lg p-10 relative overflow-hidden ds-grid-dark" style={{ background: "#0e0e0e" }}>
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/1c08d4c56_PrimaryLogo_White3.png"
-                  alt=""
-                  className="w-full h-full object-cover opacity-40"
-                />
-              </div>
-              <div className="relative">
-                <p className="text-white text-base font-bold uppercase tracking-widest mb-8" style={{ fontFamily: "var(--display)", letterSpacing: ".01em" }}>Fractional vs Consultant vs Contractor</p>
-                <div className="space-y-6">
-                  {comparisons.map((item, i) => (
-                    <div key={item.title} className={`pb-6 ${i < comparisons.length - 1 ? "border-b border-white/20" : ""}`}>
-                      <p className="text-base font-bold mb-2" style={item.highlight ? { color: "#C13B54" } : { color: "#888" }}>
-                        {item.title}
-                      </p>
-                      <p className="text-[#ccc] text-base leading-relaxed">{item.body}</p>
-                    </div>
-                  ))}
-                </div>
+            <div className="rounded-lg p-10 relative overflow-hidden border border-white/10" style={{ background: "#0e0e0e" }}>
+              <p className="text-white text-sm font-bold uppercase tracking-widest mb-8 ds-display">
+                Fractional vs Consultant vs Contractor
+              </p>
+              <div className="space-y-5">
+                {comparisons.map((item, i) => (
+                  <div key={item.title}
+                    className={`p-4 rounded-md ${item.highlight
+                      ? "bg-[#C13B54]/10 border-l-2 border-[#C13B54]"
+                      : "border-b border-white/10 rounded-none"}`}>
+                    <p className="text-base font-bold mb-1.5"
+                       style={{ color: item.highlight ? "#F06A85" : "#c9c9c9" }}>
+                      {item.title}
+                    </p>
+                    <p className="text-[15px] leading-relaxed text-white/85">{item.body}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </motion.div>
