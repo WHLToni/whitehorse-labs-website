@@ -78,7 +78,7 @@ export default function Credentials() {
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e8e4da89e_Prospection.png",
               "https://media.base44.com/images/public/6995347084af76a3154d3f6b/2867a3ffe_YarningForChange.png",
             ].map((src, i) => (
-              <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70 flex-shrink-0" style={src.includes("YarningForChange") ? { height: "112px", width: "auto" } : undefined} />
+              <img key={i} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70 flex-shrink-0" style={src.includes("YarningForChange") ? { height: "95px", width: "auto" } : undefined} />
             ))}
             {/* Duplicate for seamless loop */}
             {[
@@ -93,7 +93,7 @@ export default function Credentials() {
               "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/e8e4da89e_Prospection.png",
               "https://media.base44.com/images/public/6995347084af76a3154d3f6b/2867a3ffe_YarningForChange.png",
             ].map((src, i) => (
-              <img key={`dup-${i}`} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70 flex-shrink-0" style={src.includes("YarningForChange") ? { height: "112px", width: "auto" } : undefined} />
+              <img key={`dup-${i}`} src={src} alt={`Brand ${i + 1}`} className="h-40 w-auto object-contain opacity-70 flex-shrink-0" style={src.includes("YarningForChange") ? { height: "95px", width: "auto" } : undefined} />
             ))}
           </div>
         </div>
