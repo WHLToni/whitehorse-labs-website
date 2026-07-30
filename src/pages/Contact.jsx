@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Send, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 
 const services = [
@@ -101,7 +101,7 @@ ${form.message}
               className="p-12 rounded-md bg-[#fff] border border-[#E1E7E9] text-center"
             >
               <div className="w-14 h-14 rounded-full bg-[#C13B54]/10 flex items-center justify-center mx-auto mb-6">
-                <Send className="w-6 h-6 text-[#C13B54]" aria-hidden="true" />
+
               </div>
               <h2 className="ds-display text-2xl mb-3">Message Sent</h2>
               <p className="text-[var(--muted)] text-sm leading-relaxed max-w-sm mx-auto">
@@ -236,12 +236,12 @@ ${form.message}
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="ds-btn ds-btn-solid w-full inline-flex items-center justify-center gap-2 disabled:opacity-60"
+                className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 disabled:opacity-60"
               >
                 {status === "sending" ? (
                   <><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Sending…</>
                 ) : (
-                  <><Send className="w-4 h-4" aria-hidden="true" /> Send Message</>
+                  <>Send Message</>
                 )}
               </button>
             </motion.form>
