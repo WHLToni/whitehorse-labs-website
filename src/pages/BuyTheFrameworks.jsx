@@ -149,7 +149,7 @@ export default function BuyTheFrameworks() {
               Do the groundwork yourself.
             </h1>
             <p className="text-[#3a4649] text-base leading-relaxed max-w-[600px] mx-auto">
-              The GTM Builder and Product Builder are self-guided Notion systems - a step-by-step series of frameworks augmented with structured AI prompts, that will guide you through building the commercial foundations that every investor wants to see.
+              The GTM Builder is a guided walk-through of the essential components of a GTM strategy — a "skinny" version of what I do in a consulting engagement. Ideal for founders who have a bootstrapped MVP that's almost ready for market, founders seeking seed or Series A funding, and vibe coders who have built their first app and aren't sure how to take it to market.
               <br /><br />
               The same baseline frameworks used by big consulting firms and SaaS companies, adapted for founders who need to move fast.
             </p>
