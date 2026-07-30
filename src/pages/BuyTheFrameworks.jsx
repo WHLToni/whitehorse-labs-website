@@ -198,41 +198,6 @@ export default function BuyTheFrameworks() {
         </div>
       </section>
 
-      {/* VALUE PROP */}
-      <section className="py-16 md:py-20 bg-[#F3F8F1]">
-        <div className="max-w-4xl mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <p className="ds-eyebrow mb-4">The GTM Builder</p>
-              <h2 className="ds-display text-3xl md:text-4xl mb-6">Don't have budget for a consultant?</h2>
-              <p className="text-[#3a4649] text-base leading-relaxed mb-5">
-                The GTM Builder is a guided walk-through of the essential components of a GTM strategy — a "skinny" version of what I do in a consulting engagement. Ideal for founders who have a bootstrapped MVP that's almost ready for market, founders seeking seed or Series A funding, and vibe coders who have built their first app and aren't sure how to take it to market.
-              </p>
-              <p className="text-[#3a4649] text-base leading-relaxed">
-                Build each section, step by step — from market research and sizing, through to competitive analysis, positioning and messaging and launch planning. The tool is augmented with 34 detailed AI prompts that will deepen your research and analysis and accelerate your speed to market.
-              </p>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
-              <p className="text-base font-bold text-[var(--ink)] mb-5">The outcome</p>
-              <ul className="space-y-4">
-                {[
-                  "In-depth understanding of your market, its size and value, and your competitors",
-                  "Razor-sharp and evidence-based positioning and messaging",
-                  "Brand foundations",
-                  "A credible launch plan",
-                  "Investor snapshot containing key commercials",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="text-[#C13B54] font-bold text-sm mt-0.5 flex-shrink-0">—</span>
-                    <span className="text-[#3a4649] text-sm leading-relaxed">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* GTM BUILDER PRODUCT CARD */}
       <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden bg-[var(--mist)]">
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
