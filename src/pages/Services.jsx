@@ -109,7 +109,7 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
         {/* Left: Title and Price */}
         <div className="lg:col-span-1">
-          <h3 className={`ds-display text-2xl md:text-3xl mb-2 ${darkBg ? "text-white" : "text-[#0a0a0a]"}`}>
+          <h3 className={`text-2xl md:text-3xl font-bold mb-2 ${darkBg ? "text-white" : "text-[#0a0a0a]"}`}>
             {name}
           </h3>
           <p className={`italic text-base mb-6 ${darkBg ? "text-[#ccc]" : "text-[#666]"}`}>
@@ -183,7 +183,7 @@ export default function Services() {
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Services & Pricing</p>
-            <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6 text-[#0a0a0a]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Fixed Scope. Fixed Price. Delivered in Weeks.
             </h1>
             <p className="text-base md:text-lg text-[#666] max-w-2xl leading-relaxed mx-auto text-center">
@@ -271,7 +271,7 @@ export default function Services() {
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
             <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">How It Works</p>
-            <h2 className="ds-display text-4xl md:text-5xl tracking-tight text-[#0a0a0a] mb-2">Clear Process. No Surprises.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-2">Clear Process. No Surprises.</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
@@ -285,7 +285,7 @@ export default function Services() {
                 className="bg-white rounded-xl p-6 border border-[#E1E7E9]"
               >
                 <div className="text-3xl font-bold text-[#C13B54] mb-4">{step.num}</div>
-                <h3 className="ds-display text-lg text-[#0a0a0a] mb-3">{step.title}</h3>
+                <h3 className="text-lg font-bold text-[#0a0a0a] mb-3">{step.title}</h3>
                 <p className="text-sm text-[#666] leading-relaxed">{step.desc}</p>
               </motion.div>
             ))}
@@ -300,7 +300,7 @@ export default function Services() {
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Not Ready to Commit?</p>
-            <h2 className="ds-display text-4xl md:text-5xl tracking-tight text-[#0a0a0a] mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a] mb-6">
               Buy the Frameworks.
             </h2>
             <p className="text-base md:text-lg text-[#666] max-w-2xl mx-auto leading-relaxed mb-8">

@@ -81,7 +81,7 @@ ${form.message}
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Contact</p>
-            <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6 text-[#0a0a0a] max-w-3xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a] max-w-3xl">
               Let's Talk
             </h1>
             <p className="text-lg text-[#666] max-w-xl leading-relaxed">
@@ -103,7 +103,7 @@ ${form.message}
               <div className="w-14 h-14 rounded-full bg-[#C13B54]/10 flex items-center justify-center mx-auto mb-6">
                 <Send className="w-6 h-6 text-[#C13B54]" aria-hidden="true" />
               </div>
-              <h2 className="ds-display text-2xl text-[#0a0a0a] mb-3">Message Sent</h2>
+              <h2 className="text-2xl font-bold text-[#0a0a0a] mb-3">Message Sent</h2>
               <p className="text-[#666] text-sm leading-relaxed max-w-sm mx-auto">
                 Thanks for reaching out. I'll review your message and get back to you within one business day.
               </p>

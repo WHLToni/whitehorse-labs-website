@@ -19,7 +19,7 @@ export default function PrefactorCaseStudy() {
   }, []);
 
   return (
-    <div className="ds-page min-h-screen bg-white text-[#0a0a0a]">
+    <div className="min-h-screen bg-white text-[#0a0a0a]">
 
       {/* HERO */}
       <section
@@ -43,7 +43,7 @@ export default function PrefactorCaseStudy() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="ds-display text-white text-4xl md:text-5xl leading-tight mb-6"
+            className="text-white text-4xl md:text-5xl leading-tight mb-6"
           >
             Taking Prefactor from stalling MVP to enterprise-ready category definer.
           </motion.h1>
@@ -105,7 +105,7 @@ export default function PrefactorCaseStudy() {
       </section>
 
       {/* ENGAGEMENT OVERVIEW */}
-      <section className="bg-[#F3F8F1]">
+      <section className="bg-[#F0F7FA]">
         <div className="max-w-[900px] mx-auto px-10 py-20">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-16">
             {/* Left */}
@@ -115,7 +115,7 @@ export default function PrefactorCaseStudy() {
               className="md:col-span-2"
             >
               <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The brief</p>
-              <h2 className="ds-display text-2xl md:text-3xl leading-snug text-[#0a0a0a]">
+              <h2 className="text-2xl md:text-3xl leading-snug text-[#0a0a0a]">
                 Over $1.5M raised. 45 Free users. Zero conversions. Three months out from a US launch.
               </h2>
             </motion.div>
@@ -143,12 +143,12 @@ export default function PrefactorCaseStudy() {
             </motion.div>
           </div>
 
-          <hr className="mt-16 border-[#E1E7E9]" />
+          <hr className="mt-16 border-[#e5e5e5]" />
         </div>
       </section>
 
       {/* KEY FINDINGS */}
-      <section className="bg-[#F3F8F1]">
+      <section className="bg-[#F0F7FA]">
         <div className="max-w-[900px] mx-auto px-10 pt-4 pb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -156,7 +156,7 @@ export default function PrefactorCaseStudy() {
             className="mb-12"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">Discovery Interview Insights</p>
-            <h2 className="ds-display text-2xl md:text-3xl text-[#0a0a0a]">Three findings changed everything.</h2>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Three findings changed everything.</h2>
           </motion.div>
 
           <div className="flex flex-col gap-10">
@@ -178,7 +178,7 @@ export default function PrefactorCaseStudy() {
                 >
                   {finding.num}
                 </div>
-                <h3 className="ds-display text-[#0a0a0a] text-lg mb-2">{finding.title}</h3>
+                <h3 className="font-semibold text-[#0a0a0a] text-lg mb-2">{finding.title}</h3>
                 <p className="text-[#444] text-base leading-relaxed">{finding.body}</p>
               </motion.div>
             ))}
@@ -195,7 +195,7 @@ export default function PrefactorCaseStudy() {
             className="mb-10"
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Brand refresh</p>
-            <h2 className="ds-display text-2xl md:text-3xl text-white mb-5">From generic tech startup to enterprise-ready brand.</h2>
+            <h2 className="text-2xl md:text-3xl text-white mb-5">From generic tech startup to enterprise-ready brand.</h2>
             <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
               The Founders started rebuilding, and I started on brand. Prefactor had no cohesive identity — dark templates, AI-generated imagery that looked like every other early-stage tech company. We ran a series of brand workshops with the Founders, then built out the brand from strategy to production-ready style guide and visual design assets. <strong>The result:</strong> an enterprise-ready brand system reflecting credibility and gravitas, built for a small team to apply easily and consistently themselves.
             </p>
@@ -244,7 +244,7 @@ export default function PrefactorCaseStudy() {
             className="mb-12"
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Strategic narrative</p>
-            <h2 className="ds-display text-2xl md:text-3xl text-white mb-5">A pitch deck built around the new positioning.</h2>
+            <h2 className="text-2xl md:text-3xl text-white mb-5">A pitch deck built around the new positioning.</h2>
             <p className="text-base leading-relaxed max-w-2xl" style={{ color: "#a8cccc" }}>
               We built the product pitch deck from the ground up, using the findings from our market research and ICP interviews. It centred around a new narrative positioning Prefactor as the MCP-Native Agent Control Plane for enterprise and regulated industries.
             </p>
@@ -348,7 +348,7 @@ export default function PrefactorCaseStudy() {
             viewport={{ once: true }} transition={{ duration: 0.5 }}
             className="mb-10"
           >
-            <h2 className="ds-display text-3xl md:text-4xl text-white mb-3">From strategy to execution</h2>
+            <h2 className="text-3xl md:text-4xl text-white font-bold mb-3">From strategy to execution</h2>
             <p className="text-lg text-white mb-2">Fresh content reinforcing the new positioning.</p>
             <p className="text-sm leading-relaxed" style={{ color: "#a8d8d4" }}>
               Thought-leadership white paper, campaign-ready ad creative, pitch deck, a fully structured client workspace and asset library.
@@ -383,7 +383,7 @@ export default function PrefactorCaseStudy() {
       </section>
 
       {/* WHAT CHANGED / OUTCOMES */}
-      <section className="bg-[#F3F8F1]">
+      <section className="bg-[#F0F7FA]">
         <div className="max-w-[900px] mx-auto px-10 py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -391,7 +391,7 @@ export default function PrefactorCaseStudy() {
             className="mb-12"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The outcome</p>
-            <h2 className="ds-display text-2xl md:text-3xl text-[#0a0a0a]">A redirected product roadmap solving a real market problem, and commercial foundations built for scale.</h2>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">A redirected product roadmap solving a real market problem, and commercial foundations built for scale.</h2>
           </motion.div>
 
           <div className="flex flex-wrap gap-8">
@@ -408,7 +408,7 @@ export default function PrefactorCaseStudy() {
                 style={{ flex: 1, minWidth: "200px" }}
               >
                 {block.icon}
-                <h3 className="ds-display text-[#0a0a0a] text-base">{block.title}</h3>
+                <h3 className="font-semibold text-[#0a0a0a] text-base">{block.title}</h3>
                 <p className="text-sm text-[#555] leading-relaxed">{block.body}</p>
               </motion.div>
             ))}
@@ -425,7 +425,7 @@ export default function PrefactorCaseStudy() {
             className="mb-10"
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-[#888] mb-3">The work</p>
-            <h2 className="ds-display text-2xl md:text-3xl text-[#0a0a0a]">Seven workstreams. Nine weeks.</h2>
+            <h2 className="text-2xl md:text-3xl text-[#0a0a0a]">Seven workstreams. Nine weeks.</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -444,11 +444,11 @@ export default function PrefactorCaseStudy() {
                 initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.05 }}
                 className="bg-white rounded-xl px-6 py-5"
-                style={{ border: "0.5px solid #E1E7E9" }}
+                style={{ border: "0.5px solid #e5e5e5" }}
               >
                 <div className="flex items-center gap-3 mb-2">
                   {card.icon}
-                  <h3 className="ds-display text-[#0a0a0a] text-sm">{card.title}</h3>
+                  <h3 className="font-semibold text-[#0a0a0a] text-sm">{card.title}</h3>
                 </div>
                 <p className="text-sm text-[#555] leading-relaxed">{card.body}</p>
               </motion.div>
@@ -467,7 +467,7 @@ export default function PrefactorCaseStudy() {
             viewport={{ once: true }} transition={{ duration: 0.5 }}
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>The GTM Builder</p>
-            <h3 className="ds-display text-white text-xl md:text-2xl mb-4">The frameworks from this project, in a guided system you can run yourself.</h3>
+            <h3 className="text-white text-xl md:text-2xl mb-4">The frameworks from this project, in a guided system you can run yourself.</h3>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#a8cccc" }}>
               Available as a guided Notion system with over 30 detailed JSON AI prompts to accelerate your research.
             </p>
@@ -491,7 +491,7 @@ export default function PrefactorCaseStudy() {
             viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "#4db8b8" }}>Work with Toni</p>
-            <h3 className="ds-display text-white text-xl md:text-2xl mb-4">Ready to do this for your product?</h3>
+            <h3 className="text-white text-xl md:text-2xl mb-4">Ready to do this for your product?</h3>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#a8cccc" }}>
               If you're preparing for a raise, planning international expansion, or going to market with a complex or regulated product, let's talk.
             </p>

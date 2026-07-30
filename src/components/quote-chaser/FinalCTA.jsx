@@ -12,7 +12,7 @@ export default function FinalCTA() {
         transition={{ duration: 0.5 }}
         className="max-w-xl mx-auto px-6"
       >
-        <h2 className="ds-display text-2xl md:text-4xl text-white tracking-tight mb-4">
+        <h2 className="text-2xl md:text-4xl font-bold text-white tracking-tight mb-4">
           Book a 15-minute chat.
         </h2>
         <p className="text-white/55 text-base leading-relaxed mb-8 max-w-md mx-auto">

@@ -19,12 +19,12 @@ const plan = {
 
 export default function Pricing() {
   return (
-    <section className="py-16 md:py-20 bg-[#F3F8F1]">
+    <section className="py-16 md:py-20 bg-[#F0F7FA]">
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[#C13B54] mb-4 text-center">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[#b3475c] mb-4 text-center">
           Pricing
         </p>
-        <h2 className="ds-display text-2xl md:text-4xl tracking-tight text-[#0a0a0a] mb-10 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-[#0a0a0a] mb-10 text-center">
           Fixed monthly fee. No surprises.
         </h2>
         <div className="max-w-md mx-auto">
@@ -33,15 +33,15 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="relative rounded-2xl p-8 border border-[#C13B54] bg-white"
+            className="relative rounded-2xl p-8 border border-[#b3475c] bg-white"
           >
-            <h3 className="ds-display text-xl text-[#0a0a0a] mb-1">{plan.name}</h3>
-            <p className="text-2xl font-bold text-[#C13B54] mb-3">{plan.price}</p>
+            <h3 className="text-xl font-bold text-[#0a0a0a] mb-1">{plan.name}</h3>
+            <p className="text-2xl font-bold text-[#b3475c] mb-3">{plan.price}</p>
             <p className="text-sm text-[#666] leading-relaxed mb-6">{plan.tagline}</p>
             <ul className="space-y-3">
               {plan.bullets.map((b, j) => (
                 <li key={j} className="flex gap-3 text-sm text-[#555] leading-relaxed">
-                  <Check className="w-4 h-4 text-[#C13B54] flex-shrink-0 mt-0.5" />
+                  <Check className="w-4 h-4 text-[#b3475c] flex-shrink-0 mt-0.5" />
                   <span>{b}</span>
                 </li>
               ))}

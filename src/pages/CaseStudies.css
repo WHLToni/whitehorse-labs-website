@@ -27,7 +27,7 @@
 .cs-page .wrap { max-width: 1150px; margin: 0 auto; padding: 0 34px; }
 
 .cs-page h1, .cs-page h2, .cs-page h3 { font-weight: 800; letter-spacing: -.022em; line-height: 1.06; }
-.cs-page .hero h1, .cs-page .cap-head h2, .cs-page .case h2, .cs-page .hann .hann-head h2, .cs-page .ai-grid h2, .cs-page .close h2, .cs-page .cap h3 {
+.cs-page .hero h1, .cs-page .cap-head h2, .cs-page .case h2, .cs-page .hann .hann-head h2, .cs-page .ai-grid h2, .cs-page .close h2 {
   font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; line-height: .94;
 }
 
@@ -66,14 +66,14 @@
 @media (max-width: 560px) { .cs-page .hero-headshot { display: none; } }
 .cs-page .hero .wrap { position: relative; }
 .cs-page .hero .eyebrow { margin-bottom: 22px; }
-.cs-page .hero h1 { font-size: clamp(46px, 8vw, 104px); max-width: 15ch; color: var(--ink); }
+.cs-page .hero h1 { font-size: clamp(46px, 8vw, 104px); max-width: 15ch; color: var(--accent); }
 .cs-page .hero p.lede { font-size: clamp(16px, 1.5vw, 19px); color: #3a4649; max-width: 62ch; margin: 26px 0 34px; }
 .cs-page .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
 .cs-page .hero-actions .textlink { font-size: 15px; }
 
 /* capability cards */
 .cs-page .cap-head { margin-bottom: 20px; }
-.cs-page .cap-head h2 { font-size: clamp(24px, 3vw, 40px); margin-top: 8px; color: var(--ink); }
+.cs-page .cap-head h2 { font-size: clamp(24px, 3vw, 40px); margin-top: 8px; color: var(--accent); }
 .cs-page .cap-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
 .cs-page .cap { background: var(--paper); border: 1.5px solid var(--ink); padding: 16px; transition: transform .14s ease, box-shadow .14s ease; }
 .cs-page .cap:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--accent); }
@@ -196,7 +196,7 @@
 /* closing */
 .cs-page .close { text-align: center; }
 .cs-page .close .eyebrow { margin-bottom: 20px; }
-.cs-page .close h2 { font-size: clamp(38px, 6vw, 84px); max-width: 16ch; margin: 0 auto 20px; color: var(--ink); }
+.cs-page .close h2 { font-size: clamp(38px, 6vw, 84px); max-width: 16ch; margin: 0 auto 20px; color: var(--accent); }
 .cs-page .close p { color: #3a4649; font-size: 18px; max-width: 48ch; margin: 0 auto 34px; }
 .cs-page .close .sign { margin-top: 30px; color: var(--muted); font-size: 16px; }
 

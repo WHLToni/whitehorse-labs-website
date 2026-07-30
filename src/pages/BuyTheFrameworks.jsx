@@ -145,7 +145,7 @@ export default function BuyTheFrameworks() {
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Self-serve · Notion-based · AI-guided</p>
-            <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6 text-[#0a0a0a]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#0a0a0a]">
               Do the groundwork yourself.
             </h1>
             <p className="text-[#666] text-base leading-relaxed max-w-[600px] mx-auto">
@@ -206,7 +206,7 @@ export default function BuyTheFrameworks() {
             <div className="p-8 md:p-12 border-b border-white/10">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                 <div>
-                  <h3 className="ds-display text-3xl md:text-4xl text-white mb-1">GTM Builder</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-1">GTM Builder</h3>
                   <p className="text-white/50 text-sm">Self-guided · Notion-based · AI-guided</p>
                 </div>
                 <div className="sm:text-right flex-shrink-0">
@@ -279,7 +279,7 @@ export default function BuyTheFrameworks() {
           </div>
           <motion.h2
             initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}
-            className="ds-display mt-12 text-2xl md:text-3xl tracking-tight text-[#0a0a0a] border-t border-[#E1E7E9] pt-10 max-w-2xl">
+            className="mt-12 text-2xl md:text-3xl font-bold tracking-tight text-[#0a0a0a] border-t border-[#E1E7E9] pt-10 max-w-2xl">
             Expert GTM strategy usually comes with a five-figure price tag. The GTM Builder gives you the same architectural rigor for a fraction of the cost.
           </motion.h2>
         </div>
@@ -289,7 +289,7 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">Who It's For</p>
-          <h2 className="ds-display text-3xl md:text-4xl tracking-tight mb-10 text-[#0a0a0a]">Built for founders who need to move fast</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[#0a0a0a]">Built for founders who need to move fast</h2>
           <div className="space-y-5">
             {whoFor.map((item, i) => (
               <motion.div key={i}
@@ -309,7 +309,7 @@ export default function BuyTheFrameworks() {
         <div className="max-w-2xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border border-[#E1E7E9] p-8 md:p-10 bg-white text-center">
-            <h3 className="ds-display text-2xl md:text-3xl tracking-tight text-[#0a0a0a] mb-3">Product Builder — Coming Soon</h3>
+            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[#0a0a0a] mb-3">Product Builder — Coming Soon</h3>
             <p className="text-[#666] text-sm leading-relaxed mb-6 max-w-lg mx-auto">
               A self-guided system for founders actively building a product - same format as the GTM Builder. Join the waitlist to be first in when it launches.
             </p>
@@ -342,7 +342,7 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <p className="text-base font-semibold uppercase tracking-widest text-[#C13B54] mb-4">FAQs</p>
-          <h2 className="ds-display text-2xl md:text-3xl tracking-tight mb-8 text-[#0a0a0a]">Frequently Asked Questions</h2>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8 text-[#0a0a0a]">Frequently Asked Questions</h2>
           {faqs.map((f, i) => <FAQItem key={i} question={f.q} answer={f.a} />)}
         </div>
       </section>
