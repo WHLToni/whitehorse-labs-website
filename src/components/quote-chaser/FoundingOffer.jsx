@@ -11,7 +11,7 @@ export default function FoundingOffer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="rounded-2xl border-2 border-[#b3475c] p-8 md:p-10 text-center"
+          className="rounded-md border-2 border-[#b3475c] p-8 md:p-10 text-center"
           style={{ background: "rgba(179,71,92,0.06)" }}
         >
           <span className="bg-[#b3475c] text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">

@@ -80,7 +80,7 @@ export default function Admin() {
   if (needsLogin) {
     return (
       <div className="min-h-screen bg-[#f7f7f8] flex items-center justify-center">
-        <div className="bg-white rounded-2xl border border-[#e5e5e5] shadow-sm p-10 text-center max-w-sm w-full">
+        <div className="bg-white rounded-md border border-[#e5e5e5] shadow-sm p-10 text-center max-w-sm w-full">
           <h1 className="text-xl font-bold text-[#0a0a0a] mb-2">Admin Access</h1>
           <p className="text-sm text-[#888] mb-6">Sign in with your admin account to continue.</p>
           <button

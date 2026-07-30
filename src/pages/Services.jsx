@@ -104,7 +104,7 @@ function ServiceCard({ name, subheading, price, duration, deliverables, bestFor,
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className={`rounded-2xl p-8 md:p-12 ${darkBg ? "bg-[#0e0e0e] border border-[#222]" : "bg-white border border-[#E1E7E9] shadow-sm"}`}
+      className={`rounded-md p-8 md:p-12 ${darkBg ? "bg-[#0e0e0e] border border-[#222]" : "bg-white border border-[#E1E7E9] shadow-sm"}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
         {/* Left: Title and Price */}

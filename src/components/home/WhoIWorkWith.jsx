@@ -29,7 +29,7 @@ export default function WhoIWorkWith() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.45 }}
-              className="bg-white rounded-2xl p-7 border border-[var(--line)] transition-colors duration-200 hover:border-[var(--accent)]"
+              className="bg-white rounded-md p-7 border border-[var(--line)] transition-colors duration-200 hover:border-[var(--accent)]"
             >
               <h3 className="text-base font-bold text-[var(--ink)] mb-3">{a.title}</h3>
               <p className="text-[var(--muted)] text-sm leading-relaxed">{a.description}</p>

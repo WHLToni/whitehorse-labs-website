@@ -177,7 +177,7 @@ export default function BuyTheFrameworks() {
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border border-[#E1E7E9] p-8 md:p-10"
+            className="rounded-md border border-[#E1E7E9] p-8 md:p-10"
           >
             <blockquote className="text-[var(--muted)] text-base leading-relaxed mb-6 italic">
               "Figuring out an international GTM strategy is challenging, but The GTM Builder made it clear and helped us shape our way step by step. Beyond the amazing platform, working with Toni and her team was a highlight! She's incredibly helpful, professional, and always brings great energy. It's so important to work with good people, and Toni is exactly that."
@@ -198,7 +198,7 @@ export default function BuyTheFrameworks() {
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
           <p className="ds-eyebrow grey mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border border-[var(--line)] overflow-hidden bg-white">
+            className="rounded-md border border-[var(--line)] overflow-hidden bg-white">
 
             {/* Top: title, price, description, CTA */}
             <div className="p-8 md:p-12 border-b border-[var(--line)]">
@@ -305,7 +305,7 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-2xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border border-[#E1E7E9] p-8 md:p-10 bg-white text-center">
+            className="rounded-md border border-[#E1E7E9] p-8 md:p-10 bg-white text-center">
             <h3 className="ds-display text-2xl md:text-3xl mb-3">Product Builder — Coming Soon</h3>
             <p className="text-[var(--muted)] text-sm leading-relaxed mb-6 max-w-lg mx-auto">
               A self-guided system for founders actively building a product - same format as the GTM Builder. Join the waitlist to be first in when it launches.

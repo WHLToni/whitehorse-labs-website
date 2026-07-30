@@ -34,7 +34,7 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.1, 0, 1] }} className="hidden lg:block">
-            <div className="ds-band--paper rounded-3xl p-10 relative overflow-hidden ds-grid-dark" style={{ background: "#0e0e0e" }}>
+            <div className="ds-band--paper rounded-lg p-10 relative overflow-hidden ds-grid-dark" style={{ background: "#0e0e0e" }}>
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <img
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/1c08d4c56_PrimaryLogo_White3.png"

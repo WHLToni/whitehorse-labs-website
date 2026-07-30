@@ -98,7 +98,7 @@ ${form.message}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="p-12 rounded-2xl bg-[#fff] border border-[#E1E7E9] text-center"
+              className="p-12 rounded-md bg-[#fff] border border-[#E1E7E9] text-center"
             >
               <div className="w-14 h-14 rounded-full bg-[#C13B54]/10 flex items-center justify-center mx-auto mb-6">
                 <Send className="w-6 h-6 text-[#C13B54]" aria-hidden="true" />

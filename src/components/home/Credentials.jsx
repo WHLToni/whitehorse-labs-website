@@ -9,7 +9,7 @@ export default function Credentials() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           {/* Left — headshot */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col items-center lg:items-start gap-4">
-            <div className="w-full max-w-[280px] lg:max-w-full rounded-2xl overflow-hidden border border-[var(--line)]">
+            <div className="w-full max-w-[280px] lg:max-w-full rounded-md overflow-hidden border border-[var(--line)]">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6995347084af76a3154d3f6b/b6cb39724_Headshot.jpeg"
                 alt="Toni Morrow"

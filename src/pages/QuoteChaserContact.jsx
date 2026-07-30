@@ -93,7 +93,7 @@ Best time to call: ${form.bestTimeToCall || "Not specified"}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="p-12 rounded-2xl bg-[#f7f7f8] border border-[#e5e5e5] text-center"
+              className="p-12 rounded-md bg-[#f7f7f8] border border-[#e5e5e5] text-center"
             >
               <div className="w-14 h-14 rounded-full bg-[#b3475c]/10 flex items-center justify-center mx-auto mb-6">
                 <Send className="w-6 h-6 text-[#b3475c]" aria-hidden="true" />

@@ -31,7 +31,7 @@ export default function ChoosePath() {
         <p className="ds-eyebrow text-white mb-6 block">The Commercialisation Stack</p>
 
         {/* Tiers */}
-        <div className="border border-white/10 rounded-2xl overflow-hidden">
+        <div className="border border-white/10 rounded-md overflow-hidden">
           {tiers.map((tier, i) => (
             <motion.div
               key={tier.name}
@@ -85,7 +85,7 @@ export default function ChoosePath() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
-          className="border border-white/10 rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
+          className="border border-white/10 rounded-md px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
         >
           <div className="flex-1 min-w-0">
             <p className="text-[15px] font-bold text-white mb-1.5">The MVP Sprint <span className="text-[#999] text-xs font-normal">(Tech Products Only)</span></p>
@@ -117,7 +117,7 @@ export default function ChoosePath() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
-          className="border border-white/10 rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
+          className="border border-white/10 rounded-md px-7 py-6 flex flex-col sm:flex-row sm:gap-8 gap-3"
         >
           <div className="flex-1 min-w-0">
             <p className="text-[15px] font-bold text-white mb-1.5">Fractional GTM Leadership</p>

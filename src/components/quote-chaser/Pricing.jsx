@@ -33,7 +33,7 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="relative rounded-2xl p-8 border border-[#b3475c] bg-white"
+            className="relative rounded-md p-8 border border-[#b3475c] bg-white"
           >
             <h3 className="text-xl font-bold text-[#0a0a0a] mb-1">{plan.name}</h3>
             <p className="text-2xl font-bold text-[#b3475c] mb-3">{plan.price}</p>

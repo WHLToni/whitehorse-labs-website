@@ -9,7 +9,7 @@ export default function ServiceCard({ title, price, duration, description, deliv
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
-      className="p-8 md:p-10 rounded-2xl bg-white border border-[#E1E7E9] hover:border-[#C13B54]/20 transition-all"
+      className="p-8 md:p-10 rounded-md bg-white border border-[#E1E7E9] hover:border-[#C13B54]/20 transition-all"
       style={{ borderLeftColor: accentColor, borderLeftWidth: "3px" }}
     >
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
