@@ -145,10 +145,10 @@ export default function BuyTheFrameworks() {
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="ds-eyebrow mb-4">Self-serve · Notion-based · AI-guided</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[var(--ink)]">
+            <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">
               Do the groundwork yourself.
             </h1>
-            <p className="text-[var(--muted)] text-base leading-relaxed max-w-[600px] mx-auto">
+            <p className="text-[#3a4649] text-base leading-relaxed max-w-[600px] mx-auto">
               The GTM Builder and Product Builder are self-guided Notion systems - a step-by-step series of frameworks augmented with structured AI prompts, that will guide you through building the commercial foundations that every investor wants to see.
               <br /><br />
               The same baseline frameworks used by big consulting firms and SaaS companies, adapted for founders who need to move fast.
@@ -157,13 +157,13 @@ export default function BuyTheFrameworks() {
               <button
                 onClick={() => handleBuy('gtm')}
                 disabled={loading === 'gtm'}
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-[#C13B54] hover:bg-[#A02E44] transition-colors"
+                className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 disabled:opacity-70"
               >
                 {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
               </button>
               <a
                 href="#gtm-builder"
-                className="inline-flex items-center justify-center gap-2 text-[var(--muted)] font-semibold px-8 py-4 rounded-lg text-sm border border-[#E1E7E9] hover:border-[#C13B54]/40 transition-colors"
+                className="ds-btn ds-btn-outline inline-flex items-center justify-center gap-2"
               >
                 See what's inside &darr;
               </a>
@@ -194,32 +194,30 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* GTM BUILDER PRODUCT CARD */}
-      <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden" style={{ background: "#0e0e0e" }}>
-        <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at top right, rgba(179,71,92,0.08) 0%, transparent 70%)" }} />
+      <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden bg-[var(--mist)]">
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
           <p className="ds-eyebrow grey mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-2xl border border-white/10 overflow-hidden" style={{ background: "#1a1a18" }}>
+            className="rounded-2xl border border-[var(--line)] overflow-hidden bg-white">
 
             {/* Top: title, price, description, CTA */}
-            <div className="p-8 md:p-12 border-b border-white/10">
+            <div className="p-8 md:p-12 border-b border-[var(--line)]">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                 <div>
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-1">GTM Builder</h3>
-                  <p className="text-white/50 text-sm">Self-guided · Notion-based · AI-guided</p>
+                  <h3 className="ds-display text-3xl md:text-4xl mb-1">GTM Builder</h3>
+                  <p className="text-[var(--muted)] text-sm">Self-guided · Notion-based · AI-guided</p>
                 </div>
                 <div className="sm:text-right flex-shrink-0">
-                  <p className="text-white font-bold text-3xl">AUD $349</p>
-                  <p className="text-white/40 text-xs mt-1">One-time · Instant access</p>
+                  <p className="text-[var(--ink)] font-bold text-3xl">AUD $349</p>
+                  <p className="text-[var(--muted)] text-xs mt-1">One-time · Instant access</p>
                 </div>
               </div>
-              <p className="text-white/70 text-base leading-relaxed mb-6 max-w-2xl">
+              <p className="text-[#3a4649] text-base leading-relaxed mb-6 max-w-2xl">
                 A self-guided Notion system that walks you through seven modules of commercial groundwork — from market sizing to launch planning. Work through it at your own pace, guided by 34 structured AI prompts designed to draw out the thinking that many early-stage founders skip.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 {tags.map((tag, i) => (
-                  <span key={i} className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/60 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                  <span key={i} className="inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--muted)] bg-[#f5f8f6] border border-[var(--line)] px-3 py-1.5 rounded-full">
                     {tag}
                   </span>
                 ))}
@@ -227,20 +225,20 @@ export default function BuyTheFrameworks() {
               <button
                 onClick={() => handleBuy('gtm')}
                 disabled={loading === 'gtm'}
-                className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-70 bg-[#C13B54] hover:bg-[#A02E44] transition-colors"
+                className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 disabled:opacity-70"
               >
                 {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder — AUD $349 →'}
               </button>
             </div>
 
             {/* Strategy session - directly below price */}
-            <div className="p-8 md:p-12 border-b border-white/10">
-              <div className="rounded-xl border-2 border-[#C13B54] p-6" style={{ background: "rgba(179,71,92,0.12)" }}>
+            <div className="p-8 md:p-12 border-b border-[var(--line)]">
+              <div className="rounded-xl border-2 border-[#C13B54] p-6" style={{ background: "rgba(193,59,84,0.06)" }}>
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-[#C13B54] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
                 </div>
-                <p className="text-white font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
-                <p className="text-white/75 text-sm leading-relaxed">
+                <p className="text-[var(--ink)] font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
+                <p className="text-[#3a4649] text-sm leading-relaxed">
                   I'm opening a limited number of personal strategy sessions to GTM Builder clients. Book it before you start - so we can align on your market and focus before you dive in - or after you've completed the work, so we can pressure-test your outputs together. Either way, it's your call. Calendar link provided after purchase, and within the Notion package for easy booking.
                 </p>
               </div>
@@ -248,13 +246,12 @@ export default function BuyTheFrameworks() {
 
             {/* Modules grid */}
             <div className="p-8 md:p-12">
-              <p className="text-base font-bold text-white mb-6">7 Modules + Bonus</p>
+              <p className="text-base font-bold text-[var(--ink)] mb-6">7 Modules + Bonus</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {modules.map((m, i) => (
-                  <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${m.bonus ? "border border-[#C13B54]/40 bg-[#C13B54]/8" : "border border-white/8 bg-white/3"}`}
-                    style={m.bonus ? { background: "rgba(179,71,92,0.08)" } : { background: "rgba(255,255,255,0.03)" }}>
-                    <span className={`text-xs font-bold flex-shrink-0 w-5 ${m.bonus ? "text-[#C13B54]" : "text-white/30"}`}>{m.num}</span>
-                    <span className={`text-sm leading-snug ${m.bonus ? "text-white font-semibold" : "text-white/75"}`}>{m.title}</span>
+                  <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${m.bonus ? "border border-[#C13B54]/40 bg-[#C13B54]/5" : "border border-[var(--line)] bg-[#f5f8f6]"}`}>
+                    <span className={`text-xs font-bold flex-shrink-0 w-5 ${m.bonus ? "text-[#C13B54]" : "text-[var(--muted)]"}`}>{m.num}</span>
+                    <span className={`text-sm leading-snug ${m.bonus ? "text-[var(--ink)] font-semibold" : "text-[#3a4649]"}`}>{m.title}</span>
                   </div>
                 ))}
               </div>
@@ -289,7 +286,7 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <p className="ds-eyebrow mb-4">Who It's For</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10 text-[var(--ink)]">Built for founders who need to move fast</h2>
+          <h2 className="ds-display text-3xl md:text-4xl mb-10">Built for founders who need to move fast</h2>
           <div className="space-y-5">
             {whoFor.map((item, i) => (
               <motion.div key={i}
@@ -309,7 +306,7 @@ export default function BuyTheFrameworks() {
         <div className="max-w-2xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-2xl border border-[#E1E7E9] p-8 md:p-10 bg-white text-center">
-            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[var(--ink)] mb-3">Product Builder — Coming Soon</h3>
+            <h3 className="ds-display text-2xl md:text-3xl mb-3">Product Builder — Coming Soon</h3>
             <p className="text-[var(--muted)] text-sm leading-relaxed mb-6 max-w-lg mx-auto">
               A self-guided system for founders actively building a product - same format as the GTM Builder. Join the waitlist to be first in when it launches.
             </p>
@@ -327,7 +324,7 @@ export default function BuyTheFrameworks() {
                 />
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2 text-white font-semibold px-6 py-3 rounded-lg text-sm bg-[#C13B54] hover:bg-[#A02E44] transition-colors whitespace-nowrap"
+                  className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 whitespace-nowrap"
                 >
                   Join the waitlist →
                 </button>
@@ -342,7 +339,7 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <p className="ds-eyebrow mb-4">FAQs</p>
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8 text-[var(--ink)]">Frequently Asked Questions</h2>
+          <h2 className="ds-display text-2xl md:text-3xl mb-8">Frequently Asked Questions</h2>
           {faqs.map((f, i) => <FAQItem key={i} question={f.q} answer={f.a} />)}
         </div>
       </section>

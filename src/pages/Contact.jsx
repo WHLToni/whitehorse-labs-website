@@ -81,7 +81,7 @@ ${form.message}
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="ds-eyebrow mb-4">Contact</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[var(--ink)] max-w-3xl">
+            <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6 max-w-3xl">
               Let's Talk
             </h1>
             <p className="text-lg text-[var(--muted)] max-w-xl leading-relaxed">
@@ -103,7 +103,7 @@ ${form.message}
               <div className="w-14 h-14 rounded-full bg-[#C13B54]/10 flex items-center justify-center mx-auto mb-6">
                 <Send className="w-6 h-6 text-[#C13B54]" aria-hidden="true" />
               </div>
-              <h2 className="text-2xl font-bold text-[var(--ink)] mb-3">Message Sent</h2>
+              <h2 className="ds-display text-2xl mb-3">Message Sent</h2>
               <p className="text-[var(--muted)] text-sm leading-relaxed max-w-sm mx-auto">
                 Thanks for reaching out. I'll review your message and get back to you within one business day.
               </p>
@@ -236,7 +236,7 @@ ${form.message}
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="ds-btn-solid w-full inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm disabled:opacity-60"
+                className="ds-btn ds-btn-solid w-full inline-flex items-center justify-center gap-2 disabled:opacity-60"
               >
                 {status === "sending" ? (
                   <><Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> Sending…</>

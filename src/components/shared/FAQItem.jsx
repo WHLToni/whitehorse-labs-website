@@ -6,16 +6,16 @@ export default function FAQItem({ question, answer }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-b border-[#e5e5e5]">
+    <div className="border-b border-[var(--line)]">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-6 text-left group"
       >
-        <span className="text-base font-semibold pr-4 text-[#0a0a0a] group-hover:text-[#b3475c] transition-colors">
+        <span className="text-base font-semibold pr-4 text-[var(--ink)] group-hover:text-[var(--accent)] transition-colors">
           {question}
         </span>
         <ChevronDown
-          className={`w-5 h-5 text-[#888] flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+          className={`w-5 h-5 text-[var(--muted)] flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
       </button>
       <AnimatePresence>
@@ -27,7 +27,7 @@ export default function FAQItem({ question, answer }) {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <p className="text-[#666] text-sm leading-relaxed pb-6">{answer}</p>
+            <p className="text-[#3a4649] text-sm leading-relaxed pb-6">{answer}</p>
           </motion.div>
         )}
       </AnimatePresence>

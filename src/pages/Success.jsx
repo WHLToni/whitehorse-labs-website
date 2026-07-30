@@ -43,7 +43,7 @@ export default function Success() {
         <p className="text-xs font-semibold uppercase tracking-widest text-[#C13B54] mb-3">
           Payment Confirmed
         </p>
-        <h1 className="text-3xl md:text-4xl font-bold text-[var(--ink)] mb-4 tracking-tight">
+        <h1 className="ds-display text-3xl md:text-4xl mb-4">
           You're in. Let's get to work.
         </h1>
         <p className="text-[var(--muted)] text-base leading-relaxed mb-8">
@@ -55,7 +55,7 @@ export default function Success() {
             href={notionLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 font-semibold px-8 py-4 rounded-lg text-sm border-2 border-[#C13B54] text-[#C13B54] hover:bg-[#C13B54]/5 transition-colors"
+            className="ds-btn ds-btn-outline inline-flex items-center justify-center gap-2"
           >
             <ExternalLink className="w-4 h-4" />
             Access Your Notion Portal →
@@ -64,7 +64,7 @@ export default function Success() {
             href={CALENDAR_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm bg-[#C13B54] hover:bg-[#A02E44] transition-colors"
+            className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2"
           >
             <Calendar className="w-4 h-4" />
             Book Your Free Strategy Session

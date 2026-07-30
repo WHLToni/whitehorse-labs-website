@@ -183,7 +183,7 @@ export default function Services() {
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="ds-eyebrow mb-4">Services & Pricing</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[var(--ink)]">
+            <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">
               Fixed Scope. Fixed Price. Delivered in Weeks.
             </h1>
             <p className="text-base md:text-lg text-[var(--muted)] max-w-2xl leading-relaxed mx-auto text-center">
@@ -271,7 +271,7 @@ export default function Services() {
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
             <p className="ds-eyebrow mb-4">How It Works</p>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--ink)] mb-2">Clear Process. No Surprises.</h2>
+            <h2 className="ds-display text-4xl md:text-5xl mb-2">Clear Process. No Surprises.</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
@@ -300,7 +300,7 @@ export default function Services() {
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <p className="ds-eyebrow mb-4">Not Ready to Commit?</p>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--ink)] mb-6">
+            <h2 className="ds-display text-4xl md:text-5xl mb-6">
               Buy the Frameworks.
             </h2>
             <p className="text-base md:text-lg text-[var(--muted)] max-w-2xl mx-auto leading-relaxed mb-8">
@@ -308,7 +308,7 @@ export default function Services() {
             </p>
             <Link
               to={createPageUrl("BuyTheFrameworks")}
-              className="ds-btn-solid inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-lg text-sm"
+              className="ds-btn ds-btn-solid inline-flex items-center gap-2"
             >
               Buy the Frameworks →
             </Link>
