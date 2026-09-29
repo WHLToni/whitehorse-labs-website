@@ -15,7 +15,7 @@ export default function ICPCallout() {
           className="max-w-2xl"
         >
           <h2 className="ds-display text-[clamp(28px,4vw,44px)] text-[var(--ink)] mt-4 mb-5">
-            Schedule an Initial Discussion
+            Schedule an Initial Chat
           </h2>
           <p className="text-[#3a4649] text-base leading-relaxed max-w-xl mb-7">
             A 30-minute introductory conversation to review your current product milestone, commercial objectives, and whether a structured engagement aligns with your timeline.
