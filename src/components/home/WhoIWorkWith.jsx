@@ -15,7 +15,6 @@ export default function WhoIWorkWith() {
     <section className="ds-band ds-band--glass">
       <div className="ds-wrap">
         <div className="mb-12">
-          <span className="ds-eyebrow mb-4 block">Are We a Good Fit?</span>
           <h2 className="ds-display text-[clamp(28px,4vw,44px)] text-[var(--ink)] mt-4">
             I deliver the best results for:
           </h2>

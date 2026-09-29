@@ -18,7 +18,6 @@ export default function ChoosePath() {
       <div className="ds-wrap relative z-10">
         {/* Header */}
         <div className="mb-12">
-          <span className="ds-eyebrow mb-4 block">The Work</span>
           <h2 className="ds-display text-[clamp(28px,4vw,44px)] text-[var(--ink)] mt-4 mb-5">
             Choose Your Starting Point
           </h2>
@@ -28,8 +27,6 @@ export default function ChoosePath() {
         </div>
 
         {/* Stack label */}
-        <p className="ds-eyebrow grey mb-6 block">The Commercialisation Stack</p>
-
         {/* Tiers */}
         <div className="space-y-4">
           {tiers.map((tier, i) => (
@@ -73,11 +70,7 @@ export default function ChoosePath() {
         {/* Divider */}
         <div className="relative flex items-center my-10">
           <div className="flex-1 border-t border-[var(--line)]" />
-          <span className="mx-4 ds-eyebrow grey">Also Available</span>
-          <div className="flex-1 border-t border-[var(--line)]" />
         </div>
-
-        <p className="ds-eyebrow grey mb-6 block">Pre-Build</p>
 
         {/* MVP Sprint */}
         <motion.div
@@ -109,8 +102,6 @@ export default function ChoosePath() {
         <div className="relative flex items-center my-10">
           <div className="flex-1 border-t border-[var(--line)]" />
         </div>
-
-        <p className="ds-eyebrow grey mb-6 block">Fractional Leadership</p>
 
         <motion.div
           initial={{ opacity: 0, y: 14 }}

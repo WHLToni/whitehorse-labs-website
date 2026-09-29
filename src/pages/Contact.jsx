@@ -80,7 +80,6 @@ ${form.message}
       <section className="py-24 md:py-32 bg-[#F3F8F1]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="ds-eyebrow mb-4">Contact</p>
             <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6 max-w-3xl">
               Let's Talk
             </h1>

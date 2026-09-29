@@ -10,7 +10,6 @@ export default function HeroSection() {
       <div className="ds-wrap">
         <div className="max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.25, 0.1, 0, 1] }}>
-            <span className="ds-eyebrow">Commercialization &amp; GTM · Regulated &amp; Complex Products</span>
             <h1 className="ds-display text-[clamp(34px,5.5vw,68px)] text-[var(--ink)] mt-6 mb-8 leading-[1.05]">
               Translating complex technical products into viable commercial businesses.
             </h1>

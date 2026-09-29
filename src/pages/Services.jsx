@@ -182,7 +182,6 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="ds-eyebrow mb-4">Services & Pricing</p>
             <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">
               Fixed Scope. Fixed Price. Delivered in Weeks.
             </h1>
@@ -196,9 +195,6 @@ export default function Services() {
       {/* THE COMMERCIALISATION STACK */}
       <section className="py-10 md:py-12 bg-[#E7F0E3]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
-          <p className="ds-eyebrow grey mb-8 text-center">
-            The Commercialisation Stack
-          </p>
           <div className="space-y-6">
             {serviceCards.map((card, i) => (
               <ServiceCard key={card.name} {...card} />
@@ -213,10 +209,6 @@ export default function Services() {
             </span>
             <div className="flex-1 border-t border-[#E1E7E9]" />
           </div>
-          <p className="ds-eyebrow grey text-center mb-6">
-            Fractional Leadership
-          </p>
-
           <ServiceCard
             name="Fractional GTM Leadership"
             subheading="For founders and leadership teams who need senior GTM capability embedded on an ongoing basis."
@@ -240,12 +232,6 @@ export default function Services() {
       <section className="py-10 md:py-12 bg-[#0e0e0e] relative overflow-hidden">
         <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-[#C13B54]/5 blur-[120px]" />
         <div className="max-w-5xl mx-auto px-6 lg:px-10 relative">
-          <p className="ds-eyebrow grey mb-4 text-center">
-            Also Available
-          </p>
-          <p className="ds-eyebrow grey mb-12 text-center">
-            Pre-Build
-          </p>
           <ServiceCard
             name="The MVP Sprint"
             subheading="You have a problem worth solving but no product yet."
@@ -270,7 +256,6 @@ export default function Services() {
       <section className="py-10 md:py-12 bg-[#F3F8F1]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-8">
-            <p className="ds-eyebrow mb-4">How It Works</p>
             <h2 className="ds-display text-4xl md:text-5xl mb-2">Clear Process. No Surprises.</h2>
           </motion.div>
 
@@ -299,7 +284,6 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-[#E7F0E3]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <p className="ds-eyebrow mb-4">Not Ready to Commit?</p>
             <h2 className="ds-display text-4xl md:text-5xl mb-6">
               Buy the Frameworks.
             </h2>

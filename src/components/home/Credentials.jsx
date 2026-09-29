@@ -17,7 +17,6 @@ export default function Credentials() {
               />
             </div>
             <div className="w-full max-w-[280px] lg:max-w-full mt-1">
-              <p className="ds-eyebrow grey mb-1.5">Industry Experience</p>
               <p className="text-xs text-[var(--muted)] leading-relaxed italic">
                 Agentic AI & Automation · MedTech · HealthTech · ConstructionTech · FinTech · VeterinaryTech · Marine · Equine · Public Sector Workforce Training
               </p>
@@ -26,7 +25,6 @@ export default function Credentials() {
 
           {/* Right — bio */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="lg:col-span-2 flex flex-col gap-5">
-            <span className="ds-eyebrow">The Practitioner</span>
             <h2 className="ds-display text-[clamp(28px,4vw,44px)] text-[var(--ink)]">
               Commercial leadership spanning product marketing, GTM strategy, and enterprise sales.
             </h2>
@@ -76,9 +74,6 @@ export default function Credentials() {
 
       {/* Brands strip — scrolling marquee */}
       <div className="mt-20 py-12" style={{ background: "#0e0e0e" }}>
-        <div className="ds-wrap">
-          <p className="ds-eyebrow grey mb-8 text-center" style={{ color: "#666" }}>Brands I've worked with</p>
-        </div>
         <div className="overflow-hidden relative" style={{ maskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)", WebkitMaskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)" }}>
           <div className="flex items-center gap-12 w-max ds-marquee">
             {[

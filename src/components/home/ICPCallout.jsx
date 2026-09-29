@@ -11,7 +11,6 @@ export default function ICPCallout() {
       <div className="ds-wrap">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 md:divide-x md:divide-[var(--line)]">
           <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="flex flex-col">
-            <span className="ds-eyebrow mb-2">Free Resource</span>
             <h3 className="ds-display text-[clamp(24px,3vw,36px)] text-[var(--ink)] mt-2">
               Nail your foundations for free.
             </h3>
@@ -24,7 +23,6 @@ export default function ICPCallout() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }} className="flex flex-col md:pl-8">
-            <span className="ds-eyebrow mb-2">Ready to Start?</span>
             <h3 className="ds-display text-[clamp(24px,3vw,36px)] text-[var(--ink)] mt-2">
               Book a 30-minute call.
             </h3>

@@ -144,7 +144,6 @@ export default function BuyTheFrameworks() {
       <section className="py-12 md:py-16 bg-[#F3F8F1] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="ds-eyebrow mb-4">Self-serve · Notion-based · AI-guided</p>
             <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">
               Do the groundwork yourself.
             </h1>
@@ -204,7 +203,6 @@ export default function BuyTheFrameworks() {
       {/* GTM BUILDER PRODUCT CARD */}
       <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden bg-[var(--mist)]">
         <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
-          <p className="ds-eyebrow grey mb-4">THE BUILDER SUITE</p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="rounded-md border border-[var(--line)] overflow-hidden bg-white">
 
@@ -299,7 +297,6 @@ export default function BuyTheFrameworks() {
       {/* WHO IT'S FOR */}
       <section className="py-12 md:py-16 bg-[#E7F0E3]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10">
-          <p className="ds-eyebrow mb-4">Who It's For</p>
           <h2 className="ds-display text-3xl md:text-4xl mb-10">Built for founders who need to move fast</h2>
           <div className="space-y-5">
             {whoFor.map((item, i) => (
@@ -352,7 +349,6 @@ export default function BuyTheFrameworks() {
       {/* FAQs */}
       <section className="py-12 md:py-16 bg-[#E7F0E3]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
-          <p className="ds-eyebrow mb-4">FAQs</p>
           <h2 className="ds-display text-2xl md:text-3xl mb-8">Frequently Asked Questions</h2>
           {faqs.map((f, i) => <FAQItem key={i} question={f.q} answer={f.a} />)}
         </div>
