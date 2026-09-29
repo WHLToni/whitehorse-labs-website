@@ -35,6 +35,8 @@ const modules = [
   {
     num: "04",
     title: "Competitive Analysis",
+    image:
+      "https://media.base44.com/images/public/6995347084af76a3154d3f6b/7938864a9_Module4_CompetitorAnalysis.png",
     whatYouBuild:
       "Direct and alternative competitor mapping; side-by-side Competitor Matrix across consistent criteria; deep-dive Competitor Snapshots that convert into sales battlecards; and a VRIO Analysis framework to verify defensible advantages.",
     aiPrompts:
