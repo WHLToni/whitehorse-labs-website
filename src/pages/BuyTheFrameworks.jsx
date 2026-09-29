@@ -45,6 +45,8 @@ const modules = [
   {
     num: "05",
     title: "Positioning & Messaging Architecture",
+    image:
+      "https://media.base44.com/images/public/6995347084af76a3154d3f6b/ae04a5794_Module5_PositioningMessaging.png",
     whatYouBuild:
       "Core Positioning Framework; Value Proposition Canvas mapped to Jobs-to-be-Done (pains, gains, jobs); Messaging Framework with headlines, subheads, proof points, and objection responses; and the Evergreen Campaign Messaging House for website and sales consistency.",
     aiPrompts:
