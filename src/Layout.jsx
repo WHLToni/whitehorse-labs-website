@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "Home", page: "Home" },
-  { label: "The Builder Suite", href: "/BuyTheFrameworks" },
+  { label: "Self-Directed GTM", href: "/self-directed-gtm" },
   { label: "Contact", page: "Contact" },
 ];
 

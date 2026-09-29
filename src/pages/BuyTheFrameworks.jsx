@@ -113,8 +113,8 @@ export default function BuyTheFrameworks() {
   const pricing = usePricing();
 
   useEffect(() => {
-    document.title = "The Builder Suite - GTM Builder & Product Builder | Whitehorse Labs";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "The GTM Builder and Product Builder. Self-guided Notion systems with 34 structured AI prompts - the commercial foundations every investor will ask about. Includes a free 1-hour accelerator session with Toni. From AUD $349.");
+    document.title = "Self-Directed GTM | Commercial Planning System";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "A structured, step-by-step system for technical teams to build their positioning, pricing models, and market entry strategy independently.");
   }, []);
 
   const handleBuy = async (product) => {
@@ -141,21 +141,17 @@ export default function BuyTheFrameworks() {
     <div className="ds-page">
 
       {/* HERO */}
-      <section className="py-12 md:py-16 bg-[#F3F8F1] text-center">
+      <section className="py-16 md:py-24 bg-[#F3F8F1] text-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">
-              Do the groundwork yourself.
-            </h1>
-            <p className="text-[#3a4649] text-base leading-relaxed max-w-[600px] mx-auto">
-              <span className="font-semibold">Don't have budget for a consultant or marketer?</span>
-              <br />
-              Generate your go-to-market plan with the GTM Builder — a guided Notion-based tool that builds the fundamental components of credible, razor-sharp GTM strategy for your product. Includes 34 detailed AI prompts for deeper research and rapid speed to market, and investor snapshot.
-              <br /><br />
-              Ideal for founders who have a bootstrapped MVP that's almost ready for market, founders seeking seed or Series A funding, and vibe coders who have built a product and don't know how to get their first customers.
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C13B54] mb-5">
+              Notion Workspace · Independent Commercialization
             </p>
-            <p className="text-[#3a4649] text-base leading-relaxed max-w-[600px] mx-auto mt-4">
-              <span className="font-semibold">Bonus!</span> GTM Strategy Shadow Board Reviewer prompt. This AI prompt assembles three ruthless critics to stress test your final plan — a Cynical VC, a Risk-Averse Lawyer and a Burned Customer will argue with each other, give brutally honest feedback, and will each identify one key element that could kill your strategy entirely.
+            <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">
+              Self-Directed GTM
+            </h1>
+            <p className="text-[#3a4649] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+              A structured, step-by-step system for technical teams to build their positioning, pricing models, and market entry strategy independently.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
               <button
