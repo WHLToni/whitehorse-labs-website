@@ -55,6 +55,8 @@ const modules = [
   {
     num: "06",
     title: "Brand Strategy & Foundations",
+    image:
+      "https://media.base44.com/images/public/6995347084af76a3154d3f6b/046f4caa8_Module6_Brand.png",
     whatYouBuild:
       "Complete brand foundation covering purpose, mission, vision, and values; brand personality profile across six dimensions; voice and tone guide specific enough for freelance copywriters; and visual identity direction to brief designers.",
     aiPrompts:
