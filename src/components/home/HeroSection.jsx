@@ -16,20 +16,20 @@ export default function HeroSection() {
       <div className="ds-wrap">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.25, 0.1, 0, 1] }}>
-            <span className="ds-eyebrow">Fractional GTM · Regulated &amp; Complex Products</span>
-            <h1 className="ds-display text-[clamp(36px,6vw,72px)] text-[var(--ink)] mt-6 mb-8">
-              You've built the product. Getting it to market is a different skill set entirely.
+            <span className="ds-eyebrow">Commercialization &amp; GTM · Regulated &amp; Complex Products</span>
+            <h1 className="ds-display text-[clamp(34px,5.5vw,68px)] text-[var(--ink)] mt-6 mb-8 leading-[1.05]">
+              Translating complex technical products into viable commercial businesses.
             </h1>
             <p className="text-base md:text-lg text-[#3a4649] leading-relaxed max-w-xl mb-4">
-              I help founders and product teams in regulated industries build the commercial foundations that make products successful — segmentation, positioning, GTM strategy, launch. Fifteen years across medtech, fintech and SaaS, seed stage through IPO. I don't hand you a deck and leave; I build the frameworks alongside your team and embed them.
+              Strategic direction on positioning, pricing models, and initial market entry for engineering, climate tech, and regulated B2B software across APAC and North America.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-12">
               <Link to={createPageUrl("Contact")} className="ds-btn ds-btn-solid inline-flex items-center gap-2">
-                Book a Call <ArrowRight className="w-4 h-4" />
+                Discuss an Engagement <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link to={createPageUrl("Services")} className="ds-btn ds-btn-outline inline-flex items-center gap-2">
-                See How It Works
-              </Link>
+              <a href="#engagement-models" onClick={(e) => { e.preventDefault(); document.getElementById("engagement-models")?.scrollIntoView({ behavior: "smooth" }); }} className="ds-btn ds-btn-outline inline-flex items-center gap-2">
+                View Engagement Models
+              </a>
             </div>
           </motion.div>
 

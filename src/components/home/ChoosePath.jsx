@@ -14,7 +14,7 @@ const tiers = [
 export default function ChoosePath() {
   const pricing = usePricing();
   return (
-    <section className="ds-band bg-[#E7F0E3]">
+    <section id="engagement-models" className="ds-band bg-[#E7F0E3]">
       <div className="ds-wrap relative z-10">
         {/* Header */}
         <div className="mb-12">
