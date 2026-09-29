@@ -288,9 +288,6 @@ export default function BuyTheFrameworks() {
                     <h3 className="ds-display text-2xl md:text-3xl mb-5" style={{ letterSpacing: "0.06em" }}>{m.title}</h3>
                     <div className="space-y-5">
                       <div>
-                        <p className="text-xs font-bold uppercase tracking-widest text-[var(--ink)] mb-1.5">
-                          What you build
-                        </p>
                         <p className="text-[#3a4649] text-sm md:text-base leading-relaxed">
                           {m.whatYouBuild}
                         </p>
