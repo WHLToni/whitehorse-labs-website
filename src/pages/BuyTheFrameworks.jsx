@@ -285,7 +285,7 @@ export default function BuyTheFrameworks() {
                         {m.bonus ? "Bonus" : "Module"}
                       </span>
                     </div>
-                    <h3 className="ds-display text-2xl md:text-3xl mb-5">{m.title}</h3>
+                    <h3 className="ds-display text-2xl md:text-3xl mb-5" style={{ letterSpacing: "0.06em" }}>{m.title}</h3>
                     <div className="space-y-5">
                       <div>
                         <p className="text-xs font-bold uppercase tracking-widest text-[var(--ink)] mb-1.5">
