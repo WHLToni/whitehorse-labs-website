@@ -7,6 +7,8 @@ const modules = [
   {
     num: "01",
     title: "Market Analysis & Sizing",
+    image:
+      "https://media.base44.com/images/public/6995347084af76a3154d3f6b/c99030861_Module1_MarketAnalysis.png",
     whatYouBuild:
       "TAM, SAM, and SOM calculations; bottom-up market sizing models; PESTEL analysis; Porter's 5 Forces; SWOT and TOWS strategic matrices; and customer interview logging.",
     aiPrompts: "TAM/SAM/SOM Estimator, Bottom-Up Sizing Model, Strategic Priorities Advisor.",
@@ -303,16 +305,28 @@ export default function BuyTheFrameworks() {
                     transition={{ delay: 0.1 }}
                     className={reversed ? "md:order-1" : ""}
                   >
-                    <div
-                      className={`rounded-lg border ${m.bonus ? "border-[#C13B54]/40" : "border-[var(--line)]"} bg-[#f5f8f6] aspect-[4/3] flex flex-col items-center justify-center gap-3 p-8`}
-                    >
-                      <div className="w-10 h-10 rounded-md border border-[var(--line)] bg-white flex items-center justify-center">
-                        <span className="text-[var(--muted)] text-base font-bold">{m.num}</span>
+                    {m.image ? (
+                      <div
+                        className={`rounded-lg border ${m.bonus ? "border-[#C13B54]/40" : "border-[var(--line)]"} overflow-hidden bg-white`}
+                      >
+                        <img
+                          src={m.image}
+                          alt={`${m.title} Notion screenshot`}
+                          className="w-full h-auto block"
+                        />
                       </div>
-                      <p className="text-xs font-semibold uppercase tracking-widest text-[var(--muted)] text-center">
-                        {m.bonus ? "Bonus Snapshot" : `Section ${m.num}`} Notion screenshot
-                      </p>
-                    </div>
+                    ) : (
+                      <div
+                        className={`rounded-lg border ${m.bonus ? "border-[#C13B54]/40" : "border-[var(--line)]"} bg-[#f5f8f6] aspect-[4/3] flex flex-col items-center justify-center gap-3 p-8`}
+                      >
+                        <div className="w-10 h-10 rounded-md border border-[var(--line)] bg-white flex items-center justify-center">
+                          <span className="text-[var(--muted)] text-base font-bold">{m.num}</span>
+                        </div>
+                        <p className="text-xs font-semibold uppercase tracking-widest text-[var(--muted)] text-center">
+                          {m.bonus ? "Bonus Snapshot" : `Section ${m.num}`} Notion screenshot
+                        </p>
+                      </div>
+                    )}
                   </motion.div>
                 </div>
               );
