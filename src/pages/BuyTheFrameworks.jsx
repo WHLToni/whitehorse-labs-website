@@ -26,6 +26,8 @@ const modules = [
   {
     num: "03",
     title: "Ideal Customer Profile (ICP)",
+    image:
+      "https://media.base44.com/images/public/6995347084af76a3154d3f6b/5b2c4562c_Module3_ICP.png",
     whatYouBuild:
       "Single-sentence ICP hypotheses across B2B, B2C, or B2G; firmographic and technographic boundary boxes; the qualification layer separating firmographics from buying signals; \"Why Now\" buying triggers; buying committee decision journeys; objection and proof mapping; and a scored qualification scorecard with decision rules (e.g., pursue if must-haves met and score is 8+).",
     aiPrompts: "ICP Synthesiser and Validator Prompt.",
