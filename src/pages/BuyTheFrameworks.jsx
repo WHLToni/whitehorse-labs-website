@@ -23,6 +23,33 @@ const tags = [
   "Instant Notion access",
 ];
 
+const pricingTiers = [
+  {
+    name: "Self-Directed GTM",
+    subtitle: "Self-guided · Notion-based · AI-guided",
+    price: "AUD $349",
+    priceNote: "One-time · Instant access",
+    features: [
+      "Duplicate the complete system directly into your own Notion workspace",
+      "All 7 sequenced modules with working templates, frameworks, and databases",
+      "34 structured AI analytical prompts in JSON format",
+      "The 1-Page Investor & Executive Snapshot template",
+      "Estimated completion time: 2–4 weeks working at your own pace",
+    ],
+  },
+  {
+    name: "Workspace + Strategy Review",
+    subtitle: "Self-guided workspace + expert review",
+    price: "AUD $595",
+    priceNote: "One-time · Workspace + review session",
+    features: [
+      "The complete Self-Directed GTM workspace",
+      "Asynchronous Deep-Dive Review: Toni reviews your completed Notion system, customer discovery logs, and draft positioning",
+      "60-Minute Pressure-Test Session: A 1-on-1 strategy call to stress-test your pricing, interrogate pilot terms, and refine your launch motions",
+    ],
+  },
+];
+
 const coreComponents = [
   {
     title: "Commercial Discovery",
@@ -243,76 +270,98 @@ export default function BuyTheFrameworks() {
         </div>
       </section>
 
-      {/* GTM BUILDER PRODUCT CARD */}
+      {/* PRICING */}
       <section id="gtm-builder" className="relative py-12 md:py-16 overflow-hidden bg-[var(--mist)]">
-        <div className="relative max-w-4xl mx-auto px-6 lg:px-10 z-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-md border border-[var(--line)] overflow-hidden bg-white">
+        <div className="relative max-w-5xl mx-auto px-6 lg:px-10 z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
 
-            {/* Top: title, price, description, CTA */}
-            <div className="p-8 md:p-12 border-b border-[var(--line)]">
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
-                <div>
-                  <h3 className="ds-display text-3xl md:text-4xl mb-1">GTM Builder</h3>
-                  <p className="text-[var(--muted)] text-sm">Self-guided · Notion-based · AI-guided</p>
-                </div>
-                <div className="sm:text-right flex-shrink-0">
-                  <p className="text-[var(--ink)] font-bold text-3xl">AUD $349</p>
-                  <p className="text-[var(--muted)] text-xs mt-1">One-time · Instant access</p>
-                </div>
+            {/* Card 1: Self-Directed GTM */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+              className="rounded-md border border-[var(--line)] overflow-hidden bg-white flex flex-col">
+              <div className="p-8 md:p-10 border-b border-[var(--line)]">
+                <h3 className="ds-display text-2xl md:text-3xl mb-1">{pricingTiers[0].name}</h3>
+                <p className="text-[var(--muted)] text-sm mb-4">{pricingTiers[0].subtitle}</p>
+                <p className="text-[var(--ink)] font-bold text-3xl mb-1">{pricingTiers[0].price}</p>
+                <p className="text-[var(--muted)] text-xs">{pricingTiers[0].priceNote}</p>
               </div>
-              <p className="text-[#3a4649] text-base leading-relaxed mb-6 max-w-2xl">
-                A self-guided Notion system that walks you through seven modules of commercial groundwork — from market sizing to launch planning. Work through it at your own pace, guided by 34 structured AI prompts designed to draw out the thinking that many early-stage founders skip.
-              </p>
-              <div className="flex flex-wrap gap-4 mb-8">
-                {tags.map((tag, i) => (
-                  <span key={i} className="inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--muted)] bg-[#f5f8f6] border border-[var(--line)] px-3 py-1.5 rounded-full">
-                    {tag}
-                  </span>
-                ))}
+              <div className="p-8 md:p-10 flex-1 flex flex-col">
+                <ul className="space-y-4 mb-8 flex-1">
+                  {pricingTiers[0].features.map((f, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="text-[#C13B54] font-bold leading-relaxed flex-shrink-0 mt-0.5">&bull;</span>
+                      <p className="text-[#3a4649] text-sm leading-relaxed">{f}</p>
+                    </li>
+                  ))}
+                </ul>
+                <button
+                  onClick={() => handleBuy('gtm')}
+                  disabled={loading === 'gtm'}
+                  className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 disabled:opacity-70"
+                >
+                  {loading === 'gtm' ? 'Redirecting...' : 'Access the Workspace — AUD $349'}
+                </button>
               </div>
-              <button
-                onClick={() => handleBuy('gtm')}
-                disabled={loading === 'gtm'}
-                className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 disabled:opacity-70"
-              >
-                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder — AUD $349'}
-              </button>
+            </motion.div>
+
+            {/* Card 2: Workspace + Strategy Review */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
+              className="rounded-md border-2 border-[#C13B54] overflow-hidden bg-white flex flex-col">
+              <div className="p-8 md:p-10 border-b border-[#C13B54]/20" style={{ background: "rgba(193,59,84,0.04)" }}>
+                <h3 className="ds-display text-2xl md:text-3xl mb-1">{pricingTiers[1].name}</h3>
+                <p className="text-[var(--muted)] text-sm mb-4">{pricingTiers[1].subtitle}</p>
+                <p className="text-[var(--ink)] font-bold text-3xl mb-1">{pricingTiers[1].price}</p>
+                <p className="text-[var(--muted)] text-xs">{pricingTiers[1].priceNote}</p>
+              </div>
+              <div className="p-8 md:p-10 flex-1 flex flex-col">
+                <ul className="space-y-4 mb-8 flex-1">
+                  {pricingTiers[1].features.map((f, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="text-[#C13B54] font-bold leading-relaxed flex-shrink-0 mt-0.5">&bull;</span>
+                      <p className="text-[#3a4649] text-sm leading-relaxed">{f}</p>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  to={createPageUrl("Contact")}
+                  className="ds-btn ds-btn-outline inline-flex items-center justify-center gap-2"
+                >
+                  Enquire about Strategy Review
+                </Link>
+              </div>
+            </motion.div>
+
+          </div>
+
+          {/* Strategy session */}
+          <div className="mt-6 md:mt-8 rounded-xl border-2 border-[#C13B54] p-6 md:p-8" style={{ background: "rgba(193,59,84,0.06)" }}>
+            <div className="flex items-center gap-2 mb-3">
+              <span className="bg-[#C13B54] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
             </div>
+            <p className="text-[var(--ink)] font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
+            <p className="text-[#3a4649] text-sm leading-relaxed">
+              Calendar link provided after purchase, and within the Notion package for easy booking.
+            </p>
+            <p className="text-[#3a4649] text-sm leading-relaxed mt-3">
+              Use this session to align on your market and focus before you dive in — or after you've completed the work, we can pressure-test your outputs together.
+            </p>
+            <p className="text-[#3a4649] text-sm leading-relaxed mt-3 font-semibold">
+              Limited sessions available — once they're gone, they're gone!
+            </p>
+          </div>
 
-            {/* Strategy session - directly below price */}
-            <div className="p-8 md:p-12 border-b border-[var(--line)]">
-              <div className="rounded-xl border-2 border-[#C13B54] p-6" style={{ background: "rgba(193,59,84,0.06)" }}>
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#C13B54] text-white text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Limited Time</span>
+          {/* Modules grid */}
+          <div className="mt-6 md:mt-8 rounded-md border border-[var(--line)] bg-white p-8 md:p-12">
+            <p className="text-base font-bold text-[var(--ink)] mb-6">7 Modules + Bonus</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {modules.map((m, i) => (
+                <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${m.bonus ? "border border-[#C13B54]/40 bg-[#C13B54]/5" : "border border-[var(--line)] bg-[#f5f8f6]"}`}>
+                  <span className={`text-xs font-bold flex-shrink-0 w-5 ${m.bonus ? "text-[#C13B54]" : "text-[var(--muted)]"}`}>{m.num}</span>
+                  <span className={`text-sm leading-snug ${m.bonus ? "text-[var(--ink)] font-semibold" : "text-[#3a4649]"}`}>{m.title}</span>
                 </div>
-                <p className="text-[var(--ink)] font-bold text-base mb-2">Free 1-Hour Strategy Session With Me — Included With Purchase</p>
-                <p className="text-[#3a4649] text-sm leading-relaxed">
-                  Calendar link provided after purchase, and within the Notion package for easy booking.
-                </p>
-                <p className="text-[#3a4649] text-sm leading-relaxed mt-3">
-                  Use this session to align on your market and focus before you dive in — or after you've completed the work, we can pressure-test your outputs together.
-                </p>
-                <p className="text-[#3a4649] text-sm leading-relaxed mt-3 font-semibold">
-                  Limited sessions available — once they're gone, they're gone!
-                </p>
-              </div>
+              ))}
             </div>
+          </div>
 
-            {/* Modules grid */}
-            <div className="p-8 md:p-12">
-              <p className="text-base font-bold text-[var(--ink)] mb-6">7 Modules + Bonus</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {modules.map((m, i) => (
-                  <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${m.bonus ? "border border-[#C13B54]/40 bg-[#C13B54]/5" : "border border-[var(--line)] bg-[#f5f8f6]"}`}>
-                    <span className={`text-xs font-bold flex-shrink-0 w-5 ${m.bonus ? "text-[#C13B54]" : "text-[var(--muted)]"}`}>{m.num}</span>
-                    <span className={`text-sm leading-snug ${m.bonus ? "text-[var(--ink)] font-semibold" : "text-[#3a4649]"}`}>{m.title}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </motion.div>
         </div>
       </section>
 
