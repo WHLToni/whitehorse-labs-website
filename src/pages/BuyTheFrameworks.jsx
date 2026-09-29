@@ -76,6 +76,8 @@ const modules = [
     num: "\u2605",
     title: "Investor & Executive One-Page Snapshot",
     bonus: true,
+    image:
+      "https://media.base44.com/images/public/6995347084af76a3154d3f6b/a643532a9_Module8_InvestorSnapshot.png",
     whatYouBuild:
       "Distill your entire commercial foundation into an executive summary you can communicate in under two minutes built for pitch decks, advisory meetings, and board updates.",
     aiPrompts:
