@@ -168,7 +168,7 @@ export default function BuyTheFrameworks() {
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C13B54] mb-5">
-              Notion Workspace · Independent Commercialization
+              Notion Workspace · Independent Commercialisation
             </p>
             <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">
               Self-Directed GTM
@@ -182,7 +182,7 @@ export default function BuyTheFrameworks() {
                 Taking a complex technical product to market requires clear answers to fundamental commercial questions: who has real budget, what value proposition drives procurement, and how to price effectively.
               </p>
               <p className="text-[#3a4649] text-base leading-relaxed">
-                Self-Directed GTM translates twenty-five years of regulated B2B product management and enterprise commercialization into an interactive Notion workspace. It provides the structured frameworks, interview scripts, and analytical models necessary to build an investment-grade go-to-market plan internally.
+                Self-Directed GTM translates twenty-five years of regulated B2B product management and enterprise commercialisation into an interactive Notion workspace. It provides the structured frameworks, interview scripts, and analytical models necessary to build an investment-grade go-to-market plan internally.
               </p>
             </div>
 

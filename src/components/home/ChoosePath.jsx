@@ -24,7 +24,7 @@ const engagements = [
       },
       {
         label: "Execution Roadmap",
-        text: "A documented commercialization plan detailing sales motions, operational milestones, and timelines.",
+        text: "A documented commercialisation plan detailing sales motions, operational milestones, and timelines.",
       },
     ],
     cta: "Discuss an Engagement",
