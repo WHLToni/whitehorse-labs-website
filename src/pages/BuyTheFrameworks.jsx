@@ -179,10 +179,14 @@ export default function BuyTheFrameworks() {
               Notion Commercialisation Workspace
             </p>
             <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">Self-Directed GTM</h1>
-            <p className="text-[#3a4649] text-lg md:text-xl leading-relaxed mb-8">
-              A structured Notion system that builds the commercial foundations early-stage products
-              miss from market sizing and ICP qualification to pricing, messaging, and launch
-              execution.
+            <p className="text-[#3a4649] text-lg md:text-xl leading-relaxed mb-6">
+              Built on twenty-five years of B2B product commercialisation, this workspace puts the
+              analytical frameworks used by enterprise consultancies directly into your hands.
+            </p>
+            <p className="text-[#3a4649] text-base leading-relaxed mb-8 max-w-2xl">
+              Work step-by-step through seven sequenced modules, then use 34 structured AI sparring
+              prompts to synthesise your findings and build a defensible launch plan. Think of it as
+              a crash-course MBA in commercial strategy, where your product is the case study.
             </p>
             <p className="text-[#3a4649] text-base leading-relaxed mb-10 max-w-2xl">
               There is a gap between a functional product and a product that actually sells.
