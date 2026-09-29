@@ -204,13 +204,6 @@ export default function BuyTheFrameworks() {
               prompts to synthesise your findings and build a defensible launch plan. Think of it as
               a crash-course MBA in commercial strategy, where your product is the case study.
             </p>
-            <p className="text-[#3a4649] text-base leading-relaxed mb-10 max-w-2xl">
-              There is a gap between a functional product and a product that actually sells.
-              Self-Directed GTM is a founder-friendly operating system designed to close that gap.
-              Instead of guessing in blank documents or spending five figures on an agency, you work
-              through seven sequenced modules and 34 structured AI prompts to build an
-              investment-grade commercial plan in your own Notion workspace.
-            </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <button
                 onClick={() => scrollTo("pricing")}
@@ -382,7 +375,7 @@ export default function BuyTheFrameworks() {
                 transition={{ delay: i * 0.1 }}
                 className="rounded-md border border-[var(--line)] bg-white p-7 md:p-8"
               >
-                <h3 className="ds-display text-lg md:text-xl mb-3">{c.title}</h3>
+                <h3 className="text-lg md:text-xl mb-3">{c.title}</h3>
                 <p className="text-[#3a4649] text-sm leading-relaxed">{c.desc}</p>
               </motion.div>
             ))}
@@ -408,7 +401,7 @@ export default function BuyTheFrameworks() {
                   className={`p-8 md:p-10 border-b ${tier.featured ? "border-[#C13B54]/20" : "border-[var(--line)]"}`}
                   style={tier.featured ? { background: "rgba(193,59,84,0.04)" } : undefined}
                 >
-                  <h3 className="ds-display text-2xl md:text-3xl mb-1">{tier.name}</h3>
+                  <h3 className="text-2xl md:text-3xl mb-1">{tier.name}</h3>
                   <p className="text-[var(--ink)] font-bold text-3xl mb-1 mt-4">{tier.price}</p>
                   <p className="text-[var(--muted)] text-xs">{tier.priceNote}</p>
                 </div>
