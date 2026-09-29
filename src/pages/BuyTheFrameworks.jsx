@@ -65,6 +65,8 @@ const modules = [
   {
     num: "07",
     title: "Launch Planning & Pricing Strategy",
+    image:
+      "https://media.base44.com/images/public/6995347084af76a3154d3f6b/5d643abd3_Module7_LaunchTimeline.png",
     whatYouBuild:
       "Full launch planning document covering readiness assessments, phased timelines, channel strategy, metrics frameworks, and execution checklists; and structured launch pricing frameworks to evaluate pricing model options and competitive context.",
     aiPrompts:
