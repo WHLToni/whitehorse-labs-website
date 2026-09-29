@@ -353,13 +353,25 @@ export default function BuyTheFrameworks() {
       <section className="py-16 md:py-24 bg-[#E7F0E3]">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <h2 className="ds-display text-3xl md:text-4xl mb-4 max-w-2xl">
-            Commercialisation rarely fails dramatically. It stalls quietly.
+            Building products gets easier every day - those who understand marketing will win
           </h2>
-          <p className="text-[#3a4649] text-base md:text-lg leading-relaxed mb-12 md:mb-16 max-w-2xl">
-            Founders who struggle with commercialization rarely fail dramatically they fail
-            gradually. They burn through lead lists that go nowhere, build case studies for users
-            who don't refer anyone, and hire salespeople who can't explain who they are selling to.
-          </p>
+          <div className="space-y-5 mb-12 md:mb-16 max-w-2xl">
+            <p className="text-[#3a4649] text-base md:text-lg leading-relaxed">
+              When the technical barriers to launching a product fall away, commercial execution
+              becomes the differentiator. Getting traction and closing revenue isn't about throwing
+              ideas against a wall to see what sticks. It's a methodical, analytical process.
+            </p>
+            <p className="text-[#3a4649] text-base md:text-lg leading-relaxed">
+              AI tools are useful accelerators for marketing, but they're a reflection of what you
+              feed them. Without a solid commercial framework, you cannot direct AI to build a
+              credible go-to-market plan.
+            </p>
+            <p className="text-[#3a4649] text-base md:text-lg leading-relaxed">
+              This workspace puts the proven models of a senior tech marketer directly into your
+              hands. It gives your team the exact structure to stress-test your market, define your
+              category advantage, and close your first customers or capital.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {realityCards.map((c, i) => (
               <motion.div
