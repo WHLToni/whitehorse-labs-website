@@ -23,6 +23,29 @@ const tags = [
   "Instant Notion access",
 ];
 
+const coreComponents = [
+  {
+    title: "Commercial Discovery",
+    desc: "Structured interview scripts and scoring criteria to validate willingness-to-pay and procurement authority.",
+  },
+  {
+    title: "Positioning & Narrative",
+    desc: "Step-by-step models to translate technical features into defensible commercial value.",
+  },
+  {
+    title: "Pricing & Packaging Strategy",
+    desc: "Frameworks for structuring pilot contracts, commercial terms, and pricing tiers.",
+  },
+  {
+    title: "Execution Workflows",
+    desc: "Documented planning workflows covering initial pipeline development, enterprise outreach, and launch milestones.",
+  },
+  {
+    title: "Integrated Research Prompts",
+    desc: "Structured analytical prompts designed to accelerate market sizing, competitive landscape mapping, and risk analysis.",
+  },
+];
+
 const outcomes = [
   {
     title: "A validated ICP",
@@ -141,7 +164,7 @@ export default function BuyTheFrameworks() {
     <div className="ds-page">
 
       {/* HERO */}
-      <section className="py-16 md:py-24 bg-[#F3F8F1] text-center">
+      <section className="py-16 md:py-24 bg-[#F3F8F1]">
         <div className="max-w-3xl mx-auto px-6 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C13B54] mb-5">
@@ -150,22 +173,46 @@ export default function BuyTheFrameworks() {
             <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">
               Self-Directed GTM
             </h1>
-            <p className="text-[#3a4649] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-              A structured, step-by-step system for technical teams to build their positioning, pricing models, and market entry strategy independently.
+            <p className="text-[#3a4649] text-lg md:text-xl leading-relaxed mb-8">
+              A structured Notion workspace for technical teams to build their commercial foundations, positioning, and market entry strategy independently.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+
+            <div className="space-y-5 mb-8">
+              <p className="text-[#3a4649] text-base leading-relaxed">
+                Taking a complex technical product to market requires clear answers to fundamental commercial questions: who has real budget, what value proposition drives procurement, and how to price effectively.
+              </p>
+              <p className="text-[#3a4649] text-base leading-relaxed">
+                Self-Directed GTM translates twenty-five years of regulated B2B product management and enterprise commercialization into an interactive Notion workspace. It provides the structured frameworks, interview scripts, and analytical models necessary to build an investment-grade go-to-market plan internally.
+              </p>
+            </div>
+
+            <div className="mb-10">
+              <p className="text-sm font-bold uppercase tracking-widest text-[var(--ink)] mb-4">Core Components</p>
+              <ul className="space-y-3">
+                {coreComponents.map((c, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-[#C13B54] font-bold leading-relaxed flex-shrink-0">&bull;</span>
+                    <p className="text-[#3a4649] text-base leading-relaxed">
+                      <span className="font-semibold text-[var(--ink)]">{c.title}:</span> {c.desc}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <button
                 onClick={() => handleBuy('gtm')}
                 disabled={loading === 'gtm'}
                 className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2 disabled:opacity-70"
               >
-                {loading === 'gtm' ? 'Redirecting...' : 'Get the GTM Builder - AUD $349'}
+                {loading === 'gtm' ? 'Redirecting...' : 'Access the Workspace — AUD $349'}
               </button>
               <a
                 href="#gtm-builder"
                 className="ds-btn ds-btn-outline inline-flex items-center justify-center gap-2"
               >
-                See what's inside &darr;
+                View Workspace Contents &darr;
               </a>
             </div>
           </motion.div>
