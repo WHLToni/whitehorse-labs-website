@@ -28,24 +28,39 @@ export default function Credentials() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="lg:col-span-2 flex flex-col gap-5">
             <span className="ds-eyebrow">The Practitioner</span>
             <h2 className="ds-display text-[clamp(28px,4vw,44px)] text-[var(--ink)]">
-              Full-Stack GTM, from strategy through to execution.
+              Commercial leadership spanning product marketing, GTM strategy, and enterprise sales.
             </h2>
 
             <p className="text-[#3a4649] text-sm leading-relaxed">
-              Great products don't sell themselves. Someone has to own the journey from insight to revenue — the research, the positioning, the narrative, the launch, and everything that comes after.
+              A commercial career built across the entire product lifecycle:
             </p>
-            <p className="text-[#3a4649] text-sm leading-relaxed">
-              That kind of ownership can be hard to find in one person.
-            </p>
-            <p className="text-[#3a4649] text-sm leading-relaxed">
-              I started in the medical device and pharmaceutical industry, where product management and product marketing people are trained to carry a product through its entire commercial lifecycle: market intelligence and segmentation, positioning and messaging, launch and ongoing lifecycle management. Regulatory rigour, clinical credibility, commercial accountability — all of it built on actual frameworks, models, and data. It's an industry that treats marketing as a discipline, not an afterthought. That standard never left me.
-            </p>
-            <p className="text-[#3a4649] text-sm leading-relaxed">
-              After finishing an MBA, I spent the next fifteen years across product and marketing management in B2B SaaS across medical, veterinary, fintech and construction verticals. Enterprise and startups. Seed stage through to publicly listed brands across APAC and the US.
-            </p>
-            <p className="text-[#3a4649] text-sm leading-relaxed">
-              Now I work with early-stage and exit-ready businesses as a fractional product marketing lead — and I run an AI-native practice. The GTM work is built with the current toolstack, not slideware: custom Claude skills that encode your frameworks, AI-assisted market research, image and video generation for launch assets, working MVPs built in days, and systems your team keeps using long after I've gone. Some clients want the GTM strategy, some want the AI capability build. The engagement is shaped around what the business actually needs.
-            </p>
+
+            <ul className="flex flex-col gap-4 mt-1">
+              <li className="flex gap-3">
+                <span className="text-[#C13B54] flex-shrink-0 mt-1">•</span>
+                <p className="text-[#3a4649] text-sm leading-relaxed">
+                  <span className="font-semibold text-[var(--ink)]">Commercial Sales:</span> 10 years in enterprise medical device and pharmaceutical sales, managing complex clinical procurement cycles and multi-stakeholder purchasing decisions.
+                </p>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-[#C13B54] flex-shrink-0 mt-1">•</span>
+                <p className="text-[#3a4649] text-sm leading-relaxed">
+                  <span className="font-semibold text-[var(--ink)]">Product Leadership &amp; GTM:</span> 15 years leading product management and product marketing across regulated B2B SaaS—spanning healthtech, veterinary science, fintech, and construction tech across APAC and the US. Track record spans pre-revenue validation, seed-stage market entry, scaling a global brand through an initial public offering (IPO), and advising established market leaders.
+                </p>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-[#C13B54] flex-shrink-0 mt-1">•</span>
+                <p className="text-[#3a4649] text-sm leading-relaxed">
+                  <span className="font-semibold text-[var(--ink)]">Education &amp; Credentials:</span> Master of Business Administration (MBA) from the University of Technology Sydney, alongside executive strategy studies in Paris.
+                </p>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-[#C13B54] flex-shrink-0 mt-1">•</span>
+                <p className="text-[#3a4649] text-sm leading-relaxed">
+                  <span className="font-semibold text-[var(--ink)]">Current Focus:</span> Acting as an interim commercial lead and strategic advisor for technical founders, designing the go-to-market architecture, pricing models, and validation frameworks required to achieve repeatable commercial adoption.
+                </p>
+              </li>
+            </ul>
 
             <a
               href="https://www.linkedin.com/in/tonimorrow/"
