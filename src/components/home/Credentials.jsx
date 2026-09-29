@@ -26,12 +26,8 @@ export default function Credentials() {
           {/* Right — bio */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="lg:col-span-2 flex flex-col gap-5">
             <h2 className="ds-display text-[clamp(28px,4vw,44px)] text-[var(--ink)]">
-              Commercial leadership spanning product marketing, GTM strategy, and enterprise sales.
-            </h2>
-
-            <p className="text-[#3a4649] text-sm leading-relaxed">
               A commercial career built across the entire product lifecycle:
-            </p>
+            </h2>
 
             <ul className="flex flex-col gap-4 mt-1">
               <li className="flex gap-3">
