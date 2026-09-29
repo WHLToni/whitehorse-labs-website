@@ -210,31 +210,29 @@ export default function BuyTheFrameworks() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="py-20 md:py-24 bg-[#E7F0E3]">
+      <section className="py-10 md:py-12 bg-[#E7F0E3]">
         <div className="relative max-w-[680px] mx-auto px-6">
-          <span className="absolute top-6 left-6 w-6 h-6 border-t-[2.5px] border-l-[2.5px] border-[#C13B54]" />
-          <span className="absolute top-6 right-6 w-6 h-6 border-t-[2.5px] border-r-[2.5px] border-[#C13B54]" />
-          <span className="absolute bottom-0 left-6 w-6 h-6 border-b-[2.5px] border-l-[2.5px] border-[#C13B54]" />
-          <span className="absolute bottom-0 right-6 w-6 h-6 border-b-[2.5px] border-r-[2.5px] border-[#C13B54]" />
+          <span className="absolute top-4 left-4 w-5 h-5 border-t-[2.5px] border-l-[2.5px] border-[#C13B54]" />
+          <span className="absolute top-4 right-4 w-5 h-5 border-t-[2.5px] border-r-[2.5px] border-[#C13B54]" />
+          <span className="absolute bottom-0 left-4 w-5 h-5 border-b-[2.5px] border-l-[2.5px] border-[#C13B54]" />
+          <span className="absolute bottom-0 right-4 w-5 h-5 border-b-[2.5px] border-r-[2.5px] border-[#C13B54]" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white shadow-[0_12px_44px_rgba(20,45,35,0.09)] px-8 py-10 md:px-14 md:py-12"
+            className="bg-white shadow-[0_12px_44px_rgba(20,45,35,0.09)] px-6 py-6 md:px-10 md:py-7"
           >
-            <span className="ds-display text-[#C13B54] text-7xl leading-none block mb-1">&ldquo;</span>
-            <blockquote className="text-[var(--ink)] text-base md:text-lg leading-relaxed italic max-w-[46ch]">
+            <span className="ds-display text-[#C13B54] text-4xl leading-none block mb-1">&ldquo;</span>
+            <blockquote className="text-[var(--ink)] text-sm md:text-base leading-relaxed italic max-w-[52ch]">
               Figuring out an international GTM strategy is challenging, but The GTM Builder made it
-              clear and helped us shape our way step by step. Beyond the amazing platform, working
-              with Toni and her team was a highlight. She's incredibly helpful, professional, and
-              always brings great energy. It's so important to work with good people, and Toni is
-              exactly that.
+              clear and helped us shape our way step by step. Toni is incredibly helpful,
+              professional, and always brings great energy.
             </blockquote>
-            <div className="mt-7 flex items-center gap-3">
-              <div className="w-9 h-[2.5px] bg-[#C13B54]" />
+            <div className="mt-4 flex items-center gap-3">
+              <div className="w-8 h-[2.5px] bg-[#C13B54]" />
               <div>
-                <p className="text-base font-bold text-[var(--ink)]">Guy Jakobi</p>
-                <p className="text-sm text-[var(--muted)]">Managing Director, Pacific Grow</p>
+                <p className="text-sm font-bold text-[var(--ink)]">Guy Jakobi</p>
+                <p className="text-xs text-[var(--muted)]">Managing Director, Pacific Grow</p>
               </div>
             </div>
           </motion.div>
