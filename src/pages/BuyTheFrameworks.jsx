@@ -16,6 +16,8 @@ const modules = [
   {
     num: "02",
     title: "Segmentation & Targeting",
+    image:
+      "https://media.base44.com/images/public/6995347084af76a3154d3f6b/e8ecfad9b_Module2_SegmentationModelandTargeting.png",
     whatYouBuild:
       "Addressable customer segmentation models, segment scoring and prioritization criteria, and detailed priority segment profiles.",
     aiPrompts:
