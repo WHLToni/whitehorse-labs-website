@@ -106,6 +106,28 @@ export default function ChoosePath() {
             </motion.div>
           ))}
         </div>
+
+        {/* Custom Scopes */}
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.45 }}
+          className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 px-7 py-6 border border-[var(--line)] bg-white rounded-md"
+        >
+          <div className="max-w-2xl">
+            <p className="text-base font-bold text-[var(--ink)] mb-1.5">Custom Scopes</p>
+            <p className="text-[#3a4649] text-sm leading-relaxed">
+              For teams with specific timelines, commercial requirements, or ongoing needs outside of these fixed structures, engagements are scoped following an initial consultation.
+            </p>
+          </div>
+          <Link
+            to={createPageUrl("Contact")}
+            className="ds-btn ds-btn-outline inline-flex items-center gap-2 whitespace-nowrap"
+          >
+            Discuss a Custom Scope
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
