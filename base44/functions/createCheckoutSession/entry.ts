@@ -7,6 +7,10 @@ const PRODUCTS = {
     priceId: "price_1TclPKQ67iHZYw6w7k1doUjd",
     name: "GTM Builder",
   },
+  strategy_review: {
+    priceId: "price_1UKvjiQ67iHZYw6wzLADNDV9",
+    name: "Workspace + Strategy Review",
+  },
   bundle: {
     priceId: "price_1TdV6CQ67iHZYw6wxwocN39M",
     name: "Builder Bundle",
@@ -42,7 +46,7 @@ Deno.serve(async (req) => {
       line_items: [{ price: productConfig.priceId, quantity: 1 }],
       allow_promotion_codes: true,
       success_url: `${requestOrigin}/success?session_id={CHECKOUT_SESSION_ID}&product=${product}`,
-      cancel_url: `${requestOrigin}/BuyTheBuilderSuite`,
+      cancel_url: `${requestOrigin}/self-directed-gtm`,
       metadata: {
         base44_app_id: Deno.env.get("BASE44_APP_ID"),
         product,
