@@ -8,7 +8,7 @@ const PRODUCTS = {
     name: "GTM Builder",
   },
   strategy_review: {
-    priceId: "price_1UKvjiQ67iHZYw6wzLADNDV9",
+    priceId: "price_1UKwq5Q67iHZYw6wXd58rmzb",
     name: "Workspace + Strategy Review",
   },
   bundle: {

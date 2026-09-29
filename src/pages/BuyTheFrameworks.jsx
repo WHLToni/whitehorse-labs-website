@@ -119,14 +119,14 @@ const pricingTiers = [
   },
   {
     name: "Workspace + Strategy Review",
-    price: "AUD $1,250",
+    price: "AUD $595",
     priceNote: "One-time · Workspace + expert review",
     features: [
       "The complete Self-Directed GTM workspace",
       "Asynchronous Deep-Dive Review: Toni personally reviews your completed Notion system, customer discovery logs, and draft positioning",
       "60-Minute Pressure-Test Session: A 1-on-1 strategy call to stress-test your pricing, interrogate pilot terms, and refine your launch motions",
     ],
-    cta: "Purchase with Strategy Review AUD $1,250",
+    cta: "Purchase with Strategy Review AUD $595",
     product: "strategy_review",
     featured: true,
   },
