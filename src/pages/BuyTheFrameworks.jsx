@@ -63,7 +63,7 @@ const modules = [
     title: "Investor & Executive One-Page Snapshot",
     bonus: true,
     whatYouBuild:
-      "Distill your entire commercial foundation into an executive summary you can communicate in under two minutes—built for pitch decks, advisory meetings, and board updates.",
+      "Distill your entire commercial foundation into an executive summary you can communicate in under two minutes built for pitch decks, advisory meetings, and board updates.",
     aiPrompts:
       "The GTM Shadow Board Reviewer (stress-test your plan against three critical AI personas: a cynical VC, a risk-averse lawyer, and a burned customer).",
     aiPromptsLabel: "Bonus AI Prompt",
@@ -97,7 +97,7 @@ const pricingTiers = [
       "The 1-Page Investor & Executive Snapshot template",
       "Estimated completion time: 2–4 weeks working at your own pace",
     ],
-    cta: "Get the Workspace — AUD $349",
+    cta: "Get the Workspace AUD $349",
     product: "gtm",
     featured: false,
   },
@@ -110,7 +110,7 @@ const pricingTiers = [
       "Asynchronous Deep-Dive Review: Toni personally reviews your completed Notion system, customer discovery logs, and draft positioning",
       "60-Minute Pressure-Test Session: A 1-on-1 strategy call to stress-test your pricing, interrogate pilot terms, and refine your launch motions",
     ],
-    cta: "Purchase with Strategy Review — AUD $1,250",
+    cta: "Purchase with Strategy Review AUD $1,250",
     product: "strategy_review",
     featured: true,
   },
@@ -123,7 +123,7 @@ const faqs = [
   },
   {
     q: "How are the 34 AI prompts used?",
-    a: "The prompts are provided in structured JSON format throughout the workspace. Rather than generating generic marketing text, they act as role-specific sparring partners—such as a Bottom-Up Market Sizing Model, VRIO Analysis Agent, and Launch Price Setter—to give you strong first drafts that you refine with your market knowledge.",
+    a: "The prompts are provided in structured JSON format throughout the workspace. Rather than generating generic marketing text, they act as role-specific sparring partners such as a Bottom-Up Market Sizing Model, VRIO Analysis Agent, and Launch Price Setter to give you strong first drafts that you refine with your market knowledge.",
   },
   {
     q: "How long does it take to complete?",
@@ -144,7 +144,7 @@ export default function BuyTheFrameworks() {
       .querySelector('meta[name="description"]')
       ?.setAttribute(
         "content",
-        "A structured Notion system that builds the commercial foundations early-stage products miss—from market sizing and ICP qualification to pricing, messaging, and launch execution."
+        "A structured Notion system that builds the commercial foundations early-stage products miss from market sizing and ICP qualification to pricing, messaging, and launch execution."
       );
   }, []);
 
@@ -181,7 +181,7 @@ export default function BuyTheFrameworks() {
             <h1 className="ds-display text-4xl md:text-5xl lg:text-6xl mb-6">Self-Directed GTM</h1>
             <p className="text-[#3a4649] text-lg md:text-xl leading-relaxed mb-8">
               A structured Notion system that builds the commercial foundations early-stage products
-              miss—from market sizing and ICP qualification to pricing, messaging, and launch
+              miss from market sizing and ICP qualification to pricing, messaging, and launch
               execution.
             </p>
             <p className="text-[#3a4649] text-base leading-relaxed mb-10 max-w-2xl">
@@ -196,7 +196,7 @@ export default function BuyTheFrameworks() {
                 onClick={() => scrollTo("pricing")}
                 className="ds-btn ds-btn-solid inline-flex items-center justify-center gap-2"
               >
-                Get the Workspace — AUD $349
+                Get the Workspace AUD $349
               </button>
               <button
                 onClick={() => scrollTo("modules")}
@@ -308,7 +308,7 @@ export default function BuyTheFrameworks() {
                         <span className="text-[var(--muted)] text-base font-bold">{m.num}</span>
                       </div>
                       <p className="text-xs font-semibold uppercase tracking-widest text-[var(--muted)] text-center">
-                        {m.bonus ? "Bonus Snapshot" : `Section ${m.num}`} — Notion screenshot
+                        {m.bonus ? "Bonus Snapshot" : `Section ${m.num}`} Notion screenshot
                       </p>
                     </div>
                   </motion.div>
@@ -326,7 +326,7 @@ export default function BuyTheFrameworks() {
             Stop burning runway on outbound lists that never convert.
           </h2>
           <p className="text-[#3a4649] text-base md:text-lg leading-relaxed mb-12 md:mb-16 max-w-2xl">
-            Founders who struggle with commercialization rarely fail dramatically—they fail
+            Founders who struggle with commercialization rarely fail dramatically they fail
             gradually. They burn through lead lists that go nowhere, build case studies for users
             who don't refer anyone, and hire salespeople who can't explain who they are selling to.
           </p>
