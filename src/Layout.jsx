@@ -166,8 +166,11 @@ export default function Layout({ children, currentPageName }) {
             </div>
           </div>
           <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-[#666]">© {new Date().getFullYear()} Whitehorse Labs. All rights reserved.</p>
-            <p className="text-xs text-[#666]">Fractional Product Commercialisation</p>
+            <p className="text-xs text-[#666]">© {new Date().getFullYear()} Whitehorse Labs Pty Ltd · ABN 86 630 697 380</p>
+            <div className="flex items-center gap-6">
+              <Link to="/privacy-policy" className="text-xs text-[#666] hover:text-white transition-colors">Privacy Policy</Link>
+              <p className="text-xs text-[#666]">Fractional Product Commercialisation</p>
+            </div>
           </div>
         </div>
       </footer>

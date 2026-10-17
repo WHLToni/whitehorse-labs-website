@@ -14,6 +14,7 @@ import QuoteChaserContact from './pages/QuoteChaserContact.jsx';
 import CaseStudies from './pages/CaseStudies.jsx';
 import BuyTheFrameworks from './pages/BuyTheFrameworks.jsx';
 import Specialists from './pages/Specialists.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
@@ -76,6 +77,7 @@ const AuthenticatedApp = () => {
       <Route path="/case-studies" element={<LayoutWrapper currentPageName="CaseStudies"><CaseStudies /></LayoutWrapper>} />
       <Route path="/self-directed-gtm" element={<LayoutWrapper currentPageName="BuyTheFrameworks"><BuyTheFrameworks /></LayoutWrapper>} />
       <Route path="/specialists" element={<LayoutWrapper currentPageName="Specialists"><Specialists /></LayoutWrapper>} />
+      <Route path="/privacy-policy" element={<LayoutWrapper currentPageName="PrivacyPolicy"><PrivacyPolicy /></LayoutWrapper>} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

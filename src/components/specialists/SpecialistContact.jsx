@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Loader2 } from "lucide-react";
 import { base44 } from "@/api/base44Client";
@@ -162,7 +163,7 @@ export default function SpecialistContact() {
                   Whitehorse Labs collects these details to reply to your enquiry and may keep them
                   to follow up about our services. We won't share them or add you to a mailing list
                   without asking. See our{" "}
-                  <span className="text-[var(--ink)] font-medium">Privacy Policy</span>.
+                  <Link to="/privacy-policy" className="text-[var(--ink)] font-medium underline hover:text-[var(--accent)]">Privacy Policy</Link>.
                 </p>
                 <button
                   type="submit"
