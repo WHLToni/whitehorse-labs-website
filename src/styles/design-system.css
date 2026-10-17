@@ -130,3 +130,6 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); font-weight: 700; letter-spac
   .ds-reveal { opacity: 1; transform: none; transition: none; }
   .ds-btn:hover { transform: none; }
 }
+
+/* ─── Specialists page — relaxed display tracking for readability ─── */
+.sp-page .ds-display { letter-spacing: 0.03em; }
