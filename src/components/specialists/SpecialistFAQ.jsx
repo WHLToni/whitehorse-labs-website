@@ -28,7 +28,7 @@ const faqs = [
 export default function SpecialistFAQ() {
   const [open, setOpen] = useState(null);
   return (
-    <section className="ds-band">
+    <section className="ds-band ds-band--mist">
       <div className="ds-wrap max-w-3xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function SpecialistFAQ() {
                 >
                   <span className="font-bold text-[var(--ink)] text-base md:text-lg">{q}</span>
                   <Plus
-                    className={`w-5 h-5 flex-shrink-0 text-[var(--accent)] transition-transform duration-200 ${
+                    className={`w-5 h-5 flex-shrink-0 text-[var(--pine)] transition-transform duration-200 ${
                       isOpen ? "rotate-45" : ""
                     }`}
                     aria-hidden="true"

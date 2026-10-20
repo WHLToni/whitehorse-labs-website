@@ -12,6 +12,11 @@ const items = [
   ["Accessibility", "Contrast, heading structure, form labels and image descriptions, assessed against WCAG 2.2 AA."],
 ];
 
+const scrollTo = (id) => (e) => {
+  e.preventDefault();
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};
+
 export default function WhatICheck() {
   return (
     <section className="ds-band ds-band--mist">
@@ -28,9 +33,11 @@ export default function WhatICheck() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-[#3a4649] text-lg leading-relaxed mb-10 max-w-2xl"
+          className="text-[#3a4649] text-lg leading-relaxed mb-12 max-w-2xl"
         >
-          Each review assesses the website against current regulatory requirements, and against how effectively it converts enquiries into consultations.
+          Each review assesses the website against current regulatory
+          requirements, and against how effectively it converts enquiries into
+          consultations.
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-7">
           {items.map(([title, desc], i) => (
@@ -46,6 +53,16 @@ export default function WhatICheck() {
             </motion.div>
           ))}
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-12"
+        >
+          <button onClick={scrollTo("contact")} className="ds-btn ds-btn-solid">
+            Check my website
+          </button>
+        </motion.div>
       </div>
     </section>
   );

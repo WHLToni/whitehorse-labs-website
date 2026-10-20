@@ -33,6 +33,7 @@ export default function WhyWorkWithMe() {
             transition={{ delay: 0.1 }}
             className="order-1 lg:order-2"
           >
+            <p className="ds-eyebrow grey mb-4">Who I am</p>
             <h2 className="ds-display text-[clamp(26px,4vw,40px)] mb-8">
               Experience in medical devices, pharmaceuticals and health technology
             </h2>
@@ -40,7 +41,7 @@ export default function WhyWorkWithMe() {
               {points.map((p, i) => (
                 <li key={i} className="flex gap-3">
                   <span
-                    className="w-2.5 h-2.5 bg-[var(--accent)] flex-shrink-0 mt-2"
+                    className="w-2.5 h-2.5 bg-[var(--pine)] flex-shrink-0 mt-2"
                     aria-hidden="true"
                   />
                   <p className="text-[#3a4649] text-base leading-relaxed">{p}</p>
@@ -48,7 +49,10 @@ export default function WhyWorkWithMe() {
               ))}
             </ul>
             <p className="text-[#3a4649] text-base leading-relaxed mt-6">
-              I also live with a genetic connective tissue disorder and run a patient information and advocacy platform for others with the condition. That experience informs how I think about the information patients need when they are choosing a specialist.
+              I also live with a genetic connective tissue disorder and run a
+              patient information and advocacy platform for others with the
+              condition. That experience informs how I think about the
+              information patients need when they are choosing a specialist.
             </p>
           </motion.div>
         </div>
