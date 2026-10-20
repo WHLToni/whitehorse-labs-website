@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const points = [
-  "13 years in medical devices, pharma and medical research tech, including AI and real-world data, across sales, marketing, TGA and product commercialisation.",
+  <>13 years in medical devices, pharma and medical research tech, <strong className="font-semibold text-[var(--ink)]">including AI and real-world data</strong>, across sales, marketing, TGA and product commercialisation.</>,
   "Five therapy areas: respiratory, gastroenterology, renal, pain management and cosmetic.",
   "MTAA Advertising Medical Products certified, with a clinical background in the Queensland Ambulance Service.",
 ];
