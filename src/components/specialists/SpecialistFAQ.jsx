@@ -4,10 +4,6 @@ import { Plus } from "lucide-react";
 
 const faqs = [
   [
-    "Are you a lawyer?",
-    "No. I am a marketing consultant with formal training in medical advertising. Privacy policies should be drafted by your lawyer. I identify the gaps, brief your lawyer and implement the outcome on your website.",
-  ],
-  [
     "Do you manage social media?",
     "I develop the strategy, brief the content and review it for compliance before publication. Production is handled by your team or by designers I engage.",
   ],
