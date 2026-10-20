@@ -5,7 +5,7 @@ import { Loader2 } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 
 const BOOKING_URL =
-  "https://whitehorselabs.zohobookings.com.au/portal-embed#/28781000000044016";
+  "https://whitehorselabs.zohobookings.com.au/portal-embed#/28781000000614051";
 const EMAIL = "toni@whitehorselabs.com.au";
 
 // Opens the Zoho Bookings popup (embed script loaded in index.html)
