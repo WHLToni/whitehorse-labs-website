@@ -6,22 +6,21 @@ const cards = [
     border: "var(--accent)",
     label: "Fixed-scope project",
     title: "Compliance and Conversion Review",
-    text: "A review of the website against Ahpra, TGA and privacy requirements, followed by implementation. This includes briefing your lawyer on the privacy policy, revising non-compliant copy and improving the enquiry process to increase booked consultations.",
-    price: "From $3,500",
+    text: "A review of the website against Ahpra, TGA and privacy requirements, followed by implementation. This includes briefing your lawyer (if needed) on the privacy policy, revising non-compliant copy and improving the enquiry process to increase booked consultations.",
   },
   {
     border: "var(--ink)",
     label: "Monthly, three-month minimum",
     title: "Fractional Marketing Lead",
     text: "Senior marketing leadership without a full-time appointment. This covers strategy and quarterly planning, compliant copy and creative briefs for your team, patient communications, enquiry management and reporting on consultations booked.",
-    price: "From $4,000 per month",
+
   },
   {
     border: "var(--accent)",
     label: "Workshop and implementation",
     title: "AI Adoption for Practices",
     text: "A half-day workshop for the specialist and administrative team covering appropriate uses of AI in a specialist practice, the information that should never be entered into AI tools, and the new privacy policy disclosure requirements. Optional implementation of Claude, configured for your practice's templates and workflows.",
-    price: "From $1,500",
+
   },
 ];
 
@@ -58,7 +57,6 @@ export default function WhatIDo() {
               </p>
               <h3 className="text-xl font-bold text-[var(--ink)] mb-4">{c.title}</h3>
               <p className="text-[#3a4649] text-sm leading-relaxed mb-6 flex-1">{c.text}</p>
-              <p className="text-lg font-bold text-[var(--ink)] mb-4">{c.price}</p>
               <a href="#contact" onClick={scrollTo("contact")} className="ds-textlink text-sm">
                 Discuss this service
               </a>
