@@ -4,9 +4,17 @@ import { motion } from "framer-motion";
 import { Loader2 } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 
-// Replace these with real values when ready:
-const BOOKING_URL = ""; // e.g. https://cal.com/...
+const BOOKING_URL =
+  "https://whitehorselabs.zohobookings.com.au/portal-embed#/28781000000044016";
 const EMAIL = "toni@whitehorselabs.com.au";
+
+// Opens the Zoho Bookings popup (embed script loaded in index.html)
+const openBooking = (e) => {
+  e.preventDefault();
+  const modal = window.Bookings?.linkModal({ url: BOOKING_URL });
+  if (modal) modal(e);
+  else window.open(BOOKING_URL, "_blank", "noopener,noreferrer");
+};
 
 const inputCls =
   "w-full px-4 py-3 rounded-lg border border-[#E1E7E9] bg-[#fff] text-[var(--ink)] text-sm placeholder:text-[#aaa] focus:outline-none focus:border-[#C13B54] focus:ring-2 focus:ring-[#C13B54]/10 transition-colors";
@@ -64,22 +72,10 @@ export default function SpecialistContact() {
     }
   };
 
-  const bookingBtn = BOOKING_URL ? (
-    <a
-      href={BOOKING_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="ds-btn ds-btn-outline w-full sm:w-auto text-center"
-    >
-      Choose a time
-    </a>
-  ) : (
+  const bookingBtn = (
     <button
       type="button"
-      onClick={(e) => {
-        e.preventDefault();
-        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-      }}
+      onClick={openBooking}
       className="ds-btn ds-btn-outline w-full sm:w-auto text-center"
     >
       Choose a time
