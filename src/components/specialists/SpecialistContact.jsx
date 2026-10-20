@@ -87,9 +87,8 @@ export default function SpecialistContact() {
       <div className="ds-wrap">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           <div>
-            <p className="ds-eyebrow grey mb-4">Get in touch</p>
             <h2 className="ds-display text-[clamp(26px,4vw,40px)] mb-5">
-              Check your website
+              Book a Free Call
             </h2>
             <p className="text-[#3a4649] text-lg leading-relaxed mb-8 max-w-md">
               Tell me about your practice and what you need. I will respond within
