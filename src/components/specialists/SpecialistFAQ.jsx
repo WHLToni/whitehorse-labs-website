@@ -5,23 +5,23 @@ import { Plus } from "lucide-react";
 const faqs = [
   [
     "Are you a lawyer?",
-    "No. I'm a marketer with medical advertising training. Your lawyer drafts the privacy policy; I find the gaps, coordinate the work and fit it into your website.",
+    "No. I am a marketing consultant with formal training in medical advertising. Privacy policies should be drafted by your lawyer. I identify the gaps, brief your lawyer and implement the outcome on your website.",
   ],
   [
-    "Will you post on our social media?",
-    "No. I plan the content and write the briefs, and your team or a designer publishes them. I check everything before it goes out.",
+    "Do you manage social media?",
+    "I develop the strategy, brief the content and review it for compliance before publication. Production is handled by your team or by designers I engage.",
   ],
   [
-    "We already have an agency. Can you still help?",
-    "Yes. Agencies are usually strong on design and ads. I add the medical compliance check and the strategy on top.",
+    "Can you work with our existing agency?",
+    "Yes. I can provide strategic direction and compliance review while your agency continues to manage creative and media.",
   ],
   [
     "Do you need access to patient records?",
-    "No. I work on your website and marketing, never your clinical systems.",
+    "No. My work is limited to your marketing and website. I do not require access to clinical systems or patient data.",
   ],
   [
     "Where are you based?",
-    "On the Gold Coast. I work with practices across Australia by video call and phone.",
+    "I am based on the Gold Coast and work with practices across Australia, primarily by video conference.",
   ],
 ];
 
@@ -36,7 +36,7 @@ export default function SpecialistFAQ() {
           viewport={{ once: true }}
           className="ds-display text-[clamp(26px,4vw,40px)] mb-10"
         >
-          Questions specialists ask
+          Frequently asked questions
         </motion.h2>
         <div className="border-t border-[var(--line)]">
           {faqs.map(([q, a], i) => {

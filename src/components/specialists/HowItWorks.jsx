@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const steps = [
-  "A 15-minute call about your practice and your goals.",
-  "I review your website against Ahpra, TGA and privacy rules.",
-  "You get a plain-English fix list and a fixed quote.",
-  "We fix it, then decide together if ongoing support makes sense.",
+  "An initial 15-minute call to understand the practice and its objectives.",
+  "A review of your website against Ahpra, TGA and privacy requirements.",
+  "A written report of findings, with a fixed-price proposal.",
+  "Implementation, followed by a review of whether ongoing support is warranted.",
 ];
 
 export default function HowItWorks() {
@@ -18,7 +18,7 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="ds-display text-[clamp(26px,4vw,40px)] mb-12"
         >
-          How it works
+          Process
         </motion.h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
           {steps.map((s, i) => (

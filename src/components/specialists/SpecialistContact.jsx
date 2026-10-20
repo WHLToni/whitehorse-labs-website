@@ -71,10 +71,9 @@ export default function SpecialistContact() {
       <div className="ds-wrap">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           <div>
-            <h2 className="ds-display text-[clamp(26px,4vw,40px)] mb-5">Book a 15-minute call</h2>
+            <h2 className="ds-display text-[clamp(26px,4vw,40px)] mb-5">Book an initial call</h2>
             <p className="text-[#3a4649] text-lg leading-relaxed mb-8 max-w-md">
-              Tell me a little about your practice and I'll be in touch within one business day. Or
-              pick a time that suits you.
+              Please provide a few details about your practice and I will respond within one business day. Alternatively, you can book a time directly.
             </p>
             {bookingBtn}
             <p className="text-[#3a4649] text-base mt-8">
@@ -93,7 +92,7 @@ export default function SpecialistContact() {
                 className="p-10 rounded-md bg-white border border-[var(--line)] text-center"
               >
                 <h3 className="ds-display text-2xl text-[var(--ink)] mb-3">
-                  Thanks, I'll be in touch within one business day.
+                  Thank you for your enquiry. I will respond within one business day.
                 </h3>
               </motion.div>
             ) : (
@@ -150,7 +149,7 @@ export default function SpecialistContact() {
                     className={inputCls}
                   />
                 </Field>
-                <Field label="What would you like help with?">
+                <Field label="What would you like to discuss?">
                   <textarea
                     name="message"
                     value={form.message}
@@ -160,9 +159,7 @@ export default function SpecialistContact() {
                   />
                 </Field>
                 <p className="text-[14px] leading-relaxed text-[var(--muted)]">
-                  Whitehorse Labs collects these details to reply to your enquiry and may keep them
-                  to follow up about our services. We won't share them or add you to a mailing list
-                  without asking. See our{" "}
+                  Whitehorse Labs collects these details to respond to your enquiry and may use them to follow up about our services. We do not share them, and we will not add you to a mailing list without your consent. See our{" "}
                   <Link to="/privacy-policy" className="text-[var(--ink)] font-medium underline hover:text-[var(--accent)]">Privacy Policy</Link>.
                 </p>
                 <button

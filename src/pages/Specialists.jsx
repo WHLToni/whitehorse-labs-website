@@ -14,7 +14,7 @@ export default function Specialists() {
       .querySelector('meta[name="description"]')
       ?.setAttribute(
         "content",
-        "Compliant, senior marketing for specialist practices. Website compliance, fractional marketing and safe AI adoption from a 13-year medical device and pharma marketer."
+        "Marketing leadership and regulatory review for specialist medical practices. Ahpra, TGA and privacy compliance, fractional marketing and AI adoption, from a consultant with thirteen years in medical devices and pharmaceuticals."
       );
   }, []);
 

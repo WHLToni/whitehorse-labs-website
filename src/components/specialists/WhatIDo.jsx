@@ -4,39 +4,23 @@ import { motion } from "framer-motion";
 const cards = [
   {
     border: "var(--accent)",
-    label: "One-off project",
-    title: "Compliance and Conversion Fix",
-    bullets: [
-      "Privacy policy gaps, coordinated with your lawyer",
-      "Collection notices on every form",
-      "Ahpra and TGA review of your site copy and images",
-      "A clear call to action and booking path",
-    ],
+    label: "Fixed-scope project",
+    title: "Compliance and Conversion Review",
+    text: "A review of the website against Ahpra, TGA and privacy requirements, followed by implementation. This includes briefing your lawyer on the privacy policy, revising non-compliant copy and improving the enquiry process to increase booked consultations.",
     price: "From $3,500",
   },
   {
     border: "var(--ink)",
-    label: "Monthly, 3-month minimum",
+    label: "Monthly, three-month minimum",
     title: "Fractional Marketing Lead",
-    bullets: [
-      "Strategy and a monthly plan",
-      "Compliant copy and post briefs for your team",
-      "Website upkeep and patient email",
-      "Enquiry follow-up and monthly reporting",
-      "A compliance check on everything that goes out",
-    ],
-    price: "From $4,000 a month",
+    text: "Senior marketing leadership without a full-time appointment. This covers strategy and quarterly planning, compliant copy and creative briefs for your team, patient communications, enquiry management and reporting on consultations booked.",
+    price: "From $4,000 per month",
   },
   {
     border: "var(--accent)",
-    label: "Workshop and setup",
-    title: "AI in your practice, safely",
-    bullets: [
-      "Half-day session for the doctor and front office",
-      "What AI is good for, and what never goes into it",
-      "Claude set up with practice-specific skills",
-      "Ready for the 10 December privacy changes",
-    ],
+    label: "Workshop and implementation",
+    title: "AI Adoption for Practices",
+    text: "A half-day workshop for the specialist and administrative team covering appropriate uses of AI in a specialist practice, the information that should never be entered into AI tools, and the new privacy policy disclosure requirements. Optional implementation of Claude, configured for your practice's templates and workflows.",
     price: "From $1,500",
   },
 ];
@@ -56,7 +40,7 @@ export default function WhatIDo() {
           viewport={{ once: true }}
           className="ds-display text-[clamp(26px,4vw,40px)] mb-12 max-w-2xl"
         >
-          Three ways to work together
+          Services
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((c, i) => (
@@ -73,20 +57,10 @@ export default function WhatIDo() {
                 {c.label}
               </p>
               <h3 className="text-xl font-bold text-[var(--ink)] mb-4">{c.title}</h3>
-              <ul className="flex flex-col gap-2.5 mb-6 flex-1">
-                {c.bullets.map((b, j) => (
-                  <li key={j} className="flex gap-2.5">
-                    <span
-                      className="w-1.5 h-1.5 bg-[var(--accent)] flex-shrink-0 mt-2"
-                      aria-hidden="true"
-                    />
-                    <span className="text-[#3a4649] text-sm leading-relaxed">{b}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="text-[#3a4649] text-sm leading-relaxed mb-6 flex-1">{c.text}</p>
               <p className="text-lg font-bold text-[var(--ink)] mb-4">{c.price}</p>
               <a href="#contact" onClick={scrollTo("contact")} className="ds-textlink text-sm">
-                Talk to me about this
+                Discuss this service
               </a>
             </motion.div>
           ))}

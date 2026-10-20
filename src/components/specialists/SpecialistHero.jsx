@@ -20,13 +20,12 @@ export default function SpecialistHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: [0.25, 0.1, 0, 1] }}
             >
-              <p className="ds-eyebrow mb-5">For medical specialists</p>
+              <p className="ds-eyebrow mb-5">For specialist practices</p>
               <h1 className="ds-display text-[clamp(32px,5vw,58px)] leading-[1.06] mb-6">
-                Marketing that protects your registration and brings in the right patients.
+                Marketing leadership for specialist medical practices
               </h1>
               <p className="text-base md:text-lg text-[#3a4649] leading-relaxed max-w-xl mb-10">
-                A senior, part-time marketing lead for specialist practices. I plan and check
-                everything, your team publishes it, and your website starts doing its job.
+                I help specialist practices attract the right patients while meeting their obligations under the Ahpra advertising guidelines, the TGA Advertising Code and the Privacy Act. My background is thirteen years in medical device, pharmaceutical and health technology companies, across sales, marketing, health economics and product commercialisation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
@@ -39,7 +38,7 @@ export default function SpecialistHero() {
                   onClick={scrollTo("how-it-works")}
                   className="ds-btn ds-btn-outline w-full sm:w-auto text-center"
                 >
-                  See how I work
+                  How I work
                 </button>
               </div>
             </motion.div>
@@ -48,21 +47,18 @@ export default function SpecialistHero() {
       </section>
 
       <section className="bg-[var(--accent)] text-white">
-        <div className="ds-wrap py-14 md:py-16">
+        <div className="ds-wrap py-10 md:py-16">
           <h2
             className="ds-display text-[clamp(24px,3.5vw,36px)] mb-4"
             style={{ color: "#ffffff" }}
           >
-            Privacy policy rules change on 10 December 2026
+            Privacy policy changes take effect on 10 December 2026
           </h2>
           <p
             className="text-base md:text-lg leading-relaxed max-w-3xl"
             style={{ color: "#ffffff" }}
           >
-            From 10 December, practices that use tools such as AI scribes, online triage or
-            automated booking need to explain them in their privacy policy. Health practices are
-            covered by the Privacy Act whatever their size, and many specialist websites still
-            collect patient details through forms with no privacy policy at all.
+            Amendments to the Australian Privacy Principles (APPs 1.7 to 1.9) require organisations that use automated or AI-assisted decision-making to disclose it in their privacy policy. For specialist practices, this may include AI scribes, online triage and automated booking systems. Health service providers are not covered by the small business exemption. In a review of 17 plastic surgery websites in October 2026, I could not locate a privacy policy on eight.
           </p>
         </div>
       </section>
