@@ -6,7 +6,6 @@ import { base44 } from "@/api/base44Client";
 
 // Replace these with real values when ready:
 const BOOKING_URL = ""; // e.g. https://cal.com/...
-const MOBILE = ""; // e.g. 04xx xxx xxx
 const EMAIL = "toni@whitehorselabs.com.au";
 
 const inputCls =
@@ -102,12 +101,6 @@ export default function SpecialistContact() {
               directly.
             </p>
             {bookingBtn}
-            <p className="text-[#3a4649] text-base mt-8">
-              Toni Morrow{MOBILE ? ` · ${MOBILE}` : ""} ·{" "}
-              <a href={`mailto:${EMAIL}`} className="ds-textlink">
-                {EMAIL}
-              </a>
-            </p>
           </div>
 
           <div>
