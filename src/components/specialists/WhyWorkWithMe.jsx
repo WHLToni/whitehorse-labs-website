@@ -5,7 +5,6 @@ const points = [
   "13 years in medical devices, pharma and medical research tech, including AI and real-world data, across sales, marketing, TGA and product commercialisation.",
   "Five therapy areas: respiratory, gastroenterology, renal, pain management and cosmetic.",
   "MTAA Advertising Medical Products certified, with a clinical background in the Queensland Ambulance Service.",
-  "I see both sides. I run a patient information platform for a genetic connective tissue disorder I live with.",
 ];
 
 export default function WhyWorkWithMe() {
@@ -35,7 +34,7 @@ export default function WhyWorkWithMe() {
             className="order-1 lg:order-2"
           >
             <h2 className="ds-display text-[clamp(26px,4vw,40px)] mb-8">
-              Built inside medical devices, pharma and health tech
+              Experience in medical devices, pharmaceuticals and health technology
             </h2>
             <ul className="flex flex-col gap-5">
               {points.map((p, i) => (
@@ -48,6 +47,9 @@ export default function WhyWorkWithMe() {
                 </li>
               ))}
             </ul>
+            <p className="text-[#3a4649] text-base leading-relaxed mt-6">
+              I also live with a genetic connective tissue disorder and run a patient information and advocacy platform for others with the condition. That experience informs how I think about the information patients need when they are choosing a specialist.
+            </p>
           </motion.div>
         </div>
       </div>
