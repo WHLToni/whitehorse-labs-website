@@ -1,0 +1,127 @@
+/* ─── Specialists page: what a website review covers ─── */
+
+.sp-review {
+  padding: 64px 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.sp-review__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 42px;
+}
+
+/* Sticky-style brief with the crimson rule that draws down it */
+.sp-review__brief {
+  position: relative;
+  align-self: start;
+  padding: 12px 34px 38px 0;
+}
+
+.sp-review__bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: bottom;
+}
+
+.sp-page .sp-review h2 {
+  margin: 0 0 27px;
+  color: var(--pine);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .015em;
+}
+
+.sp-review__intro {
+  margin: 0 0 31px;
+  max-width: 32ch;
+  color: #344247;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.sp-review__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 23px;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.sp-review__action:hover { background: #a92f46; border-color: #a92f46; }
+.sp-review__action:active { transform: translateY(1px); }
+.sp-review__action:focus-visible { outline: 3px solid var(--pine); outline-offset: 4px; }
+
+/* The checklist itself */
+.sp-review__list {
+  display: grid;
+  align-self: stretch;
+  min-width: 0;
+}
+
+.sp-review__item {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  column-gap: 16px;
+  align-content: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.sp-review__item:last-child { border-bottom: 0; }
+
+.sp-review__tick {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.sp-review .sp-review__title {
+  margin: 0 0 4px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -.015em;
+}
+
+.sp-review__desc {
+  margin: 0;
+  max-width: 68ch;
+  color: #3a4649;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+@media (min-width: 1024px) {
+  .sp-review { padding: 78px 0; }
+  .sp-review__grid {
+    grid-template-columns: 350px minmax(0, 1fr);
+    column-gap: 74px;
+    row-gap: 0;
+  }
+  .sp-review__list { grid-template-rows: repeat(8, minmax(0, 1fr)); }
+  .sp-page .sp-review h2 { font-size: 47px; }
+}

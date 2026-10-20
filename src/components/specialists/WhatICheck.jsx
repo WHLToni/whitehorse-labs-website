@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./WhatICheck.css";
 
 const items = [
   ["Privacy policy (APP 1)", "Whether a policy is published, current, and covers health information, enquiry forms, tracking technologies and, from 10 December, automated decision-making."],
@@ -19,50 +20,56 @@ const scrollTo = (id) => (e) => {
 
 export default function WhatICheck() {
   return (
-    <section className="ds-band ds-band--mist">
-      <div className="ds-wrap">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="ds-display text-[clamp(26px,4vw,40px)] mb-5 max-w-2xl"
-        >
-          What a website review covers
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-[#3a4649] text-lg leading-relaxed mb-12 max-w-2xl"
-        >
-          Each review assesses the website against current regulatory
-          requirements, and against how effectively it converts enquiries into
-          consultations.
-        </motion.p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-7">
-          {items.map(([title, desc], i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.04 }}
-            >
-              <p className="font-bold text-[var(--ink)] text-base mb-1">{title}</p>
-              <p className="text-[#3a4649] text-base leading-relaxed">{desc}</p>
-            </motion.div>
-          ))}
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-12"
-        >
-          <button onClick={scrollTo("contact")} className="ds-btn ds-btn-solid">
+    <section className="sp-review">
+      <div className="ds-wrap sp-review__grid">
+        <div className="sp-review__brief">
+          <motion.span
+            aria-hidden="true"
+            className="sp-review__bar"
+            initial={{ scaleY: 0 }}
+            whileInView={{ scaleY: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.75, ease: [0.2, 0.75, 0.25, 1], delay: 0.35 }}
+          />
+          <h2>What a website review covers</h2>
+          <p className="sp-review__intro">
+            Each review assesses the website against current regulatory
+            requirements, and against how effectively it converts enquiries into
+            consultations.
+          </p>
+          <button
+            type="button"
+            className="sp-review__action"
+            onClick={scrollTo("contact")}
+          >
             Check my website
           </button>
-        </motion.div>
+        </div>
+
+        <div className="sp-review__list">
+          {items.map(([title, desc], i) => (
+            <motion.article
+              key={title}
+              className="sp-review__item"
+              initial={{ opacity: 0.35, y: 7 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.48,
+                ease: [0.25, 0.1, 0.25, 1],
+                delay: 0.07 + i * 0.04,
+              }}
+            >
+              <span aria-hidden="true" className="sp-review__tick">
+                ✓
+              </span>
+              <div>
+                <h3 className="sp-review__title">{title}</h3>
+                <p className="sp-review__desc">{desc}</p>
+              </div>
+            </motion.article>
+          ))}
+        </div>
       </div>
     </section>
   );
