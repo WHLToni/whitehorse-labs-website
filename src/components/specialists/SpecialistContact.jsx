@@ -22,7 +22,7 @@ const inputCls =
 
 const supportOptions = [
   SNAPSHOT_OPTION,
-  "Full review (from $1,200)",
+  "Full review (from $750)",
   "Implementation or a new website",
   "Ongoing marketing support",
   "AI workshop for my team",

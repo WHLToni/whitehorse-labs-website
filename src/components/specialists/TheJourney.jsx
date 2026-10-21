@@ -8,7 +8,7 @@ const stages = [
     label: "Start here",
     title: "Compliance & Conversion Review",
     text: "A detailed review of your website against Ahpra, TGA, privacy and accessibility requirements, with a written report of every finding, ranked by risk. The report is written so your team or your agency can act on it, and includes a 30-minute handover call with whoever will make the changes.",
-    price: "From $1,200",
+    price: "From $750",
     priceNote: "Credited in full against implementation if you proceed within 60 days.",
   },
   {
