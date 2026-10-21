@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Loader2 } from "lucide-react";
 import { base44 } from "@/api/base44Client";
+import { CONTACT_INTENT_EVENT, SNAPSHOT_OPTION } from "@/lib/specialistContactCta";
 
 const BOOKING_URL =
   "https://whitehorselabs.zohobookings.com.au/portal-embed#/28781000000614051";
@@ -20,27 +21,39 @@ const inputCls =
   "w-full px-4 py-3 rounded-lg border border-[#E1E7E9] bg-[#fff] text-[var(--ink)] text-sm placeholder:text-[#aaa] focus:outline-none focus:border-[#C13B54] focus:ring-2 focus:ring-[#C13B54]/10 transition-colors";
 
 const supportOptions = [
-  "Compliance & conversion review",
-  "Website improvements",
-  "A new website",
+  SNAPSHOT_OPTION,
+  "Full review (from $1,200)",
+  "Implementation or a new website",
   "Ongoing marketing support",
-  "AI adoption workshop",
-  "Not sure yet",
+  "AI workshop for my team",
+  "Something else",
 ];
 
 const initialForm = {
   name: "",
   practice: "",
+  practice_website: "",
   role: "",
   email: "",
   phone: "",
-  support_type: "",
+  support_type: SNAPSHOT_OPTION,
   message: "",
 };
 
 export default function SpecialistContact() {
   const [form, setForm] = useState(initialForm);
   const [status, setStatus] = useState("idle");
+  const bookingRef = useRef(null);
+
+  // The snapshot and booking buttons elsewhere on the page tell the form what was clicked.
+  useEffect(() => {
+    const onIntent = ({ detail }) => {
+      if (detail?.preset) setForm((p) => ({ ...p, support_type: detail.preset }));
+      if (detail?.booking) bookingRef.current?.focus();
+    };
+    window.addEventListener(CONTACT_INTENT_EVENT, onIntent);
+    return () => window.removeEventListener(CONTACT_INTENT_EVENT, onIntent);
+  }, []);
 
   const handleChange = (e) =>
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
@@ -55,6 +68,7 @@ export default function SpecialistContact() {
       await base44.entities.SpecialistEnquiry.create({
         name: form.name,
         practice_name: form.practice,
+        practice_website: form.practice_website,
         role: form.role,
         email: form.email,
         phone: form.phone,
@@ -63,7 +77,7 @@ export default function SpecialistContact() {
       await base44.integrations.Core.SendEmail({
         to: EMAIL,
         subject: `New specialist enquiry — ${form.name}`,
-        body: `New enquiry from the specialists landing page.\n\nName: ${form.name}\nPractice: ${form.practice}\nRole: ${form.role || "Not specified"}\nEmail: ${form.email}\nPhone: ${form.phone || "Not provided"}\nSupport type: ${form.support_type || "Not specified"}\n\nMessage:\n${form.message || "None"}`.trim(),
+        body: `New enquiry from the specialists landing page. Practice website: ${form.practice_website || "not provided"}.\n\nName: ${form.name}\nPractice: ${form.practice}\nRole: ${form.role || "Not specified"}\nEmail: ${form.email}\nPhone: ${form.phone || "Not provided"}\nSupport type: ${form.support_type || "Not specified"}\n\nMessage:\n${form.message || "None"}`.trim(),
       });
       setStatus("success");
       setForm(initialForm);
@@ -75,6 +89,7 @@ export default function SpecialistContact() {
   const bookingBtn = (
     <button
       type="button"
+      ref={bookingRef}
       onClick={openBooking}
       className="ds-btn ds-btn-outline w-full sm:w-auto text-center"
     >
@@ -88,14 +103,16 @@ export default function SpecialistContact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           <div>
             <h2 className="ds-display text-[clamp(26px,4vw,40px)] mb-5">
-              Book a Free Call
+              Get your free snapshot or book a call
             </h2>
             <p className="text-[#3a4649] text-lg leading-relaxed mb-8 max-w-md">
-              Tell me about your practice and what you need. I will respond within
-              one business day with next steps. Alternatively, you can book a time
-              directly.
+              Tell me about your practice. I will email your snapshot within three
+              business days, or respond within one business day to arrange a call.
+              Alternatively, you can book a time directly.
             </p>
-            {bookingBtn}
+            <div id="book-a-call" className="scroll-mt-28">
+              {bookingBtn}
+            </div>
           </div>
 
           <div>
@@ -136,6 +153,17 @@ export default function SpecialistContact() {
                     className={inputCls}
                   />
                 </Field>
+                <Field label="Practice website" required>
+                  <input
+                    type="url"
+                    name="practice_website"
+                    value={form.practice_website}
+                    onChange={handleChange}
+                    placeholder="https://"
+                    required
+                    className={inputCls}
+                  />
+                </Field>
                 <Field label="Your role">
                   <select
                     name="role"
@@ -156,7 +184,6 @@ export default function SpecialistContact() {
                     onChange={handleChange}
                     className={inputCls}
                   >
-                    <option value="">Select…</option>
                     {supportOptions.map((o) => (
                       <option key={o} value={o}>
                         {o}

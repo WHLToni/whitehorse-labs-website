@@ -9,7 +9,7 @@ const faqs = [
   ],
   [
     "Can you work with our existing agency?",
-    "Yes. I can provide strategic direction and compliance review while your agency continues to manage creative and media.",
+    "Yes. Many practices already have an agency. I can complete the review and hand the findings to your agency to implement, or provide ongoing compliance review of what they produce.",
   ],
   [
     "Do you need access to patient records?",

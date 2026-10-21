@@ -1,10 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const scrollTo = (id) => (e) => {
-  e.preventDefault();
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-};
+import { goToContact, SNAPSHOT_OPTION } from "@/lib/specialistContactCta";
 
 export default function SpecialistHero() {
   return (
@@ -26,24 +23,28 @@ export default function SpecialistHero() {
             <p className="text-base md:text-lg text-[#3a4649] leading-relaxed max-w-xl mb-10">
               I review specialist practice websites against the Ahpra advertising
               guidelines, the TGA Advertising Code and the Privacy Act, then fix
-              what I find or build a new one. My background is thirteen years in
-              medical device, pharmaceutical and health technology companies,
-              across sales, marketing and product commercialisation.
+              what needs fixing, or build a compliant new site. My background is 13
+              years in medical device, pharmaceutical and health technology
+              companies, across sales, marketing and product commercialisation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
-                onClick={scrollTo("contact")}
+                onClick={(e) => goToContact(e, { preset: SNAPSHOT_OPTION })}
                 className="ds-btn ds-btn-solid w-full sm:w-auto text-center"
               >
-                Check my website
+                Get a free website snapshot
               </button>
               <button
-                onClick={scrollTo("how-it-works")}
+                onClick={(e) => goToContact(e, { booking: true })}
                 className="ds-btn ds-btn-outline w-full sm:w-auto text-center"
               >
-                How I work
+                or book a 15-minute call
               </button>
             </div>
+            <p className="text-sm text-[var(--muted)] leading-relaxed mt-5 max-w-xl">
+              A check of five key compliance points, emailed within three business
+              days. No obligation.
+            </p>
           </motion.div>
 
           <motion.div
@@ -55,9 +56,6 @@ export default function SpecialistHero() {
               className="bg-white border border-[var(--line)] rounded-md p-8 lg:p-9 relative"
               style={{ borderLeft: "4px solid var(--accent)" }}
             >
-              <span className="inline-block text-xs font-bold uppercase tracking-widest text-white bg-[var(--accent)] px-3 py-1.5 rounded mb-5">
-                From 10 Dec 2026
-              </span>
               <h3 className="font-bold text-[var(--ink)] text-xl md:text-2xl leading-snug mb-4">
                 New privacy obligations take effect on 10 December 2026
               </h3>
@@ -74,10 +72,10 @@ export default function SpecialistHero() {
                 2026, I could not locate a privacy policy on eight.
               </p>
               <button
-                onClick={scrollTo("contact")}
+                onClick={(e) => goToContact(e, { preset: SNAPSHOT_OPTION })}
                 className="ds-textlink text-sm"
               >
-                Check whether yours is ready
+                Get a free website snapshot
               </button>
             </div>
           </motion.div>

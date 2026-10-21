@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const steps = [
-  "An initial 15-minute call to understand the practice and its objectives.",
-  "A review of your website against Ahpra, TGA and privacy requirements.",
-  "A written report of findings, with a fixed-price proposal.",
+  "A free website snapshot, emailed within three business days.",
+  "A 15-minute call to go through it and understand the practice's objectives.",
+  "A fixed-price proposal for the full review, which you can implement with me or hand to your existing agency.",
   "Implementation, followed by a review of whether ongoing support is warranted.",
 ];
 

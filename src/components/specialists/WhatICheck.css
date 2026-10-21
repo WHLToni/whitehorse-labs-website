@@ -115,6 +115,14 @@
   line-height: 1.45;
 }
 
+.sp-review__note {
+  margin: 34px 0 0;
+  max-width: 78ch;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 @media (min-width: 1024px) {
   .sp-review { padding: 78px 0; }
   .sp-review__grid {

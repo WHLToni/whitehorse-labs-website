@@ -14,7 +14,7 @@ export default function Specialists() {
       .querySelector('meta[name="description"]')
       ?.setAttribute(
         "content",
-        "Is your practice website clear, credible and compliant? Reviews and implementation against Ahpra, TGA and privacy requirements, then ongoing fractional marketing leadership, from a consultant with thirteen years in medical devices and pharmaceuticals."
+        "Is your practice website clear, credible and compliant? Reviews and implementation against Ahpra, TGA and privacy requirements, then ongoing fractional marketing leadership, from a consultant with 13 years in medical devices and pharmaceuticals."
       );
   }, []);
 

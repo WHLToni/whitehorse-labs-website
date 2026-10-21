@@ -1,34 +1,31 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { goToContact, SNAPSHOT_OPTION } from "@/lib/specialistContactCta";
 
 const stages = [
   {
     no: "01",
     label: "Start here",
     title: "Compliance & Conversion Review",
-    text: "I review your website against Ahpra, TGA and privacy requirements, then report the findings with a fixed-price proposal for the work.",
-    ongoing: false,
+    text: "A detailed review of your website against Ahpra, TGA, privacy and accessibility requirements, with a written report of every finding, ranked by risk. The report is written so your team or your agency can act on it, and includes a 30-minute handover call with whoever will make the changes.",
+    price: "From $1,200",
+    priceNote: "Credited in full against implementation if you proceed within 60 days.",
   },
   {
     no: "02",
     label: "Then",
     title: "Implementation or a New Website",
     text: "I revise non-compliant copy, brief your lawyer on the privacy policy, improve the enquiry process to increase booked consultations, or build a new compliant website.",
-    ongoing: false,
+    price: "POA, depending on scope",
   },
   {
     no: "03",
     label: "Ongoing",
     title: "Fractional Marketing Lead",
     text: "Once your website is right, I stay on as your marketing lead: strategy and quarterly planning, compliant copy and creative briefs, patient communications, enquiry management and reporting on consultations booked.",
-    ongoing: true,
+    price: "POA, depending on scope",
   },
 ];
-
-const scrollTo = (id) => (e) => {
-  e.preventDefault();
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-};
 
 export default function TheJourney() {
   return (
@@ -65,11 +62,6 @@ export default function TheJourney() {
                 <span className="ds-display text-[var(--pine)] text-4xl leading-none">
                   {s.no}
                 </span>
-                {s.ongoing && (
-                  <span className="text-xs font-bold uppercase tracking-widest text-white bg-[var(--pine)] px-2.5 py-1 rounded">
-                    Ongoing
-                  </span>
-                )}
               </div>
               <p className="text-xs font-bold uppercase tracking-widest text-[var(--muted)] mb-2">
                 {s.label}
@@ -78,6 +70,14 @@ export default function TheJourney() {
               <p className="text-[#3a4649] text-sm leading-relaxed flex-1">
                 {s.text}
               </p>
+              <div className="mt-6 pt-5 border-t border-[var(--line)]">
+                <p className="text-base font-bold text-[var(--ink)]">{s.price}</p>
+                {s.priceNote && (
+                  <p className="text-sm text-[var(--muted)] leading-snug mt-1.5">
+                    {s.priceNote}
+                  </p>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>
@@ -93,7 +93,7 @@ export default function TheJourney() {
             AI, the information that should never be entered into AI tools, and
             the new privacy policy disclosure requirements. Optional
             implementation of Claude, configured for your practice's templates
-            and workflows.
+            and workflows. POA, depending on scope.
           </p>
         </motion.div>
         <motion.div
@@ -102,8 +102,11 @@ export default function TheJourney() {
           viewport={{ once: true }}
           className="mt-10"
         >
-          <button onClick={scrollTo("contact")} className="ds-btn ds-btn-solid">
-            Check my website
+          <button
+            onClick={(e) => goToContact(e, { preset: SNAPSHOT_OPTION })}
+            className="ds-btn ds-btn-solid"
+          >
+            Get a free website snapshot
           </button>
         </motion.div>
       </div>
