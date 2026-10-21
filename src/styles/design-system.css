@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); font-weight: 700; letter-spac
 .ds-band--paper h1, .ds-band--paper h2 { color: #fff; }
 .ds-display { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; line-height: .94; }
 
-.ds-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.ds-eyebrow { font-size: 16px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
 .ds-eyebrow.grey { color: var(--muted); }
 .ds-eyebrow.mint { color: var(--accent); }
 
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); font-weight: 700; letter-spac
 .ds-body { color: #3a4649; max-width: 52ch; margin-bottom: 20px; }
 
 /* ─── Buttons ───────────────────────────────────────────── */
-.ds-btn { display: inline-block; font-weight: 600; font-size: 15px; border-radius: 4px; padding: 13px 24px; transition: background .18s ease, color .18s ease, transform .18s ease, border-color .18s ease; cursor: pointer; border: none; text-decoration: none; }
+.ds-btn { display: inline-block; font-weight: 600; font-size: 16px; border-radius: 4px; padding: 13px 24px; transition: background .18s ease, color .18s ease, transform .18s ease, border-color .18s ease; cursor: pointer; border: none; text-decoration: none; }
 .ds-btn-solid { background: var(--accent); color: #fff; border: 1.6px solid var(--accent); }
 .ds-btn-solid:hover { background: var(--accent-dark); border-color: var(--accent-dark); transform: translateY(-1px); }
 .ds-btn-outline { border: 2px solid var(--ink); color: var(--ink); background: transparent; }
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); font-weight: 700; letter-spac
 
 /* ─── Facts list (diamond bullets) ─────────────────────── */
 .ds-facts { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 20px; padding: 0; }
-.ds-facts li { position: relative; padding-left: 22px; font-size: 15px; color: #2b3639; }
+.ds-facts li { position: relative; padding-left: 22px; font-size: 16px; color: #2b3639; }
 .ds-facts li::before { content: ""; position: absolute; left: 0; top: 9px; width: 8px; height: 8px; background: var(--accent); border-radius: 2px; transform: rotate(45deg); }
 
 /* ─── Reveal animation ─────────────────────────────────── */

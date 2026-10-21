@@ -192,7 +192,7 @@ export default function SpecialistContact() {
                     className={inputCls + " resize-none"}
                   />
                 </Field>
-                <p className="text-[14px] leading-relaxed text-[var(--muted)]">
+                <p className="text-[16px] leading-relaxed text-[var(--muted)]">
                   Whitehorse Labs collects these details to respond to your enquiry
                   and may use them to follow up about our services. We do not share
                   them, and we will not add you to a mailing list without your

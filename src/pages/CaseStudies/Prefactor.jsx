@@ -96,7 +96,7 @@ export default function PrefactorCaseStudy() {
                 boxShadow: '0 4px 24px rgba(0,0,0,0.3)'
               }}
             />
-            <p style={{ fontSize: '13px', color: '#7ecec4', marginTop: '10px', letterSpacing: '0.05em', fontWeight: 500 }}>
+            <p style={{ fontSize: '16px', color: '#7ecec4', marginTop: '10px', letterSpacing: '0.05em', fontWeight: 500 }}>
               Before — scroll down for the transformation
             </p>
           </motion.div>
@@ -209,7 +209,7 @@ export default function PrefactorCaseStudy() {
           >
             {/* BEFORE — compact 4-image grid */}
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-widest mb-3" style={{ color: "#7ecec4", opacity: 0.7 }}>Before</p>
+              <p className="text-[16px] font-semibold uppercase tracking-widest mb-3" style={{ color: "#7ecec4", opacity: 0.7 }}>Before</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/7b210d5b7_PrefactorBeforeHomepage.png" alt="Old Prefactor homepage" className="w-full block rounded-md" style={{ opacity: 0.65 }} />
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/53dbdcb20_PrefactorBeforeWhy.png" alt="Old Prefactor why section" className="w-full block rounded-md" style={{ opacity: 0.65 }} />
@@ -221,7 +221,7 @@ export default function PrefactorCaseStudy() {
 
             {/* AFTER — prominent single column */}
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-widest mb-3" style={{ color: "#7ecec4", opacity: 0.7 }}>After</p>
+              <p className="text-[16px] font-semibold uppercase tracking-widest mb-3" style={{ color: "#7ecec4", opacity: 0.7 }}>After</p>
               <div className="grid grid-cols-2 gap-3">
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/175af339b_BrandGuidelines1.png" alt="Brand guidelines — cover" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />
                 <img src="https://media.base44.com/images/public/6995347084af76a3154d3f6b/0c55cba4a_BrandGuidelines3.png" alt="Typography system" className="w-full block rounded-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }} />

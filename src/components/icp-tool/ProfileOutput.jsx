@@ -65,7 +65,7 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
             <div className="grid sm:grid-cols-2 gap-4 mb-3.5">
               {alts.map((a, i) => (
                 <div key={i}>
-                  <div className="text-[10px] font-bold text-[var(--muted)] tracking-wider uppercase mb-1">{a.n}</div>
+                  <div className="text-[16px] font-bold text-[var(--muted)] tracking-wider uppercase mb-1">{a.n}</div>
                   <div className="text-sm text-[var(--muted)]">{a.l || "—"}</div>
                 </div>
               ))}
@@ -84,7 +84,7 @@ export default function ProfileOutput({ formData, onDownload, onReset }) {
             <ProfileField label="Primary Objection" value={formData.primaryObjection} />
           </div>
           <div className="mt-3.5">
-            <div className="text-[10px] font-bold text-[var(--muted)] tracking-wider uppercase mb-1.5">How They Discover Solutions</div>
+            <div className="text-[16px] font-bold text-[var(--muted)] tracking-wider uppercase mb-1.5">How They Discover Solutions</div>
             <div className="flex flex-wrap gap-1.5">
               {formData.discovery.length ? formData.discovery.map((d, i) => <Tag key={i}>{d}</Tag>) : <span className="text-sm text-[var(--muted)] italic">Not specified</span>}
             </div>
