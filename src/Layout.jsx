@@ -148,7 +148,7 @@ export default function Layout({ children, currentPageName }) {
                   to="/BuyTheFrameworks"
                   className="block text-sm text-[#999] hover:text-white transition-colors"
                 >
-                  Buy the Frameworks — from {AUD_FROM}
+                  Buy My GTM Frameworks for {AUD_FROM}
                 </Link>
                 <Link
                   to={createPageUrl("Services")}
