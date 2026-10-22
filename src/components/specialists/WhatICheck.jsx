@@ -6,7 +6,7 @@ import { goToContact, SNAPSHOT_OPTION } from "@/lib/specialistContactCta";
 const items = [
   ["Privacy policy (APP 1)", "Whether a policy is published, current, and covers health information, enquiry forms, tracking technologies and, from 10 December, automated decision-making."],
   ["Collection notices (APP 5)", "Whether a notice appears wherever a form collects personal or health information."],
-  ["Tracking technologies", "Whether Meta, Google, TikTok or other tracking pixels operate on pages where patients disclose health information, the subject of the Privacy Commissioner's 2026 determinations against Monash IVF and Medmate."],
+  ["Tracking technologies", "Whether Meta, Google or other tracking pixels operate on pages where patients disclose health information, the subject of the Privacy Commissioner's 2026 determinations against Monash IVF and Medmate."],
   ["Ahpra advertising (section 133)", "Testimonials, before and after images, protected titles and claims."],
   ["TGA requirements", "References to prescription-only medicines, including indirect terms for injectables."],
   ["Cosmetic surgery guidelines", "Registration details, GP referral, pre-operative consultations and the cooling-off period."],
