@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { base44 } from "@/api/base44Client";
 import { motion } from "framer-motion";
 import FAQItem from "../components/shared/FAQItem";
+import usePageViewTracking from "@/lib/usePageViewTracking";
 
 const modules = [
   {
@@ -153,6 +154,7 @@ const faqs = [
 
 export default function BuyTheFrameworks() {
   const [loading, setLoading] = useState(false);
+  usePageViewTracking("self_directed_gtm_page_view", "/self-directed-gtm");
 
   useEffect(() => {
     document.title = "Self-Directed GTM | Notion Commercialisation Workspace";

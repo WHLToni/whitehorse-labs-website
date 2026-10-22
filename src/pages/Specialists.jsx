@@ -6,8 +6,11 @@ import TheJourney from "../components/specialists/TheJourney";
 import HowItWorks from "../components/specialists/HowItWorks";
 import SpecialistFAQ from "../components/specialists/SpecialistFAQ";
 import SpecialistContact from "../components/specialists/SpecialistContact";
+import usePageViewTracking from "@/lib/usePageViewTracking";
 
 export default function Specialists() {
+  usePageViewTracking("specialists_page_view", "/specialists");
+
   useEffect(() => {
     document.title = "Website compliance and marketing for medical specialists | Whitehorse Labs";
     document
